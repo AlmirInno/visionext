@@ -794,7 +794,7 @@ footer {
         /* padding: 599px 0px 0px; */
         width: 100%;
         /* top: -175px; */
-        top: 5000px;
+        top: 2500px;
     }
 
 
@@ -913,15 +913,14 @@ footer {
         /* width: 130%; */
         left: -100px;
         top: -339px;
-        clip-path: polygon(100% 44.5%, 0% 44.5%, 0% 85.3%, 100% 47.3%);
+        clip-path: polygon(100% 44.5%, 0% 44.5%, 0% 86.3%, 100% 48.3%);
     }
-}
 
 .fotoValoriMissione img {
-    width: 130%;
+    width: 135%;
     position: relative;
     left: -100px;
-    top: -409px;
+    top: -432px;
 }
 
 .fotoValoriMissione {
@@ -933,9 +932,9 @@ footer {
 
 .rett-valori-img {
     background-color: #9448a6;
-    width: 122%;
+    width: 130%;
     height: 346px;
-    clip-path: polygon(100% 0%, 100% 8%, 67% 36.5%, 100% 81%);
+    clip-path: polygon(100% 0%, 100% 8%, 67% 36.5%, 100% 100%);
     position: absolute;
     top: 200px;
     z-index: 3;
