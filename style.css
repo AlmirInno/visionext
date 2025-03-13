@@ -688,6 +688,7 @@ footer {
         border-radius: 8px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         width: 200px;
+        font-size: 12vw;
     }
 
     /* Make nav links visible when hamburger is clicked */
@@ -695,17 +696,17 @@ footer {
         display: flex;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
+    body{
+        width: max-content;
     }
 
     header {
         overflow: visible;
+        width: 100%;
     }
 
     .header-rett img {
-        width: 35%;
+        width: 55%;
         position: relative;
         top: -66px;
         left: 65px;
