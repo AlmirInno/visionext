@@ -660,8 +660,7 @@ footer {
         font-size: 12vw;
         font-weight: bold;
         color: #000;
-        display: flex
-    ;
+        display: flex;
         font-family: 'Orbitron', sans-serif;
     }
 
@@ -696,7 +695,7 @@ footer {
         display: flex;
     }
 
-    body{
+    body {
         width: max-content;
     }
 
@@ -705,8 +704,17 @@ footer {
         width: 100%;
     }
 
+    .header-rett {
+        position: absolute;
+        width: 250%;
+        height: 2000px;
+        rotate: -25deg;
+        overflow: hidden;
+        top: 179px;
+    }
+
     .header-rett img {
-        width: 55%;
+        width: 100%;
         position: relative;
         top: -66px;
         left: 65px;
@@ -719,9 +727,9 @@ footer {
         background-color: #000;
         z-index: 2;
         position: absolute;
-        top: 793px;
-        width: 140%;
-        height: 147px;
+        top: 1898px;
+        width: 292%;
+        height: 500px;
         rotate: -25deg;
     }
 
@@ -735,9 +743,9 @@ footer {
 
     header h1 {
 
-        font-size: 85px;
+        font-size: 45vw;
         width: 100%;
-        padding: 0px 10px;
+        
     }
 
 
@@ -767,6 +775,7 @@ footer {
 
 
     main {
+        margin-top: 2000px;
         width: 100%;
     }
 
