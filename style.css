@@ -774,6 +774,12 @@ footer {
 
     }
 
+    #about {
+        position: relative;
+        padding: 0px 0px;
+        margin: 0px 0px 100px 0px;
+        width: 100%;
+    }
 
     #services {
         position: relative;
@@ -856,7 +862,7 @@ footer {
         width: 150%;
         position: relative;
         height: 1298px;
-        top: 1452px;
+        top: 1535px;
         left: 0px;
         /* padding: 0px 10px; */
         clip-path: polygon(100% 0%, -2% 27.5%, 0% 77%, 100% 77%);
@@ -883,7 +889,7 @@ footer {
 }
 
 .testo {
-    font-size: 12vw;
+    font-size: 11.1vw;
     padding: 0px 30px;
     width: 800px;
 }
