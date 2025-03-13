@@ -650,6 +650,10 @@ footer {
 
 @media (min-width: 0px) and (max-width: 768px) {
 
+    nav{
+        width: 100%;
+    }
+
     /* Show hamburger icon on mobile */
     nav .menu-toggle {
         display: block;
