@@ -656,12 +656,21 @@ footer {
         justify-content: space-around;
     }
 
+    nav .logo {
+        font-size: 12vw;
+        font-weight: bold;
+        color: #000;
+        display: flex
+    ;
+        font-family: 'Orbitron', sans-serif;
+    }
+
     /* Show hamburger icon on mobile */
     nav .menu-toggle {
         display: block;
         background: transparent;
         border: none;
-        font-size: 30px;
+        font-size: 20vw;
         color: #9448a6;
         margin: 0px 0px 0px 700px;
     }
@@ -738,8 +747,8 @@ footer {
     }
 
     .lx {
-        padding-top: 1px;
-        font-size: 27px;
+        padding-top: 4px;
+        font-size: 11vw;
         margin: 0px;
         color: #ff00ff;
         font-family: 'Orbitron', sans-serif;
