@@ -706,7 +706,7 @@ footer {
 
     .header-rett {
         position: absolute;
-        width: 250%;
+        width: 248%;
         height: 2000px;
         rotate: -25deg;
         overflow: hidden;
@@ -734,15 +734,14 @@ footer {
     }
 
     .header-content {
-        top: 55%;
-        left: 50%;
+        top: 157%;
+        left: 68%;
         transform: translate(-50%, -50%);
         text-align: center;
         width: 100%;
     }
 
     header h1 {
-
         font-size: 45vw;
         width: 100%;
         
@@ -765,12 +764,11 @@ footer {
     }
 
     .Tx {
-        padding-top: 23px;
+        padding-top: 4px;
         margin: 0;
-        font-size: 66px;
+        font-size: 45vw;
         color: #ff00ff;
         font-family: 'Orbitron', sans-serif;
-        width: 100%;
     }
 
 
