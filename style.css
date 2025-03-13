@@ -648,7 +648,7 @@ footer {
     margin: 0 auto;
 }
 
-@media (min-width: 0px) and (max-width: 380px) {
+@media (min-width: 0px) and (max-width: 760px) {
 
     nav {
         width: 100%;
