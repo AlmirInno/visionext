@@ -820,7 +820,7 @@ footer {
         flex-direction: column;
         padding: 0px;
         position: relative;
-        top: -28px;
+        top: 0px;
         margin: 0 auto;
     }
 
