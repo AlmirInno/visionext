@@ -713,21 +713,20 @@ footer {
         top: 179px;
     }
 
-    .header-rett img {
-        width: 100%;
-        position: relative;
-        top: -66px;
-        left: 65px;
-        filter: brightness(0.5);
-        z-index: 1;
-        rotate: 25deg;
+    .header-rett {
+        position: absolute;
+        width: 248%;
+        height: 1691px;
+        rotate: -25deg;
+        overflow: hidden;
+        top: 179px;
     }
 
     .rett-grande {
         background-color: #000;
         z-index: 2;
         position: absolute;
-        top: 1898px;
+        top: 1998px;
         width: 292%;
         height: 500px;
         rotate: -25deg;
@@ -749,11 +748,11 @@ footer {
 
 
     header p {
-        text-align: center;
-        margin: -20px 10px 0px 10px;
-        font-size: 18px;
+        /* text-align: center; */
+        margin: -51px 10px 0px 10px;
+        font-size: 15vw;
     }
-
+}
     .lx {
         padding-top: 4px;
         font-size: 11vw;
