@@ -900,13 +900,13 @@ footer {
 
     #missione-valori {
         width: 100%;
-        top: 1108px;
+        top: 1229px;
         margin: 0px;
         z-index: 3;
     }
 
     #missione-valori h2 {
-        top: 843px;
+        top: 664px;
         text-align: right;
         padding: 0px 250px;
     }
@@ -930,7 +930,7 @@ footer {
         width: 104%;
         position: relative;
         height: auto;
-        top: -116px;
+        top: -235px;
     }
 
     .rett-valori-img {
@@ -948,7 +948,7 @@ footer {
     .testi,
     .missione {
         font-size: 11vw;
-        top: 1067px;
+        top: 920px;
         padding: 0px 30px;
         width: 96%;
     }
