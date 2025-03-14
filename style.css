@@ -813,12 +813,11 @@ main {
 
 #contact {
     width: 100%;
-    top: -749px;
+    top: -664px;
     /* padding: 4598px 0px 0px 0px; */
     font-size: 12vw;
-    margin: 5570px 0px 0px 0px;
+    margin: 5270px 0px 0px 0px;
 }
-
 
 /* Footer for mobile */
 footer {
@@ -979,12 +978,12 @@ footer {
 #services h2 {
     margin: 0px;
     /* text-align: left; */
-    font-size: 20vw;
+    font-size: 30vw;
     color: #9448a6;
     margin-bottom: 20px;
     font-weight: bold;
     font-family: "Antonio";
-    padding: 40px 30px;
+    padding: 100px 30px;
 }
 
 .service-cards {
@@ -1020,7 +1019,7 @@ footer {
 }
 
 #approccio h2 {
-    top: 240px;
+    top: 189px;
     color: #fff;
     width: 100%;
     padding: 0px 30px;
@@ -1036,11 +1035,11 @@ footer {
 }
 
 .aproccio-img img {
-    width: 226%;
+    width: 233%;
     left: -550px;
     top: -529px;
     /* height: 2400px; */
-    clip-path: polygon(100% -18%, 0% 30%, 0% 104%, 100% 71%, 100% 0%);
+    clip-path: polygon(100% -18%, 0% 28%, 0% 104%, 100% 71%, 100% 0%);
 }
 
 .aproccio-content {
@@ -1078,9 +1077,9 @@ footer {
 }
 
 .triangolo-viola-approccio {
-    top: 2011px;
+    top: 2097px;
     width: 117%;
-    clip-path: polygon(100% 43%, 100% 120%, 40% 40%);
+    clip-path: polygon(100% 43%, 100% 100%, 57% 38%);
 }
 
 .rett-contacts {
