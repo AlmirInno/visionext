@@ -800,10 +800,10 @@ footer {
 
     #contact {
         width: 100%;
-        /* top: -124px; */
+        top: -1195px;
         /* padding: 4598px 0px 0px 0px; */
         font-size: 11vw;
-        margin: 4598px 0px 0px 0px;
+        margin: 6070px  0px 0px;
     }
 
 
@@ -1073,12 +1073,50 @@ footer {
         width: 120%;
         position: absolute;
         z-index: 2;
-        top: 572px;
+        top: 1006px;
         clip-path: polygon(100% 0%, 100% 100%, 51% 100%);
     }
 
-    #contact p {
-        width: 105%;
+    h2 {
+        margin: 0px;
+        text-align: center;
+        font-size: 16vw;
+        color: #9448a6;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-family: "Antonio";
     }
 
+    #contact p {
+        width: 62%;
+    }
+
+
+    #contact form{
+        max-width: 60%;
+        font-size: 11vw;
+        gap:30px;
+    }
+
+    #contact input, #contact textarea {
+        padding: 14px;
+        font-size: 11vw;
+        background: #fff;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+
+    #contact button {
+        padding: 14px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 11vw;
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        width: 106%;
+    }
 }
