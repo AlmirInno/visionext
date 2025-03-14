@@ -62,7 +62,7 @@ nav ul {
 nav ul li a {
     color: #000;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14vw;
     text-transform: uppercase;
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -678,21 +678,21 @@ footer {
     nav .nav-links {
         display: none;
         flex-direction: column;
-        gap: 15px;
+        gap: 150px;
         position: absolute;
-        top: 70px;
+        top: 124px;
         right: 80px;
         background-color: #fff;
-        padding: 20px;
+        padding: 52px;
         border-radius: 8px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        width: 200px;
+        width: 441px;
     }
+}
 
     /* Make nav links visible when hamburger is clicked */
     nav.active .nav-links {
         display: flex;
-        font-size: 16vw;
     }
 
     body {
