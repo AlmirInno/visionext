@@ -251,7 +251,7 @@ h2 {
 }
 
 .foto {
-    top: 454px;
+    top: 1498px;
     width: 160%;
     height: 500px;
     position: absolute;
@@ -318,9 +318,8 @@ h2 {
 }
 
 
-
 .fotoValoriMissione img {
-    clip-path: polygon(100% 56%, 0% 56%, 0% 100%, 100% 66%, 100% 0%);
+    clip-path: polygon(100% 42%, 0% 42%, 0% 100%, 100% 66%, 100% 0%);
     position: absolute;
     left: -363px;
     top: -391px;
@@ -814,9 +813,8 @@ main {
 #contact {
     width: 100%;
     top: -664px;
-    /* padding: 4598px 0px 0px 0px; */
     font-size: 12vw;
-    margin: 5270px 0px 0px 0px;
+    padding: 5270px 0px 0px 0px;
 }
 
 /* Footer for mobile */
