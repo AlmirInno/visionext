@@ -814,7 +814,7 @@ main {
     width: 100%;
     top: -664px;
     font-size: 12vw;
-    margin: 5130px 0px 0px 0px;
+    margin: 5150px 0px 0px 0px;
 }
 
 /* Footer for mobile */
@@ -872,7 +872,7 @@ footer {
     /* padding: 0px 10px; */
     clip-path: polygon(100% 0%, -2% 27.5%, 0% 101%, 100% 101%);
 }
-}
+
 
 
 .foto img {
