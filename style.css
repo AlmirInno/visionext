@@ -800,12 +800,12 @@ footer {
 
     #contact {
         width: 100%;
-        top: -1195px;
+        top: -930px;
+
         /* padding: 4598px 0px 0px 0px; */
         font-size: 11vw;
-        margin: 6070px  0px 0px;
+        margin: 5835px 0px 0px 0px;
     }
-
 
 
     /* Footer for mobile */
@@ -1069,18 +1069,19 @@ footer {
 
     .rett-contacts {
         background-color: #9448a6;
-        height: 80px;
-        width: 120%;
+        height: 341px;
+        width: 103%;
         position: absolute;
         z-index: 2;
-        top: 1006px;
+        top: 1847px;
         clip-path: polygon(100% 0%, 100% 100%, 51% 100%);
     }
 
-    h2 {
+
+    #contact h2 {
         margin: 0px;
         text-align: center;
-        font-size: 16vw;
+        font-size: 20vw;
         color: #9448a6;
         margin-bottom: 20px;
         font-weight: bold;
@@ -1088,17 +1089,25 @@ footer {
     }
 
     #contact p {
-        width: 62%;
+        width: 82%;
     }
 
-
-    #contact form{
-        max-width: 60%;
+    #contact form {
+        max-width: 80%;
         font-size: 11vw;
-        gap:30px;
+        gap: 30px;
     }
 
-    #contact input, #contact textarea {
+    #contact input {
+        padding: 20px;
+        font-size: 11vw;
+        background: #fff;
+        border-radius: 8px;
+        width: 100%;
+        height: 100px
+    }
+
+    #contact textarea {
         padding: 14px;
         font-size: 11vw;
         background: #fff;
@@ -1106,9 +1115,8 @@ footer {
         width: 100%;
     }
 
-
     #contact button {
-        padding: 14px;
+        padding: 24px;
         background-color: #000;
         color: #fff;
         border: none;
@@ -1117,6 +1125,6 @@ footer {
         cursor: pointer;
         display: block;
         text-align: center;
-        width: 106%;
+        width: 103%;
     }
 }
