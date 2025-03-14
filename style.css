@@ -864,7 +864,7 @@ footer {
         width: 158%;
         position: relative;
         height: 1298px;
-        top: 1765px;
+        top: 2073px;
         left: 0px;
         /* padding: 0px 10px; */
         clip-path: polygon(100% 0%, -2% 27.5%, 0% 77%, 100% 77%);
@@ -898,7 +898,7 @@ footer {
 
     #missione-valori {
         width: 100%;
-        top: 1292px;
+        top: 1606px;
         margin: 0px;
         z-index: 3;
     }
