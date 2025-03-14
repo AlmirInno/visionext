@@ -814,13 +814,13 @@ main {
     width: 100%;
     top: -664px;
     font-size: 12vw;
-    padding: 5270px 0px 0px 0px;
+    margin:  5270px 0px 0px 0px;
 }
 
 /* Footer for mobile */
 footer {
     font-size: 12vw;
-    width: 100%;
+    width: 101%;
 }
 
 
@@ -1086,7 +1086,7 @@ footer {
     width: 103%;
     position: absolute;
     z-index: 2;
-    top: 6909px;
+    top: 1930px;
     clip-path: polygon(100% 0%, 100% 100%, 51% 100%);
 }
 
