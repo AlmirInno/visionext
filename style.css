@@ -906,23 +906,24 @@ footer {
     }
 
     #missione-valori h2 {
-        top: 507px;
+        top: 805px;
         text-align: right;
         padding: 0px 30px;
     }
 
     .fotoValoriMissione::before {
-        /* width: 130%; */
+        width: 104%;
         left: -100px;
-       top:-194px;
-        clip-path: polygon(100% 44.5%, 0% 44.5%, 0% 86.3%, 100% 48.3%);
+        top: -116px;
+        clip-path: polygon(100% 36.5%, 0% 36.5%, 0% 91.3%, 100% 59.3%);
     }
 
     .fotoValoriMissione img {
-        width: 135%;
+        width: 104%;
         position: relative;
         left: -100px;
-        top: -432px;
+        top: -152px;
+        clip-path: polygon(100% 43%, 0% 43%, 0% 100%, 100% 66%, 100% 0%);
     }
 
     .fotoValoriMissione {
@@ -934,11 +935,11 @@ footer {
 
     .rett-valori-img {
         background-color: #9448a6;
-        width: 130%;
+        width: 96%;
         height: 346px;
         clip-path: polygon(100% 0%, 100% 8%, 67% 36.5%, 100% 100%);
         position: absolute;
-        top: 200px;
+        top: 447px;
         z-index: 3;
         /* left: 0px; */
     }
@@ -947,7 +948,7 @@ footer {
     .testi,
     .missione {
         font-size: 11vw;
-        top: 685px;
+        top: 835px;
         padding: 0px 30px;
         width: 100%;
     }
