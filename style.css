@@ -941,7 +941,7 @@ footer {
         position: absolute;
         top: 447px;
         z-index: 3;
-        /* left: 0px; */
+        left:15px;
     }
 
 
