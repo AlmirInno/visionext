@@ -648,7 +648,7 @@ footer {
     margin: 0 auto;
 }
 
-@media (min-width: 0px) and (max-width: 760px) {
+@media (min-width: 0px) and (max-width: 760px) and (max-height:784px) {
 
     nav {
         width: 100%;
@@ -771,7 +771,7 @@ footer {
 
     main {
         margin-top: 1990px;
-        width: 1519px;
+        width: 1535px;
 
     }
 
@@ -801,20 +801,17 @@ footer {
     #contact {
         width: 100%;
         /* top: -124px; */
-        padding: 4598px 0px 0px 0px;
+        /* padding: 4598px 0px 0px 0px; */
         font-size: 11vw;
+        margin: 4598px 0px 0px 0px;
     }
 
-    #contact p {
-        width: 100%;
-        text-align: left;
-    }
 
 
     /* Footer for mobile */
     footer {
         font-size: 11vw;
-        width: 100%;
+        width: 107%;
     }
 
 
@@ -937,9 +934,9 @@ footer {
         height: 346px;
         clip-path: polygon(100% 0%, 100% 8%, 67% 36.5%, 100% 100%);
         position: absolute;
-        top: 447px;
+        top: 440px;
         z-index: 3;
-        left: 15px;
+        left: 20px;
     }
 
 
@@ -1061,7 +1058,7 @@ footer {
     .rett-nero-approccio {
         top: 1380px;
         height: 732px;
-        width: 127%;
+        width: 130%;
     }
 
     .triangolo-viola-approccio {
