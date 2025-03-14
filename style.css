@@ -688,7 +688,7 @@ footer {
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         width: 441px;
     }
-}
+
 
     /* Make nav links visible when hamburger is clicked */
     nav.active .nav-links {
@@ -733,7 +733,7 @@ footer {
     }
 
     .header-content {
-        top: 157%;
+        top: 168%;
         left: 68%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -916,165 +916,165 @@ footer {
         clip-path: polygon(100% 44.5%, 0% 44.5%, 0% 86.3%, 100% 48.3%);
     }
 
-.fotoValoriMissione img {
-    width: 135%;
-    position: relative;
-    left: -100px;
-    top: -432px;
-}
+    .fotoValoriMissione img {
+        width: 135%;
+        position: relative;
+        left: -100px;
+        top: -432px;
+    }
 
-.fotoValoriMissione {
-    width: 104%;
-    position: relative;
-    height: auto;
-    top: -116px;
-}
+    .fotoValoriMissione {
+        width: 104%;
+        position: relative;
+        height: auto;
+        top: -116px;
+    }
 
-.rett-valori-img {
-    background-color: #9448a6;
-    width: 130%;
-    height: 346px;
-    clip-path: polygon(100% 0%, 100% 8%, 67% 36.5%, 100% 100%);
-    position: absolute;
-    top: 200px;
-    z-index: 3;
-    /* left: 0px; */
-}
-
-
-.testi,
-.missione {
-    font-size: 11vw;
-    top: 685px;
-    padding: 0px 30px;
-    width: 100%;
-}
-
-.testi .missione,
-.testi .valori {
-    flex: 1;
-    padding: 10px;
-    color: #000;
-}
+    .rett-valori-img {
+        background-color: #9448a6;
+        width: 130%;
+        height: 346px;
+        clip-path: polygon(100% 0%, 100% 8%, 67% 36.5%, 100% 100%);
+        position: absolute;
+        top: 200px;
+        z-index: 3;
+        /* left: 0px; */
+    }
 
 
-.testi h3 {
-    font-size: 16vw;
-}
+    .testi,
+    .missione {
+        font-size: 11vw;
+        top: 685px;
+        padding: 0px 30px;
+        width: 100%;
+    }
 
-#services h2 {
-    margin: 0px;
-    /* text-align: left; */
-    font-size: 20vw;
-    color: #9448a6;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-family: "Antonio";
-    padding: 40px 30px;
-}
+    .testi .missione,
+    .testi .valori {
+        flex: 1;
+        padding: 10px;
+        color: #000;
+    }
 
-.service-cards {
-    z-index: 3;
-    position: relative;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 0px 30px;
-    justify-content: center;
-    /* line-height: 0.8rem; */
-}
 
-.service-card {
-    background: rgb(255 255 255);
-    flex: 1;
-    min-width: 720px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 15px #9448a6;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 720px;
-    font-size: 11vw;
-    padding: 10px;
-}
+    .testi h3 {
+        font-size: 16vw;
+    }
 
-.rett-services {
-    /* height: 447px; */
-    width: 130%;
-    left: -100px;
-    clip-path: polygon(0% 0%, 0% 100%, 55% 88%);
-    bottom: -228px;
-}
+    #services h2 {
+        margin: 0px;
+        /* text-align: left; */
+        font-size: 20vw;
+        color: #9448a6;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-family: "Antonio";
+        padding: 40px 30px;
+    }
 
-#approccio h2 {
-    top: 170px;
-    color: #fff;
-    width: 100%;
-    padding: 0px 10px;
-    margin: 0px;
-}
+    .service-cards {
+        z-index: 3;
+        position: relative;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 0px 30px;
+        justify-content: center;
+        /* line-height: 0.8rem; */
+    }
 
-.aproccio-img {
-    overflow: visible;
-    width: 100%;
-    position: relative;
-}
+    .service-card {
+        background: rgb(255 255 255);
+        flex: 1;
+        min-width: 720px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 15px #9448a6;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 720px;
+        font-size: 11vw;
+        padding: 10px;
+    }
 
-.aproccio-img img {
-    width: 228%;
-    left: -331px;
-    top: 58px;
-    clip-path: polygon(100% 0%, 0% 31%, 0% 110%, 100% 77%, 100% 0%);
-}
+    .rett-services {
+        /* height: 447px; */
+        width: 130%;
+        left: -100px;
+        clip-path: polygon(0% 0%, 0% 100%, 55% 88%);
+        bottom: -228px;
+    }
 
-.aproccio-content {
-    width: 100%;
-    align-items: center;
-    /* top: 250px; */
-    left: 0;
-    bottom: 90px;
-}
+    #approccio h2 {
+        top: 170px;
+        color: #fff;
+        width: 100%;
+        padding: 0px 10px;
+        margin: 0px;
+    }
 
-.aproccio-text {
-    height: 90px;
-    width: 90px;
-    margin: 10px 0;
-    border: 2.5px solid white;
-}
+    .aproccio-img {
+        overflow: visible;
+        width: 100%;
+        position: relative;
+    }
 
-.aproccio-text h3 {
-    font-size: 10px;
-}
+    .aproccio-img img {
+        width: 228%;
+        left: -331px;
+        top: 58px;
+        clip-path: polygon(100% 0%, 0% 31%, 0% 110%, 100% 77%, 100% 0%);
+    }
 
-.aproccio-img::before {
-    /* width: 130%; */
-    left: -100px;
-    top: -20px;
-    clip-path: polygon(100% -13%, 0% 26.5%, 0% 84%, 100% 69%);
-}
+    .aproccio-content {
+        width: 100%;
+        align-items: center;
+        /* top: 250px; */
+        left: 0;
+        bottom: 90px;
+    }
 
-.rett-nero-approccio {
+    .aproccio-text {
+        height: 90px;
+        width: 90px;
+        margin: 10px 0;
+        border: 2.5px solid white;
+    }
 
-    top: 576px;
-    height: 165px;
-}
+    .aproccio-text h3 {
+        font-size: 10px;
+    }
 
-.triangolo-viola-approccio {
-    width: 140%;
-    clip-path: polygon(99% 13%, 100% 37%, 43% 13%);
-}
+    .aproccio-img::before {
+        /* width: 130%; */
+        left: -100px;
+        top: -20px;
+        clip-path: polygon(100% -13%, 0% 26.5%, 0% 84%, 100% 69%);
+    }
 
-.rett-contacts {
-    background-color: #9448a6;
-    height: 80px;
-    width: 120%;
-    position: absolute;
-    z-index: 2;
-    top: 572px;
-    clip-path: polygon(100% 0%, 100% 100%, 51% 100%);
-}
+    .rett-nero-approccio {
 
-#contact p {
-    width: 105%;
-}
+        top: 576px;
+        height: 165px;
+    }
+
+    .triangolo-viola-approccio {
+        width: 140%;
+        clip-path: polygon(99% 13%, 100% 37%, 43% 13%);
+    }
+
+    .rett-contacts {
+        background-color: #9448a6;
+        height: 80px;
+        width: 120%;
+        position: absolute;
+        z-index: 2;
+        top: 572px;
+        clip-path: polygon(100% 0%, 100% 100%, 51% 100%);
+    }
+
+    #contact p {
+        width: 105%;
+    }
 
 }
