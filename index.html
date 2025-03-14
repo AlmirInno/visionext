@@ -277,6 +277,7 @@
         window.addEventListener("orientationchange", function () {
 
             if (window.orientation === 90 || window.orientation === -90) {
+                window.relouded();
                 alert("Ruota il telefono in verticale per migliorare l'esperienza")
             }
         });
