@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VisioNEXT</title>
     <link rel="stylesheet" href="style.css">
@@ -272,6 +273,11 @@
             const scrollPosition = window.scrollY;
             document.getElementById("parallax-image").style.transform = `translateY(${scrollPosition * 0.5}px)`;
         });
+
+        window.addEventListener("orientationchange", function () {
+            location.reload();
+        });
+        
     </script>
 </body>
 
