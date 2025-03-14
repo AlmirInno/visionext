@@ -771,6 +771,7 @@ footer {
 
     main {
         margin-top: 1990px;
+        width: 1519px;
 
     }
 
@@ -778,12 +779,12 @@ footer {
         position: relative;
         padding: 0px 0px;
         margin: 0px 0px 100px 0px;
-        width: 127%;
+        width: 100%;
     }
 
     #services {
         position: relative;
-        width: 127%;
+        width: 100%;
         top: 2886px;
         padding: 145px 0px 0px 0px;
     }
@@ -792,16 +793,15 @@ footer {
         /* position: relative; */
         margin: 544px 0px 0px 0px;
         padding: 132px 0px 0px;
-        width: 127%;
+        width: 100%;
         /* top: -175px; */
         top: 2500px;
     }
 
     #contact {
-        width: 90%;
+        width: 100%;
         /* top: -124px; */
-        padding: 78px 0px 0px 0px;
-        top: 10000px;
+        padding: 4598px 0px 0px 0px;
         font-size: 11vw;
     }
 
@@ -815,7 +815,6 @@ footer {
     footer {
         font-size: 11vw;
         width: 100%;
-        margin: 10000px 0px 0px 0px;
     }
 
 
