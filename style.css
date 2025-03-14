@@ -900,7 +900,7 @@ footer {
 
     #missione-valori {
         width: 100%;
-        top: 1606px;
+        top: 1108px;
         margin: 0px;
         z-index: 3;
     }
@@ -914,7 +914,7 @@ footer {
     .fotoValoriMissione::before {
         /* width: 130%; */
         left: -100px;
-        top: -339px;
+       top:-194px;
         clip-path: polygon(100% 44.5%, 0% 44.5%, 0% 86.3%, 100% 48.3%);
     }
 
