@@ -895,7 +895,7 @@ footer {
         background-color: #9548a6c0;
         mix-blend-mode: multiply;
         z-index: 3;
-        clip-path: polygon(100% 0%, -2% 25.5%, 0% 88%, 100% 88%);
+        clip-path: polygon(100% 0%, -2% 25.5%, 0% 90%, 100% 90%);
     }
 
     .foto {
@@ -958,8 +958,9 @@ footer {
         width: 104%;
         left: -100px;
         top: -116px;
-        clip-path: polygon(100% 36.5%, 0% 36.5%, 0% 91.3%, 100% 58.3%);
+        clip-path: polygon(100% 36%, 0% 36%, 0% 91.3%, 100% 58.3%);
     }
+    
 
     .fotoValoriMissione img {
         width: 104%;
