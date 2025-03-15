@@ -1204,12 +1204,3 @@ footer {
         height: 150px;
     }
 }
-
-@media (max-width: 768px) {
-    body {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        position: fixed;
-    }
-}
