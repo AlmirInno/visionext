@@ -282,7 +282,27 @@
             }
         });
 
+// Forza la modalità ritratto
+if (window.screen.orientation) {
+  window.screen.orientation.lock('portrait').catch(function(error) {
+    console.log('Errore nel bloccare l\'orientamento:', error);
+  });
+} else if (window.screen.lockOrientation) {
+  window.screen.lockOrientation('portrait').catch(function(error) {
+    console.log('Errore nel bloccare l\'orientamento:', error);
+  });
+} else {
+  window.addEventListener('orientationchange', function() {
+    if (window.orientation !== 0) {
+      alert('Per una migliore esperienza, ruota il dispositivo in modalità ritratto.');
+      window.location.reload();
+    }
+  });
+}
+
     </script>
+
+
 </body>
 
 </html>
