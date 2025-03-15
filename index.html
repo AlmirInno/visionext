@@ -286,7 +286,21 @@
         });
     }
 });
+document.addEventListener("DOMContentLoaded", function () {
+    function enforceMobileLayout() {
+        if (window.innerWidth > window.innerHeight) { // Se lo schermo è in orizzontale
+            document.body.classList.add("force-portrait");
+        } else {
+            document.body.classList.remove("force-portrait");
+        }
+    }
 
+    // Controllo iniziale
+    enforceMobileLayout();
+
+    // Controllo ogni volta che la finestra cambia dimensione
+    window.addEventListener("resize", enforceMobileLayout);
+});
     </script>
 
 </body>
