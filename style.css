@@ -345,6 +345,15 @@ h2 {
     left: 12px;
 }
 
+.arrow-icon {
+        color: purple;
+            border: 2px solid purple;
+                border-radius: 50%;
+                    padding: 5px;
+                        font-size: 24px; /* Adjust the size as needed */
+                            vertical-align: middle; /* Aligns the icon vertically with the text */
+                            
+}
 
 .testo {
     width: 600px;
