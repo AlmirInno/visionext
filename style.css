@@ -1208,8 +1208,10 @@ footer {
     }
 }
 
-@media screen and (orientation: landscape) {
-       body {
-           overflow: hidden;
-       }
-   }
+@media (max-width: 768px) {
+    body {
+        transform: rotate(0deg);
+        transform-origin: center;
+        overflow-x: hidden;
+    }
+}
