@@ -677,7 +677,7 @@ footer {
 
 @media (min-width: 0px) and (max-width: 760px) {
 
-    nav ul li a{
+    nav ul li a {
         font-size: 14vw;
     }
 
@@ -688,7 +688,8 @@ footer {
     }
 
     nav .logo {
-        font-size: 12vw;
+        font-size: 20vw;
+
         font-weight: bold;
         color: #000;
         display: flex;
@@ -700,9 +701,9 @@ footer {
         display: block;
         background: transparent;
         border: none;
-        font-size: 25vw;
+        font-size: 40vw;
         color: #9448a6;
-        margin: 0px 0px 0px 700px;
+        margin: 0px 0px 0px 500px;
     }
 
     /* Hide the navigation links by default on mobile */
@@ -798,8 +799,9 @@ footer {
     }
 
     .lx {
-        padding-top: 4px;
-        font-size: 11vw;
+        padding-top: 0px;
+        font-size: 20vw;
+
         margin: 0px;
         color: #ff00ff;
         font-family: 'Orbitron', sans-serif;
@@ -870,7 +872,7 @@ footer {
 
     #about h2 {
         position: relative;
-        top: 0px;
+        top: 16px;
         padding: 0px 30px;
         font-size: 30vw;
     }
@@ -880,7 +882,7 @@ footer {
         display: flex;
         justify-content: space-between;
         position: absolute;
-        top: 0px;
+        top:16px;
     }
 
     .foto::before {
@@ -935,7 +937,7 @@ footer {
     .testo {
         font-size: 12vw;
         padding: 0px 30px;
-        width: 963px;
+        width: 70%;
     }
 
     #missione-valori {
@@ -1014,7 +1016,7 @@ footer {
         margin-bottom: 20px;
         font-weight: bold;
         font-family: "Antonio";
-        padding: 100px 30px;
+        padding: 100px 30px 0px 30px;
     }
 
     .service-cards {
@@ -1046,11 +1048,11 @@ footer {
         width: 130%;
         left: -100px;
         clip-path: polygon(0% 0%, 0% 100%, 40% 75%);
-        bottom: -702px;
+        bottom: -792px;
     }
 
     #approccio h2 {
-        top: 189px;
+        top: 280px;
         color: #fff;
         width: 100%;
         padding: 0px 30px;
@@ -1062,7 +1064,7 @@ footer {
         overflow: visible;
         width: 104%;
         position: relative;
-        top: 525px;
+        top: 611px;
     }
 
     .aproccio-img img {
@@ -1076,9 +1078,9 @@ footer {
     .aproccio-content {
         width: 100%;
         align-items: center;
-        /* top: 250px; */
         left: 0;
-        bottom: -2425px;
+        bottom: -2708px;
+
     }
 
     .aproccio-text {
@@ -1098,7 +1100,7 @@ footer {
         left: -100px;
         top: -537px;
         height: 2400px;
-        clip-path: polygon(100% -1%, 0% 20.5%, 0% 85%, 100% 71%);
+        clip-path: polygon(100% -1%, 0% 20.5%, 0% 89%, 100% 74%);
     }
 
     .rett-nero-approccio {
