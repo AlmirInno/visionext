@@ -665,7 +665,7 @@ footer {
     margin: 0 auto;
 }
 
-@media (min-width: 480px) and (max-width: 760px) and (max-height:784px) {
+  @media (min-width: 480px) and (max-width: 760px) and (max-height:784px) {
 
     nav {
         width: 100%;
@@ -1162,9 +1162,77 @@ footer {
 }
 
 }
-
-   @media (min-width:760px) and (max-width:1200px) {
-    body{
-        width:max-content;
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* Navbar */
+    nav {
+        padding: 20px 50px;
     }
-   }
+
+    nav .logo {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    /* Header */
+    header {
+        height: 80vh;
+    }
+
+    .header-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    header p {
+        font-size: 24px;
+    }
+
+    /* Sezioni */
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    #about,
+    #services,
+    #approccio,
+    #contact {
+        padding: 60px 0;
+    }
+
+    .service-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .service-card {
+        width: 45%;
+        min-width: 280px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 16px;
+        padding: 15px 0;
+    }
+}
