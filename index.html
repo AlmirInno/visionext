@@ -274,13 +274,6 @@
             document.getElementById("parallax-image").style.transform = `translateY(${scrollPosition * 0.5}px)`;
         });
 
-        window.addEventListener("orientationchange", function () {
-
-            if (window.orientation === 90 || window.orientation === -90) {
-                window.reloaded();
-                alert("Ruota il telefono in verticale per migliorare l'esperienza")
-            }
-        });
 
 // Forza la modalità ritratto
 if (window.screen.orientation) {
