@@ -1161,11 +1161,10 @@ footer {
     height: 150px;
 }
 
-@media (min-width:760px) and (max-width:1200px) {
+}
+
+   @media (min-width:760px) and (max-width:1200px) {
     body{
-width:max-content;
-
+        width:max-content;
     }
-}
-
-}
+   }
