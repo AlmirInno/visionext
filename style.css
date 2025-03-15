@@ -1163,7 +1163,7 @@ footer {
 
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-    
+    body{width:max-content;}
     /* Navbar */
     nav {
         padding: 20px 50px;
