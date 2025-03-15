@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 
-.force-portrait {
+.force-landscape {
     width: 100vh;
     height: 100vw;
     transform: rotate(-90deg);
