@@ -351,15 +351,16 @@ h2 {
 }
 
 .arrow-icon {
-    color: purple;
-    border: 3px solid purple;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    border: 5px solid #9448a6;
+    color:#9448a6;
     padding: 5px;
     font-size: 24px;
     /* Adjust the size as needed */
     vertical-align: middle;
     /* Aligns the icon vertically with the text */
-
 }
 
 .testo {
@@ -676,6 +677,20 @@ footer {
 
 
 @media (min-width: 0px) and (max-width: 760px) {
+
+
+
+    .material-icons {
+        text-align: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 5px solid #9448a6;
+        color: #9448a6;
+        font-size: 80px;
+        vertical-align: bottom;
+        margin-right:10px ;
+    }
 
     nav ul li a {
         font-size: 14vw;
