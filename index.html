@@ -268,27 +268,6 @@
                 nav.classList.toggle("active");
             });
 
-            function lockOrientation() {
-                if (screen.orientation && screen.orientation.lock) {
-                    screen.orientation.lock('portrait').catch(function (error) {
-                        console.log('Errore nel bloccare l\'orientamento:', error);
-                    });
-                } else if (screen.lockOrientation) {
-                    screen.lockOrientation('portrait').catch(function (error) {
-                        console.log('Errore nel bloccare l\'orientamento:', error);
-                    });
-                } else {
-                    window.addEventListener('orientationchange', function () {
-                        if (window.orientation !== 0) {
-                            alert('Per una migliore esperienza, ruota il dispositivo in modalità ritratto.');
-                            window.location.reload();
-                        }
-                    });
-                }
-            }
-
-            lockOrientation();
-        });
 
         window.addEventListener("scroll", function () {
             const scrollPosition = window.scrollY;
