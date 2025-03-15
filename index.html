@@ -287,21 +287,7 @@
     }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    function enforceMobileLayout() {
-        if (window.innerWidth > window.innerHeight) { // Controlla se è in orizzontale
-            document.body.classList.add("force-portrait");
-        } else {
-            document.body.classList.remove("force-portrait");
-        }
-    }
 
-    // Controllo all'avvio
-    enforceMobileLayout();
-
-    // Controllo ogni volta che cambia orientamento
-    window.addEventListener("resize", enforceMobileLayout);
-});
     </script>
 
 </body>
