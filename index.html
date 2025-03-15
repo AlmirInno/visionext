@@ -268,10 +268,10 @@
                 nav.classList.toggle("active");
             });
 
-
-        window.addEventListener("scroll", function () {
-            const scrollPosition = window.scrollY;
-            document.getElementById("parallax-image").style.transform = `translateY(${scrollPosition * 0.5}px)`;
+            window.addEventListener("scroll", function () {
+                const scrollPosition = window.scrollY;
+                document.getElementById("parallax-image").style.transform = `translateY(${scrollPosition * 0.5}px)`;
+            });
         });
     </script>
 
