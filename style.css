@@ -1207,27 +1207,3 @@ footer {
         height: 150px;
     }
 }
-
-/* Blocco per mostrare solo versione portrait su mobile */
-@media (orientation: landscape) and (max-width: 760px) {
-    body {
-        display: none;
-    }
-
-    .landscape-warning {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        text-align: center;
-        font-size: 20px;
-        color: #fff;
-        background-color: #000;
-    }
-}
-
-@media (orientation: portrait) and (max-width: 760px) {
-    .landscape-warning {
-        display: none;
-    }
-}
