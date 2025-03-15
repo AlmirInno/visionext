@@ -713,7 +713,7 @@ footer {
     }
 
     body {
-        width: max-content;
+        width:max-content;
     }
 
     header {
@@ -1160,4 +1160,6 @@ footer {
     width: 103%;
     height: 150px;
 }
+
+
 }
