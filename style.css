@@ -1207,3 +1207,9 @@ footer {
         height: 150px;
     }
 }
+
+@media screen and (orientation: landscape) {
+       body {
+           overflow: hidden;
+       }
+   }
