@@ -261,18 +261,31 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const menuToggle = document.querySelector(".menu-toggle");
-            const nav = document.querySelector("nav");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+    const parallaxImage = document.getElementById("parallax-image");
 
-            menuToggle.addEventListener("click", function () {
-                nav.classList.toggle("active");
-            });
-
-            window.addEventListener("scroll", function () {
-                const scrollPosition = window.scrollY;
-                document.getElementById("parallax-image").style.transform = `translateY(${scrollPosition * 0.5}px)`;
-            });
+    if (menuToggle && nav) {
+        menuToggle.addEventListener("click", function () {
+            nav.classList.toggle("active");
         });
+    }
+
+    if (parallaxImage) {
+        let ticking = false;
+
+        window.addEventListener("scroll", function () {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    const scrollPosition = window.scrollY;
+                    parallaxImage.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    }
+});
     </script>
 
 </body>
