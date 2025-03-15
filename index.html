@@ -288,21 +288,19 @@
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    function lockOrientation() {
-        if (window.innerWidth < 768) { // Solo per dispositivi mobili
-            screen.orientation.lock("portrait").catch(err => {
-                console.warn("Blocco orientamento non supportato:", err);
-                // Soluzione alternativa per browser che non supportano `screen.orientation.lock`
-                document.body.style.transform = "rotate(0deg)";
-            });
+    function enforceMobileLayout() {
+        if (window.innerWidth > window.innerHeight) { // Controlla se è in orizzontale
+            document.body.classList.add("force-portrait");
+        } else {
+            document.body.classList.remove("force-portrait");
         }
     }
 
-    // Blocca l'orientamento all'avvio
-    lockOrientation();
+    // Controllo all'avvio
+    enforceMobileLayout();
 
-    // Rileva i cambiamenti di orientamento
-    window.addEventListener("orientationchange", lockOrientation);
+    // Controllo ogni volta che cambia orientamento
+    window.addEventListener("resize", enforceMobileLayout);
 });
     </script>
 
