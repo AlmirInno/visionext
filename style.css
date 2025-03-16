@@ -1738,6 +1738,7 @@ footer {
         margin: 0;
         padding: 0;
 position:fixed;
+trasform: rotazione (0deg);
     }
 
 }
