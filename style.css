@@ -685,7 +685,7 @@ footer {
 }
 
 
-@media (min-width: 0px) and (max-width: 760px) and (orientation:portrait) {
+@media (min-width: 0px) and (max-width: 720px) and (orientation:portrait) {
 
 
 
@@ -758,7 +758,7 @@ footer {
 
     header {
         /* overflow: visible; */
-        width: 116%;
+        width: 101%;
         height: 2882px;
         position: relative;
         z-index: 1;
@@ -1303,7 +1303,6 @@ footer {
     main {
         width: 280%;
     }
-
 
     #about, #services, #approccio, #contact {
         width: 100%;
