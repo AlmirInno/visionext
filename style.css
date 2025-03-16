@@ -1729,25 +1729,15 @@ footer {
 
 /* Media query per modalità landscape */
 @media screen and (orientation: landscape) {
-    body {
-        transform: rotate(-90deg);
+    body{
         transform-origin: center center;
-        width: 100vh;
-        height: 100vw;
-        overflow: hidden;
-        position: absolute;
+        width: max-content;
+        height: 100 vh;
         top: 50%;
         left: 50%;
         margin: 0;
         padding: 0;
+position:fixed;
     }
 
-    /* Sovrascrivi gli stili per mantenere il layout della modalità portrait */
-    nav, .header-content, main, footer {
-        transform: rotate(90deg);
-        width: 100vw;
-        height: 100vh;
-    }
-
-    /* Aggiungi ulteriori regole CSS necessarie per mantenere il layout */
 }
