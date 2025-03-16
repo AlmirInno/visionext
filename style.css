@@ -1726,3 +1726,12 @@ footer {
         height: 150px;
     }
 }
+
+@media (orientation:landscape){
+
+body{
+width:max-content;
+overflow-x: hidden;
+trasform:rotate (-90deg)
+}
+}
