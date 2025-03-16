@@ -355,7 +355,7 @@ h2 {
     height: 100px;
     border-radius: 50%;
     border: 5px solid #9448a6;
-    color:#9448a6;
+    color: #9448a6;
     padding: 5px;
     font-size: 24px;
     /* Adjust the size as needed */
@@ -688,7 +688,7 @@ footer {
 }
 
 
-@media (min-width: 0px) and (max-width: 760px) {
+@media (min-width: 0px) and (max-width: 760px) and (orientation:portrait) {
 
 
 
@@ -701,7 +701,7 @@ footer {
         color: #9448a6;
         font-size: 80px;
         vertical-align: bottom;
-        margin-right:10px ;
+        margin-right: 10px;
     }
 
     nav ul li a {
@@ -909,7 +909,7 @@ footer {
         display: flex;
         justify-content: space-between;
         position: absolute;
-        top:16px;
+        top: 16px;
     }
 
     .foto::before {
@@ -987,7 +987,7 @@ footer {
         top: -116px;
         clip-path: polygon(100% 36%, 0% 36%, 0% 91.3%, 100% 58.3%);
     }
-    
+
 
     .fotoValoriMissione img {
         width: 104%;
@@ -1206,4 +1206,68 @@ footer {
         width: 103%;
         height: 150px;
     }
+}
+
+@media (min-width: 720px) and (orientation:landscape) {
+
+    nav ul li a {
+        font-size: 10vw;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav .logo {
+        font-size: 15vw;
+        font-weight: bold;
+        color: #000;
+        display: flex;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    /* Show hamburger icon on mobile */
+    nav .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        font-size: 20vw;
+        color: #9448a6;
+        margin: 0px 0px 0px 500px;
+    }
+
+    /* Hide the navigation links by default on mobile */
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 150px;
+        position: absolute;
+        top: 124px;
+        right: 80px;
+        background-color: #fff;
+        padding: 52px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        width: 441px;
+    }
+
+
+    /* Make nav links visible when hamburger is clicked */
+    nav.active .nav-links {
+        display: flex;
+    }
+
+    .lx{
+        font-size: 100px;
+    }
+
+    header{
+            width: 280%;
+            top: 0px;
+            height: 279vh;
+    
+    }
+
 }
