@@ -1206,7 +1206,7 @@ footer {
     }
 }
 
-@media (min-width: 720px) and (orientation:landscape) {
+@media (min-width: 720px) and (min-height: 384px )and (orientation:landscape) {
 
     body {
         max-width: 100%;
