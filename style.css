@@ -1235,7 +1235,7 @@ footer {
         display: block;
         background: transparent;
         border: none;
-        font-size: 20vw;
+        font-size: 15vw;
         color: #9448a6;
         margin: 0px 0px 0px 500px;
     }
@@ -1304,7 +1304,10 @@ footer {
         width: 280%;
     }
 
-    #about, #services, #approccio, #contact {
+    #about,
+    #services,
+    #approccio,
+    #contact {
         width: 100%;
     }
 }
