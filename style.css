@@ -754,6 +754,7 @@ footer {
 
     body {
         width: max-content;
+overflow-x:hidden;
     }
 
     header {
