@@ -1208,12 +1208,16 @@ footer {
 
 @media (min-width: 720px) and (orientation:landscape) {
 
+    body {
+        max-width: 100%;
+    }
+
     nav ul li a {
         font-size: 10vw;
     }
 
     nav {
-        width: 100%;
+        width: 67.3%;
         display: flex;
         justify-content: space-around;
     }
@@ -1257,15 +1261,51 @@ footer {
         display: flex;
     }
 
-    .lx{
+    .lx {
         font-size: 100px;
     }
 
-    header{
-            width: 280%;
-            top: 0px;
-            height: 279vh;
-    
+    header {
+        width: 280%;
+        top: 0px;
+        height: 279vh;
     }
 
+    .header-rett {
+        position: absolute;
+        width: 140%;
+        height: 75%;
+        rotate: -25deg;
+        overflow: hidden;
+    }
+
+    .rett {
+        background-color: #000;
+        z-index: 2;
+        position: absolute;
+        top: 0%;
+        width: 120%;
+        height: 50px;
+        rotate: -25deg;
+    }
+
+
+    .rett-grande {
+        background-color: #000;
+        z-index: 2;
+        position: absolute;
+        top: 93%;
+        width: 120%;
+        height: 300px;
+        rotate: -25deg;
+    }
+
+    main {
+        width: 280%;
+    }
+
+
+    #about, #services, #approccio, #contact {
+        width: 100%;
+    }
 }
