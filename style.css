@@ -684,6 +684,25 @@ footer {
     margin-right: 10px;
 }
 
+/* Prevenire la modifica del layout durante la rotazione del dispositivo */
+@media (orientation: landscape) {
+  body, header, nav, main, footer, .service-cards, .foto, .fotoValoriMissione, .approccio-img {
+    transform: none !important; /* Disabilita ogni trasformazione */
+    width: 100vw !important; /* Imposta larghezza fissa per evitare adattamento */
+    height: 100vh !important; /* Imposta altezza fissa per evitare adattamento */
+  }
+  
+  /* Evita che la larghezza del contenuto cambi quando la rotazione è orizzontale */
+  header, main, #about, #services, #approccio {
+    width: 100% !important;
+  }
+  
+  /* Puoi anche impostare una larghezza fissa per altri elementi in base alle necessità */
+  .nav-links, .service-cards, .foto {
+    width: auto !important;
+  }
+}
+
 
 @media (min-width: 0px) and (max-width: 760px) {
 
