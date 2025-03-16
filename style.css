@@ -1732,6 +1732,6 @@ footer {
 body{
 width:max-content;
 overflow-x: hidden;
-trasform:rotate (-90deg)
+trasform:rotate (-90deg);
 }
 }
