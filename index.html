@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>VisioNEXT</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -26,6 +26,7 @@
             <li><a href="#contact">Contatti</a></li>
         </ul>
     </nav>
+
     <header>
         <div class="rett"></div>
 
@@ -41,6 +42,7 @@
             <p>Costruiamo la tua identità digitale </p>
         </div>
     </header>
+
     <main>
         <section id="about">
 
@@ -255,6 +257,7 @@
             <div class="rett-contacts"></div>
         </section>
     </main>
+
     <footer>
         <p>Contatti: +39 331 444 7370 | Email: info@visionext.com</p>
     </footer>
@@ -263,20 +266,23 @@
         document.addEventListener("DOMContentLoaded", function () {
             const menuToggle = document.querySelector(".menu-toggle");
             const nav = document.querySelector("nav");
+            const parallaxImage = document.getElementById("parallax-image");
 
-            menuToggle.addEventListener("click", function () {
-                nav.classList.toggle("active");
-            });
+
+            if (menuToggle && nav) {
+                menuToggle.addEventListener("click", function () {
+                    nav.classList.toggle("active");
+                });
+            }
+
+            if (parallaxImage) {
+                let ticking = false;
+
+            }
         });
-
-        document.addEventListener("scroll", function () {
-            const scrollPosition = window.scrollY;
-            document.getElementById("parallax-image").style.transform = `translateY(${scrollPosition * 0.5}px)`;
-        });
-
-        
 
     </script>
+
 </body>
 
 </html>
