@@ -1207,6 +1207,8 @@ footer {
     }
 }
 
+
+
 @media only and (orientation:landscape) {
 .material-icons {
         text-align: center;
@@ -1723,6 +1725,4 @@ footer {
         width: 103%;
         height: 150px;
     }
-}
-
 }
