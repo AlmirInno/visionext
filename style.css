@@ -873,7 +873,7 @@ footer {
         width: 100%;
         top: 0vh;
         font-size: 2.8vw;
-        margin: 74.5vh 0vh 0vh 0vh;
+        margin: 70.5vh 0vh 0vh 0vh;
     }
 
     /* Footer for mobile */
@@ -1127,7 +1127,7 @@ footer {
     }
 
     .triangolo-viola-approccio {
-        top: 9vh;
+        top: 8vh;
         left: 0;
         width: 103%;
         clip-path: polygon(100% 39%, 100% 52%, 65% 38%);
@@ -1139,7 +1139,7 @@ footer {
         width: 100%;
         position: absolute;
         z-index: 2;
-        top: 67vh;
+        top: 70vh;
         clip-path: polygon(100% 52%, 100% 100%, 50% 100%);
     }
 
@@ -1160,7 +1160,7 @@ footer {
     }
 
     #contact form {
-        max-width: 40%;
+        width: 70%;
         font-size: 2.8vw;
         gap: 2vh;
     }
@@ -1180,7 +1180,7 @@ footer {
         background: #fff;
         border-radius: 2vw;
         width: 100%;
-        height: 4vh;
+        height: 7vh;
     }
 
     #contact button {
@@ -1193,7 +1193,7 @@ footer {
         cursor: pointer;
         display: block;
         text-align: center;
-        width: 120%;
+        width: 110%;
 
     }
 }
