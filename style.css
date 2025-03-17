@@ -1100,15 +1100,15 @@ footer {
     }
 
     .aproccio-text {
-        height: 2vh;
-        width: 2vh;
+        height: 1vh;
+        width: 1vh;
         margin: 0vh 0vw;
-        border: 1vw solid white;
-        padding: 8vw;
+        border: 0.5vw solid white;
+        padding: 9vw;
     }
 
     .aproccio-text h3 {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .aproccio-img::before {
