@@ -687,6 +687,12 @@ footer {
 
 @media (min-width: 0px) and (max-width: 650px) and (orientation:portrait) {
 
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
 
     .material-icons {
