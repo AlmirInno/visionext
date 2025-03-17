@@ -134,15 +134,15 @@ header {
     overflow: hidden;
 }
 
-.header-rett img {
-    width: 100%;
-    position: relative;
-    top: -56px;
-    left: 0;
-    filter: brightness(0.5);
-    z-index: 1;
-    rotate: 25deg;
-}
+    .header-rett img {
+        width: 100%;
+        position: relative;
+        top: -56px;
+        left: 0;
+        filter: brightness(0.5);
+        z-index: 1;
+        rotate: 25deg;
+    }
 
 .header-content {
     color: white;
@@ -771,7 +771,7 @@ footer {
     .header-rett img {
         width: 100%;
         position: relative;
-        top: -39px;
+        top: -58px;
         left: 0;
         filter: brightness(0.5);
         z-index: 1;
