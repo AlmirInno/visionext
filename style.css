@@ -37,6 +37,7 @@ nav .logo {
     font-family: 'Orbitron', sans-serif;
 }
 
+
 .lx {
     padding-top: 6px;
     margin: 0px;
@@ -685,8 +686,15 @@ footer {
 }
 
 
-@media  (max-width: 384px) and (orientation:portrait) {
+@media (max-width: 384px) and (orientation:portrait) {
 
+    html,
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 
 
     .material-icons {
@@ -760,7 +768,7 @@ footer {
     header {
         /* overflow: visible; */
         width: 101%;
-        height: 2882px;
+        height: 2888px;
         position: relative;
         z-index: 1;
     }
