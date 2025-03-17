@@ -258,23 +258,39 @@
 
     <script>
 
-            document.addEventListener("DOMContentLoaded", function () {
-                const menuToggle = document.querySelector(".menu-toggle");
-                const nav = document.querySelector("nav");
-                const parallaxImage = document.getElementById("parallax-image");
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+    const parallaxImage = document.getElementById("parallax-image");
 
+    // Toggle menu navigation
+    if (menuToggle && nav) {
+        menuToggle.addEventListener("click", function () {
+            nav.classList.toggle("active");
+        });
+    }
 
-                if (menuToggle && nav) {
-                    menuToggle.addEventListener("click", function () {
-                        nav.classList.toggle("active");
-                    });
-                }
+    // Effetto Parallax
+    if (parallaxImage) {
+        let ticking = false;
 
-                if (parallaxImage) {
-                    let ticking = false;
+        function updateParallax() {
+            let scrollPosition = window.scrollY;
+            parallaxImage.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+            ticking = false;
+        }
 
-                }
-            });
+        function onScroll() {
+            if (!ticking) {
+                requestAnimationFrame(updateParallax);
+                ticking = true;
+            }
+        }
+
+        window.addEventListener("scroll", onScroll);
+    }
+});
+
 
     </script>
 
