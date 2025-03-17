@@ -873,7 +873,7 @@ footer {
         width: 100%;
         top: 0vh;
         font-size: 2.8vw;
-        margin: 72vh 0vh 0vh 0vh;
+        margin: 74.5vh 0vh 0vh 0vh;
     }
 
     /* Footer for mobile */
@@ -1067,7 +1067,7 @@ footer {
         clip-path: polygon(0% 0%, 0% 100%, 40% 87%);
         bottom: -28vh;
     }
-}
+
 
     #approccio h2 {
         top: 10vh;
@@ -1096,13 +1096,13 @@ footer {
         width: 100%;
         align-items: center;
         left: 0;
-        bottom: 30vh;
+        top: 60vh;
     }
 
     .aproccio-text {
         height: 2vh;
         width: 2vh;
-        margin: 0vh 2vw;
+        margin: 0vh 0vw;
         border: 1vw solid white;
         padding: 8vw;
     }
@@ -1127,10 +1127,10 @@ footer {
     }
 
     .triangolo-viola-approccio {
-        top: -7vh;
+        top: 9vh;
         left: 0;
         width: 103%;
-        clip-path: polygon(100% 39%, 100% 100%, 65% 38%);
+        clip-path: polygon(100% 39%, 100% 52%, 65% 38%);
     }
 
     .rett-contacts {
@@ -1140,7 +1140,7 @@ footer {
         position: absolute;
         z-index: 2;
         top: 67vh;
-        clip-path: polygon(100% 0%, 100% 100%, 51% 100%);
+        clip-path: polygon(100% 52%, 100% 100%, 50% 100%);
     }
 
     #contact h2 {
