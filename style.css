@@ -1008,7 +1008,7 @@ footer {
     mix-blend-mode: multiply;
     z-index: 2;
     border-radius: 10px;
-    clip-path: polygon(100% 35%, 0% 35%, 0% 107%, 100% 27%, 100% 100%);
+    clip-path: polygon(100% 35%, 0% 35%, 0% 98%, 100% 25%, 100% 100%);
 }
 
 .rett-valori-img {
@@ -1017,7 +1017,7 @@ footer {
     height: 13vh;
     clip-path: polygon(100% 0%, 100% 12%, 69% 36.5%, 100% 100%);
     position: absolute;
-    top: 0vh;
+    top: -4vh;
     z-index: 3;
     left: 0vw;
 }
