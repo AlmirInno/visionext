@@ -135,14 +135,12 @@ header {
 }
 
 .header-rett img {
-    width: 3000px;
+    width: 100%;
     position: relative;
-    top: 0;
+    top: -56px;
     left: 0;
     filter: brightness(0.5);
-    /* La luminosità dell'immagine potrebbe essere mantenuta o eliminata, a seconda del risultato desiderato */
     z-index: 1;
-    /* Assicurati che l'immagine sia sotto gli altri contenuti */
     rotate: 25deg;
 }
 
