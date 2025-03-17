@@ -862,25 +862,24 @@ footer {
 
 
     #approccio {
-        /* position: relative; */
-        margin: 544px 0px 0px 0px;
-        padding: 132px 0px 0px;
+
+        margin: 0vh 0vh 0vh 0vh;
+        padding: 0vh 0vh 0vh 0vh;
         width: 100%;
-        /* top: -175px; */
-        top: 2500px;
+        top: 100vh;
     }
 
     #contact {
         width: 100%;
-        top: -664px;
-        font-size: 12vw;
-        margin: 5150px 0px 0px 0px;
+        top: 0vh;
+        font-size: 2.8vw;
+        margin: 72vh 0vh 0vh 0vh;
     }
 
     /* Footer for mobile */
     footer {
-        font-size: 12vw;
-        width: 101%;
+        font-size: 3vw;
+        width: 100%;
     }
 
     #intro-content {
@@ -1017,7 +1016,6 @@ footer {
     }
 
 
-
     .testi h3 {
         font-size: 5vw;
     }
@@ -1063,139 +1061,140 @@ footer {
     }
 
     .rett-services {
-        height: 820px;
-        width: 130%;
-        left: -100px;
-        clip-path: polygon(0% 0%, 0% 100%, 40% 75%);
-        bottom: -792px;
+        height: 40vh;
+        width: 100%;
+        left: 0vh;
+        clip-path: polygon(0% 0%, 0% 100%, 40% 87%);
+        bottom: -28vh;
     }
+}
 
     #approccio h2 {
-        top: 280px;
+        top: 10vh;
         color: #fff;
         width: 100%;
-        padding: 0px 30px;
+        padding: 0vw 2vw;
         margin: 0px;
         font-size: 7vw;
     }
 
     .aproccio-img {
         overflow: visible;
-        width: 104%;
+        width: 100%;
         position: relative;
-        top: 611px;
+        top: 63vh;
     }
 
     .aproccio-img img {
-        width: 233%;
-        left: -550px;
-        top: -529px;
-        /* height: 2400px; */
-        clip-path: polygon(100% -18%, 0% 28%, 0% 104%, 100% 71%, 100% 0%);
+        width: 213%;
+        left: -62vw;
+        top: -53vh;
+        clip-path: polygon(100% -11%, 0% 35%, 0% 112%, 100% 76%, 100% 0%);
     }
 
     .aproccio-content {
         width: 100%;
         align-items: center;
         left: 0;
-        bottom: -2708px;
-
+        bottom: 30vh;
     }
 
     .aproccio-text {
-        height: 250px;
-        width: 250px;
-        margin: 20px 0;
-        border: 5px solid white;
-        padding: 50px;
+        height: 2vh;
+        width: 2vh;
+        margin: 0vh 2vw;
+        border: 1vw solid white;
+        padding: 8vw;
     }
 
     .aproccio-text h3 {
-        font-size: 8vw;
+        font-size: 3vw;
     }
 
     .aproccio-img::before {
-        /* width: 213%; */
-        left: -100px;
-        top: -537px;
-        height: 2400px;
-        clip-path: polygon(100% -1%, 0% 20.5%, 0% 89%, 100% 74%);
+        width: 100%;
+        left: 0vw;
+        top: -54vh;
+        height: 69vh;
+        clip-path: polygon(100% 1%, 0% 20.5%, 0% 89%, 100% 74%);
     }
 
     .rett-nero-approccio {
-        top: 1456px;
-        height: 478px;
-        width: 130%;
+        top: 2vh;
+        height: 35vw;
+        width: 182%;
+        left: -40vw;
     }
 
     .triangolo-viola-approccio {
-        top: 1807px;
-        width: 117%;
-        clip-path: polygon(100% 43%, 100% 100%, 57% 38%);
+        top: -7vh;
+        left: 0;
+        width: 103%;
+        clip-path: polygon(100% 39%, 100% 100%, 65% 38%);
     }
 
     .rett-contacts {
         background-color: #9448a6;
-        height: 341px;
-        width: 103%;
+        height: 30vw;
+        width: 100%;
         position: absolute;
         z-index: 2;
-        top: 1930px;
+        top: 67vh;
         clip-path: polygon(100% 0%, 100% 100%, 51% 100%);
     }
-
 
     #contact h2 {
         margin: 0px;
         text-align: center;
-        font-size: 30vw;
+        font-size: 7vw;
         color: #9448a6;
-        margin-bottom: 20px;
+        margin-bottom: 3vh;
         font-weight: bold;
         font-family: "Antonio";
     }
 
+
     #contact p {
-        width: 82%;
-        font-size: 12vw;
+        width: 80%;
+        font-size: 2.8vw;
     }
 
     #contact form {
-        max-width: 80%;
-        font-size: 11vw;
-        gap: 30px;
+        max-width: 40%;
+        font-size: 2.8vw;
+        gap: 2vh;
     }
 
     #contact input {
-        padding: 20px;
-        font-size: 11vw;
+        padding: 3vw;
+        font-size: 2.8vw;
         background: #fff;
-        border-radius: 8px;
+        border-radius: 2vw;
         width: 100%;
-        height: 100px;
+        height: 2vh;
     }
 
     #contact textarea {
-        padding: 20px;
-        font-size: 11vw;
+        padding: 3vw;
+        font-size: 2.8vwvw;
         background: #fff;
-        border-radius: 8px;
+        border-radius: 2vw;
         width: 100%;
-        height: 300px;
+        height: 4vh;
     }
 
     #contact button {
-        padding: 20px;
+        padding: 3vw;
         background-color: #000;
         color: #fff;
         border: none;
-        border-radius: 8px;
-        font-size: 16vw;
+        border-radius: 2vw;
+        font-size: 3vw;
         cursor: pointer;
         display: block;
         text-align: center;
-        width: 103%;
-        height: 150px;
+        width: 120%;
+
     }
 }
 
