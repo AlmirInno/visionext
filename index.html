@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VisioNEXT</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -265,24 +265,25 @@
     <script>
 
 
-document.addEventListener("DOMContentLoaded", function () {
-            window.scrollTo(0, 0); // Scrolla all'inizio della pagina
         document.addEventListener("DOMContentLoaded", function () {
-            const menuToggle = document.querySelector(".menu-toggle");
-            const nav = document.querySelector("nav");
-            const parallaxImage = document.getElementById("parallax-image");
+            window.scrollTo(0, 0); // Scrolla all'inizio della pagina
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuToggle = document.querySelector(".menu-toggle");
+                const nav = document.querySelector("nav");
+                const parallaxImage = document.getElementById("parallax-image");
 
 
-            if (menuToggle && nav) {
-                menuToggle.addEventListener("click", function () {
-                    nav.classList.toggle("active");
-                });
-            }
+                if (menuToggle && nav) {
+                    menuToggle.addEventListener("click", function () {
+                        nav.classList.toggle("active");
+                    });
+                }
 
-            if (parallaxImage) {
-                let ticking = false;
+                if (parallaxImage) {
+                    let ticking = false;
 
-            }
+                }
+            });
         });
 
     </script>
