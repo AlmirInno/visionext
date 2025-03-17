@@ -353,7 +353,8 @@ h2 {
 }
 
 .testi h3 {
-    font-size: 5vw;;
+    font-size: 5vw;
+    ;
     color: #333;
     margin-bottom: 2vh;
 }
@@ -371,18 +372,26 @@ h2 {
 
 
 
+.testi,
+.missione {
+    font-size: 3vw;
+    top: 33vh;
+    padding: 0vw 2vw;
+    width: 100%;
+}
+
 .testi {
     flex: 2;
     display: flex;
     gap: 20px;
     position: absolute;
     z-index: 1;
+    top: 30vh;
 }
 
 .testi .missione,
 .testi .valori {
     flex: 1;
-    padding: 20px;
     color: #000;
     top: 38vh;
 }
@@ -700,11 +709,12 @@ footer {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        height: 3vh;
     }
 
     nav .logo {
-        font-size: 7vw;
+        font-size: 5vw;
         font-weight: bold;
         color: #000;
         display: flex;
@@ -716,7 +726,7 @@ footer {
         display: block;
         background: transparent;
         border: none;
-        font-size: 10vw;
+        font-size: 8vw;
         /* Mantiene il font adattabile senza diventare troppo grande */
         color: #9448a6;
         /* Adatta il margine in base alla larghezza dello schermo */
@@ -727,7 +737,7 @@ footer {
         flex-direction: column;
         gap: 7vh;
         position: absolute;
-        top: 10vh;
+        top: 5vh;
         right: 21vw;
         background-color: #fff;
         padding: 6vw;
@@ -763,7 +773,7 @@ footer {
     .header-rett img {
         width: 100%;
         position: relative;
-        top: 0;
+        top: -39px;
         left: 0;
         filter: brightness(0.5);
         z-index: 1;
@@ -772,7 +782,8 @@ footer {
 
     .header-rett {
         position: absolute;
-        width: 165vw;
+        width: 173vw;
+
         height: 54vh;
         rotate: -25deg;
         overflow: hidden;
@@ -816,7 +827,7 @@ footer {
     .lx {
         padding-top: 0;
         /* Nessun cambiamento necessario */
-        font-size: 7vw;
+        font-size: 5vw;
         /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
         margin: 0;
         /* Nessun cambiamento necessario */
@@ -847,7 +858,7 @@ footer {
 
     #about {
         position: relative;
-        padding: 8vh 0 0 0;
+        padding: 6vh 0 0 0;
         margin: 0;
         width: 100%;
     }
@@ -899,13 +910,14 @@ footer {
     #about h2 {
         position: relative;
         padding: 2vw;
-        font-size: 10vw;
+        font-size: 7vw;
+        top: -2vh;
     }
 
     .pres {
         width: 100%;
         position: absolute;
-        top: -3vh;
+        top: -6vh;
     }
 
     .foto::before {
@@ -922,14 +934,15 @@ footer {
     }
 
     .foto {
-        width: 100%;
+        width: 123%;
         position: relative;
-        height: 27vh;
+        height: 37vh;
         left: 0;
         /* padding: 0px 10px; */
         clip-path: polygon(100% 0%, -2% 27.5%, 0% 101%, 100% 101%);
-        top: 47vh;
+        top: 46vh;
     }
+
 
 
     .foto img {
@@ -963,12 +976,12 @@ footer {
     }
 
     #missione-valori h2 {
-        top: 33vh;
+        top: 25vh;
         /* Posizionamento verticale adattabile alla viewport */
         text-align: right;
         padding: 0 5vw;
         /* Padding orizzontale adattabile alla larghezza della viewport */
-        font-size: 10vw;
+        font-size: 7vw;
         /* Dimensione del font adattabile alla larghezza della viewport */
     }
 
@@ -976,29 +989,29 @@ footer {
         width: 100%;
         position: relative;
         height: auto;
-        top: 9vh;
+        top: 3.8vh;
     }
 
     .fotoValoriMissione img {
         width: 127%;
         position: relative;
-        left: -27vw;
+        left: -26vw;
         top: -24vh;
-        clip-path: polygon(100% 42%, 0% 42%, 0% 100%, 100% 66%, 100% 0%);
+        clip-path: polygon(100% 52%, 0% 52%, 0% 100%, 100% 66%, 100% 0%);
     }
 
     .fotoValoriMissione::before {
         content: "";
         position: absolute;
-        top: -18.3vh;
+        top: -13.1vh;
         left: -27vw;
         width: 200%;
-        height: 30vh;
+        height: 26vh;
         background-color: #9548a6c0;
         mix-blend-mode: multiply;
         z-index: 2;
         border-radius: 10px;
-        clip-path: polygon(100% 35%, 0% 35%, 0% 109%, 100% 42%, 100% 100%);
+        clip-path: polygon(100% 35%, 0% 35%, 0% 107%, 100% 27%, 100% 100%);
     }
 
     .rett-valori-img {
@@ -1010,23 +1023,6 @@ footer {
         top: 0vh;
         z-index: 3;
         left: 0vw;
-    }
-
-
-    .testi,
-    .missione {
-        font-size: 3vw;
-        top: 33vh;
-        padding: 0;
-        width: 100%;
-    }
-
-
-    .testi .missione,
-    .testi .valori {
-        flex: 1;
-        padding: 3vw;
-        color: #000;
     }
 
 
