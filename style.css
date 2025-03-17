@@ -762,7 +762,6 @@ footer {
         z-index: 2;
         position: absolute;
         top: -4vh;
-
         width: 220vw;
         height: 3vh;
         rotate: -25deg;
@@ -781,7 +780,7 @@ footer {
 
     .header-rett {
         position: absolute;
-        width: 173vw;
+        width: 184vw;
         height: 66vh;
         rotate: -25deg;
         overflow: hidden;
