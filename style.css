@@ -134,15 +134,15 @@ header {
     overflow: hidden;
 }
 
-    .header-rett img {
-        width: 100%;
-        position: relative;
-        top: -56px;
-        left: 0;
-        filter: brightness(0.5);
-        z-index: 1;
-        rotate: 25deg;
-    }
+.header-rett img {
+    width: 100%;
+    position: relative;
+    top: -56px;
+    left: 0;
+    filter: brightness(0.5);
+    z-index: 1;
+    rotate: 25deg;
+}
 
 .header-content {
     color: white;
@@ -800,404 +800,404 @@ footer {
 
 
     .header-content {
-        top: 44%;
-        left: 52%;
+        top: 42%;
         transform: translate(-50%, -50%);
-        text-align: center;
         width: 100%;
+        left: 51%;
     }
 
 
-    header h1 {
-        font-size: 15vw;
-        width: 100%;
+header h1 {
+    font-size: 15vw;
+    width: 100%;
 
-    }
+}
 
-    header p {
-        /* text-align: center; */
-        margin: -2vh 2vw 0 2vw;
-        font-size: 4.9vw;
-    }
-
-
-    .lx {
-        padding-top: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 5vw;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        margin: 0;
-        /* Nessun cambiamento necessario */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
-        width: 100%;
-        /* Larghezza già adattabile */
-    }
+header p {
+    text-align: start;
+    margin: -2vh 2vw 0 2vw;
+    font-size: 4.8vw;
+    width: 100%;
+}
 
 
-    .Tx {
-        padding-top: 0vh;
-        /* Padding adattabile in base all'altezza della viewport */
-        margin: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 15vw;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    main {
-        width: 100%;
-        padding: 0;
-        margin: 0 auto;
-
-    }
-
-    #about {
-        position: relative;
-        padding: 6vh 0 0 0;
-        margin: 0;
-        width: 100%;
-    }
-
-    #services {
-        position: relative;
-        width: 100%;
-        top: 2886px;
-        padding: 145px 0px 0px 0px;
-    }
-
-    #approccio {
-        /* position: relative; */
-        margin: 544px 0px 0px 0px;
-        padding: 132px 0px 0px;
-        width: 100%;
-        /* top: -175px; */
-        top: 2500px;
-    }
-
-    #contact {
-        width: 100%;
-        top: -664px;
-        font-size: 12vw;
-        margin: 5150px 0px 0px 0px;
-    }
-
-    /* Footer for mobile */
-    footer {
-        font-size: 12vw;
-        width: 101%;
-    }
-
-    #intro-content {
-        display: flex;
-        background-color: #ffffff09;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        padding: 0;
-        position: relative;
-        top: 1vh;
-        /* Posizionamento adattabile in base all'altezza della viewport */
-        margin: 0;
-        width: 100%;
-    }
+.lx {
+    padding-top: 0;
+    /* Nessun cambiamento necessario */
+    font-size: 5vw;
+    /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
+    margin: 0;
+    /* Nessun cambiamento necessario */
+    color: #ff00ff;
+    font-family: 'Orbitron', sans-serif;
+    width: 100%;
+    /* Larghezza già adattabile */
+}
 
 
-    #about h2 {
-        position: relative;
-        padding: 2vw;
-        font-size: 7vw;
-        top: -2vh;
-    }
+.Tx {
+    padding-top: 0vh;
+    /* Padding adattabile in base all'altezza della viewport */
+    margin: 0;
+    /* Nessun cambiamento necessario */
+    font-size: 15vw;
+    /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
+    color: #ff00ff;
+    font-family: 'Orbitron', sans-serif;
+}
 
-    .pres {
-        width: 100%;
-        position: absolute;
-        top: -6vh;
-    }
+main {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
 
-    .foto::before {
-        content: "";
-        position: absolute;
-        top: -10vh;
-        left: 0;
-        width: 100%;
-        height: 65vh;
-        background-color: #9548a6c0;
-        mix-blend-mode: multiply;
-        z-index: 3;
-        clip-path: polygon(100% 0%, -2% 25.5%, 0% 90%, 100% 90%);
-    }
+}
 
-    .foto {
-        width: 123%;
-        position: relative;
-        height: 37vh;
-        left: 0;
-        /* padding: 0px 10px; */
-        clip-path: polygon(100% 0%, -2% 27.5%, 0% 101%, 100% 101%);
-        top: 46vh;
-    }
+#about {
+    position: relative;
+    padding: 6vh 0 0 0;
+    margin: 0;
+    width: 100%;
+}
+
+#services {
+    position: relative;
+    width: 100%;
+    top: 2886px;
+    padding: 145px 0px 0px 0px;
+}
+
+#approccio {
+    /* position: relative; */
+    margin: 544px 0px 0px 0px;
+    padding: 132px 0px 0px;
+    width: 100%;
+    /* top: -175px; */
+    top: 2500px;
+}
+
+#contact {
+    width: 100%;
+    top: -664px;
+    font-size: 12vw;
+    margin: 5150px 0px 0px 0px;
+}
+
+/* Footer for mobile */
+footer {
+    font-size: 12vw;
+    width: 101%;
+}
+
+#intro-content {
+    display: flex;
+    background-color: #ffffff09;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+    top: 1vh;
+    /* Posizionamento adattabile in base all'altezza della viewport */
+    margin: 0;
+    width: 100%;
+}
 
 
+#about h2 {
+    position: relative;
+    padding: 2vw;
+    font-size: 7vw;
+    top: -2vh;
+}
 
-    .foto img {
-        width: 100%;
-        /* L'immagine si adatta alla larghezza del contenitore */
-        position: relative;
-        left: 0;
-        /* Posizionamento orizzontale adattabile alla larghezza della viewport */
-        top: -4vh;
-        /* Posizionamento verticale adattabile all'altezza della viewport */
-        clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 0%);
-        /* Corretto la sintassi */
-    }
+.pres {
+    width: 100%;
+    position: absolute;
+    top: -6vh;
+}
+
+.foto::before {
+    content: "";
+    position: absolute;
+    top: -10vh;
+    left: 0;
+    width: 100%;
+    height: 65vh;
+    background-color: #9548a6c0;
+    mix-blend-mode: multiply;
+    z-index: 3;
+    clip-path: polygon(100% 0%, -2% 25.5%, 0% 90%, 100% 90%);
+}
+
+.foto {
+    width: 123%;
+    position: relative;
+    height: 37vh;
+    left: 0;
+    /* padding: 0px 10px; */
+    clip-path: polygon(100% 0%, -2% 27.5%, 0% 101%, 100% 101%);
+    top: 46vh;
+}
 
 
 
-    .testo {
-        font-size: 3vw;
-        /* Dimensione del font adattabile alla larghezza della viewport */
-        /* Padding orizzontale adattabile alla larghezza della viewport */
-        width: 95%;
-        /* Larghezza adattabile in base alla larghezza della viewport */
-    }
-
-
-    #missione-valori {
-        width: 100%;
-        top: 30.7vh;
-        margin: 0 auto;
-        z-index: 3;
-    }
-
-    #missione-valori h2 {
-        top: 25vh;
-        /* Posizionamento verticale adattabile alla viewport */
-        text-align: right;
-        padding: 0 5vw;
-        /* Padding orizzontale adattabile alla larghezza della viewport */
-        font-size: 7vw;
-        /* Dimensione del font adattabile alla larghezza della viewport */
-    }
-
-    .fotoValoriMissione {
-        width: 100%;
-        position: relative;
-        height: auto;
-        top: 3.8vh;
-    }
-
-    .fotoValoriMissione img {
-        width: 127%;
-        position: relative;
-        left: -26vw;
-        top: -24vh;
-        clip-path: polygon(100% 52%, 0% 52%, 0% 100%, 100% 66%, 100% 0%);
-    }
-
-    .fotoValoriMissione::before {
-        content: "";
-        position: absolute;
-        top: -13.1vh;
-        left: -27vw;
-        width: 200%;
-        height: 26vh;
-        background-color: #9548a6c0;
-        mix-blend-mode: multiply;
-        z-index: 2;
-        border-radius: 10px;
-        clip-path: polygon(100% 35%, 0% 35%, 0% 107%, 100% 27%, 100% 100%);
-    }
-
-    .rett-valori-img {
-        background-color: #9448a6;
-        width: 100%;
-        height: 13vh;
-        clip-path: polygon(100% 0%, 100% 12%, 69% 36.5%, 100% 100%);
-        position: absolute;
-        top: 0vh;
-        z-index: 3;
-        left: 0vw;
-    }
+.foto img {
+    width: 100%;
+    /* L'immagine si adatta alla larghezza del contenitore */
+    position: relative;
+    left: 0;
+    /* Posizionamento orizzontale adattabile alla larghezza della viewport */
+    top: -4vh;
+    /* Posizionamento verticale adattabile all'altezza della viewport */
+    clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 0%);
+    /* Corretto la sintassi */
+}
 
 
 
-    .testi h3 {
-        font-size: 5vw;
-    }
-
-    #services h2 {
-        margin: 0px;
-        /* text-align: left; */
-        font-size: 30vw;
-        color: #9448a6;
-        margin-bottom: 20px;
-        font-weight: bold;
-        font-family: "Antonio";
-        padding: 100px 30px 0px 30px;
-    }
-
-    .service-cards {
-        z-index: 3;
-        position: relative;
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        margin: 0px 30px;
-        justify-content: center;
-        /* line-height: 0.8rem; */
-    }
-
-    .service-card {
-        background: rgb(255 255 255);
-        flex: 1;
-        min-width: 720px;
-        text-align: center;
-        border-radius: 10px;
-        box-shadow: 0 0 15px #9448a6;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        height: 720px;
-        font-size: 12vw;
-        padding: 30px;
-    }
-
-    .rett-services {
-        height: 820px;
-        width: 130%;
-        left: -100px;
-        clip-path: polygon(0% 0%, 0% 100%, 40% 75%);
-        bottom: -792px;
-    }
-
-    #approccio h2 {
-        top: 280px;
-        color: #fff;
-        width: 100%;
-        padding: 0px 30px;
-        margin: 0px;
-        font-size: 30vw;
-    }
-
-    .aproccio-img {
-        overflow: visible;
-        width: 104%;
-        position: relative;
-        top: 611px;
-    }
-
-    .aproccio-img img {
-        width: 233%;
-        left: -550px;
-        top: -529px;
-        /* height: 2400px; */
-        clip-path: polygon(100% -18%, 0% 28%, 0% 104%, 100% 71%, 100% 0%);
-    }
-
-    .aproccio-content {
-        width: 100%;
-        align-items: center;
-        left: 0;
-        bottom: -2708px;
-
-    }
-
-    .aproccio-text {
-        height: 250px;
-        width: 250px;
-        margin: 20px 0;
-        border: 5px solid white;
-        padding: 50px;
-    }
-
-    .aproccio-text h3 {
-        font-size: 8vw;
-    }
-
-    .aproccio-img::before {
-        /* width: 213%; */
-        left: -100px;
-        top: -537px;
-        height: 2400px;
-        clip-path: polygon(100% -1%, 0% 20.5%, 0% 89%, 100% 74%);
-    }
-
-    .rett-nero-approccio {
-        top: 1456px;
-        height: 478px;
-        width: 130%;
-    }
-
-    .triangolo-viola-approccio {
-        top: 1807px;
-        width: 117%;
-        clip-path: polygon(100% 43%, 100% 100%, 57% 38%);
-    }
-
-    .rett-contacts {
-        background-color: #9448a6;
-        height: 341px;
-        width: 103%;
-        position: absolute;
-        z-index: 2;
-        top: 1930px;
-        clip-path: polygon(100% 0%, 100% 100%, 51% 100%);
-    }
+.testo {
+    font-size: 3vw;
+    /* Dimensione del font adattabile alla larghezza della viewport */
+    /* Padding orizzontale adattabile alla larghezza della viewport */
+    width: 95%;
+    /* Larghezza adattabile in base alla larghezza della viewport */
+}
 
 
-    #contact h2 {
-        margin: 0px;
-        text-align: center;
-        font-size: 30vw;
-        color: #9448a6;
-        margin-bottom: 20px;
-        font-weight: bold;
-        font-family: "Antonio";
-    }
+#missione-valori {
+    width: 100%;
+    top: 30.7vh;
+    margin: 0 auto;
+    z-index: 3;
+}
 
-    #contact p {
-        width: 82%;
-        font-size: 12vw;
-    }
+#missione-valori h2 {
+    top: 25vh;
+    /* Posizionamento verticale adattabile alla viewport */
+    text-align: right;
+    padding: 0 5vw;
+    /* Padding orizzontale adattabile alla larghezza della viewport */
+    font-size: 7vw;
+    /* Dimensione del font adattabile alla larghezza della viewport */
+}
 
-    #contact form {
-        max-width: 80%;
-        font-size: 11vw;
-        gap: 30px;
-    }
+.fotoValoriMissione {
+    width: 100%;
+    position: relative;
+    height: auto;
+    top: 3.3vh;
+}
 
-    #contact input {
-        padding: 20px;
-        font-size: 11vw;
-        background: #fff;
-        border-radius: 8px;
-        width: 100%;
-        height: 100px;
-    }
+.fotoValoriMissione img {
+    width: 127%;
+    position: relative;
+    left: -26vw;
+    top: -24vh;
+    clip-path: polygon(100% 52%, 0% 52%, 0% 100%, 100% 66%, 100% 0%);
+}
 
-    #contact textarea {
-        padding: 20px;
-        font-size: 11vw;
-        background: #fff;
-        border-radius: 8px;
-        width: 100%;
-        height: 300px;
-    }
+.fotoValoriMissione::before {
+    content: "";
+    position: absolute;
+    top: -15.8vh;
+    left: -27vw;
+    width: 200%;
+    height: 26vh;
+    background-color: #9548a6c0;
+    mix-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 10px;
+    clip-path: polygon(100% 35%, 0% 35%, 0% 107%, 100% 27%, 100% 100%);
+}
 
-    #contact button {
-        padding: 20px;
-        background-color: #000;
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        font-size: 16vw;
-        cursor: pointer;
-        display: block;
-        text-align: center;
-        width: 103%;
-        height: 150px;
-    }
+.rett-valori-img {
+    background-color: #9448a6;
+    width: 100%;
+    height: 13vh;
+    clip-path: polygon(100% 0%, 100% 12%, 69% 36.5%, 100% 100%);
+    position: absolute;
+    top: 0vh;
+    z-index: 3;
+    left: 0vw;
+}
+
+
+
+.testi h3 {
+    font-size: 5vw;
+}
+
+#services h2 {
+    margin: 0px;
+    /* text-align: left; */
+    font-size: 30vw;
+    color: #9448a6;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: "Antonio";
+    padding: 100px 30px 0px 30px;
+}
+
+.service-cards {
+    z-index: 3;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0px 30px;
+    justify-content: center;
+    /* line-height: 0.8rem; */
+}
+
+.service-card {
+    background: rgb(255 255 255);
+    flex: 1;
+    min-width: 720px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #9448a6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 720px;
+    font-size: 12vw;
+    padding: 30px;
+}
+
+.rett-services {
+    height: 820px;
+    width: 130%;
+    left: -100px;
+    clip-path: polygon(0% 0%, 0% 100%, 40% 75%);
+    bottom: -792px;
+}
+
+#approccio h2 {
+    top: 280px;
+    color: #fff;
+    width: 100%;
+    padding: 0px 30px;
+    margin: 0px;
+    font-size: 30vw;
+}
+
+.aproccio-img {
+    overflow: visible;
+    width: 104%;
+    position: relative;
+    top: 611px;
+}
+
+.aproccio-img img {
+    width: 233%;
+    left: -550px;
+    top: -529px;
+    /* height: 2400px; */
+    clip-path: polygon(100% -18%, 0% 28%, 0% 104%, 100% 71%, 100% 0%);
+}
+
+.aproccio-content {
+    width: 100%;
+    align-items: center;
+    left: 0;
+    bottom: -2708px;
+
+}
+
+.aproccio-text {
+    height: 250px;
+    width: 250px;
+    margin: 20px 0;
+    border: 5px solid white;
+    padding: 50px;
+}
+
+.aproccio-text h3 {
+    font-size: 8vw;
+}
+
+.aproccio-img::before {
+    /* width: 213%; */
+    left: -100px;
+    top: -537px;
+    height: 2400px;
+    clip-path: polygon(100% -1%, 0% 20.5%, 0% 89%, 100% 74%);
+}
+
+.rett-nero-approccio {
+    top: 1456px;
+    height: 478px;
+    width: 130%;
+}
+
+.triangolo-viola-approccio {
+    top: 1807px;
+    width: 117%;
+    clip-path: polygon(100% 43%, 100% 100%, 57% 38%);
+}
+
+.rett-contacts {
+    background-color: #9448a6;
+    height: 341px;
+    width: 103%;
+    position: absolute;
+    z-index: 2;
+    top: 1930px;
+    clip-path: polygon(100% 0%, 100% 100%, 51% 100%);
+}
+
+
+#contact h2 {
+    margin: 0px;
+    text-align: center;
+    font-size: 30vw;
+    color: #9448a6;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: "Antonio";
+}
+
+#contact p {
+    width: 82%;
+    font-size: 12vw;
+}
+
+#contact form {
+    max-width: 80%;
+    font-size: 11vw;
+    gap: 30px;
+}
+
+#contact input {
+    padding: 20px;
+    font-size: 11vw;
+    background: #fff;
+    border-radius: 8px;
+    width: 100%;
+    height: 100px;
+}
+
+#contact textarea {
+    padding: 20px;
+    font-size: 11vw;
+    background: #fff;
+    border-radius: 8px;
+    width: 100%;
+    height: 300px;
+}
+
+#contact button {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16vw;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    width: 103%;
+    height: 150px;
+}
 }
 
 @media (max-width: 720px) and (orientation:landscape) {
