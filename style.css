@@ -37,6 +37,10 @@ nav .logo {
     font-family: 'Orbitron', sans-serif;
 }
 
+.logo a {
+text-decoration:none;
+}
+
 .lx {
     padding-top: 6px;
     margin: 0px;
