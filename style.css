@@ -1212,24 +1212,30 @@ footer {
     }
 }
 
-@media (max-width: 720px) and (orientation:landscape) {
+@media (max-width: 800px) and (orientation:landscape) {
 
+    html,
     body {
-        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 
     nav ul li a {
-        font-size: 10vw;
+        font-size: 5vw;
     }
 
     nav {
         width: 100%;
         display: flex;
+        align-items: center;
         justify-content: space-around;
+        height: 3vh;
     }
 
     nav .logo {
-        font-size: 15vw;
+        font-size: 4vw;
         font-weight: bold;
         color: #000;
         display: flex;
@@ -1241,24 +1247,24 @@ footer {
         display: block;
         background: transparent;
         border: none;
-        font-size: 15vw;
+        font-size: 5vw;
+        /* Mantiene il font adattabile senza diventare troppo grande */
         color: #9448a6;
-        margin: 0px 0px 0px 500px;
+        /* Adatta il margine in base alla larghezza dello schermo */
     }
 
-    /* Hide the navigation links by default on mobile */
     nav .nav-links {
         display: none;
         flex-direction: column;
-        gap: 150px;
+        gap: 7vh;
         position: absolute;
-        top: 124px;
-        right: 80px;
+        top: 5vh;
+        right: 21vw;
         background-color: #fff;
-        padding: 52px;
-        border-radius: 8px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        width: 441px;
+        padding: 6vw;
+        border-radius: 0.5rem;
+        box-shadow: 0px 0.5vh 1vh rgba(0, 0, 0, 0.1);
+        width: 65vw;
     }
 
 
@@ -1268,67 +1274,18 @@ footer {
     }
 
     .lx {
-        font-size: 100px;
-    }
-
-    header {
-        width: 280%;
-        top: 0px;
-        height: 279vh;
-    }
-
-    .header-rett {
-        position: absolute;
-        width: 140%;
-        height: 75%;
-        rotate: -25deg;
-        overflow: hidden;
-    }
-
-    .rett {
-        background-color: #000;
-        z-index: 2;
-        position: absolute;
-        top: 0%;
-        width: 120%;
-        height: 50px;
-        rotate: -25deg;
-    }
-
-
-    .rett-grande {
-        background-color: #000;
-        z-index: 2;
-        position: absolute;
-        top: 93%;
-        width: 120%;
-        height: 300px;
-        rotate: -25deg;
-    }
-
-    main {
-        width: 280%;
-    }
-
-    #about,
-    #services,
-    #approccio,
-    #contact {
+        padding-top: 0;
+        /* Nessun cambiamento necessario */
+        font-size: 4vw;
+        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
+        margin: 0;
+        /* Nessun cambiamento necessario */
+        color: #ff00ff;
+        font-family: 'Orbitron', sans-serif;
         width: 100%;
+        /* Larghezza già adattabile */
     }
 
-    .fotoValoriMissione::before {
-        content: "";
-        position: absolute;
-        top: -271px;
-        left: -366px;
-        width: 100%;
-        height: 1000px;
-        background-color: #9548a6c0;
-        mix-blend-mode: multiply;
-        z-index: 2;
-        border-radius: 10px;
-        clip-path: polygon(100% 45.5%, 0% 44.5%, 0% 98%, 100% 60%);
-    }
+
 
 }
