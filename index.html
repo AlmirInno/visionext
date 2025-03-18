@@ -112,11 +112,11 @@
                                     esperienze visive che catturano l’attenzione.</p>
                             </li>
                             <li>
-                                <p><strong>Innovazione:</strong> <br>Siamo sempre aggiornati sulle ultime tendenze per
+                                <p><strong>Innovazione</strong> <br>Siamo sempre aggiornati sulle ultime tendenze per
                                     offrirti soluzioni all’avanguardia.</p>
                             </li>
                             <li>
-                                <p><strong>Personalizzazione:</strong> <br>Ogni progetto è studiato nei minimi
+                                <p><strong>Personalizzazione</strong> <br>Ogni progetto è studiato nei minimi
                                     particolari
                                     per le esigenze del cliente.</p>
                             </li>
@@ -256,40 +256,67 @@
         <p>Contatti: +39 331 444 7370 | Email: info@visionext.com</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <script>
 
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector("nav");
-    const parallaxImage = document.getElementById("parallax-image");
+(function(){
+        emailjs.init("TUO_PUBLIC_KEY"); // Sostituisci con la tua Public Key
+    })();
 
-    // Toggle menu navigation
-    if (menuToggle && nav) {
-        menuToggle.addEventListener("click", function () {
-            nav.classList.toggle("active");
+    document.getElementById("contact").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Ottieni i dati dal form
+        let formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value
+        };
+
+        // Invia i dati con EmailJS
+        emailjs.send("TUO_SERVICE_ID", "TUO_TEMPLATE_ID", formData)
+        .then(function(response) {
+            document.getElementById("responseMessage").innerText = "Messaggio inviato con successo!";
+            document.getElementById("contactForm").reset(); // Pulisce il form
+        }, function(error) {
+            document.getElementById("responseMessage").innerText = "Errore nell'invio del messaggio. Riprova.";
+            console.error("Errore EmailJS:", error);
         });
-    }
+    });
 
-    // Effetto Parallax
-    if (parallaxImage) {
-        let ticking = false;
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuToggle = document.querySelector(".menu-toggle");
+                const nav = document.querySelector("nav");
+                const parallaxImage = document.getElementById("parallax-image");
 
-        function updateParallax() {
-            let scrollPosition = window.scrollY;
-            parallaxImage.style.transform = `translateY(${scrollPosition * 0.5}px)`;
-            ticking = false;
-        }
+                // Toggle menu navigation
+                if (menuToggle && nav) {
+                    menuToggle.addEventListener("click", function () {
+                        nav.classList.toggle("active");
+                    });
+                }
 
-        function onScroll() {
-            if (!ticking) {
-                requestAnimationFrame(updateParallax);
-                ticking = true;
-            }
-        }
+                // Effetto Parallax
+                if (parallaxImage) {
+                    let ticking = false;
 
-        window.addEventListener("scroll", onScroll);
-    }
-});
+                    function updateParallax() {
+                        let scrollPosition = window.scrollY;
+                        parallaxImage.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+                        ticking = false;
+                    }
+
+                    function onScroll() {
+                        if (!ticking) {
+                            requestAnimationFrame(updateParallax);
+                            ticking = true;
+                        }
+                    }
+
+                    window.addEventListener("scroll", onScroll);
+                }
+            });
 
 
     </script>
