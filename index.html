@@ -241,7 +241,7 @@
 
             <h2>Contattaci</h2>
             <p>Hai bisogno di un’identità digitale per la tua azienda? Richiedi un preventivo.</p>
-         <form id="contact">
+         <form id="contactForm">
     <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
     <input type="email" id="email" name="email" placeholder="La tua email" required>
     <textarea id="message" name="message" placeholder="Descrivi la tua idea" required></textarea>
@@ -264,7 +264,7 @@
         emailjs.init("ik19gHtHKsrLrDk33"); // Sostituisci con la tua Public Key
     })();
 
-    document.getElementById("contact").addEventListener("submit", function(event) {
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
         event.preventDefault();
 
         // Ottieni i dati dal form
