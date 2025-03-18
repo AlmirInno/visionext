@@ -261,7 +261,7 @@
     <script>
 
 (function(){
-        emailjs.init("TUO_PUBLIC_KEY"); // Sostituisci con la tua Public Key
+        emailjs.init("ik19gHtHKsrLrDk33"); // Sostituisci con la tua Public Key
     })();
 
     document.getElementById("contact").addEventListener("submit", function(event) {
@@ -275,10 +275,10 @@
         };
 
         // Invia i dati con EmailJS
-        emailjs.send("TUO_SERVICE_ID", "TUO_TEMPLATE_ID", formData)
+        emailjs.send("almir96", "template_almir96", formData)
         .then(function(response) {
             document.getElementById("responseMessage").innerText = "Messaggio inviato con successo!";
-            document.getElementById("contactForm").reset(); // Pulisce il form
+            document.getElementById("contact").reset(); // Pulisce il form
         }, function(error) {
             document.getElementById("responseMessage").innerText = "Errore nell'invio del messaggio. Riprova.";
             console.error("Errore EmailJS:", error);
