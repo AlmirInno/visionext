@@ -862,7 +862,6 @@ footer {
 
 
     #approccio {
-
         margin: 0vh 0vh 0vh 0vh;
         padding: 0vh 0vh 0vh 0vh;
         width: 100%;
@@ -871,7 +870,7 @@ footer {
 
     #contact {
         width: 100%;
-        top: 0vh;
+        top: 2vh;
         font-size: 2.8vw;
         margin: 70.5vh 0vh 0vh 0vh;
     }
@@ -1115,11 +1114,11 @@ footer {
     }
 
     .aproccio-text {
-        height: 1vh;
-        width: 1vh;
+        height: 8vh;
+        width: 8vh;
         margin: 0vh 0vw;
         border: 0.5vw solid white;
-        padding: 9vw;
+        padding: 3vw;
     }
 
     .aproccio-text h3 {
@@ -1145,7 +1144,7 @@ footer {
         top: 8vh;
         left: 0;
         width: 103%;
-        clip-path: polygon(100% 39%, 100% 52%, 65% 38%);
+        clip-path: polygon(100% 39%, 100% 49%, 65% 39%);
     }
 
     .rett-contacts {
@@ -1154,7 +1153,7 @@ footer {
         width: 100%;
         position: absolute;
         z-index: 2;
-        top: 70vh;
+        top: 68vh;
         clip-path: polygon(100% 52%, 100% 100%, 50% 100%);
     }
 
@@ -1168,9 +1167,8 @@ footer {
         font-family: "Antonio";
     }
 
-
     #contact p {
-        width: 80%;
+        width: 75%;
         font-size: 2.8vw;
     }
 
@@ -1187,15 +1185,17 @@ footer {
         border-radius: 2vw;
         width: 100%;
         height: 2vh;
+        border: 0.2vh solid black;
     }
 
     #contact textarea {
         padding: 3vw;
-        font-size: 2.8vwvw;
+        font-size: 2.8vw;
         background: #fff;
         border-radius: 2vw;
         width: 100%;
         height: 7vh;
+        border: 0.2vh solid black;
     }
 
     #contact button {
@@ -1209,7 +1209,6 @@ footer {
         display: block;
         text-align: center;
         width: 110%;
-
     }
 }
 
