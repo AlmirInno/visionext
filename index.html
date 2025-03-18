@@ -258,9 +258,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <script>
-
-    (function(){
+ <script>
+    (function() {
         emailjs.init("ik19gHtHKsrLrDk33"); // Sostituisci con la tua Public Key
     })();
 
@@ -285,55 +284,51 @@
         });
     });
 
-      
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");  // Simbolo hamburger
+        const nav = document.querySelector("nav");             
 
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");  // Simbolo hamburger
-    const nav = document.querySelector("nav");             
+        // Il menu
+        const navLinks = document.querySelectorAll(".nav-links a"); // Link nel menu
 
-     // Il menu
-    const navLinks = document.querySelectorAll(".nav-links a"); // Link nel menu
+        // Toggle menu navigation (apri/chiudi il menu con l'hamburger)
+        if (menuToggle && nav) {
+            menuToggle.addEventListener("click", function () {
+                nav.classList.toggle("active");
+            });
+        }
 
-    // Toggle menu navigation (apri/chiudi il menu con l'hamburger)
-    if (menuToggle && nav) {
-        menuToggle.addEventListener("click", function () {
-            nav.classList.toggle("active");
-        });
-    }
-
-    // Chiudi il menu quando si clicca su un link
-    navLinks.forEach(link => {
-        link.addEventListener("click", function () {
-            if (nav.classList.contains("active")) {
-                nav.classList.remove("active");  // Chiude il menu
-            }
-        });
-    });
-});
-
-                // Effetto Parallax
-                if (parallaxImage) {
-                    let ticking = false;
-
-                    function updateParallax() {
-                        let scrollPosition = window.scrollY;
-                        parallaxImage.style.transform = `translateY(${scrollPosition * 0.5}px)`;
-                        ticking = false;
-                    }
-
-                    function onScroll() {
-                        if (!ticking) {
-                            requestAnimationFrame(updateParallax);
-                            ticking = true;
-                        }
-                    }
-
-                    window.addEventListener("scroll", onScroll);
+        // Chiudi il menu quando si clicca su un link
+        navLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                if (nav.classList.contains("active")) {
+                    nav.classList.remove("active");  // Chiude il menu
                 }
             });
+        });
 
+        // Effetto Parallax
+        const parallaxImage = document.querySelector('.parallax'); // Aggiungi il selettore per l'immagine parallax
+        if (parallaxImage) {
+            let ticking = false;
 
-    </script>
+            function updateParallax() {
+                let scrollPosition = window.scrollY;
+                parallaxImage.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+                ticking = false;
+            }
+
+            function onScroll() {
+                if (!ticking) {
+                    requestAnimationFrame(updateParallax);
+                    ticking = true;
+                }
+            }
+
+            window.addEventListener("scroll", onScroll);
+        }
+    });
+</script>
 
 </body>
 
