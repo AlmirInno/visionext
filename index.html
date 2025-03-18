@@ -285,17 +285,27 @@
         });
     });
 
-            document.addEventListener("DOMContentLoaded", function () {
-                const menuToggle = document.querySelector(".menu-toggle");
-                const nav = document.querySelector("nav");
-                const parallaxImage = document.getElementById("parallax-image");
+      
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+    const parallaxImage = document.getElementById("parallax-image");
 
-                // Toggle menu navigation
-                if (menuToggle && nav) {
-                    menuToggle.addEventListener("click", function () {
-                        nav.classList.toggle("active");
-                    });
-                }
+    // Toggle menu navigation
+    if (menuToggle && nav) {
+        menuToggle.addEventListener("click", function () {
+            nav.classList.toggle("active");
+        });
+    }
+
+    // Chiudi il menu quando si clicca su un link di navigazione
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", function () {
+            nav.classList.remove("active"); // Chiude il menu
+        });
+    });
+});
+
 
                 // Effetto Parallax
                 if (parallaxImage) {
