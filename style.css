@@ -624,6 +624,13 @@ h2 {
     width: 100%;
 }
 
+#contact input:focus,
+#contact textarea:focus {
+    border: 2px solid #9448a6; /* Colore del bordo quando l'elemento è attivo */
+    outline: none; /* Rimuove l'outline di default quando l'input è attivo */
+}
+
+
 #contact button {
     padding: 14px;
     background-color: #000;
