@@ -241,12 +241,14 @@
 
             <h2>Contattaci</h2>
             <p>Hai bisogno di un’identità digitale per la tua azienda? Richiedi un preventivo.</p>
-            <form>
-                <input type="text" name="name" placeholder="Il tuo nome" required>
-                <input type="email" name="email" placeholder="La tua email" required>
-                <textarea name="message" placeholder="Descrivi la tua idea" required></textarea>
-                <button type="submit">Invia</button>
-            </form>
+         <form id="contact">
+    <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+    <input type="email" id="email" name="email" placeholder="La tua email" required>
+    <textarea id="message" name="message" placeholder="Descrivi la tua idea" required></textarea>
+    <button type="submit">Invia</button>
+</form>
+
+<p id="responseMessage"></p> <!-- Per visualizzare i messaggi di conferma o errore -->
 
             <div class="rett-contacts"></div>
         </section>
