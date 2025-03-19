@@ -138,13 +138,14 @@
                 </div>
                 <div class="service-card">
 
-<i class="material-icons">web</i>                   <h3>Web Design</h3>
+                    <i class="icons">web</i>
+                    <h3>Web Design</h3>
                     <p>Il sito web è il fulcro della tua identità digitale. Realizziamo siti web moderni, esteticamente
                         curati e completamente ottimizzati per ogni dispositivo. Non solo belli da vedere, ma anche
                         funzionali e veloci, progettati per offrire un’esperienza utente impeccabile.</p>
                 </div>
                 <div class="service-card">
-<i class="material-icons">create</i>
+                    <i class="icons">create</i>
                     <h3>UX/UI Design</h3>
                     <p>Un design bello non basta. Un sito o un’app devono essere facili da navigare, intuitivi e
                         coinvolgenti. Attraverso lo studio della User Experience (UX) e della User Interface (UI),
@@ -154,14 +155,14 @@
                         utenti.</p>
                 </div>
                 <div class="service-card">
-<i class="material-icons">color_lens</i>
+                    <i class="icons">color_lens</i>
                     <h3>Content Creation</h3>
                     <p>Un sito web senza contenuti è come un negozio senza prodotti. Creiamo contenuti visivi e
                         multimediali
                         di qualità per rafforzare la tua comunicazione e rendere il tuo brand più accattivante.</p>
                 </div>
                 <div class="service-card">
-<i class="material-icons">search</i>
+                    <i class="icons">search</i>
                     <h3>SEO e Ottimizzazione</h3>
                     <p>Un sito web, per essere davvero efficace, deve essere trovato dai clienti. Lavoriamo sulla SEO
                         (Search Engine Optimization) per migliorare il posizionamento sui motori di ricerca e aumentare
@@ -245,12 +246,12 @@
 
             <h2>Contattaci</h2>
             <p>Hai bisogno di un’identità digitale per la tua azienda? Richiedi un preventivo.</p>
-         <form id="contactForm">
-    <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
-    <input type="email" id="email" name="email" placeholder="La tua email" required>
-    <textarea id="message" name="message" placeholder="Descrivi la tua idea" required></textarea>
-    <button type="submit">Invia</button>
-</form>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+                <input type="email" id="email" name="email" placeholder="La tua email" required>
+                <textarea id="message" name="message" placeholder="Descrivi la tua idea" required></textarea>
+                <button type="submit">Invia</button>
+            </form>
 
             <div class="rett-contacts"></div>
         </section>
@@ -262,77 +263,77 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
- <script>
-    (function() {
-        emailjs.init("ik19gHtHKsrLrDk33"); // Sostituisci con la tua Public Key
-    })();
+    <script>
+        (function () {
+            emailjs.init("ik19gHtHKsrLrDk33"); // Sostituisci con la tua Public Key
+        })();
 
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault();
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault();
 
-        // Ottieni i dati dal form
-        let formData = {
-            name: document.getElementById("name").value,
-            email: document.getElementById("email").value,
-            message: document.getElementById("message").value
-        };
+            // Ottieni i dati dal form
+            let formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+            };
 
-        // Invia i dati con EmailJS
-        emailjs.send("almir96", "template_visionext", formData)
-        .then(function(response) {
-            alert("Il messaggio è stato condiviso!"); // Mostra l'alert di conferma
-            document.getElementById("contactForm").reset(); // Pulisce il form
-        }, function(error) {
-            alert("Errore nell'invio del messaggio. Riprova.");
-            console.error("Errore EmailJS:", error);
-        });
-    });
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.querySelector(".menu-toggle");  // Simbolo hamburger
-        const nav = document.querySelector("nav");             
-
-        // Il menu
-        const navLinks = document.querySelectorAll(".nav-links a"); // Link nel menu
-
-        // Toggle menu navigation (apri/chiudi il menu con l'hamburger)
-        if (menuToggle && nav) {
-            menuToggle.addEventListener("click", function () {
-                nav.classList.toggle("active");
-            });
-        }
-
-        // Chiudi il menu quando si clicca su un link
-        navLinks.forEach(link => {
-            link.addEventListener("click", function () {
-                if (nav.classList.contains("active")) {
-                    nav.classList.remove("active");  // Chiude il menu
-                }
-            });
+            // Invia i dati con EmailJS
+            emailjs.send("almir96", "template_visionext", formData)
+                .then(function (response) {
+                    alert("Il messaggio è stato condiviso!"); // Mostra l'alert di conferma
+                    document.getElementById("contactForm").reset(); // Pulisce il form
+                }, function (error) {
+                    alert("Errore nell'invio del messaggio. Riprova.");
+                    console.error("Errore EmailJS:", error);
+                });
         });
 
-        // Effetto Parallax
-        const parallaxImage = document.querySelector('.parallax'); // Aggiungi il selettore per l'immagine parallax
-        if (parallaxImage) {
-            let ticking = false;
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");  // Simbolo hamburger
+            const nav = document.querySelector("nav");
 
-            function updateParallax() {
-                let scrollPosition = window.scrollY;
-                parallaxImage.style.transform = `translateY(${scrollPosition * 0.5}px)`;
-                ticking = false;
+            // Il menu
+            const navLinks = document.querySelectorAll(".nav-links a"); // Link nel menu
+
+            // Toggle menu navigation (apri/chiudi il menu con l'hamburger)
+            if (menuToggle && nav) {
+                menuToggle.addEventListener("click", function () {
+                    nav.classList.toggle("active");
+                });
             }
 
-            function onScroll() {
-                if (!ticking) {
-                    requestAnimationFrame(updateParallax);
-                    ticking = true;
+            // Chiudi il menu quando si clicca su un link
+            navLinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    if (nav.classList.contains("active")) {
+                        nav.classList.remove("active");  // Chiude il menu
+                    }
+                });
+            });
+
+            // Effetto Parallax
+            const parallaxImage = document.querySelector('.parallax'); // Aggiungi il selettore per l'immagine parallax
+            if (parallaxImage) {
+                let ticking = false;
+
+                function updateParallax() {
+                    let scrollPosition = window.scrollY;
+                    parallaxImage.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+                    ticking = false;
                 }
-            }
 
-            window.addEventListener("scroll", onScroll);
-        }
-    });
-</script>
+                function onScroll() {
+                    if (!ticking) {
+                        requestAnimationFrame(updateParallax);
+                        ticking = true;
+                    }
+                }
+
+                window.addEventListener("scroll", onScroll);
+            }
+        });
+    </script>
 
 </body>
 
