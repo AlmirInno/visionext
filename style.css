@@ -1304,8 +1304,9 @@ footer {
         top: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
-        left: 72%;
+        left: 77%;
     }
+
 
     .header-rett {
         position: absolute;
@@ -1333,7 +1334,7 @@ footer {
     }
 
     header h1 {
-        font-size: 10vw;
+        font-size: 8vw;
         width: 100%;
     }
 
@@ -1342,7 +1343,7 @@ footer {
         /* Padding adattabile in base all'altezza della viewport */
         margin: 0;
         /* Nessun cambiamento necessario */
-        font-size: 10vw;
+        font-size: 8vw;
         /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
         color: #ff00ff;
         font-family: 'Orbitron', sans-serif;
@@ -1350,10 +1351,11 @@ footer {
 
     header p {
         text-align: start;
-        margin: -7vh 0vw 0 0vw;
-        font-size: 3.3vw;
+        margin: -4vh 0vw 0 0vw;
+        font-size: 2.6vw;
         width: 100%;
     }
+
 
 
     main {
@@ -1428,7 +1430,7 @@ footer {
         z-index: 3;
         clip-path: polygon(100% 0%, -2% 25.5%, 0% 90%, 100% 90%);
     }
-    
+
     .foto {
         width: 123%;
         position: relative;
