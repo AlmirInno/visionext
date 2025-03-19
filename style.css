@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 
+
 html {
     overflow-x: hidden;
     width: 100%;
@@ -1219,7 +1220,7 @@ footer {
     }
 }
 
-@media (max-width: 800px) and (orientation:landscape) {
+@media (max-width: 720px) and (orientation:landscape) {
 
     html,
     body {
