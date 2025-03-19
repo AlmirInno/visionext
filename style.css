@@ -627,8 +627,10 @@ h2 {
 
 #contact input:focus,
 #contact textarea:focus {
-    border: 2px solid #9448a6; /* Colore del bordo quando l'elemento è attivo */
-    outline: none; /* Rimuove l'outline di default quando l'input è attivo */
+    border: 2px solid #9448a6;
+    /* Colore del bordo quando l'elemento è attivo */
+    outline: none;
+    /* Rimuove l'outline di default quando l'input è attivo */
 }
 
 
@@ -818,7 +820,6 @@ footer {
     header h1 {
         font-size: 15vw;
         width: 100%;
-
     }
 
     header p {
@@ -858,7 +859,6 @@ footer {
         width: 100%;
         padding: 0;
         margin: 0 auto;
-
     }
 
     #about {
@@ -1221,7 +1221,7 @@ footer {
     }
 }
 
-@media (min-width:650px ) and (max-width: 800px) and (orientation:landscape) {
+@media (min-width:650px) and (max-width: 800px) and (orientation:landscape) {
 
     html,
     body {
@@ -1295,6 +1295,160 @@ footer {
         /* Larghezza già adattabile */
     }
 
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .header-content {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        left: 72%;
+    }
+
+    .header-rett {
+        position: absolute;
+        width: 119vw;
+        height: 85vh;
+        rotate: -25deg;
+        overflow: hidden;
+        top: 6vh;
+    }
+
+    .rett {
+        top: -7vh;
+        width: 220vw;
+        height: 6vh;
+    }
+
+    .rett-grande {
+        background-color: #000;
+        z-index: 2;
+        position: absolute;
+        top: 100vh;
+        width: 118%;
+        height: 27vh;
+        rotate: -25deg;
+    }
+
+    header h1 {
+        font-size: 10vw;
+        width: 100%;
+    }
+
+    .Tx {
+        padding-top: 0vh;
+        /* Padding adattabile in base all'altezza della viewport */
+        margin: 0;
+        /* Nessun cambiamento necessario */
+        font-size: 10vw;
+        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
+        color: #ff00ff;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    header p {
+        text-align: start;
+        margin: -7vh 0vw 0 0vw;
+        font-size: 3.3vw;
+        width: 100%;
+    }
 
 
+    main {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+
+    }
+
+    #about {
+        position: relative;
+        padding: 6vh 0 0 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    #approccio {
+        margin: 0vh 0vh 0vh 0vh;
+        padding: 0vh 0vh 0vh 0vh;
+        width: 100%;
+        top: 100vh;
+    }
+
+    #contact {
+        width: 100%;
+        top: 2vh;
+        font-size: 2.8vw;
+        margin: 70.5vh 0vh 0vh 0vh;
+    }
+
+    /* Footer for mobile */
+    footer {
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    #intro-content {
+        margin: 0;
+        width: 100%;
+    }
+
+    #about h2 {
+        position: relative;
+        padding: 2vw;
+        top: -2vh;
+    }
+
+    .pres {
+        width: 100%;
+        position: absolute;
+        top: 36vh;
+    }
+
+    .testo {
+        font-size: 1.6vw;
+        /* Dimensione del font adattabile alla larghezza della viewport */
+        /* Padding orizzontale adattabile alla larghezza della viewport */
+        width: 95%;
+        /* Larghezza adattabile in base alla larghezza della viewport */
+    }
+
+
+    .foto::before {
+        content: "";
+        position: absolute;
+        top: -20vh;
+        left: 0;
+        width: 100%;
+        height: 122vh;
+        background-color: #9548a6c0;
+        mix-blend-mode: multiply;
+        z-index: 3;
+        clip-path: polygon(100% 0%, -2% 25.5%, 0% 90%, 100% 90%);
+    }
+    
+    .foto {
+        width: 123%;
+        position: relative;
+        height: 89vh;
+        left: 0;
+        /* padding: 0px 10px; */
+        clip-path: polygon(100% 0%, -2% 27.5%, 0% 101%, 100% 101%);
+        top: 12vh;
+    }
+
+
+    .foto img {
+        width: 100%;
+        /* L'immagine si adatta alla larghezza del contenitore */
+        position: relative;
+        left: 0;
+        /* Posizionamento orizzontale adattabile alla larghezza della viewport */
+        top: -4vh;
+        /* Posizionamento verticale adattabile all'altezza della viewport */
+        clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 0%);
+        /* Corretto la sintassi */
+    }
 }
