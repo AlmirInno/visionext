@@ -1533,4 +1533,51 @@ footer {
     .testi h3 {
         font-size: 3vw;
     }
+
+    #services {
+        /* position: relative; */
+        width: 100%;
+        /* top: 93vh; */
+        padding: 16vh 0vh 0vh 0vh;
+    }
+
+    #services h2 {
+        width: 100%;
+        padding: 0vw 2vw;
+        /* font-size: 7vw; */
+    }
+
+
+    .service-cards {
+        z-index: 3;
+        position: relative;
+        display: flex;
+        gap: 3vh;
+        flex-wrap: wrap;
+        margin: 0vw 2vw;
+        justify-content: center;
+        /* line-height: 0.8rem; */
+    }
+
+    .service-card {
+        background: rgb(255 255 255);
+        flex: 1;
+        width: 100%;
+        text-align: center;
+        border-radius: 2vw;
+        box-shadow: 0 0 15px #9448a6;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 67vh;
+        font-size: 1.6vw;
+        padding: 2vw;
+    }
+
+    .rett-services {
+        height: 40vh;
+        width: 100%;
+        left: 0vh;
+        clip-path: polygon(0% 0%, 0% 100%, 40% 87%);
+        bottom: -28vh;
+    }
+
 }
