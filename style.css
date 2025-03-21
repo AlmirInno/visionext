@@ -369,7 +369,6 @@ h2 {
 }
 
 
-
 .testi,
 .missione {
     font-size: 3vw;
@@ -719,7 +718,7 @@ footer {
         margin-right: 2vw;
     }
 
-    .icone{
+    .icone {
         border: none;
         color: #9448a6;
     }
@@ -1006,6 +1005,20 @@ footer {
         top: 30vh;
         gap: 0;
         padding: 0vw;
+        flex-direction: column;
+    }
+
+
+    .missione p {
+        padding: 0vh 10vw 0vh 10vw;
+    }
+
+    .valori p {
+        padding: 0vh 10vw 0vh 0vw;
+    }
+
+    .valori ul{
+        list-style: none;
     }
 
     .testi .missione,
@@ -1487,6 +1500,19 @@ footer {
         padding: 0vw;
     }
 
+    .missione p {
+        padding: 0vh 0vw 0vh 5vw;
+    }
+
+    .valori p {
+        padding: 0vh 0vw 0vh 0vw;
+    }
+
+    .valori ul{
+        list-style: none;
+    }
+
+
     .testi .missione,
     .testi .valori {
         flex: 1;
@@ -1508,7 +1534,7 @@ footer {
         margin-right: 10px;
     }
 
-    .icone{
+    .icone {
         border: none;
         color: #9448a6;
     }
