@@ -1394,7 +1394,7 @@ footer {
     }
 
     #intro-content {
-        margin: 0;
+        margin: 0vh 0vh 83vh 0vh;
         width: 100%;
     }
 
@@ -1499,24 +1499,23 @@ footer {
         width: 127%;
         position: relative;
         left: -26vw;
-        top: -24vh;
-        clip-path: polygon(100% 52%, 0% 52%, 0% 100%, 100% 66%, 100% 0%);
+        top: -20vh;
+        clip-path: polygon(100% 1%, 0% 41%, 0% 100%, 100% 66%, 100% 0%);
     }
 
     .fotoValoriMissione::before {
         content: "";
         position: absolute;
-        top: 22.5vh;
+        top: -19.5vh;
         left: -27vw;
         width: 200%;
-        height: 108vh;
+        height: 158vh;
         background-color: #9548a6c0;
         mix-blend-mode: multiply;
         z-index: 2;
         border-radius: 10px;
-        clip-path: polygon(100% 31%, 0% 31%, 0% 100%, 95% 27%, 100% 100%);
+        clip-path: polygon(100% -21%, 0% 38%, -13% 100%, 128% 27%, 100% 100%);
     }
-
 
 
     .rett-valori-img {
