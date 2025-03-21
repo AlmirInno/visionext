@@ -282,8 +282,10 @@ h2 {
     right: 0px;
 }
 
+
 .fotoValoriMissione {
     width: 100%;
+    z-index: 1;
     height: 850px;
     /* overflow: hidden; */
     position: relative;
@@ -291,11 +293,10 @@ h2 {
     flex: 1;
 }
 
-
 .fotoValoriMissione::before {
     content: "";
     position: absolute;
-    top: -271px;
+    top: -289px;
     left: -366px;
     width: 161%;
     height: 1000px;
@@ -303,13 +304,12 @@ h2 {
     mix-blend-mode: multiply;
     z-index: 2;
     border-radius: 10px;
-    clip-path: polygon(100% 45.5%, 0% 44.5%, 0% 98%, 100% 60%);
+    clip-path: polygon(100% -0.5%, 0% 32.5%, 0% 99.5%, 100% 62%);
 }
 
 
-
 .fotoValoriMissione img {
-    clip-path: polygon(100% 42%, 0% 42%, 0% 100%, 100% 66%, 100% 0%);
+    clip-path: polygon(100% 9%, 0% 39%, 0% 100%, 100% 66%, 100% 0%);
     position: absolute;
     left: -363px;
     top: -391px;
@@ -966,7 +966,7 @@ footer {
     #missione-valori {
         width: 100%;
         top: 30.7vh;
-        margin: 0 auto;
+        margin: 39vh 0vh 0vh 0vh;
         z-index: 3;
     }
 
@@ -1003,6 +1003,7 @@ footer {
         position: relative;
         height: auto;
         top: 3.3vh;
+        z-index: 1;
     }
 
     .fotoValoriMissione img {
@@ -1010,21 +1011,21 @@ footer {
         position: relative;
         left: -26vw;
         top: -24vh;
-        clip-path: polygon(100% 52%, 0% 52%, 0% 100%, 100% 66%, 100% 0%);
+        clip-path: polygon(100% 1%, 0% 41%, 0% 100%, 100% 66%, 100% 0%);
     }
 
     .fotoValoriMissione::before {
         content: "";
         position: absolute;
-        top: -14.5vh;
+        top: -24.5vh;
         left: -27vw;
-        width: 200%;
-        height: 26vh;
+        width: 280%;
+        height: 39vh;
         background-color: #9548a6c0;
         mix-blend-mode: multiply;
         z-index: 2;
         border-radius: 10px;
-        clip-path: polygon(100% 35%, 0% 35%, 0% 100%, 104% 27%, 100% 100%);
+        clip-path: polygon(100% -41%, 0% 39%, 0% 95%, 100% 20%);
     }
 
     .rett-valori-img {
