@@ -1730,7 +1730,7 @@ footer {
         width: 112%;
         position: absolute;
         z-index: 2;
-        top: 104vh;
+       top: 109vh;
         clip-path: polygon(100% 52%, 100% 100%, 50% 100%);
     }
 
