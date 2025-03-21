@@ -1526,7 +1526,7 @@ footer {
         mix-blend-mode: multiply;
         z-index: 2;
         border-radius: 10px;
-        clip-path: polygon(100% -16%, 0% 36%, -31% 100%, 128% 28%, 100% 100%);
+        clip-path: polygon(100% -17%, 6% 36%, -14% 100%, 128% 30%, 100% 100%);
     }
 
 
@@ -1534,7 +1534,7 @@ footer {
         background-color: #9448a6;
         width: 100%;
         height: 51vh;
-        clip-path: polygon(100% 0%, 100% 12%, 65% 36.5%, 100% 100%);
+        clip-path: polygon(100% 0%, 100% 26%, 65% 53%, 100% 100%);
         position: absolute;
         top: 61.5vh;
         z-index: 3;
@@ -1578,7 +1578,7 @@ footer {
         border-radius: 2vw;
         box-shadow: 0 0 15px #00000038;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        height: 67vh;
+        height: 70vh;
         font-size: 1.7vw;
         padding: 2vw;
     }
@@ -1644,9 +1644,8 @@ footer {
         left: -5vw;
         top: -52vh;
         height: 148vh;
-        clip-path: polygon(100% 1%, 0% 31.5%, 0% 88%, 100% 62%);
+        clip-path: polygon(100% 1%, 0% 34.4%, 0% 88%, 100% 62%);
     }
-
     .rett-nero-approccio {
         top: 33vh;
         /* height: 35vw; */
