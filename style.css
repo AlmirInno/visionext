@@ -33,7 +33,7 @@ nav {
     left: 0;
     z-index: 1000;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px  #00000038;
+    box-shadow: 0 0 10px #00000038;
 }
 
 nav .logo {
@@ -717,6 +717,15 @@ footer {
         font-size: 5vw;
         vertical-align: middle;
         margin-right: 2vw;
+    }
+
+    .icone{
+        border: none;
+        color: #9448a6;
+    }
+
+    .service-card:hover .icone {
+        color: #fff;
     }
 
     nav ul li a {
@@ -1499,6 +1508,15 @@ footer {
         margin-right: 10px;
     }
 
+    .icone{
+        border: none;
+        color: #9448a6;
+    }
+
+    .service-card:hover .icone {
+        color: #fff;
+    }
+
     .fotoValoriMissione {
         width: 100%;
         position: relative;
@@ -1526,7 +1544,7 @@ footer {
         mix-blend-mode: multiply;
         z-index: 2;
         border-radius: 10px;
-        clip-path: polygon(100% -17%, 6% 36%, -14% 100%, 128% 30%, 100% 100%);
+        clip-path: polygon(100% -17%, 6% 36%, -16% 100%, 128% 30%, 100% 100%);
     }
 
 
@@ -1536,7 +1554,7 @@ footer {
         height: 51vh;
         clip-path: polygon(100% 0%, 100% 26%, 65% 53%, 100% 100%);
         position: absolute;
-        top: 61.5vh;
+        top: 60.5vh;
         z-index: 3;
         left: 5vw;
     }
@@ -1646,6 +1664,7 @@ footer {
         height: 148vh;
         clip-path: polygon(100% 1%, 0% 34.4%, 0% 88%, 100% 62%);
     }
+
     .rett-nero-approccio {
         top: 33vh;
         /* height: 35vw; */
@@ -1729,7 +1748,7 @@ footer {
         width: 112%;
         position: absolute;
         z-index: 2;
-       top: 111vh;
+        top: 111vh;
         clip-path: polygon(100% 52%, 100% 100%, 50% 100%);
     }
 
