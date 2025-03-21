@@ -33,7 +33,7 @@ nav {
     left: 0;
     z-index: 1000;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px #9448a6;
+    box-shadow: 0 0 10px  #00000038;
 }
 
 nav .logo {
@@ -529,13 +529,17 @@ h2 {
     min-width: 250px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 15px #9448a6;
+    box-shadow: 0 0 15px #0000001f;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
     transform: translateY(-5px);
     background-color: #9448a6;
+    color: #fff;
+}
+
+.service-card:hover .icone {
     color: #fff;
 }
 
@@ -683,6 +687,12 @@ footer {
     font-size: 50px;
     vertical-align: middle;
     margin-right: 10px;
+}
+
+
+.icone {
+    border: none;
+    display: flex;
 }
 
 
@@ -1077,7 +1087,7 @@ footer {
         /* min-width: 720px; */
         text-align: center;
         border-radius: 2vw;
-        box-shadow: 0 0 15px #9448a6;
+        box-shadow: 0 0 15px #00000038;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         height: 20vh;
         font-size: 2.8vw;
@@ -1233,7 +1243,7 @@ footer {
     }
 
     nav ul li a {
-        font-size: 5vw;
+        font-size: 3vw;
     }
 
     nav {
@@ -1245,7 +1255,7 @@ footer {
     }
 
     nav .logo {
-        font-size: 4vw;
+        font-size: 3vw;
         font-weight: bold;
         color: #000;
         display: flex;
@@ -1257,7 +1267,7 @@ footer {
         display: block;
         background: transparent;
         border: none;
-        font-size: 5vw;
+        font-size: 4vw;
         /* Mantiene il font adattabile senza diventare troppo grande */
         color: #9448a6;
         /* Adatta il margine in base alla larghezza dello schermo */
@@ -1266,15 +1276,15 @@ footer {
     nav .nav-links {
         display: none;
         flex-direction: column;
-        gap: 7vh;
+        gap: 6vh;
         position: absolute;
-        top: 5vh;
-        right: 21vw;
+        top: 9vh;
+        right: 10vw;
         background-color: #fff;
-        padding: 6vw;
+        padding: 3vw;
         border-radius: 0.5rem;
         box-shadow: 0px 0.5vh 1vh rgba(0, 0, 0, 0.1);
-        width: 65vw;
+        width: 41vw;
     }
 
 
@@ -1286,7 +1296,7 @@ footer {
     .lx {
         padding-top: 0;
         /* Nessun cambiamento necessario */
-        font-size: 4vw;
+        font-size: 3vw;
         /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
         margin: 0;
         /* Nessun cambiamento necessario */
@@ -1305,9 +1315,8 @@ footer {
         top: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
-        left: 77%;
+        left: 74%;
     }
-
 
     .header-rett {
         position: absolute;
@@ -1315,11 +1324,11 @@ footer {
         height: 85vh;
         rotate: -25deg;
         overflow: hidden;
-        top: 6vh;
+        top: 2vh;
     }
 
     .rett {
-        top: -7vh;
+        top: -12vh;
         width: 220vw;
         height: 6vh;
     }
@@ -1328,10 +1337,20 @@ footer {
         background-color: #000;
         z-index: 2;
         position: absolute;
-        top: 100vh;
+        top: 97vh;
         width: 118%;
-        height: 27vh;
+        height: 33vh;
         rotate: -25deg;
+    }
+
+    .header-rett img {
+        width: 100%;
+        position: relative;
+        top: -133px;
+        left: 0;
+        filter: brightness(0.5);
+        z-index: 1;
+        rotate: 25deg;
     }
 
     header h1 {
@@ -1360,7 +1379,7 @@ footer {
 
 
     main {
-        width: 100%;
+        width: 90%;
         padding: 0;
         margin: 0 auto;
 
@@ -1370,26 +1389,6 @@ footer {
         position: relative;
         padding: 6vh 0 0 0;
         margin: 0;
-        width: 100%;
-    }
-
-    #approccio {
-        margin: 0vh 0vh 0vh 0vh;
-        padding: 0vh 0vh 0vh 0vh;
-        width: 100%;
-        top: 100vh;
-    }
-
-    #contact {
-        width: 100%;
-        top: 2vh;
-        font-size: 2.8vw;
-        margin: 70.5vh 0vh 0vh 0vh;
-    }
-
-    /* Footer for mobile */
-    footer {
-        font-size: 3vw;
         width: 100%;
     }
 
@@ -1479,7 +1478,8 @@ footer {
         padding: 0vw;
     }
 
-    .testi .missione, .testi .valori {
+    .testi .missione,
+    .testi .valori {
         flex: 1;
         color: #000;
         padding: 0 2vw;
@@ -1510,7 +1510,7 @@ footer {
     .fotoValoriMissione img {
         width: 127%;
         position: relative;
-        left: -26vw;
+        left: -18vw;
         top: -20vh;
         clip-path: polygon(100% 1%, 0% 41%, 0% 100%, 100% 66%, 100% 0%);
     }
@@ -1526,7 +1526,7 @@ footer {
         mix-blend-mode: multiply;
         z-index: 2;
         border-radius: 10px;
-        clip-path: polygon(100% -21%, 0% 38%, -13% 100%, 128% 27%, 100% 100%);
+        clip-path: polygon(100% -16%, 0% 36%, -31% 100%, 128% 28%, 100% 100%);
     }
 
 
@@ -1534,11 +1534,11 @@ footer {
         background-color: #9448a6;
         width: 100%;
         height: 51vh;
-        clip-path: polygon(100% 0%, 100% 12%, 69% 36.5%, 100% 100%);
+        clip-path: polygon(100% 0%, 100% 12%, 65% 36.5%, 100% 100%);
         position: absolute;
-        top: 71.5vh;
+        top: 61.5vh;
         z-index: 3;
-        left: 0vw;
+        left: 5vw;
     }
 
 
@@ -1550,15 +1550,14 @@ footer {
         /* position: relative; */
         width: 100%;
         /* top: 93vh; */
-        padding: 16vh 0vh 0vh 0vh;
+        padding: 0vh 0vh 0vh 0vh;
     }
 
     #services h2 {
         width: 100%;
-        padding: 0vw 2vw;
+        padding: 8vw 2vw 0vh 2vw;
         /* font-size: 7vw; */
     }
-
 
     .service-cards {
         z-index: 3;
@@ -1577,7 +1576,7 @@ footer {
         width: 100%;
         text-align: center;
         border-radius: 2vw;
-        box-shadow: 0 0 15px #9448a6;
+        box-shadow: 0 0 15px #00000038;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         height: 67vh;
         font-size: 1.7vw;
@@ -1585,11 +1584,162 @@ footer {
     }
 
     .rett-services {
-        height: 40vh;
+        height: 102vh;
         width: 100%;
-        left: 0vh;
-        clip-path: polygon(0% 0%, 0% 100%, 40% 87%);
-        bottom: -28vh;
+        left: -11vh;
+        clip-path: polygon(0% 0%, 0% 100%, 50% 81%);
+        bottom: -71vh;
     }
+
+    #approccio {
+        width: 100%;
+        padding: 0;
+        margin: 18vh 0vh 0vh 0vh;
+    }
+
+    #approccio h2 {
+        top: 17vh;
+        color: #fff;
+        width: 100%;
+        padding: 0vw 2vw;
+        /* margin: 0px; */
+        /* font-size: 7vw; */
+    }
+
+    .aproccio-img {
+        overflow: visible;
+        width: 106%;
+        position: relative;
+        top: 63vh;
+    }
+
+    .aproccio-img img {
+        width: 117%;
+        left: -10vw;
+        top: -51vh;
+        clip-path: polygon(100% -2%, -10% 41%, 0% 100%, 100% 66%, 100% 0%);
+    }
+
+    .aproccio-content {
+        width: 100%;
+        align-items: center;
+        left: 0;
+        top: 89vh;
+    }
+
+    .aproccio-text {
+        height: 30vh;
+        width: 30vh;
+        margin: 0vh 0vw;
+        border: 0.5vw solid white;
+        padding: 2.5vw;
+    }
+
+    .aproccio-text h3 {
+        font-size: 1.7vw;
+    }
+
+    .aproccio-img::before {
+        width: 105%;
+        left: -5vw;
+        top: -52vh;
+        height: 148vh;
+        clip-path: polygon(100% 1%, 0% 31.5%, 0% 88%, 100% 62%);
+    }
+
+    .rett-nero-approccio {
+        top: 33vh;
+        /* height: 35vw; */
+        /* width: 182%; */
+        /* left: -40vw; */
+    }
+
+    .triangolo-viola-approccio {
+        top: 76vh;
+        /* left: 0; */
+        width: 103%;
+        clip-path: polygon(100% 39%, 100% 66%, 54% 39%);
+    }
+
+
+    #contact {
+        width: 100%;
+        top: 2vh;
+        font-size: 2.8vw;
+        margin: -76.5vh 0vh 0vh 0vh;
+    }
+
+    #contact h2 {
+        margin: 0px;
+        text-align: left;
+        /* font-size: 43px; */
+        color: #9448a6;
+        /* margin-bottom: 20px; */
+        font-weight: bold;
+        font-family: "Antonio";
+    }
+
+    #contact p {
+        width: 77%;
+        text-align: left;
+        font-size: 1.7vw;
+    }
+
+    #contact form {
+        width: 70%;
+        font-size: 1.7vw;
+        gap: 2vh;
+    }
+
+    #contact input {
+        padding: 2vw;
+        font-size: 1.7vw;
+        background: #fff;
+        border-radius: 0.5vw;
+        width: 103%;
+        height: 1.5vh;
+        border: 0.2vh solid black;
+    }
+
+    #contact textarea {
+        padding: 2vw;
+        font-size: 1.7vw;
+        background: #fff;
+        border-radius: 0.5vw;
+        width: 103%;
+        height: 4vh;
+        border: 0.2vh solid black;
+    }
+
+    #contact button {
+        padding: 2vw;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 0.5vw;
+        font-size: 2vw;
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        width: 110%;
+    }
+
+    .rett-contacts {
+        background-color: #9448a6;
+        height: 54vh;
+        width: 112%;
+        position: absolute;
+        z-index: 2;
+        top: 104vh;
+        clip-path: polygon(100% 52%, 100% 100%, 50% 100%);
+    }
+
+
+    /* Footer for mobile */
+    footer {
+        font-size: 1.7vw;
+        width: 100%;
+    }
+
 
 }
