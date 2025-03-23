@@ -293,7 +293,7 @@ h2 {
     flex: 1;
 }
 
-.fotoValoriMissione::before {
+/* .fotoValoriMissione::before {
     content: "";
     position: absolute;
     top: -289px;
@@ -305,7 +305,7 @@ h2 {
     z-index: 2;
     border-radius: 10px;
     clip-path: polygon(100% -0.5%, 0% 32.5%, 0% 99.5%, 100% 62%);
-}
+} */
 
 
 .fotoValoriMissione img {
@@ -314,7 +314,6 @@ h2 {
     left: -363px;
     top: -391px;
     width: 1920px;
-    filter: grayscale(100%);
 }
 
 .rett-valori-img {
@@ -1046,10 +1045,9 @@ footer {
         left: -26vw;
         top: -24vh;
         clip-path: polygon(100% 1%, 0% 41%, 0% 100%, 100% 66%, 100% 0%);
-        filter: grayscale(100%);
     }
 
-    .fotoValoriMissione::before {
+    /* .fotoValoriMissione::before {
         content: "";
         position: absolute;
         top: -24.5vh;
@@ -1061,7 +1059,7 @@ footer {
         z-index: 2;
         border-radius: 10px;
         clip-path: polygon(100% -41%, 0% 39%, 0% 95%, 100% 20%);
-    }
+    } */
 
     .rett-valori-img {
         background-color: #9448a6;
@@ -1562,10 +1560,9 @@ footer {
         left: -18vw;
         top: -20vh;
         clip-path: polygon(100% 1%, 0% 41%, 0% 100%, 100% 66%, 100% 0%);
-        filter: grayscale(100%);
     }
 
-    .fotoValoriMissione::before {
+    /* .fotoValoriMissione::before {
         content: "";
         position: absolute;
         top: -19.5vh;
@@ -1577,7 +1574,7 @@ footer {
         z-index: 2;
         border-radius: 10px;
         clip-path: polygon(100% -17%, 6% 36%, -16% 100%, 128% 30%, 100% 100%);
-    }
+    } */
 
 
     .rett-valori-img {
