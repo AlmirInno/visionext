@@ -1198,7 +1198,7 @@ footer {
         width: 100%;
         position: absolute;
         z-index: 2;
-        top: 68vh;
+        top: 70vh;
         clip-path: polygon(100% 52%, 100% 100%, 50% 100%);
     }
 
