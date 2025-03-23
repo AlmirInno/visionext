@@ -974,7 +974,7 @@ footer {
 
 
     .testo {
-        font-size: 3.5vw;
+        font-size: 3.2vw;
         /* Dimensione del font adattabile alla larghezza della viewport */
         /* Padding orizzontale adattabile alla larghezza della viewport */
         width: 95%;
@@ -1028,7 +1028,7 @@ footer {
         color: #000;
         padding: 0 2vw;
         top: 38vh;
-        font-size: 3vw;
+        font-size: 3.2vw;
     }
 
     .fotoValoriMissione {
