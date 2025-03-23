@@ -627,6 +627,7 @@ h2 {
     background: #fff;
     border-radius: 8px;
     width: 100%;
+text-transform: uppercase;
 }
 
 #contact input:focus,
