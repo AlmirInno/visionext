@@ -384,7 +384,7 @@ h2 {
     gap: 20px;
     position: absolute;
     z-index: 1;
-    top: 56vh;
+    top: 58vh;
     padding: 0;
 }
 
@@ -1622,12 +1622,11 @@ footer {
         clip-path: polygon(100% -17%, 6% 36%, -16% 100%, 128% 30%, 100% 100%);
     } */
 
-
     .rett-valori-img {
         background-color: #9448a6;
         width: 100%;
-        height: 51vh;
-        clip-path: polygon(100% 0%, 100% 26%, 65% 53%, 100% 100%);
+        height: 52vh;
+        clip-path: polygon(100% 0%, 100% 25%, 65% 51%, 100% 100%);
         position: absolute;
         top: 60.5vh;
         z-index: 3;
