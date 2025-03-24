@@ -1354,7 +1354,7 @@ footer a:hover {
 
 }
 
-@media (min-width:650px) and (max-width: 800px) and (orientation:landscape) {
+@media screen and (max-width: 800px) and (orientation:landscape) {
 
     html,
     body {
@@ -1936,3 +1936,5 @@ footer a:hover {
     }
 
 }
+
+
