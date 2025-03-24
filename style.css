@@ -801,17 +801,16 @@ footer {
     nav .nav-links {
         display: none;
         flex-direction: column;
-        gap: 7vh;
+        gap: 1vh;
         position: absolute;
         top: 5vh;
         right: 21vw;
         background-color: #fff;
         padding: 6vw;
-        border-radius: 0.5rem;
+        border-radius: -0.5rem;
         box-shadow: 0px 0.5vh 1vh rgba(0, 0, 0, 0.1);
-        width: 65vw;
+        width: 88vw;
     }
-
 
     /* Make nav links visible when hamburger is clicked */
     nav.active .nav-links {

@@ -308,7 +308,20 @@
             if (menuToggle && nav) {
                 menuToggle.addEventListener("click", function () {
                     nav.classList.toggle("active");
+
+                    // Cambia l'icona dell'hamburger
+                    if (nav.classList.contains("active")) {
+                        menuToggle.setAttribute("aria-label", "Close Menu");
+                        menuToggle.innerHTML = "&#10006;"; // X
+                    } else {
+                        menuToggle.setAttribute("aria-label", "Open Menu");
+                        menuToggle.innerHTML = "&#9776;"; // Hamburger
+                    }
+
+                    //apparizione fluida del menu
+                    nav.style.transition = "transform 0.3s ease-in-out";
                 });
+
             }
 
             // Chiudi il menu quando si clicca su un link
@@ -316,6 +329,8 @@
                 link.addEventListener("click", function () {
                     if (nav.classList.contains("active")) {
                         nav.classList.remove("active");  // Chiude il menu
+                        menuToggle.setAttribute("aria-label", "Open Menu");
+                        menuToggle.innerHTML = "&#9776;"; // Hamburger
                     }
                 });
             });
