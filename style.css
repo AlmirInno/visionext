@@ -1118,6 +1118,10 @@ footer {
         padding: 2vw;
     }
 
+.service-card h3{
+font-size: 5vw;
+}
+
     .rett-services {
         height: 40vh;
         width: 100%;
