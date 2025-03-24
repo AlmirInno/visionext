@@ -314,6 +314,9 @@
                     if (nav.classList.contains("active")) {
                         menuToggle.setAttribute("aria-label", "Close Menu");
                         menuToggle.innerHTML = "&#10006;"; // X
+                        //Icona X style light
+                        menuToggle.style.fontWeight = "lighter";
+
                     } else {
                         menuToggle.setAttribute("aria-label", "Open Menu");
                         menuToggle.innerHTML = "&#9776;"; // Hamburger
