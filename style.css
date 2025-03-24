@@ -1113,9 +1113,11 @@ footer {
         border-radius: 2vw;
         box-shadow: 0 0 15px #00000038;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        height: 25vh;
+        height: 30vh;
         font-size: 3.2vw;
         padding: 2vw;
+vertical-align: middle;
+display: table-cell;
     }
 
 .service-card h3{
