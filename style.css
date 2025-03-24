@@ -717,13 +717,13 @@ footer {
     margin: 0 auto;
 }
 
-footer a{
+footer a {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
 }
 
-footer a:hover{
+footer a:hover {
     color: #ff00ff;
 }
 
@@ -781,6 +781,20 @@ footer a:hover{
         font-size: 5vw;
     }
 
+    nav ul li {
+        border-top: 0.3px solid grey;
+        width: 100%;
+        padding: 1vh 6vw;
+    }
+
+    nav ul li:hover {
+        background-color: #9448a6;
+    }
+
+    nav ul li:hover a {
+        color: #fff;
+    }
+
     nav {
         width: 100%;
         display: flex;
@@ -811,15 +825,15 @@ footer a:hover{
     nav .nav-links {
         display: none;
         flex-direction: column;
-        gap: 1vh;
+        gap: 0vh;
         position: absolute;
-        top: 5vh;
+        top: 6vh;
         right: 21vw;
         background-color: #fff;
-        padding: 6vw;
         border-radius: -0.5rem;
         box-shadow: 0px 0.5vh 1vh rgba(0, 0, 0, 0.1);
-        width: 88vw;
+        width: 100vw;
+        padding: 0;
     }
 
     /* Make nav links visible when hamburger is clicked */
@@ -1030,7 +1044,7 @@ footer a:hover{
     }
 
 
-    .testo p{
+    .testo p {
         padding: 0vh 2vw;
     }
 

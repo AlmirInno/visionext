@@ -303,7 +303,9 @@
             const nav = document.querySelector("nav");
 
             // Il menu
-            const navLinks = document.querySelectorAll(".nav-links a"); // Link nel menu
+            const navLinks = document.querySelectorAll(".nav-links a"); // Tutti i link del menu
+            const navItems = document.querySelectorAll(".nav-links li"); // Tutti gli elementi del menu
+
 
             // Toggle menu navigation (apri/chiudi il menu con l'hamburger)
             if (menuToggle && nav) {
@@ -338,6 +340,16 @@
                 });
             });
 
+            
+ // Chiudi il menu e naviga quando si clicca su un elemento <li>
+    navItems.forEach(item => {
+        item.addEventListener("click", function () {
+            const link = item.querySelector("a");
+            if (link) {
+                link.click(); // Simula il click sul link
+            }
+        });
+    });
             // Effetto Parallax
 
             const parallaxImage = document.querySelector('.parallax'); // Aggiungi il selettore per l'immagine parallax
