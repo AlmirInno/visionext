@@ -353,7 +353,7 @@ h2 {
 }
 
 .testi h3 {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     color: #333;
     margin-bottom: 2vh;
 }
@@ -546,7 +546,6 @@ h2 {
     margin: 0;
     font-size: 1.5vw;
 }
-
 
 .service-card {
     display: grid;
