@@ -1016,10 +1016,14 @@ footer {
         font-size: 3.2vw;
         /* Dimensione del font adattabile alla larghezza della viewport */
         /* Padding orizzontale adattabile alla larghezza della viewport */
-        width: 95%;
+        width: 100%;
         /* Larghezza adattabile in base alla larghezza della viewport */
     }
 
+
+    .testo p{
+        padding: 0vh 2vw;
+    }
 
     #missione-valori {
         width: 100%;
