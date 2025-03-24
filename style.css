@@ -1076,16 +1076,17 @@ footer a:hover {
     }
 
 
-    .missione p {
-        padding: 0vh 10vw 0vh 10vw;
+    .testi .missione p {
+        padding: 0vh 10vw 0vh 9vw;
     }
 
-    .valori p {
+    .testi .valori p {
         padding: 0vh 10vw 0vh 0vw;
     }
 
-    .valori ul {
+    .testi .valori ul {
         list-style: none;
+        padding: 0vh 0vw 0vh 9vw;
     }
 
     .testi .missione,
