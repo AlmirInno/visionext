@@ -1670,7 +1670,7 @@
         position: relative;
         left: -18vw;
         top: -20vh;
-        clip-path: polygon(100% 1%, 0% 41%, 0% 100%, 100% 66%, 100% 0%);
+        clip-path: polygon(100% 1%, 0% 41%, 0% 100%, 100% 100%, 100% 0%);
     }
 
     /* .fotoValoriMissione::before {
