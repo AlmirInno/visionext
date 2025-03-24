@@ -309,13 +309,13 @@
 } */
 
 
-    .fotoValoriMissione img {
-        clip-path: polygon(100% 9%, 0% 39%, 0% 100%, 100% 66%, 100% 0%);
-        position: absolute;
-        left: -363px;
-        top: -391px;
-        width: 1920px;
-    }
+.fotoValoriMissione img {
+    clip-path: polygon(100% 9%, 0% 39%, 0% 100%, 100% 89%, 100% 0%);
+    position: absolute;
+    left: -363px;
+    top: -490px;
+    width: 160%;
+}
 
     .rett-valori-img {
         background-color: #9448a6;
@@ -1052,7 +1052,7 @@
     #missione-valori {
         width: 100%;
         top: 30.7vh;
-        margin: 39vh 0vh 0vh 0vh;
+        margin: 43vh 0vh 0vh 0vh;
         z-index: 3;
     }
 
@@ -1112,7 +1112,7 @@
         position: relative;
         left: -26vw;
         top: -24vh;
-        clip-path: polygon(100% 1%, 0% 41%, 0% 100%, 100% 66%, 100% 0%);
+        clip-path: polygon(100% 1%, 0% 41%, 0% 100%, 100% 100%, 100% 0%);
     }
 
     /* .fotoValoriMissione::before {
