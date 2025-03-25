@@ -356,6 +356,8 @@ h2 {
     color: #000;
 }
 
+
+
 .testi h3 {
     font-size: 1.5vw;
     color: #333;
@@ -389,7 +391,7 @@ h2 {
     gap: 20px;
     position: absolute;
     z-index: 1;
-    top: 58vh;
+    top: 61vh;
     padding: 0;
 }
 
@@ -2284,7 +2286,7 @@ footer a:hover {
     }
 
     #contact p {
-        width: 44%;
+        width: 58%;
     }
 
     #contact form {
