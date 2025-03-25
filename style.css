@@ -1938,6 +1938,7 @@ footer a:hover {
 
 }
 
+/*Mac 15 inch*/
 @media screen and (min-width: 1440px) and (max-width: 1792px) {
     /* Stili per dispositivi desktop con schermi da 15 a 16 pollici */
 
