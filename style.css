@@ -2163,7 +2163,7 @@ footer a:hover {
     }
 
     #services {
-        padding: 6.875rem 0; /* 110px 0 in rem */
+        padding: 0vh 0vw 10.875vh 0vw;
     }
 
     #services h2 {
