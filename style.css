@@ -1254,7 +1254,7 @@ footer a:hover {
     .aproccio-content {
         width: 100%;
         align-items: center;
-        left: 0;
+        left: 6px;
         top: 60vh;
     }
 
