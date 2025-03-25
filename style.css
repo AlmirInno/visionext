@@ -2340,6 +2340,10 @@ footer a:hover {
         /* 10px in rem */
     }
 
+    .icone {
+        border: none;
+    }
+
     footer a {
         font-size: 1rem;
         /* 16px in rem */
