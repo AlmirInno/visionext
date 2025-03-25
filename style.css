@@ -674,7 +674,6 @@ h2 {
     background: #fff;
     border-radius: 8px;
     width: 100%;
-    text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -794,7 +793,7 @@ footer a:hover {
     }
 
     nav ul li {
-        border-top: 0.3px solid grey;
+        border-top: 0.3px solid rgba(0, 0, 0, 0.123);
         width: 100%;
         padding: 1vh 6vw;
     }
