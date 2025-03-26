@@ -401,14 +401,16 @@
         window.addEventListener("load", function () {
             window.cookieconsent.initialise({
                 "palette": {
-                    "popup": { "background": "#000" },
-                    "button": { "background": "#9448a6" }
+                    "popup": { "background": "#000", "text": "#fff" },
+                    "button": { "background": "#9448a6", "text": "#fff" }
                 },
                 "theme": "classic",
                 "position": "bottom",
+                "type": "opt-in",  // ATTIVA il rifiuto
                 "content": {
                     "message": "Questo sito utilizza i cookie per migliorare l'esperienza utente.",
                     "dismiss": "Accetta",
+                    "deny": "Rifiuta",  // ATTIVA il pulsante di rifiuto
                     "link": "Leggi di più",
                     "href": "/privacy-policy"
                 }
