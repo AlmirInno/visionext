@@ -416,6 +416,14 @@
                 }
             });
         });
+
+
+        /*alert banner*/gtagwindow.onload = function () {
+            if (!localStorage.getItem("siteAlertShown")) {
+                alert("Attenzione: il sito è ancora in fase di ottimizzazione per tutti i dispositivi. Potrebbero esserci problemi con il layout.");
+                localStorage.setItem("siteAlertShown", "true");
+            }
+        };
     </script>
 
 </body>
