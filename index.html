@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>VISIONEXT</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link
@@ -288,6 +291,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
 
     <script>
         (function () {
@@ -390,6 +394,25 @@
                 window.addEventListener("scroll", onScroll);
             }
 
+        });
+
+
+        /*cookie*/
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": { "background": "#000" },
+                    "button": { "background": "#9448a6" }
+                },
+                "theme": "classic",
+                "position": "bottom",
+                "content": {
+                    "message": "Questo sito utilizza i cookie per migliorare l'esperienza utente.",
+                    "dismiss": "Accetta",
+                    "link": "Leggi di più",
+                    "href": "/privacy-policy"
+                }
+            });
         });
     </script>
 
