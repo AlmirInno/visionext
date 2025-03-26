@@ -418,11 +418,10 @@
         });
 
 
-        /*alert banner*/gtagwindow.onload = function () {
-            if (!localStorage.getItem("siteAlertShown")) {
-                alert("Attenzione: il sito è ancora in fase di ottimizzazione per tutti i dispositivi. Potrebbero esserci problemi con il layout.");
-                localStorage.setItem("siteAlertShown", "true");
-            }
+        /*alert banner*/
+
+        window.onload = function () {
+            alert("Attenzione: il sito è ancora in fase di ottimizzazione per tutti i dispositivi. Potrebbero esserci problemi con il layout.");
         };
     </script>
 
