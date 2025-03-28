@@ -2029,13 +2029,13 @@ footer a:hover {
     }
 
 
-.aproccio-img img {
-    clip-path: polygon(100% 0%, 0% 31%, 0% 100%, 100% 66%, 100% 0%);
-    position: absolute;
-    left: -363px;
-    top: -6vh;
-    width: 170%;
-}
+    .aproccio-img img {
+        clip-path: polygon(100% 0%, 0% 31%, 0% 100%, 100% 66%, 100% 0%);
+        position: absolute;
+        left: -363px;
+        top: -6vh;
+        width: 170%;
+    }
 
     #contact p {
         width: 58%;
@@ -2043,11 +2043,8 @@ footer a:hover {
         font-size: 1rem;
     }
 
-    .service-card {
-     height: 1px;
-    }
 
-.service-card-text p{
-    font-size: 1rem;
-}
+    .service-card-text p {
+        font-size: 1rem;
+    }
 }
