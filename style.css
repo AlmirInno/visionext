@@ -4,7 +4,7 @@
 
 html {
     overflow-x: hidden;
-    width: 100vw;
+    width: 100%;
 }
 
 body {
@@ -12,8 +12,9 @@ body {
     margin: 0;
     padding: 0;
     background: #fff;
+    line-height: 1.6;
     overflow-x: hidden;
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -23,18 +24,18 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
-    padding: 0.5vw 2vw;
+    padding: 20px 40px;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
     backdrop-filter: blur(10px);
-    box-shadow: 1vw 0 0.5vw #00000038;
+    box-shadow: 0 0 10px #00000038;
 }
 
 nav .logo {
-    font-size: 2.1vw;
+    font-size: 28px;
     font-weight: bold;
     color: #000;
     display: flex;
@@ -44,15 +45,17 @@ nav .logo {
 
 
 .lx {
+    padding-top: 0px;
     margin: 0px;
-    font-size: 2.1vw;
+    font-size: 28px;
     color: #ff00ff;
     font-family: 'Orbitron', sans-serif;
 }
 
 .Tx {
+    padding-top: 6px;
     margin: 0;
-    font-size: 7vw;
+    font-size: 115px;
     color: #ff00ff;
     font-family: 'Orbitron', sans-serif;
 }
@@ -61,7 +64,7 @@ nav .logo {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5vw;
+    gap: 30px;
 }
 
 nav ul li a {
@@ -69,7 +72,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 1vw;
     text-transform: uppercase;
-    font-weight:600;
+    font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
     font-family: "Poppins", sans-serif;
 }
@@ -93,7 +96,7 @@ nav .nav-links {
 /* Header */
 header {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -117,9 +120,9 @@ header {
     background-color: #000;
     z-index: 2;
     position: absolute;
-    top: 94vh;
-    width: 130vw;
-    height: 33vh;
+    top: 800px;
+    width: 10000px;
+    height: 300px;
     rotate: -25deg;
 }
 
@@ -136,7 +139,7 @@ header {
 .header-rett img {
     width: 100%;
     position: relative;
-    top: -38vh;
+    top: -133px;
     left: 0;
     filter: brightness(0.5);
     z-index: 1;
@@ -154,11 +157,11 @@ header {
 }
 
 header h1 {
-    font-size: 7vw;
+    font-size: 120px;
     font-weight: bold;
-    text-shadow: 0.5vh 0.5vw 0.5rem rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     color: #fff;
-    margin: 0;
+    margin: 0px;
     text-align: justify;
     display: flex;
     font-family: 'Orbitron', sans-serif;
@@ -166,10 +169,10 @@ header h1 {
 }
 
 header p {
-    font-size: 2.3vw;
-    text-shadow: 0.5vh 0.5vw 0.5rem rgba(0, 0, 0, 0.7);
+    font-size: 38.5px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     color: white;
-    margin: -0.5vw 0vw 0vh 0vw;
+    margin: -40px 0px 0px 0px;
     text-align: justify;
     text-transform: uppercase;
 }
@@ -183,10 +186,11 @@ main {
 }
 
 h2 {
-    margin: 0;
+    margin: 0px;
     text-align: left;
+    font-size: 43px;
     color: #9448a6;
-    margin-bottom: 0vw;
+    margin-bottom: 20px;
     font-weight: bold;
     font-family: "Antonio";
 }
@@ -196,19 +200,24 @@ h2 {
     padding: 80px 0px;
     margin: 0px 0px 100px 0px;
     width: 100%;
-    
 }
 
 #vision h2 {
-    margin-top: 2vw;
+    margin-top: 30px;
     font-size: 2.5vw;
     text-transform: uppercase;
-    text-align: left;
-    color: #9448a6;
-    font-weight: bold;
-    font-family: "Antonio";
 }
 
+.rett-about {
+    background-color: #9448a6;
+    z-index: -1;
+    position: absolute;
+    width: 3000px;
+    height: 20px;
+    rotate: -9.5deg;
+    left: -2000px;
+    top: 1190px;
+}
 
 #intro-content {
     display: flex;
@@ -216,21 +225,32 @@ h2 {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding: 10vw 0vw;
+    padding: 156px 0px;
     width: 100%;
 }
 
 
+.ChiSiamo {
+    display: contents;
+    margin: 0;
+}
+
+.Txt {
+    color: #ff00ff;
+    font-size: 12px;
+    display: contents;
+}
+
 #missione-valori {
     position: relative;
-    margin: 15vw 0vw 0vw 0vw;
+    margin: 345px 0px 0px 0px;
     width: 100%;
 }
 
 #missione-valori h2 {
     position: absolute;
     z-index: 3;
-    top: 20vw;
+    top: 392px;
     right: 0px;
     font-size: 2.5vw;
     text-transform: uppercase;
@@ -239,11 +259,11 @@ h2 {
 
 .fotoValoriMissione {
     width: 100%;
-    z-index: -1;
-    height: 100vh;
+    z-index: 1;
+    height: 850px;
     /* overflow: hidden; */
     position: relative;
-    top: -7vw;
+    top: -96px;
     flex: 1;
 }
 
@@ -251,22 +271,33 @@ h2 {
 .fotoValoriMissione img {
     clip-path: polygon(100% 9%, 0% 39%, 0% 100%, 100% 89%, 100% 0%);
     position: absolute;
-    left: -19vw;
-    top: -50vh;
+    left: -363px;
+    top: -490px;
     width: 160%;
+}
+
+.rett-valori-img {
+    background-color: #9448a6;
+    width: 1920px;
+    height: 300px;
+    clip-path: polygon(100% -12%, 69% 26%, 63% 33.5%, 101% 179%);
+    position: absolute;
+    top: 295px;
+    z-index: 3;
 }
 
 .pres {
     width: 100%;
     position: absolute;
-    top: 9vw;
+    top: 184px;
 }
 
+
 .arrow-icon {
-    width: 10vw;
-    height: 10vw;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 10vw solid #9448a6;
+    border: 5px solid #9448a6;
     color: #9448a6;
     padding: 5px;
     font-size: 24px;
@@ -280,9 +311,7 @@ h2 {
     color: #000;
 }
 
-.testo p {
-    font-size: 0.9vw;
-}
+
 
 .testi h3 {
     font-size: 1.5vw;
@@ -291,9 +320,21 @@ h2 {
     text-transform: uppercase;
 }
 
+.arrow-icon {
+    color: purple;
+    border: 2px solid purple;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 24px;
+    /* Adjust the size as needed */
+    vertical-align: middle;
+    /* Aligns the icon vertically with the text */
+}
+
 
 .testi,
 .missione {
+    font-size: 3vw;
     top: 33vh;
     padding: 0vw 2vw;
     width: 100%;
@@ -302,7 +343,7 @@ h2 {
 .testi {
     flex: 2;
     display: flex;
-    gap: 2vh;
+    gap: 20px;
     position: absolute;
     z-index: 1;
     top: 61vh;
@@ -314,13 +355,13 @@ h2 {
     flex: 1;
     color: #000;
     top: 38vh;
-    font-size: 0.9vw;
+    font-size: 16px;
     padding: 0;
 }
 
 .testi .missione p {
-    padding: 0 3vw;
-    padding: 0 2.5vw;
+    padding: 0 54px;
+    padding: 0 47px;
 
 }
 
@@ -328,11 +369,22 @@ h2 {
     list-style: none;
 }
 
+.rett-nero-missione {
+    height: 201px;
+    width: 2000px;
+    background-color: #000;
+    rotate: -9.6deg;
+    position: absolute;
+    z-index: 2;
+    top: -145px;
+    left: -400px;
+}
+
 /* approccio */
 
 #approach {
     position: relative;
-    padding: 5.4vw 0vw 0vw 0vw;
+    padding: 36px 0px 0px 0px;
     width: 100%;
 }
 
@@ -351,35 +403,35 @@ h2 {
     justify-content: space-around;
     rotate: -10.9deg;
     position: absolute;
-    top: 36vw;
+    top: 631px;
     z-index: 3;
-    left: -6.5%;
+    left: 3%;
 }
 
 .aproccio-text {
     position: relative;
-    width: 12vw;
-    height: 12vw;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: #9448a6;
     rotate: 10.9deg;
     text-align: center;
     color: #fff;
-    margin: 0px 2.5vw;
+    margin: 0px 30px;
     border: 5px solid #fff;
     padding: 5px;
     align-content: center;
-    top: -3vw;
+    top: -33px;
 }
 
 .aproccio-text h3 {
-    font-size: 1.2vw;
+    font-size: 1vw;
     width: 100%;
 }
 
 .aproccio-img {
     width: 100%;
-    height: 45vw;
+    height: 850px;
     /* overflow: hidden; */
     position: relative;
 }
@@ -387,9 +439,9 @@ h2 {
 .aproccio-img img {
     clip-path: polygon(100% 0%, 0% 31%, 0% 100%, 100% 66%, 100% 0%);
     position: absolute;
-    left: -19vw;
+    left: -363px;
     top: -6vh;
-    width: 100vw;
+    width: 160%;
 }
 
 .rett-nero-approccio {
@@ -403,28 +455,37 @@ h2 {
     left: -23vw;
 }
 
+
+
+.triangolo-viola-approccio {
+    top: 774px;
+    position: absolute;
+    z-index: 2;
+    width: 2000px;
+    background-color: #9448a6;
+    height: 250px;
+    rotate: -10.9deg;
+    clip-path: polygon(100% 6%, 100% 100%, 29% 2%);
+}
+
 /* servizi */
 #services {
-    padding: 5vw 0vw;
+    padding: 110px 0px;
     position: relative;
     width: 100%;
     margin: 0 auto;
 }
 
 #services h2 {
-    margin-bottom: 3vw;
     font-size: 2.5vw;
     text-transform: uppercase;
 }
 
-#services p{
-    font-size: 0.9vw;
-}
 .service-cards {
     z-index: 3;
     position: relative;
     display: flex;
-    gap: 1vw;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -438,12 +499,12 @@ h2 {
 .service-card {
     display: grid;
     background: rgb(255 255 255);
-    padding: 1vw;
+    padding: 20px;
     flex: 1;
-    min-width: 15vw;
+    min-width: 250px;
     text-align: center;
-    border-radius: 1vw;
-    box-shadow: 0 0 0.5vw #0000001f;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0000001f;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     vertical-align: middle;
 }
@@ -459,16 +520,63 @@ h2 {
 }
 
 
+.rett-services {
+    background-color: #9448a6;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    bottom: -319px;
+    left: -500px;
+    clip-path: polygon(12% 0%, 12% 100%, 82% 72%);
+}
+
+
+/* #pricing {
+    padding: 80px 0px;
+    width: 100%;
+    margin: auto;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff7c;
+
+}
+
+.pricing-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.pricing-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pricing-card p {
+    color: #666;
+} */
+
+
 /* Contact Section */
 #contact {
-    padding: 8vw 0vw;
+    padding: 145px 0px;
     background-color: #ffffff09;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 0;
+    top: 0px;
     width: 100%;
     margin: 0 auto;
 }
@@ -478,7 +586,7 @@ h2 {
     text-align: center;
     font-size: 2.5vw;
     color: #9448a6;
-    margin-bottom: 1vw;
+    margin-bottom: 20px;
     font-weight: bold;
     font-family: "Antonio";
     text-transform: uppercase;
@@ -487,32 +595,31 @@ h2 {
 #contact p {
     width: 44%;
     text-align: left;
-    font-size: 0.9vw;
 }
 
 #contact form {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: 20px;
     width: 100%;
-    max-width: 26vw;
+    max-width: 500px;
     margin: 0 auto;
     align-items: center;
 }
 
 #contact input,
 #contact textarea {
-    padding: 0.8vw;
-    font-size: 0.9vw;
+    padding: 14px;
+    font-size: 16px;
     background: #fff;
-    border-radius: 0.4vw;
+    border-radius: 8px;
     width: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
 #contact input:focus,
 #contact textarea:focus {
-    border: 0.2vw solid #9448a6;
+    border: 2px solid #9448a6;
     /* Colore del bordo quando l'elemento è attivo */
     outline: none;
     /* Rimuove l'outline di default quando l'input è attivo */
@@ -520,11 +627,11 @@ h2 {
 
 
 #contact button {
-    padding: 0.8vw;
+    padding: 14px;
     background-color: #000;
     color: #fff;
     border: none;
-    border-radius: 0.4vw;
+    border-radius: 8px;
     font-size: 1vw;
     cursor: pointer;
     display: block;
@@ -537,6 +644,16 @@ h2 {
     color: #fff;
 }
 
+.rett-contacts {
+    background-color: #9448a6;
+    height: 200px;
+    width: 2000px;
+    position: absolute;
+    z-index: 2;
+    top: 575px;
+    clip-path: polygon(100% 0%, 100% 100%, 51% 100%);
+}
+
 
 
 /* Footer */
@@ -544,7 +661,7 @@ footer {
     background-color: #9448a6;
     color: #fff;
     text-align: center;
-    padding: 1vw 0;
+    padding: 20px 0;
     width: 100%;
     margin: 0 auto;
 }
@@ -1771,4 +1888,166 @@ footer a:hover {
         color: #ff00ff;
     }
 
+}
+
+/*Desktop: 1440-1444 * 816 - 900 stili da 15 a 16 pollici*/
+@media screen and (min-width:1440px) and (max-width: 1600px) and (orientation:landscape) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+
+
+    .lx {
+        padding-top: 0;
+        /* Nessun cambiamento necessario */
+        font-size: 1.7rem;
+        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
+        margin: 0;
+        /* Nessun cambiamento necessario */
+        color: #ff00ff;
+        font-family: 'Orbitron', sans-serif;
+        width: 100%;
+        /* Larghezza già adattabile */
+    }
+
+
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .header-content {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        left: 74%;
+    }
+
+    .header-rett {
+        position: absolute;
+        width: 122vw;
+        height: 85vh;
+        rotate: -25deg;
+        overflow: hidden;
+        top: 2vh;
+    }
+
+    .rett {
+        top: -12vh;
+        width: 220vw;
+        height: 6vh;
+    }
+
+    .rett-grande {
+        background-color: #000;
+        z-index: 2;
+        position: absolute;
+        top: 93vh;
+        width: 123%;
+        height: 33vh;
+        rotate: -25deg;
+    }
+
+    .header-rett img {
+        width: 100%;
+        position: relative;
+        top: -133px;
+        left: 0;
+        filter: brightness(0.5);
+        z-index: 1;
+        rotate: 25deg;
+    }
+
+    header h1 {
+        font-size: 7rem;
+        width: 100%;
+    }
+
+    .Tx {
+        padding-top: 0vh;
+        /* Padding adattabile in base all'altezza della viewport */
+        margin: 0;
+        /* Nessun cambiamento necessario */
+        font-size: 7rem;
+        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
+        color: #ff00ff;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    header p {
+        text-align: start;
+        margin: -4vh 0vw 0vh 1vw;
+        font-size: 2.26rem;
+        width: 100%;
+    }
+
+    .fotoValoriMissione {
+        width: 106%;
+        z-index: 1;
+        height: 850px;
+        /* overflow: hidden; */
+        position: relative;
+        top: 3vh;
+        flex: 1;
+    }
+
+
+    .aproccio-content {
+        display: flex;
+        justify-content: space-around;
+        rotate: -10.9deg;
+        position: absolute;
+        top: 631px;
+        z-index: 3;
+        left: -10%;
+    }
+
+    #vision h2 {
+        font-size: 2.6rem;
+    }
+
+    .pres {
+        width: 100%;
+        position: absolute;
+        top: 162px;
+        font-size: 1rem;
+    }
+
+    #mission h2 {
+        font-size: 2.6rem;
+    }
+
+    .testi .missione,
+    .testi .valori {
+        font-size: 1rem;
+    }
+
+
+.aproccio-img img {
+    clip-path: polygon(100% 0%, 0% 31%, 0% 100%, 100% 66%, 100% 0%);
+    position: absolute;
+    left: -363px;
+    top: -6vh;
+    width: 170%;
+}
+
+    #contact p {
+        width: 58%;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .service-card {
+     height: 120px;
+    }
+
+.service-card-text p{
+    font-size: 1rem;
+}
 }
