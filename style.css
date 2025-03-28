@@ -2033,9 +2033,24 @@ footer a:hover {
         clip-path: polygon(100% 0%, 0% 31%, 0% 100%, 100% 66%, 100% 0%);
         position: absolute;
         left: -363px;
-        top: -6vh;
+        top: -2vh;
         width: 170%;
     }
+
+    .aproccio-content {
+        display: flex;
+        justify-content: space-around;
+        rotate: -10.9deg;
+        position: absolute;
+        top: 71vh;
+        z-index: 3;
+        left: -10%;
+    }
+
+    .service-card-text p {
+        font-size: 1rem;
+    }
+
 
     #contact p {
         width: 58%;
@@ -2043,8 +2058,11 @@ footer a:hover {
         font-size: 1rem;
     }
 
-
-    .service-card-text p {
-        font-size: 1rem;
+    #contact{
+        padding: 10vh 0vw;
     }
+
+
+
+
 }
