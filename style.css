@@ -2058,11 +2058,35 @@ footer a:hover {
         font-size: 1rem;
     }
 
-    #contact{
+    #contact {
         padding: 10vh 0vw;
     }
 
 
 
 
+}
+
+
+/*Desktop: 1300 a 1439*/
+@media screen and (min-width:1300px) and (max-width:1439px) {
+
+    .header-content {
+        top: 37%;
+        left: 21%;
+    }
+
+    .rett-grande {
+        top: 94vh;
+        height: 31vh;
+    }
+
+    header h1 {
+        font-size: 7vw;
+    }
+
+    .Tx {
+        font-size: 7vw;
+        padding: 0;
+    }
 }
