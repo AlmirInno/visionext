@@ -1890,8 +1890,59 @@ footer a:hover {
 
 }
 
-/*Desktop: 1440-1444 * 816 - 900 stili da 15 a 16 pollici*/
-@media screen and (min-width:1440px) and (max-width: 1600px) and (orientation:landscape) {
+/* Desktop: 1500px a 1599px - stili da 16 pollici */
+@media screen and (min-width:1500px) and (max-width: 1599px) {
+    .rett-grande {
+        top: 95vh;
+    }
+
+    .header-content {
+        left: 25%;
+    }
+
+    header p {
+        font-size: 2.59vw;
+    }
+
+    #vision{
+        margin-bottom: 0;
+    }
+
+    .fotoValoriMissione img {
+        width: 168%;
+        top: -55vh;
+    }
+
+    #missione-valori h2 {
+        top: 35vh;
+    }
+
+    .testi {
+        top: 50vh;
+    }
+
+    .aproccio-img img {
+        width: 168%;
+        top: -2vh;
+    }
+
+    .aproccio-content {
+        left: -8%;
+        top: 67vh;
+    }
+
+    #contact {
+        margin: -10vh 0vw;
+        top: -4vh;
+    }
+
+    #contact p {
+        width: 56%;
+    }
+}
+
+/*Desktop: 1440-1444 a 1500 - stili da 15 a 16 pollici*/
+@media screen and (min-width:1440px) and (max-width: 1499px) and (orientation:landscape) {
 
     html,
     body {
@@ -2067,13 +2118,12 @@ footer a:hover {
 
 }
 
-
-/*Desktop: 1300 a 1439*/
+/*Desktop: 1300 a 1439* - stili da 11 a 14 pollici*/
 @media screen and (min-width:1280px) and (max-width:1439px) {
 
     .header-content {
         top: 37%;
-        left: 32%;
+        left: 30%;
     }
 
 
@@ -2090,10 +2140,13 @@ footer a:hover {
         font-size: 2.34vw;
     }
 
-
     .Tx {
         font-size: 7vw;
         padding: 0;
+    }
+
+    #vision {
+        margin: 0;
     }
 
     .fotoValoriMissione img {
@@ -2101,11 +2154,31 @@ footer a:hover {
         top: -48vh;
     }
 
-    #missione-valori h2{
+    #missione-valori h2 {
         top: 30vh;
     }
 
-    .testi{
+    .testi {
         top: 43vh;
+    }
+
+    .aproccio-img img {
+
+        top: 3vh;
+        width: 175%;
+    }
+
+    .aproccio-content {
+        top: 66vh;
+        left: -18%;
+    }
+
+    #contact {
+        margin: -10vh 0vw;
+        top: -4vh;
+    }
+
+    #contact p {
+        width: 66%;
     }
 }
