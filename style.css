@@ -2069,12 +2069,13 @@ footer a:hover {
 
 
 /*Desktop: 1300 a 1439*/
-@media screen and (min-width:1300px) and (max-width:1439px) {
+@media screen and (min-width:1280px) and (max-width:1439px) {
 
     .header-content {
         top: 37%;
-        left: 21%;
+        left: 32%;
     }
+
 
     .rett-grande {
         top: 94vh;
@@ -2085,8 +2086,26 @@ footer a:hover {
         font-size: 7vw;
     }
 
+    header p {
+        font-size: 2.34vw;
+    }
+
+
     .Tx {
         font-size: 7vw;
         padding: 0;
+    }
+
+    .fotoValoriMissione img {
+        width: 175%;
+        top: -48vh;
+    }
+
+    #missione-valori h2{
+        top: 30vh;
+    }
+
+    .testi{
+        top: 43vh;
     }
 }
