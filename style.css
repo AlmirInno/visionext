@@ -1890,6 +1890,9 @@ footer a:hover {
 
 }
 
+
+
+
 /* Desktop: 1500px a 1560px - stili da 16 pollici aspect ratio 16/9*/
 @media screen and (min-width:1500px) and (max-width: 1560px) {
     .rett-grande {
@@ -2030,8 +2033,11 @@ footer a:hover {
     }
 }
 
-/*Desktop: 1440-1444 a 1500 - stili da 15 a 16 pollici aspect ratio 16/9*/
-@media screen and (min-width:1440px) and (max-width: 1499px) and (orientation:landscape) {
+
+
+
+/*Desktop: 1440-1444 a 1499 - stili da 15 a 16 pollici aspect ratio 16/9*/
+@media screen and (min-width:1440px) and (max-width: 1499px) {
 
     html,
     body {
@@ -2207,12 +2213,196 @@ footer a:hover {
 
 }
 
-/*Desktop: 1300 a 1439* - stili da 11 a 14 pollici*/
+/*Desktop: 1440-1444 a 1499 - stili da 15 a 16 pollici aspect ratio 16/10*/
+@media screen and (min-width:1440px) and (max-width: 1499px) and (min-height:900px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .lx {
+        padding-top: 0;
+        /* Nessun cambiamento necessario */
+        font-size: 1.7rem;
+        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
+        margin: 0;
+        /* Nessun cambiamento necessario */
+        color: #ff00ff;
+        font-family: 'Orbitron', sans-serif;
+        width: 100%;
+        /* Larghezza già adattabile */
+    }
+
+
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .header-content {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        left: 74%;
+    }
+
+    .header-rett {
+        position: absolute;
+        width: 122vw;
+        height: 85vh;
+        rotate: -25deg;
+        overflow: hidden;
+        top: 2vh;
+    }
+
+    .rett {
+        top: -12vh;
+        width: 220vw;
+        height: 6vh;
+    }
+
+    .rett-grande {
+        background-color: #000;
+        z-index: 2;
+        position: absolute;
+        top: 93vh;
+        width: 123%;
+        height: 33vh;
+        rotate: -25deg;
+    }
+
+    .header-rett img {
+        width: 100%;
+        position: relative;
+        top: -133px;
+        left: 0;
+        filter: brightness(0.5);
+        z-index: 1;
+        rotate: 25deg;
+    }
+
+    header h1 {
+        font-size: 7rem;
+        width: 100%;
+    }
+
+    .Tx {
+        padding-top: 0vh;
+        /* Padding adattabile in base all'altezza della viewport */
+        margin: 0;
+        /* Nessun cambiamento necessario */
+        font-size: 7rem;
+        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
+        color: #ff00ff;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    header p {
+        text-align: start;
+        margin: -4vh 0vw 0vh 1vw;
+        font-size: 2.26rem;
+        width: 100%;
+    }
+
+    .fotoValoriMissione {
+        width: 106%;
+        z-index: 1;
+        height: 850px;
+        /* overflow: hidden; */
+        position: relative;
+        top: 3vh;
+        flex: 1;
+    }
+
+
+    .aproccio-content {
+        display: flex;
+        justify-content: space-around;
+        rotate: -10.9deg;
+        position: absolute;
+        top: 631px;
+        z-index: 3;
+        left: -10%;
+    }
+
+    #vision h2 {
+        font-size: 2.6rem;
+        top: 35vh;
+    }
+
+    .pres {
+        width: 100%;
+        position: absolute;
+        top: 162px;
+        font-size: 1rem;
+    }
+
+    #mission h2 {
+        font-size: 2.6rem;
+    }
+
+    .testi{
+        top: 50vh;
+    }
+
+    .testi .missione,
+    .testi .valori {
+        font-size: 1rem;
+    }
+
+
+    .aproccio-img img {
+        clip-path: polygon(100% 0%, 0% 31%, 0% 100%, 100% 66%, 100% 0%);
+        position: absolute;
+        left: -363px;
+        top: -2vh;
+        width: 170%;
+    }
+
+    .aproccio-content {
+        display: flex;
+        justify-content: space-around;
+        rotate: -10.9deg;
+        position: absolute;
+        top: 69vh;
+        z-index: 3;
+        left: -10%;
+    }
+
+    .service-card-text p {
+        font-size: 1rem;
+    }
+
+
+    #contact p {
+        width: 58%;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    #contact {
+        padding: 16vh 0vw;
+    }
+
+}
+
+
+
+
+
+/*Desktop: 1280 a 1439* - stili da 11 a 14 pollici aspect ratio 16/9*/
 @media screen and (min-width:1280px) and (max-width:1439px) {
+
 
     .header-content {
         top: 37%;
-        left: 30%;
+        left: 22%;
+        width: 100%;
     }
 
 
@@ -2222,16 +2412,103 @@ footer a:hover {
     }
 
     header h1 {
-        font-size: 7vw;
-    }
-
-    header p {
-        font-size: 2.34vw;
+        font-size: 7rem;
+        width: 100%;
     }
 
     .Tx {
-        font-size: 7vw;
-        padding: 0;
+        padding-top: 0vh;
+        /* Padding adattabile in base all'altezza della viewport */
+        margin: 0;
+        /* Nessun cambiamento necessario */
+        font-size: 7rem;
+        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
+        color: #ff00ff;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    header p {
+        text-align: start;
+        margin: -4vh 0vw 0vh 1vw;
+        font-size: 2.26rem;
+        width: 100%;
+    }
+
+    #vision {
+        margin: 0;
+    }
+
+    .fotoValoriMissione img {
+        width: 175%;
+        top: -48vh;
+    }
+
+    #missione-valori h2 {
+        top: 40vh;
+    }
+
+    .testi {
+        top: 52vh;
+    }
+
+    .aproccio-img img {
+
+        top: 3vh;
+        width: 175%;
+    }
+
+    .aproccio-content {
+        top: 66vh;
+        left: -18%;
+    }
+
+    #contact {
+        margin: 0;
+        top: -7vh;
+        padding: 0vh 0vw 0vh 0vw;
+    }
+
+    #contact p {
+        width: 66%;
+    }
+}
+
+/*Desktop: 1280 a 1439* - stili da 11 a 14 pollici aspect ratio 16/10*/
+@media screen and (min-width:1280px) and (max-width:1439px) and (min-height:800px) {
+
+    .header-content {
+        top: 37%;
+        left: 22%;
+        width: 100%;
+    }
+
+
+    .rett-grande {
+        top: 94vh;
+        height: 31vh;
+    }
+
+    header h1 {
+        font-size: 7rem;
+        width: 100%;
+    }
+
+    .Tx {
+        padding-top: 0vh;
+        /* Padding adattabile in base all'altezza della viewport */
+        margin: 0;
+        /* Nessun cambiamento necessario */
+        font-size: 7rem;
+        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
+        color: #ff00ff;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    header p {
+        text-align: start;
+        margin: -4vh 0vw 0vh 1vw;
+        font-size: 2.26rem;
+        width: 100%;
     }
 
     #vision {
@@ -2263,9 +2540,10 @@ footer a:hover {
     }
 
     #contact {
-        margin: -10vh 0vw;
+        margin: 7vh 0vw;
         top: -4vh;
     }
+
 
     #contact p {
         width: 66%;
