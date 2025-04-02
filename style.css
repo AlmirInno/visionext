@@ -1890,21 +1890,39 @@ footer a:hover {
 
 }
 
-/* Desktop: 1500px a 1599px - stili da 16 pollici */
-@media screen and (min-width:1500px) and (max-width: 1599px) {
+/* Desktop: 1500px a 1560px - stili da 16 pollici aspect ratio 16/9*/
+@media screen and (min-width:1500px) and (max-width: 1560px) {
     .rett-grande {
-        top: 95vh;
+        top: 94vh;
     }
 
     .header-content {
         left: 25%;
     }
 
-    header p {
-        font-size: 2.59vw;
+    header h1 {
+        font-size: 7rem;
+        width: 100%;
     }
 
-    #vision{
+    .Tx {
+        padding-top: 0vh;
+        /* Padding adattabile in base all'altezza della viewport */
+        margin: 0;
+        /* Nessun cambiamento necessario */
+        font-size: 7rem;
+        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
+        color: #ff00ff;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    header p {
+        text-align: start;
+        margin: -4vh 0vw 0vh 1vw;
+        font-size: 2.26rem;
+        width: 100%;
+    }
+    #vision {
         margin-bottom: 0;
     }
 
@@ -1918,7 +1936,7 @@ footer a:hover {
     }
 
     .testi {
-        top: 50vh;
+        top: 52vh;
     }
 
     .aproccio-img img {
@@ -1941,7 +1959,78 @@ footer a:hover {
     }
 }
 
-/*Desktop: 1440-1444 a 1500 - stili da 15 a 16 pollici*/
+/* Desktop: 1500px a 1560px - stili 16 pollici per aspect ratio 16:10 */
+@media screen and (min-width:1500px) and (max-width: 1560px) and (min-height:900px) {
+
+    .rett-grande {
+        top: 94vh;
+    }
+
+    .header-content {
+        left: 25%;
+    }
+
+    header h1 {
+        font-size: 7rem;
+        width: 100%;
+    }
+
+    .Tx {
+        padding-top: 0vh;
+        /* Padding adattabile in base all'altezza della viewport */
+        margin: 0;
+        /* Nessun cambiamento necessario */
+        font-size: 7rem;
+        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
+        color: #ff00ff;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    header p {
+        text-align: start;
+        margin: -4vh 0vw 0vh 1vw;
+        font-size: 2.26rem;
+        width: 100%;
+    }
+
+    #vision {
+        margin-bottom: 2vh;
+    }
+
+    .fotoValoriMissione img {
+        width: 168%;
+        top: -50vh;
+    }
+
+    #missione-valori h2 {
+        top: 33vh;
+    }
+
+    .testi {
+        top: 45vh;
+    }
+
+    .aproccio-img img {
+        width: 168%;
+        top: -1vh;
+    }
+
+    .aproccio-content {
+        left: -6%;
+        top: 65vh;
+    }
+
+    #contact {
+        margin: 0vh 0vw;
+        top: -3vh;
+    }
+
+    #contact p {
+        width: 56%;
+    }
+}
+
+/*Desktop: 1440-1444 a 1500 - stili da 15 a 16 pollici aspect ratio 16/9*/
 @media screen and (min-width:1440px) and (max-width: 1499px) and (orientation:landscape) {
 
     html,
