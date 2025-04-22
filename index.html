@@ -402,33 +402,34 @@
 
 
 
-      window.addEventListener("load", function () {
+     
+  window.addEventListener("load", function () {
     window.cookieconsent.initialise({
-        "palette": {
-            "popup": { "background": "#000", "text": "#fff" },
-            "button": { "background": "#c62ff6", "text": "#fff" }
-        },
-        "theme": "classic",
-        "position": "bottom",
-        "type": "opt-in",
-        "revokable": false, // << DISABILITA la linguetta
-        "content": {
-            "message": "Questo sito utilizza i cookie per migliorare l'esperienza utente.",
-            "dismiss": "Accetta",
-            "deny": "Rifiuta",
-            "link": "Leggi di più",
-            "href": "https://www.termsfeed.com/live/51600732-c7a3-47dd-b112-022031687524"
-        },
-        onStatusChange: function(status, chosenBefore) {
-            var cc = this;
-            setTimeout(function () {
-                if (cc.popup) {
-                    cc.popup.style.display = "none";
-                }
-            }, 200);
+      "palette": {
+        "popup": { "background": "#000", "text": "#fff" },
+        "button": { "background": "#c62ff6", "text": "#fff" }
+      },
+      "theme": "classic",
+      "position": "bottom",
+      "type": "opt-in",
+      "revokable": false, // niente linguetta
+      "revokeBtn": false, // importante: disabilita il bottone per riaprire
+      "content": {
+        "message": "Questo sito utilizza i cookie per migliorare l'esperienza utente.",
+        "dismiss": "Accetta",
+        "deny": "Rifiuta",
+        "link": "Leggi di più",
+        "href": "https://www.termsfeed.com/live/51600732-c7a3-47dd-b112-022031687524"
+      },
+      onStatusChange: function (status, chosenBefore) {
+        var popup = document.querySelector('.cc-window');
+        if (popup) {
+          popup.style.display = 'none';
         }
+      }
     });
-});
+  });
+
 
 
         /*alert banner*/
