@@ -404,6 +404,13 @@
 
      
   window.addEventListener("load", function () {
+    // Verifica se l'utente ha già scelto
+    var consentStatus = localStorage.getItem("cookieconsent_status");
+    if (consentStatus === "allow" || consentStatus === "deny") {
+      // Se ha già scelto, non mostrare il popup
+      return;
+    }
+
     window.cookieconsent.initialise({
       "palette": {
         "popup": { "background": "#000", "text": "#fff" },
@@ -412,8 +419,8 @@
       "theme": "classic",
       "position": "bottom",
       "type": "opt-in",
-      "revokable": false, // niente linguetta
-      "revokeBtn": false, // importante: disabilita il bottone per riaprire
+      "revokable": false,
+      "revokeBtn": false,
       "content": {
         "message": "Questo sito utilizza i cookie per migliorare l'esperienza utente.",
         "dismiss": "Accetta",
@@ -423,13 +430,10 @@
       },
       onStatusChange: function (status, chosenBefore) {
         var popup = document.querySelector('.cc-window');
-        if (popup) {
-          popup.style.display = 'none';
-        }
+        if (popup) popup.style.display = 'none';
       }
     });
   });
-
 
 
         /*alert banner*/
