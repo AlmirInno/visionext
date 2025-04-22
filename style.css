@@ -748,6 +748,7 @@ h3 {
         padding: 3vw;
         border-radius: 3vw;
         flex: unset;
+        height: 50vw;
     }
 
     .material-icons {
