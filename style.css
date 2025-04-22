@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
     width: 100%;
     color: #263238;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
 }
 
 
@@ -274,7 +274,7 @@ h3 {
 #value h2,
 #services h2,
 #approach h2 {
-    padding: 8vw 0vw 6vh 0vw;
+    padding: 6vw 0vw 4vh 0vw;
 }
 
 #services h2 {
@@ -290,11 +290,11 @@ h3 {
 .service-cards {
     width: 80vw;
     display: flex;
-    gap: 30px;
+    gap: 26px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0vh 0vw 15vh 0vw;
+    padding: 0vh 0vw 11vw 0vw;
 }
 
 .service-card {
