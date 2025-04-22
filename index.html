@@ -401,25 +401,33 @@
         });
 
 
-        /*cookie*/
         window.addEventListener("load", function () {
-            window.cookieconsent.initialise({
-                "palette": {
-                    "popup": { "background": "#000", "text": "#fff" },
-                    "button": { "background": "#c62ff6", "text": "#fff" }
-                },
-                "theme": "classic",
-                "position": "bottom",
-                "type": "opt-in",  // ATTIVA il rifiuto
-                "content": {
-                    "message": "Questo sito utilizza i cookie per migliorare l'esperienza utente.",
-                    "dismiss": "Accetta",
-                    "deny": "Rifiuta",  // ATTIVA il pulsante di rifiuto
-                    "link": "Leggi di più",
-                    "href": "https://www.termsfeed.com/live/51600732-c7a3-47dd-b112-022031687524"
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": { "background": "#000", "text": "#fff" },
+            "button": { "background": "#c62ff6", "text": "#fff" }
+        },
+        "theme": "classic",
+        "position": "bottom",
+        "type": "opt-in",
+        "content": {
+            "message": "Questo sito utilizza i cookie per migliorare l'esperienza utente.",
+            "dismiss": "Accetta",
+            "deny": "Rifiuta",
+            "link": "Leggi di più",
+            "href": "https://www.termsfeed.com/live/51600732-c7a3-47dd-b112-022031687524"
+        },
+        onStatusChange: function(status, chosenBefore) {
+            // Forza la rimozione del popup
+            var cc = this;
+            setTimeout(function () {
+                if (cc.popup) {
+                    cc.popup.style.display = "none";
                 }
-            });
-        });
+            }, 200); // Leggero delay per evitare glitch
+        }
+    });
+});
 
 
         /*alert banner*/
