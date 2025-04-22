@@ -401,7 +401,8 @@
         });
 
 
-        window.addEventListener("load", function () {
+
+      window.addEventListener("load", function () {
     window.cookieconsent.initialise({
         "palette": {
             "popup": { "background": "#000", "text": "#fff" },
@@ -410,6 +411,7 @@
         "theme": "classic",
         "position": "bottom",
         "type": "opt-in",
+        "revokable": false, // << DISABILITA la linguetta
         "content": {
             "message": "Questo sito utilizza i cookie per migliorare l'esperienza utente.",
             "dismiss": "Accetta",
@@ -418,13 +420,12 @@
             "href": "https://www.termsfeed.com/live/51600732-c7a3-47dd-b112-022031687524"
         },
         onStatusChange: function(status, chosenBefore) {
-            // Forza la rimozione del popup
             var cc = this;
             setTimeout(function () {
                 if (cc.popup) {
                     cc.popup.style.display = "none";
                 }
-            }, 200); // Leggero delay per evitare glitch
+            }, 200);
         }
     });
 });
