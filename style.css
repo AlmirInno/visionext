@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 
-html {
-    overflow-x: hidden;
-    width: 100%;
-}
-
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background: #fff;
-    line-height: 1.6;
     overflow-x: hidden;
     width: 100%;
+    color: #263238;
+    font-size: 1.2vw;
 }
 
 
@@ -33,7 +28,7 @@ nav {
     box-shadow: 0 0 10px #00000038;
 }
 
-nav .logo {
+.logo {
     font-size: 28px;
     font-weight: bold;
     color: #000;
@@ -42,20 +37,19 @@ nav .logo {
     text-transform: uppercase;
 }
 
+.logo a {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    color: #000;
+}
+
 
 .lx {
     padding-top: 0px;
     margin: 0px;
     font-size: 28px;
-    color: #ff00ff;
-    font-family: 'Orbitron', sans-serif;
-}
-
-.Tx {
-    padding-top: 6px;
-    margin: 0;
-    font-size: 115px;
-    color: #ff00ff;
+    color: #c62ff6;
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -67,17 +61,16 @@ nav ul {
 }
 
 nav ul li a {
-    color: #000;
+    color: #263238;
     text-decoration: none;
     font-size: 1vw;
     text-transform: uppercase;
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
-    font-family: "Poppins", sans-serif;
 }
 
 nav ul li a:hover {
-    color: #9448a6;
+    color: #c62ff6;
     transform: scale(1.1);
 }
 
@@ -92,458 +85,393 @@ nav .nav-links {
 }
 
 
-/* Header */
 header {
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
+    text-align: right;
+    justify-content: space-between;
+    align-content: space-around;
+
 }
 
-.rett {
-    background-color: #000;
-    z-index: 2;
-    position: absolute;
-    rotate: -25deg;
-    top: -12vh;
-    width: 220vw;
-    height: 6vh;
+figure {
+    width: 50.15%;
+    margin: 0px;
+    padding: 0px;
 }
 
-
-.rett-grande {
-    background-color: #000;
-    z-index: 2;
-    position: absolute;
-    top: 800px;
-    width: 10000px;
-    height: 300px;
-    rotate: -25deg;
-}
-
-/* Cambiamo il comportamento dell'immagine */
-.header-rett {
-    position: absolute;
-    width: 119vw;
-    height: 85vh;
-    rotate: -25deg;
-    overflow: hidden;
-    top: 2vh;
-}
-
-.header-rett img {
+figure img {
     width: 100%;
-    position: relative;
-    top: -133px;
-    left: 0;
-    filter: brightness(0.5);
-    z-index: 1;
-    rotate: 25deg;
+    object-fit: cover;
+    margin: 0px;
+}
+
+header figure img {
+    padding: 5vw 0vw 0vw 0vw;
 }
 
 .header-content {
+    width: 40%;
+    padding: 0vh 5vw 0vh 0vw;
+}
+
+
+.header-content h1 {
+    font-size: 4vw;
+    color: #c62ff6;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 2vw;
+    margin: 3vh 0vw 0vh 0vw;
+}
+
+.header-content button {
+    background-color: #263238;
+    padding: content;
+    width: 10vw;
+    height: 6vh;
+    border: none;
+    border-radius: 0.5vw;
+    margin: 4vh 0vw 0vh 0vw;
+}
+
+.header-content button:hover {
+    background-color: #c62ff6;
+}
+
+.header-content button a {
     color: white;
-    /* position: absolute; */
-    display: flex;
-    z-index: 3;
-    width: 100%;
-    /* top: 40%; */
-    /* left: 30%; */
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    text-decoration: none;
+    font-size: 1.5vw;
 }
 
-header h1 {
-    font-size: 120px;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    color: #fff;
-    margin: 0px;
-    text-align: justify;
-    display: flex;
-    font-family: 'Orbitron', sans-serif;
-    text-transform: uppercase;
-}
-
-header p {
-    font-size: 38.5px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-    color: white;
-    margin: -40px 0px 0px 0px;
-    text-align: justify;
-    text-transform: uppercase;
-}
-
-
-
-/* Sections */
 main {
-    width: 63%;
-    margin: 0 auto;
+    width: 100%;
 }
 
-h2 {
-    margin: 0px;
-    text-align: left;
-    font-size: 43px;
-    color: #9448a6;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-family: "Antonio";
+#vision,
+#mission,
+#value,
+#approach,
+#contact {
+    width: 100%;
 }
 
 #vision {
-    position: relative;
-    padding: 80px 0px;
-    margin: 0px 0px 100px 0px;
-    width: 100%;
+    padding-top: 9vw;
 }
 
-#vision h2 {
-    margin-top: 30px;
-    font-size: 2.5vw;
-    text-transform: uppercase;
+#mission {
+    background-color: #ededed;
+    clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    padding: 13vh 0vw 0vh 0vw;
 }
 
-
-#intro-content {
-    display: flex;
-    background-color: #ffffff09;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    padding: 156px 0px;
-    width: 100%;
-}
-
-
-.Txt {
-    color: #ff00ff;
-    font-size: 12px;
-    display: contents;
-}
-
-#missione-valori {
-    position: relative;
-    margin: 345px 0px 0px 0px;
-    width: 100%;
-}
-
-#missione-valori h2 {
-    position: absolute;
-    z-index: 3;
-    top: 392px;
-    right: 0px;
-    font-size: 2.5vw;
-    text-transform: uppercase;
-}
-
-.fotoValoriMissione {
-    width: 100%;
-    z-index: 1;
-    height: 850px;
-    /* overflow: hidden; */
-    position: relative;
-    top: -96px;
-    flex: 1;
-}
-
-.fotoValoriMissione img {
-    clip-path: polygon(100% 9%, 0% 39%, 0% 100%, 100% 89%, 100% 0%);
-    position: absolute;
-    left: -363px;
-    top: -490px;
-    width: 160%;
-}
-
-
-.pres {
-    width: 100%;
-    position: absolute;
-    top: 184px;
-}
-
-
-.arrow-icon {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 5px solid #9448a6;
-    color: #9448a6;
-    padding: 5px;
-    font-size: 24px;
-    /* Adjust the size as needed */
-    vertical-align: middle;
-    /* Aligns the icon vertically with the text */
-}
-
-
-.valori ul li strong {
-    color: #000;
-}
-
-
-
-.testi h3 {
-    font-size: 1.5vw;
-    color: #333;
-    margin-bottom: 2vh;
-    text-transform: uppercase;
-}
-
-.arrow-icon {
-    color: purple;
-    border: 2px solid purple;
-    border-radius: 50%;
-    padding: 5px;
-    font-size: 24px;
-    /* Adjust the size as needed */
-    vertical-align: middle;
-    /* Aligns the icon vertically with the text */
-}
-
-
-.testi,
-.missione {
-    font-size: 3vw;
-    top: 33vh;
-    padding: 0vw 2vw;
-    width: 100%;
-}
-
-.testi {
-    flex: 2;
-    display: flex;
-    gap: 20px;
-    position: absolute;
-    z-index: 1;
-    top: 61vh;
-    padding: 0;
-}
-
-.testi .missione,
-.testi .valori {
-    flex: 1;
-    color: #000;
-    top: 38vh;
-    font-size: 16px;
-    padding: 0;
-}
-
-.testi .missione p {
-    padding: 0 54px;
-    padding: 0 47px;
-
-}
-
-.testi .valori ul {
-    list-style: none;
-}
-
-.rett-nero-missione {
-    height: 201px;
-    width: 2000px;
-    background-color: #000;
-    rotate: -9.6deg;
-    position: absolute;
-    z-index: 2;
-    top: -145px;
-    left: -400px;
-}
-
-/* approccio */
-
-#approach {
-    position: relative;
-    padding: 36px 0px 0px 0px;
-    width: 100%;
-}
-
-#approach h2 {
-    position: absolute;
-    z-index: 3;
-    color: #9448a6;
-    top: 123px;
-    font-size: 2.5vw;
-    text-transform: uppercase;
-}
-
-
-.aproccio-content {
-    display: flex;
-    justify-content: space-around;
-    rotate: -10.9deg;
-    position: absolute;
-    top: 631px;
-    z-index: 3;
-    left: 3%;
-}
-
-.aproccio-text {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #9448a6;
-    rotate: 10.9deg;
+#value {
     text-align: center;
-    color: #fff;
-    margin: 0px 30px;
-    border: 5px solid #fff;
-    padding: 5px;
-    align-content: center;
-    top: -33px;
+    background-color: #ededed;
 }
 
-.aproccio-text h3 {
-    font-size: 1vw;
-    width: 100%;
-}
-
-.aproccio-img {
-    width: 100%;
-    height: 850px;
-    /* overflow: hidden; */
-    position: relative;
-}
-
-.aproccio-img img {
-    clip-path: polygon(100% 0%, 0% 31%, 0% 100%, 100% 66%, 100% 0%);
-    position: absolute;
-    left: -363px;
-    top: -6vh;
-    width: 160%;
-}
-
-.rett-nero-approccio {
-    height: 25vh;
-    width: 107vw;
-    background-color: #000;
-    rotate: -10.9deg;
-    position: absolute;
-    z-index: 2;
-    top: 75vh;
-    left: -23vw;
+#contact {
+    padding: 0vw 0vw 19vw 0vw;
+    background-image: url('img/footer_new.png');
+    /* Percorso immagine */
+    background-position: bottom center;
+    /* Centra l’immagine e la ancora in basso*/
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    background-size: 101%;
 }
 
 
-
-.triangolo-viola-approccio {
-    top: 774px;
-    position: absolute;
-    z-index: 2;
-    width: 2000px;
-    background-color: #9448a6;
-    height: 250px;
-    rotate: -10.9deg;
-    clip-path: polygon(100% 6%, 100% 100%, 29% 2%);
+h2 {
+    color: #c62ff6;
+    font-size: 3vw;
+    margin: 0;
 }
 
-/* servizi */
-#services {
-    padding: 110px 0px;
-    position: relative;
-    width: 100%;
+h3 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+
+#vision-content,
+#mission-content,
+#value-content,
+#approach-content {
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 0vw;
+    width: 80vw;
+}
+
+.textMission,
+.textVision {
+    width: 38%;
+}
+
+.fotoVision,
+.fotoMission {
+    width: 42%;
+}
+
+#value-content {
+    width: 80vw;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0vh 0vw 15vh 0vw;
+}
+
+#value-content article figure {
+    margin: 0;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#value-content article {
+    min-width: 14vw;
+    height: 27.3vw;
+    flex: 1;
+    text-align: start;
+    background-color: white;
+    border-radius: 1vw;
+    box-shadow: 0 0 15px #0000001f;
+    padding: 1vw;
+}
+
+#value-content article h4 {
+    color: #c62ff6;
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 1vh 0vw;
+}
+
+
+#services {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: #730099;
+    clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+}
+
+#services-background {
+    width: 100%;
+    background-color: #ededed;
+}
+
+#value h2,
+#services h2,
+#approach h2 {
+    padding: 8vw 0vw 6vh 0vw;
 }
 
 #services h2 {
-    font-size: 2.5vw;
-    text-transform: uppercase;
+    color: white;
+}
+
+
+
+#contact h2 {
+    padding: 15vh 0vw 0vh 0vw;
 }
 
 .service-cards {
-    z-index: 3;
-    position: relative;
+    width: 80vw;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
-    justify-content: center;
-}
-
-.service-card h3 {
-    margin: 0;
-    font-size: 1.5vw;
-    text-transform: uppercase;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0vh 0vw 15vh 0vw;
 }
 
 .service-card {
     display: grid;
     background: rgb(255 255 255);
-    padding: 20px;
+    padding: 1vw;
     flex: 1;
-    min-width: 250px;
+    min-width: 17vw;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 1vw;
     box-shadow: 0 0 15px #0000001f;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     vertical-align: middle;
+    /* position: relative; */
+    cursor: pointer;
+    /* justify-items: center; */
+}
+
+.int-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.int-content h3 {
+    width: 80%;
+    text-align: center;
+    color: #c62ff6;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    background-color: #9448a6;
+    transform: translateY(-1vh);
+    background-color: #c62ff6;
     color: #fff;
 }
 
-.service-card:hover .icone {
-    color: #fff;
+.service-card:hover h3 {
+    color: white;
 }
 
+.material-icons {
+    /* text-align: left; */
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    color: #9448a6;
+    font-size: 2vw;
+    /* vertical-align: 7vh; */
+    /* margin-right: 10px; */
+}
 
-.rett-services {
-    background-color: #9448a6;
-    height: 500px;
+.icone {
+    /* position: absolute; */
+    background-color: #730099;
+    box-shadow: 0 0 15px #0000001f;
+    color: white;
+    /* top: -3vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* clip-path: polygon(100% 0%, 80% 100%, 20% 100%, 0% 0%); */
+}
+
+.service-card p {
+    margin: 2vw 0vw;
+}
+
+/* Approach section */
+#approach-background {
     width: 100%;
-    position: absolute;
-    z-index: 3;
-    bottom: -319px;
-    left: -500px;
-    clip-path: polygon(12% 0%, 12% 100%, 82% 72%);
+    background-color: #730099;
+    margin: 0;
 }
 
+#approach {
+    width: 100%;
+    clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    text-align: center;
+    background-color: white;
+    padding: 0vw 0vw 5vw 0vw;
+}
+
+#approach-content {
+    padding: 0;
+    align-items: stretch;
+}
+
+#approach h3 {
+    color: #c62ff6;
+}
+
+.textApproach_1 {
+    text-align: right;
+    padding-right: 5vw;
+    display: grid;
+    gap: 50px;
+}
+
+.textApproach_2 {
+    text-align: left;
+    padding-left: 5vw;
+    display: grid;
+    gap: 50px;
+}
+
+
+.infoGraphic-approach {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.infoGraphic-approach div {
+    height: 16vw;
+    width: 16vw;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 15px #0000001f;
+    margin: 0;
+}
+
+.box1,
+.box4 {
+    background-color: #c62ff6;
+}
+
+.box2,
+.box3 {
+    background-color: #730099;
+}
+
+.box1 {
+    clip-path: polygon(-50% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
+
+.box2 {
+    clip-path: polygon(0% 20%, 100% -50%, 100% 100%, 0% 100%);
+}
+
+.box3 {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 150%);
+}
+
+.box4 {
+    clip-path: polygon(0% -50%, 100% 20%, 100% 100%, 0% 100%);
+}
+
+.infoGraphic-approach p {
+    font-size: 3vw;
+    margin: 39%;
+}
 
 
 /* Contact Section */
-#contact {
-    padding: 145px 0px;
-    background-color: #ffffff09;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 0px;
-    width: 100%;
-    margin: 0 auto;
-}
 
-#contact h2 {
-    margin: 0px;
-    text-align: center;
-    font-size: 2.5vw;
-    color: #9448a6;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-family: "Antonio";
-    text-transform: uppercase;
+#contact-content {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6vw 0vw;
+    width: 80vw;
+    flex-direction: column;
 }
 
 #contact p {
-    width: 44%;
+    width: 32vw;
     text-align: left;
+    margin-bottom: 0;
+    color: #263238;
 }
 
 #contact form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
+    width: 32vw;
     max-width: 500px;
     margin: 0 auto;
     align-items: center;
@@ -552,16 +480,15 @@ h2 {
 #contact input,
 #contact textarea {
     padding: 14px;
-    font-size: 16px;
+    font-size: 1vw;
     background: #fff;
-    border-radius: 8px;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
+    border-radius: 0.5vw;
+    width: 30vw;
 }
 
 #contact input:focus,
 #contact textarea:focus {
-    border: 2px solid #9448a6;
+    border: 2px solid #c62ff6;
     /* Colore del bordo quando l'elemento è attivo */
     outline: none;
     /* Rimuove l'outline di default quando l'input è attivo */
@@ -570,105 +497,130 @@ h2 {
 
 #contact button {
     padding: 14px;
-    background-color: #000;
+    background-color: #263238;
     color: #fff;
     border: none;
-    border-radius: 8px;
-    font-size: 1vw;
+    border-radius: 0.5vw;
+    font-size: 1.2vw;
     cursor: pointer;
     display: block;
     text-align: center;
-    width: 106%;
+    width: 31.5vw;
 }
 
 #contact button:hover {
-    background-color: #9448a6;
+    background-color: #c62ff6;
     color: #fff;
 }
-
-.rett-contacts {
-    background-color: #9448a6;
-    height: 200px;
-    width: 2000px;
-    position: absolute;
-    z-index: 2;
-    top: 575px;
-    clip-path: polygon(100% 0%, 100% 100%, 51% 100%);
-}
-
-
 
 /* Footer */
-footer {
-    background-color: #9448a6;
+.footer {
+    background-color: #263238;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
+    padding: 60px 20px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+    justify-content: start;
+    max-width: 80vw;
     margin: 0 auto;
 }
 
+.footer-section {
+    /* flex: 1 1 37vw; */
+    width: 25vw;
+}
 
-footer a {
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-section a:hover {
+    text-decoration: none;
+    color: #c62ff6;
+}
+
+.footer-bottom {
+    border-top: 1px solid #fff;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #fff;
+}
+
+.footer-bottom a:hover {
+    color: #c62ff6;
+}
+
+.footer-section a {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
 }
 
-footer a:hover {
-    color: #ff00ff;
-}
-
-.material-icons {
-    text-align: center;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 3px solid #9448a6;
-    color: #9448a6;
-    font-size: 24px;
-    vertical-align: 7;
-    margin-right: 10px;
-}
-
-.icone {
-    border: none;
-    display: flex;
+.footer-section a footer a:hover {
+    color: #c62ff6;
 }
 
 
+/*Layout mobile version */
 
-@media screen and (max-width: 660px) and (orientation:portrait) {
+@media screen and (max-width:480px) {
 
-    html,
     body {
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    figure {
+        order: 2;
         width: 100%;
     }
 
-
-    .material-icons {
-        text-align: center;
-        width: 5vw;
-        height: 5vw;
-        border-radius: 50%;
-        border: 2px solid #9448a6;
-        color: #9448a6;
-        font-size: 5vw;
-        vertical-align: middle;
-        margin-right: 2vw;
+    header figure img {
+        padding: 25vw 0vw 0vw 0vw;
     }
 
-    .icone {
-        border: none;
-        color: #9448a6;
+    .header-content {
+        order: 1;
+        width: 100%;
+        padding: 20vw 5vw 0vw 0vw;
     }
 
-    .service-card:hover .icone {
-        color: #fff;
+    .header-content h1 {
+        font-size: 11vw;
     }
+
+    .header-content p {
+        font-size: 6vw;
+    }
+
+    .header-content button {
+        width: 45vw;
+    }
+
+    .header-content button a {
+        font-size: 4vw;
+    }
+
 
     nav ul li a {
         font-size: 5vw;
@@ -681,7 +633,7 @@ footer a:hover {
     }
 
     nav ul li:hover {
-        background-color: #9448a6;
+        background-color: #c62ff6;
     }
 
     nav ul li:hover a {
@@ -689,15 +641,15 @@ footer a:hover {
     }
 
     nav {
-        width: 100%;
+        width: 79%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         height: 3vh;
     }
 
     nav .logo {
-        font-size: 5vw;
+
         font-weight: bold;
         color: #000;
         display: flex;
@@ -711,7 +663,7 @@ footer a:hover {
         border: none;
         font-size: 8vw;
         /* Mantiene il font adattabile senza diventare troppo grande */
-        color: #9448a6;
+        color: #c62ff6;
         /* Adatta il margine in base alla larghezza dello schermo */
     }
 
@@ -736,1757 +688,144 @@ footer a:hover {
         align-items: flex-start;
     }
 
-    header {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        z-index: 1;
+    #vision-content,
+    #mission-content,
+    #value-content,
+    #approach-content {
+        width: 90vw;
+        display: block;
     }
 
-    .rett {
-        background-color: #000;
-        z-index: 2;
-        position: absolute;
-        top: -4vh;
-        width: 220vw;
-        height: 3vh;
-        rotate: -25deg;
-        left: -14vh;
+    h2 {
+        font-size: 10vw;
     }
 
-    .header-rett img {
-        width: 100%;
-        position: relative;
-        top: -58px;
-        left: 0;
-        filter: brightness(0.5);
-        z-index: 1;
-        rotate: 25deg;
-    }
-
-    .header-rett {
-        position: absolute;
-        width: 195vw;
-        height: 54vh;
-        rotate: -25deg;
-        overflow: hidden;
-        top: 12vh;
-    }
-
-
-    .rett-grande {
-        background-color: #000;
-        z-index: 2;
-        position: absolute;
-        top: 71vh;
-        width: 131%;
-        height: 20vh;
-        rotate: -25deg;
-    }
-
-
-    .header-content {
-
-        transform: translate(3%, -50%);
-
-    }
-
-
-    header h1 {
-        font-size: 15vw;
-        width: 100%;
-    }
-
-    header p {
-        text-align: start;
-        margin: -2vh 2vw 0 2vw;
-        font-size: 4.8vw;
-        width: 100%;
-    }
-
-
-    .lx {
-        padding-top: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 5vw;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        margin: 0;
-        /* Nessun cambiamento necessario */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
-        width: 100%;
-        /* Larghezza già adattabile */
-    }
-
-
-    .Tx {
-        padding-top: 0vh;
-        /* Padding adattabile in base all'altezza della viewport */
-        margin: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 15vw;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    main {
-        width: 100%;
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    #vision {
-        position: relative;
-        padding: 6vh 0 0 0;
-        margin: 0;
-        width: 100%;
-    }
-
-
-    #approach {
-        margin: 0vh 0vh 0vh 0vh;
-        padding: 0vh 0vh 0vh 0vh;
-        width: 100%;
-        top: 100vh;
-    }
-
-    #contact {
-        width: 100%;
-        top: 2vh;
-        font-size: 2.8vw;
-        margin: 70.5vh 0vh 0vh 0vh;
-    }
-
-    /* Footer for mobile */
-    footer {
-        font-size: 3vw;
-        width: 100%;
-    }
-
-    #intro-content {
-        display: flex;
-        background-color: #ffffff09;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        padding: 0;
-        position: relative;
-        top: 1vh;
-        /* Posizionamento adattabile in base all'altezza della viewport */
-        margin: 0;
-        width: 100%;
-    }
-
-
-    #vision h2 {
-        position: relative;
-        padding: 2vw;
+    h3 {
         font-size: 7vw;
-        top: -2vh;
     }
 
-    .pres {
+    .textMission,
+    .textVision {
         width: 100%;
-        position: absolute;
-        top: -6vh;
     }
 
-    .foto::before {
-        content: "";
-        position: absolute;
-        top: -20vh;
-        left: 0;
+    .fotoVision,
+    .fotoMission {
         width: 100%;
-        height: 65vh;
-        background-color: #9548a6c0;
-        mix-blend-mode: multiply;
-        z-index: 3;
-        clip-path: polygon(100% 0%, -2% 25.5%, 0% 90%, 100% 90%);
     }
 
-    .foto {
-        width: 123%;
-        position: relative;
-        height: 40vh;
-        left: 0;
-        /* padding: 0px 10px; */
-        clip-path: polygon(100% 0%, -2% 27.5%, 0% 101%, 100% 101%);
-        top: 49vh;
-    }
-
-    .foto img {
-        width: 100%;
-        /* L'immagine si adatta alla larghezza del contenitore */
-        position: relative;
-        left: 0;
-        /* Posizionamento orizzontale adattabile alla larghezza della viewport */
-        top: -4vh;
-        /* Posizionamento verticale adattabile all'altezza della viewport */
-        clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 0%);
-        /* Corretto la sintassi */
-    }
-
-
-
-    .testo {
-        font-size: 3.2vw;
-        /* Dimensione del font adattabile alla larghezza della viewport */
-        /* Padding orizzontale adattabile alla larghezza della viewport */
-        width: 100%;
-        /* Larghezza adattabile in base alla larghezza della viewport */
-    }
-
-
-    .testo p {
-        padding: 0vh 2vw;
-    }
-
-    #missione-valori {
-        width: 100%;
-        top: 30.7vh;
-        margin: 43vh 0vh 0vh 0vh;
-        z-index: 3;
-    }
-
-    #missione-valori h2 {
-        top: 24vh;
-        /* Posizionamento verticale adattabile alla viewport */
-        text-align: right;
-        padding: 0 5vw;
-        /* Padding orizzontale adattabile alla larghezza della viewport */
-        font-size: 7vw;
-        /* Dimensione del font adattabile alla larghezza della viewport */
-    }
-
-    .testi {
+    #value-content {
         display: flex;
-        position: absolute;
-        z-index: 1;
-        top: 30vh;
-        gap: 0;
-        padding: 0vw;
+        gap: 5vw;
         flex-direction: column;
     }
 
-
-    .testi .missione p {
-        padding: 0vh 10vw 0vh 9vw;
+    #value-content article {
+        padding: 5vw;
+        border-radius: 5vw;
     }
 
-    .testi .valori p {
-        padding: 0vh 10vw 0vh 0vw;
-    }
-
-    .testi .valori ul {
-        list-style: none;
-        padding: 0vh 0vw 0vh 9vw;
-    }
-
-    .testi .missione,
-    .testi .valori {
-        flex: 1;
-        color: #000;
-        padding: 0 2vw;
-        top: 38vh;
-        font-size: 3.2vw;
-    }
-
-    .fotoValoriMissione {
-        width: 100%;
-        position: relative;
-        height: auto;
-        top: 3.3vh;
-        z-index: 1;
-    }
-
-    .fotoValoriMissione img {
-        width: 127%;
-        position: relative;
-        left: -26vw;
-        top: -24vh;
-        clip-path: polygon(100% 1%, 0% 41%, 0% 100%, 100% 100%, 100% 0%);
-    }
-
-    /* .fotoValoriMissione::before {
-        content: "";
-        position: absolute;
-        top: -24.5vh;
-        left: -27vw;
-        width: 280%;
-        height: 39vh;
-        background-color: #9d4cb1;
-        mix-blend-mode: multiply;
-        z-index: 2;
-        border-radius: 10px;
-        clip-path: polygon(100% -41%, 0% 39%, 0% 95%, 100% 20%);
-    } */
-
-    .rett-valori-img {
-        background-color: #9448a6;
-        width: 100%;
-        height: 13vh;
-        clip-path: polygon(100% 0%, 100% 14%, 68% 37.5%, 100% 100%);
-        position: absolute;
-        top: -2.5vh;
-        z-index: 3;
-        left: 0vw;
-    }
-
-    .testi h3 {
-        font-size: 5vw;
+    #value-content article h4 {
+        font-size: 6vw;
     }
 
     #services {
-        position: relative;
-        width: 100%;
-        top: 93vh;
-        padding: 8vh 0vh 0vh 0vh;
+        clip-path: polygon(50% 5%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
     }
 
-    #services h2 {
-        width: 100%;
-        padding: 0vw 2vw;
-        font-size: 7vw;
-        ;
+    #services h2,
+    #value h2, #approach h2 {
+        padding: 26vw 0vw 6vh 0vw;
     }
-
 
     .service-cards {
-        z-index: 3;
-        position: relative;
-        display: flex;
-        gap: 2vh;
-        flex-wrap: wrap;
-        margin: 0vw 2vw;
-        justify-content: center;
-        /* line-height: 0.8rem; */
+        width: 90vw;
+        gap: 5vw;
     }
 
     .service-card {
-        background: rgb(255 255 255);
-        flex: 1;
-        width: 100%;
-        /* min-width: 720px; */
-        /* text-align: center; */
-        /* border-radius: 2vw; */
-        box-shadow: 0 0 15px #00000038;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        height: 28vh;
-        font-size: 3.2vw;
-        padding: 2vw;
-        /* vertical-align: middle; */
-        /* display: table-cell; */
-    }
-
-    .service-card-text {
-        /* top: 4vh; */
-        /* position: relative; */
-        width: 100%;
-        height: 50%;
-        padding: 5vh 0vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* align-content: space-around; */
-    }
-
-    .service-card h3 {
-        font-size: 5vw;
-        padding: 0;
-    }
-
-    .rett-services {
-        height: 40vh;
-        width: 100%;
-        left: 0vh;
-        clip-path: polygon(0% 0%, 0% 100%, 40% 88%);
-        bottom: -28vh;
-    }
-
-
-    #approach h2 {
-        top: 10vh;
-        color: #9448a6;
-        width: 100%;
-        padding: 0vw 2vw;
-        margin: 0px;
-        font-size: 7vw;
-    }
-
-    .aproccio-img {
-        overflow: visible;
-        width: 100%;
-        position: relative;
-        top: 63vh;
-    }
-
-
-    .aproccio-img img {
-        width: 231%;
-        left: -71vw;
-        top: -53vh;
-        clip-path: polygon(100% -11%, 0% 35%, 0% 112%, 100% 76%, 100% 0%);
-        /* filter: grayscale(100%); */
-    }
-
-    .aproccio-content {
-        width: 100%;
-        align-items: center;
-        left: 6px;
-        top: 60vh;
-    }
-
-    .aproccio-text {
-        height: 8vh;
-        width: 8vh;
-        margin: 0vh 0vw;
-        border: 0.5vw solid white;
         padding: 3vw;
-    }
-
-    .aproccio-text h3 {
-        font-size: 2vw;
-    }
-
-    /* .aproccio-img::before {
-        width: 100%;
-        left: 0vw;
-        top: -54vh;
-        height: 69vh;
-        clip-path: polygon(100% 1%, 0% 20.5%, 0% 89%, 100% 74%);
-    } */
-
-    .rett-nero-approccio {
-        top: 2vh;
-        height: 35vw;
-        width: 182%;
-        left: -40vw;
-    }
-
-    .triangolo-viola-approccio {
-        top: 8vh;
-        left: 0;
-        width: 103%;
-        clip-path: polygon(100% 39%, 100% 49%, 65% 39%);
-    }
-
-    .rett-contacts {
-        background-color: #9448a6;
-        height: 30vw;
-        width: 100%;
-        position: absolute;
-        z-index: 2;
-        top: 70vh;
-        clip-path: polygon(100% 52%, 100% 100%, 50% 100%);
-    }
-
-    #contact h2 {
-        margin: 0px;
-        text-align: center;
-        font-size: 7vw;
-        color: #9448a6;
-        margin-bottom: 3vh;
-        font-weight: bold;
-        font-family: "Antonio";
-    }
-
-    #contact p {
-        width: 75%;
-        font-size: 3.2vw;
-    }
-
-    #contact form {
-        width: 70%;
-        font-size: 2.8vw;
-        gap: 2vh;
-    }
-
-    #contact input {
-        padding: 3vw;
-        font-size: 2.8vw;
-        background: #fff;
-        border-radius: 1vw;
-        width: 100%;
-        height: 2vh;
-        border: 0.2vh solid black;
-    }
-
-    #contact textarea {
-        padding: 3vw;
-        font-size: 2.8vw;
-        background: #fff;
-        border-radius: 1vw;
-        width: 100%;
-        height: 7vh;
-        border: 0.2vh solid black;
-    }
-
-    #contact button {
-        padding: 3vw;
-        background-color: #000;
-        color: #fff;
-        border: none;
-        border-radius: 2vw;
-        font-size: 3vw;
-        cursor: pointer;
-        display: block;
-        text-align: center;
-        width: 110%;
-    }
-
-    footer a {
-        color: #fff;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    footer a:hover {
-        color: #ff00ff;
-    }
-
-}
-
-@media screen and (min-width:660px) and (max-width: 800px) and (orientation:landscape) {
-
-    html,
-    body {
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
-    nav ul li a {
-        font-size: 3vw;
-    }
-
-    nav ul li {
-        border-top: 0.3px solid grey;
-        width: 100%;
-        padding: 1vh 6vw;
-    }
-
-    nav ul li:hover {
-        background-color: #9448a6;
-    }
-
-    nav ul li:hover a {
-        color: #fff;
-    }
-
-    nav {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        height: 3vh;
-    }
-
-    nav .logo {
-        font-size: 3vw;
-        font-weight: bold;
-        color: #000;
-        display: flex;
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    /* Show hamburger icon on mobile */
-    nav .menu-toggle {
-        display: block;
-        background: transparent;
-        border: none;
-        font-size: 4vw;
-        /* Mantiene il font adattabile senza diventare troppo grande */
-        color: #9448a6;
-        /* Adatta il margine in base alla larghezza dello schermo */
-    }
-
-    nav .nav-links {
-        display: none;
-        flex-direction: column;
-        gap: 0;
-        position: absolute;
-        top: 9vh;
-        right: 10vw;
-        background-color: #fff;
-        padding: 0;
-        /* border-radius: 0.5rem; */
-        box-shadow: 0px 0.5vh 1vh rgba(0, 0, 0, 0.1);
-        width: 101vw;
-    }
-
-    /* Make nav links visible when hamburger is clicked */
-    nav.active .nav-links {
-        display: flex;
-    }
-
-    .lx {
-        padding-top: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 3vw;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        margin: 0;
-        /* Nessun cambiamento necessario */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
-        width: 100%;
-        /* Larghezza già adattabile */
-    }
-
-    header {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .header-content {
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        left: 74%;
-    }
-
-    .header-rett {
-        position: absolute;
-        width: 119vw;
-        height: 85vh;
-        rotate: -25deg;
-        overflow: hidden;
-        top: 2vh;
-    }
-
-    .rett {
-        top: -12vh;
-        width: 220vw;
-        height: 6vh;
-    }
-
-    .rett-grande {
-        background-color: #000;
-        z-index: 2;
-        position: absolute;
-        top: 97vh;
-        width: 118%;
-        height: 33vh;
-        rotate: -25deg;
-    }
-
-    .header-rett img {
-        width: 100%;
-        position: relative;
-        top: -133px;
-        left: 0;
-        filter: brightness(0.5);
-        z-index: 1;
-        rotate: 25deg;
-    }
-
-    header h1 {
-        font-size: 8vw;
-        width: 100%;
-    }
-
-    .Tx {
-        padding-top: 0vh;
-        /* Padding adattabile in base all'altezza della viewport */
-        margin: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 8vw;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    header p {
-        text-align: start;
-        margin: -4vh 0vw 0 0vw;
-        font-size: 2.6vw;
-        width: 100%;
-    }
-
-
-    main {
-        width: 90%;
-        padding: 0;
-        margin: 0 auto;
-
-    }
-
-    #vision {
-        position: relative;
-        padding: 6vh 0 0 0;
-        margin: 0;
-        width: 100%;
-    }
-
-    #intro-content {
-        margin: 0vh 0vh 83vh 0vh;
-        width: 100%;
-    }
-
-    #vision h2 {
-        position: relative;
-        padding: 2vw 0vw;
-        top: -2vh;
-        font-size: 5vw;
-    }
-
-    .pres {
-        width: 100%;
-        position: absolute;
-        top: 36vh;
-    }
-
-    .testo {
-        font-size: 1.7vw;
-        /* Dimensione del font adattabile alla larghezza della viewport */
-        /* Padding orizzontale adattabile alla larghezza della viewport */
-        width: 95%;
-        /* Larghezza adattabile in base alla larghezza della viewport */
-    }
-
-
-    .foto::before {
-        content: "";
-        position: absolute;
-        top: -20vh;
-        left: 0;
-        width: 100%;
-        height: 122vh;
-        background-color: #9548a6c0;
-        mix-blend-mode: multiply;
-        z-index: 3;
-        clip-path: polygon(100% 0%, -2% 25.5%, 0% 90%, 100% 90%);
-    }
-
-    .foto {
-        width: 123%;
-        position: relative;
-        height: 89vh;
-        left: 0;
-        /* padding: 0px 10px; */
-        clip-path: polygon(100% 0%, -2% 27.5%, 0% 101%, 100% 101%);
-        top: 12vh;
-    }
-
-
-    .foto img {
-        width: 100%;
-        /* L'immagine si adatta alla larghezza del contenitore */
-        position: relative;
-        left: 0;
-        /* Posizionamento orizzontale adattabile alla larghezza della viewport */
-        top: -4vh;
-        /* Posizionamento verticale adattabile all'altezza della viewport */
-        clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 0%);
-        /* Corretto la sintassi */
-    }
-
-    #missione-valori {
-        width: 100%;
-        top: -62.3vh;
-        margin: 0 auto;
-        z-index: 3;
-    }
-
-    #missione-valori h2 {
-        top: 82vh;
-        text-align: right;
-        padding: 0 5vw;
-        /* font-size: 7vw; */
-    }
-
-
-    .testi {
-        display: flex;
-        position: absolute;
-        z-index: 1;
-        top: 102vh;
-        gap: 0;
-        padding: 0vw;
-    }
-
-    .missione p {
-        padding: 0vh 0vw 0vh 5vw;
-    }
-
-    .valori p {
-        padding: 0vh 0vw 0vh 0vw;
-    }
-
-    .valori ul {
-        list-style: none;
-    }
-
-
-    .testi .missione,
-    .testi .valori {
-        flex: 1;
-        color: #000;
-        padding: 0 2vw;
-        top: 38vh;
-        font-size: 1.7vw;
+        border-radius: 3vw;
+        flex: unset;
     }
 
     .material-icons {
-        text-align: center;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        border: 2px solid #9448a6;
-        color: #9448a6;
-        font-size: 24px;
-        vertical-align: middle;
-        margin-right: 10px;
-    }
-
-    .icone {
-        border: none;
-        color: #9448a6;
-    }
-
-    .service-card:hover .icone {
-        color: #fff;
-    }
-
-    .fotoValoriMissione {
-        width: 100%;
-        position: relative;
-        height: auto;
-        top: -54.7vh;
-    }
-
-
-    .fotoValoriMissione img {
-        width: 127%;
-        position: relative;
-        left: -18vw;
-        top: -20vh;
-        clip-path: polygon(100% 1%, 0% 41%, 0% 100%, 100% 100%, 100% 0%);
-    }
-
-    /* .fotoValoriMissione::before {
-        content: "";
-        position: absolute;
-        top: -19.5vh;
-        left: -27vw;
-        width: 200%;
-        height: 158vh;
-        background-color: #9d4cb1;
-        mix-blend-mode: multiply;
-        z-index: 2;
-        border-radius: 10px;
-        clip-path: polygon(100% -17%, 6% 36%, -16% 100%, 128% 30%, 100% 100%);
-    } */
-
-    .rett-valori-img {
-        background-color: #9448a6;
-        width: 100%;
-        height: 52vh;
-        clip-path: polygon(100% 0%, 100% 25%, 65% 51%, 100% 100%);
-        position: absolute;
-        top: 60.5vh;
-        z-index: 3;
-        left: 5vw;
-    }
-
-
-    .testi h3 {
-        font-size: 3vw;
-    }
-
-    #services {
-        /* position: relative; */
-        width: 100%;
-        /* top: 93vh; */
-        padding: 0vh 0vh 0vh 0vh;
-    }
-
-    #services h2 {
-        width: 100%;
-        padding: 8vw 2vw 0vh 2vw;
+        width: 10vw;
+        height: 10vw;
         font-size: 5vw;
     }
 
-    .service-cards {
-        z-index: 3;
-        position: relative;
-        display: flex;
-        gap: 3vh;
-        flex-wrap: wrap;
-        margin: 0vw 2vw;
-        justify-content: center;
-        /* line-height: 0.8rem; */
-    }
-
-    .service-card {
-        /* align-items: center; */
-        display: flex;
-        background: rgb(255 255 255);
-        flex: 1;
-        width: 100%;
-        /* text-align: center; */
-        box-shadow: 0 0 15px #00000038;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        /* height: 70vh; */
-        font-size: 1.7vw;
-        padding: 2vw;
-        /* justify-content: center; */
-        flex-direction: column;
-    }
-
-    .service-card-text {
-        /* top: 4vh; */
-        /* position: relative; */
-        width: 100%;
-        /* height: 100%; */
-        padding: 5vh 0vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* align-content: space-around; */
-    }
-
-    .service-card h3 {
-        font-size: 3vw;
-        padding: 0;
-    }
-
-    .service-card p {
-        top: 5px;
-        position: relative;
-        margin: 0;
-    }
-
-
-    .rett-services {
-        height: 102vh;
-        width: 100%;
-        left: -11vh;
-        clip-path: polygon(0% 0%, 0% 100%, 50% 80%);
-        bottom: -71vh;
-    }
 
     #approach {
+        clip-path: polygon(50% 5%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    }
+    }
+
+    .textApproach_1 {
+        padding: 0vw 0vw 5vw 0vw;
+        display: flex;
+    }
+
+    .textApproach_2 {
+        padding: 5vw 0vw 0vw 0vw;
+        display: flex;
+    }
+
+    .infoGraphic-approach div {
+        height: 100%;
         width: 100%;
-        padding: 0;
-        margin: 18vh 0vh 0vh 0vh;
+
     }
 
-    #approach h2 {
-        top: 17vh;
-        color: #9448a6;
-        width: 100%;
-        padding: 0vw 2vw;
-        /* margin: 0px; */
-        font-size: 5vw;
+    .infoGraphic-approach p {
+        font-size: 10vw;
+        margin: 36%;
     }
 
-    .aproccio-img {
-        overflow: visible;
-        width: 106%;
-        position: relative;
-        top: 63vh;
-    }
-
-    .aproccio-img img {
-        width: 117%;
-        left: -10vw;
-        top: -51vh;
-        clip-path: polygon(100% -2%, -10% 41%, 0% 100%, 100% 66%, 100% 0%);
-    }
-
-    .aproccio-content {
-        width: 100%;
-        align-items: center;
-        left: 0;
-        top: 89vh;
-    }
-
-    .aproccio-text {
-        height: 30vh;
-        width: 30vh;
-        margin: 0vh 0vw;
-        border: 0.5vw solid white;
-        padding: 2.5vw;
-    }
-
-    .aproccio-text h3 {
-        font-size: 1.7vw;
-    }
-
-    .aproccio-img::before {
-        width: 105%;
-        left: -5vw;
-        top: -52vh;
-        height: 148vh;
-        clip-path: polygon(100% 1%, 0% 34.4%, 0% 88%, 100% 62%);
-    }
-
-    .rett-nero-approccio {
-        top: 33vh;
-        /* height: 35vw; */
-        /* width: 182%; */
-        /* left: -40vw; */
-    }
-
-    .triangolo-viola-approccio {
-        top: 76vh;
-        /* left: 0; */
-        width: 103%;
-        clip-path: polygon(100% 39%, 100% 66%, 54% 39%);
-    }
-
-
-    #contact {
-        width: 100%;
-        top: 2vh;
-        font-size: 2.8vw;
-        margin: -85vh 0vh 0vh 0vh;
-    }
-
-    #contact h2 {
-        margin: 0px;
+    .technology,
+    .result {
         text-align: left;
-        font-size: 5vw;
-        color: #9448a6;
-        /* margin-bottom: 20px; */
-        font-weight: bold;
-        font-family: "Antonio";
+
     }
 
-    #contact p {
-        width: 77%;
-        text-align: left;
-        font-size: 1.7vw;
+    .strategy,
+    .Support {
+        text-align: right;
+
+    }
+
+    .contact-content {
+        width: 90vw;
     }
 
     #contact form {
-        width: 70%;
-        font-size: 1.7vw;
-        gap: 2vh;
+        width: 100%;
     }
 
-    #contact input {
-        padding: 2vw;
-        font-size: 1.7vw;
-        background: #fff;
-        border-radius: 0.5vw;
-        width: 103%;
-        height: 1.5vh;
-        border: 0.2vh solid black;
-    }
-
+    #contact input,
     #contact textarea {
-        padding: 2vw;
-        font-size: 1.7vw;
-        background: #fff;
-        border-radius: 0.5vw;
-        width: 103%;
-        height: 4vh;
-        border: 0.2vh solid black;
+        width: 90%;
+        font-size: 4vw;
+    }
+
+    #contact p {
+        width: 100%;
     }
 
     #contact button {
-        padding: 2vw;
-        background-color: #000;
-        color: #fff;
-        border: none;
-        border-radius: 0.5vw;
-        font-size: 2vw;
-        cursor: pointer;
-        display: block;
-        text-align: center;
-        width: 110%;
-    }
-
-    .rett-contacts {
-        background-color: #9448a6;
-        height: 54vh;
-        width: 112%;
-        position: absolute;
-        z-index: 2;
-        top: 111vh;
-        clip-path: polygon(100% 52%, 100% 100%, 50% 100%);
-    }
-
-
-    /* Footer for mobile */
-    footer {
-        font-size: 1.7vw;
         width: 100%;
+        font-size: 4vw;
     }
 
-    footer a {
-        color: #fff;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    footer a:hover {
-        color: #ff00ff;
-    }
-
-}
-
-
-
-
-/* Desktop: 1500px a 1560px - stili da 16 pollici aspect ratio 16/9*/
-@media screen and (min-width:1500px) and (max-width: 1560px) {
-    .rett-grande {
-        top: 94vh;
-    }
-
-    .header-content {
-        left: 25%;
-    }
-
-    header h1 {
-        font-size: 7rem;
-        width: 100%;
-    }
-
-    .Tx {
-        padding-top: 0vh;
-        /* Padding adattabile in base all'altezza della viewport */
+    .footer-container {
+        width: 90vw;
         margin: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 7rem;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
+        flex-wrap: nowrap;
+        align-items: center;
     }
 
-    header p {
-        text-align: start;
-        margin: -4vh 0vw 0vh 1vw;
-        font-size: 2.26rem;
-        width: 100%;
-    }
-
-    #vision {
-        margin-bottom: 0;
-    }
-
-    .fotoValoriMissione img {
-        width: 168%;
-        top: -55vh;
-    }
-
-    #missione-valori h2 {
-        top: 35vh;
-    }
-
-    .testi {
-        top: 52vh;
-    }
-
-    .aproccio-img img {
-        width: 168%;
-        top: -2vh;
-    }
-
-    .aproccio-content {
-        left: -8%;
-        top: 67vh;
-    }
-
-    #contact {
-        margin: -10vh 0vw;
-        top: -4vh;
-    }
-
-    #contact p {
-        width: 56%;
-    }
-}
-
-/* Desktop: 1500px a 1560px - stili 16 pollici per aspect ratio 16:10 */
-@media screen and (min-width:1500px) and (max-width: 1560px) and (min-height:900px) {
-
-    .rett-grande {
-        top: 94vh;
-    }
-
-    .header-content {
-        left: 25%;
-    }
-
-    header h1 {
-        font-size: 7rem;
-        width: 100%;
-    }
-
-    .Tx {
-        padding-top: 0vh;
-        /* Padding adattabile in base all'altezza della viewport */
-        margin: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 7rem;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    header p {
-        text-align: start;
-        margin: -4vh 0vw 0vh 1vw;
-        font-size: 2.26rem;
-        width: 100%;
-    }
-
-    #vision {
-        margin-bottom: 2vh;
-    }
-
-    .fotoValoriMissione img {
-        width: 168%;
-        top: -50vh;
-    }
-
-    #missione-valori h2 {
-        top: 33vh;
-    }
-
-    .testi {
-        top: 45vh;
-    }
-
-    .aproccio-img img {
-        width: 168%;
-        top: -1vh;
-    }
-
-    .aproccio-content {
-        left: -6%;
-        top: 65vh;
-    }
-
-    #contact {
-        margin: 0vh 0vw;
-        top: -3vh;
-    }
-
-    #contact p {
-        width: 56%;
-    }
-}
-
-
-
-
-/*Desktop: 1440-1444 a 1499 - stili da 15 a 16 pollici aspect ratio 16/9*/
-@media screen and (min-width:1440px) and (max-width: 1499px) {
-
-    html,
-    body {
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
-
-
-    .lx {
-        padding-top: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 1.7rem;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        margin: 0;
-        /* Nessun cambiamento necessario */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
-        width: 100%;
-        /* Larghezza già adattabile */
-    }
-
-
-    header {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .header-content {
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        left: 74%;
-    }
-
-    .header-rett {
-        position: absolute;
-        width: 122vw;
-        height: 85vh;
-        rotate: -25deg;
-        overflow: hidden;
-        top: 2vh;
-    }
-
-    .rett {
-        top: -12vh;
-        width: 220vw;
-        height: 6vh;
-    }
-
-    .rett-grande {
-        background-color: #000;
-        z-index: 2;
-        position: absolute;
-        top: 93vh;
-        width: 123%;
-        height: 33vh;
-        rotate: -25deg;
-    }
-
-    .header-rett img {
-        width: 100%;
-        position: relative;
-        top: -133px;
-        left: 0;
-        filter: brightness(0.5);
-        z-index: 1;
-        rotate: 25deg;
-    }
-
-    header h1 {
-        font-size: 7rem;
-        width: 100%;
-    }
-
-    .Tx {
-        padding-top: 0vh;
-        /* Padding adattabile in base all'altezza della viewport */
-        margin: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 7rem;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    header p {
-        text-align: start;
-        margin: -4vh 0vw 0vh 1vw;
-        font-size: 2.26rem;
-        width: 100%;
-    }
-
-    .fotoValoriMissione {
-        width: 106%;
-        z-index: 1;
-        height: 850px;
-        /* overflow: hidden; */
-        position: relative;
-        top: 3vh;
-        flex: 1;
-    }
-
-
-    .aproccio-content {
-        display: flex;
-        justify-content: space-around;
-        rotate: -10.9deg;
-        position: absolute;
-        top: 631px;
-        z-index: 3;
-        left: -10%;
-    }
-
-    #vision h2 {
-        font-size: 2.6rem;
-    }
-
-    .pres {
-        width: 100%;
-        position: absolute;
-        top: 162px;
-        font-size: 1rem;
-    }
-
-    #mission h2 {
-        font-size: 2.6rem;
-    }
-
-    .testi .missione,
-    .testi .valori {
-        font-size: 1rem;
-    }
-
-
-    .aproccio-img img {
-        clip-path: polygon(100% 0%, 0% 31%, 0% 100%, 100% 66%, 100% 0%);
-        position: absolute;
-        left: -363px;
-        top: -2vh;
-        width: 170%;
-    }
-
-    .aproccio-content {
-        display: flex;
-        justify-content: space-around;
-        rotate: -10.9deg;
-        position: absolute;
-        top: 71vh;
-        z-index: 3;
-        left: -10%;
-    }
-
-    .service-card-text p {
-        font-size: 1rem;
-    }
-
-
-    #contact p {
-        width: 58%;
-        text-align: left;
-        font-size: 1rem;
-    }
-
-    #contact {
-        padding: 10vh 0vw;
-    }
-
-
-
-
-}
-
-/*Desktop: 1440-1444 a 1499 - stili da 15 a 16 pollici aspect ratio 16/10*/
-@media screen and (min-width:1440px) and (max-width: 1499px) and (min-height:900px) {
-
-    html,
-    body {
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
-
-    .lx {
-        padding-top: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 1.7rem;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        margin: 0;
-        /* Nessun cambiamento necessario */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
-        width: 100%;
-        /* Larghezza già adattabile */
-    }
-
-
-    header {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .header-content {
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        left: 74%;
-    }
-
-    .header-rett {
-        position: absolute;
-        width: 122vw;
-        height: 85vh;
-        rotate: -25deg;
-        overflow: hidden;
-        top: 2vh;
-    }
-
-    .rett {
-        top: -12vh;
-        width: 220vw;
-        height: 6vh;
-    }
-
-    .rett-grande {
-        background-color: #000;
-        z-index: 2;
-        position: absolute;
-        top: 93vh;
-        width: 123%;
-        height: 33vh;
-        rotate: -25deg;
-    }
-
-    .header-rett img {
-        width: 100%;
-        position: relative;
-        top: -133px;
-        left: 0;
-        filter: brightness(0.5);
-        z-index: 1;
-        rotate: 25deg;
-    }
-
-    header h1 {
-        font-size: 7rem;
-        width: 100%;
-    }
-
-    .Tx {
-        padding-top: 0vh;
-        /* Padding adattabile in base all'altezza della viewport */
-        margin: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 7rem;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    header p {
-        text-align: start;
-        margin: -4vh 0vw 0vh 1vw;
-        font-size: 2.26rem;
-        width: 100%;
-    }
-
-    .fotoValoriMissione {
-        width: 106%;
-        z-index: 1;
-        height: 850px;
-        /* overflow: hidden; */
-        position: relative;
-        top: 3vh;
-        flex: 1;
-    }
-
-
-    .aproccio-content {
-        display: flex;
-        justify-content: space-around;
-        rotate: -10.9deg;
-        position: absolute;
-        top: 631px;
-        z-index: 3;
-        left: -10%;
-    }
-
-    #vision h2 {
-        font-size: 2.6rem;
-        top: 35vh;
-    }
-
-    .pres {
-        width: 100%;
-        position: absolute;
-        top: 162px;
-        font-size: 1rem;
-    }
-
-    #mission h2 {
-        font-size: 2.6rem;
-    }
-
-    .testi {
-        top: 50vh;
-    }
-
-    .testi .missione,
-    .testi .valori {
-        font-size: 1rem;
-    }
-
-
-    .aproccio-img img {
-        clip-path: polygon(100% 0%, 0% 31%, 0% 100%, 100% 66%, 100% 0%);
-        position: absolute;
-        left: -363px;
-        top: -2vh;
-        width: 170%;
-    }
-
-    .aproccio-content {
-        display: flex;
-        justify-content: space-around;
-        rotate: -10.9deg;
-        position: absolute;
-        top: 69vh;
-        z-index: 3;
-        left: -10%;
-    }
-
-    .service-card-text p {
-        font-size: 1rem;
-    }
-
-
-    #contact p {
-        width: 58%;
-        text-align: left;
-        font-size: 1rem;
-    }
-
-    #contact {
-        padding: 16vh 0vw;
-    }
-
-}
-
-
-
-
-
-/*Desktop: 1280 a 1439* - stili da 11 a 14 pollici aspect ratio 16/9*/
-@media screen and (min-width:1280px) and (max-width:1439px) {
-
-
-    .header-content {
-        top: 37%;
-        left: 22%;
-        width: 100%;
-    }
-
-
-    .rett-grande {
-        top: 94vh;
-        height: 31vh;
-    }
-
-    header h1 {
-        font-size: 7rem;
-        width: 100%;
-    }
-
-    .Tx {
-        padding-top: 0vh;
-        /* Padding adattabile in base all'altezza della viewport */
-        margin: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 7rem;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    header p {
-        text-align: start;
-        margin: -4vh 0vw 0vh 1vw;
-        font-size: 2.26rem;
-        width: 100%;
-    }
-
-    #vision {
-        margin: 0;
-    }
-
-    .fotoValoriMissione img {
-        width: 175%;
-        top: -48vh;
-    }
-
-    #missione-valori h2 {
-        top: 40vh;
-    }
-
-    .testi {
-        top: 52vh;
-    }
-
-    .aproccio-img img {
-
-        top: 3vh;
-        width: 175%;
-    }
-
-    .aproccio-content {
-        top: 66vh;
-        left: -18%;
-    }
-
-    #contact {
-        margin: 0;
-        top: -7vh;
-        padding: 0vh 0vw 0vh 0vw;
-    }
-
-    #contact p {
-        width: 66%;
-    }
-}
-
-/*Desktop: 1280 a 1439* - stili da 11 a 14 pollici aspect ratio 16/10*/
-@media screen and (min-width:1280px) and (max-width:1439px) and (min-height:800px) {
-
-    .header-content {
-        top: 37%;
-        left: 22%;
-        width: 100%;
-    }
-
-
-    .rett-grande {
-        top: 94vh;
-        height: 31vh;
-    }
-
-    header h1 {
-        font-size: 7rem;
-        width: 100%;
-    }
-
-    .Tx {
-        padding-top: 0vh;
-        /* Padding adattabile in base all'altezza della viewport */
-        margin: 0;
-        /* Nessun cambiamento necessario */
-        font-size: 7rem;
-        /* Mantiene la dimensione del font adattabile alla larghezza della viewport */
-        color: #ff00ff;
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    header p {
-        text-align: start;
-        margin: -4vh 0vw 0vh 1vw;
-        font-size: 2.26rem;
-        width: 100%;
-    }
-
-    #vision {
-        margin: 0;
-    }
-
-    .fotoValoriMissione img {
-        width: 175%;
-        top: -48vh;
-    }
-
-    #missione-valori h2 {
-        top: 30vh;
-    }
-
-    .testi {
-        top: 43vh;
-    }
-
-    .aproccio-img img {
-
-        top: 3vh;
-        width: 175%;
-    }
-
-    .aproccio-content {
-        top: 66vh;
-        left: -18%;
-    }
-
-    #contact {
-        margin: 7vh 0vw;
-        top: -4vh;
-    }
-
-    #contact p {
-        width: 66%;
+    .footer-section {
+        width: 50vw;
+        ;
     }
 }
