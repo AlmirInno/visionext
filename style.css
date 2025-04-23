@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
-
 body {
     font-family: 'Fira Sans', sans-serif;
     margin: 0;
@@ -43,7 +42,6 @@ nav {
     display: flex;
     color: #000;
 }
-
 
 .lx {
     padding-top: 0px;
@@ -137,6 +135,7 @@ header figure img {
     border: none;
     border-radius: 0.5vw;
     margin: 4vh 0vw 0vh 0vw;
+    cursor: pointer;
 }
 
 .header-content button:hover {
@@ -200,7 +199,6 @@ h3 {
     margin: 0;
 }
 
-
 #vision-content,
 #mission-content,
 #value-content,
@@ -257,7 +255,6 @@ h3 {
     margin: 1vh 0vw;
 }
 
-
 #services {
     width: 100%;
     margin: 0;
@@ -280,7 +277,6 @@ h3 {
 #services h2 {
     color: white;
 }
-
 
 
 #contact h2 {
@@ -401,7 +397,6 @@ h3 {
     gap: 50px;
 }
 
-
 .infoGraphic-approach {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -493,7 +488,6 @@ h3 {
     outline: none;
     /* Rimuove l'outline di default quando l'input è attivo */
 }
-
 
 #contact button {
     padding: 14px;
@@ -611,6 +605,7 @@ h3 {
 
     .header-content p {
         font-size: 6vw;
+        width: 90vw;
     }
 
     .header-content button {
@@ -621,7 +616,6 @@ h3 {
     .header-content button a {
         font-size: 4vw;
     }
-
 
     nav ul li a {
         font-size: 5vw;
@@ -650,7 +644,6 @@ h3 {
     }
 
     nav .logo {
-
         font-weight: bold;
         color: #000;
         display: flex;
@@ -681,7 +674,6 @@ h3 {
         width: 100%;
         padding: 0;
     }
-
 
     /* Make nav links visible when hamburger is clicked */
     nav.active .nav-links {
@@ -758,11 +750,9 @@ h3 {
         font-size: 5vw;
     }
 
-
     #approach {
         clip-path: polygon(50% 5%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
     }
-
 
     .textApproach_1 {
         padding: 0vw 0vw 5vw 0vw;
@@ -777,7 +767,6 @@ h3 {
     .infoGraphic-approach div {
         height: 100%;
         width: 100%;
-
     }
 
     .infoGraphic-approach p {
@@ -788,13 +777,11 @@ h3 {
     .technology,
     .result {
         text-align: left;
-
     }
 
     .strategy,
     .Support {
         text-align: right;
-
     }
 
     .contact-content {
@@ -833,4 +820,8 @@ h3 {
         width: 50vw;
         ;
     }
+}
+
+@media screen and (max-width:800px) {
+
 }
