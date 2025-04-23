@@ -259,7 +259,7 @@ h3 {
     margin: 0;
     text-align: center;
     background-color: #730099;
-    clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    clip-path: polygon(50% 7%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
 }
 
 #services-background {
@@ -367,7 +367,7 @@ h3 {
 
 #approach {
     width: 100%;
-    clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    clip-path: polygon(50% 5%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
     text-align: center;
     background-color: white;
     padding: 0vw 0vw 5vw 0vw;
@@ -380,7 +380,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 15vh 0vw 10vw 0vw;
+    padding: 0vh 0vw 10vw 0vw;
 }
 
 .accordion-item {
@@ -392,18 +392,20 @@ h3 {
     box-shadow: 0 0 15px #0000001f;
     transition: 0.3s ease, box-shadow 0.3s ease;
     vertical-align: middle;
+    height: 11vw;
 }
 
 #approach .int-content {
     border-radius: 1vw 1vw 1vw 1vw;
     cursor: pointer;
     background-color: #730099;
+    width: 100%;
 }
 
 #approach .material-icons {
     background-color: #730099;
     box-shadow: none;
-    padding: 1vw;
+    padding: 0.5vw;
 }
 
 #approach h3 {
@@ -415,7 +417,7 @@ h3 {
     display: none;
     margin: 1vw;
     transition: all 0.5s ease-in-out;
-    height: 9.5vw;
+    height: 13vw;
     font-size: 1.3vw;
 }
 
@@ -756,8 +758,8 @@ h3 {
 
     .accordion-item p {
         height: 50%;
+        font-size: 4vw;
     }
-
 
     .contact-content {
         width: 90vw;
