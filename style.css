@@ -201,8 +201,7 @@ h3 {
 
 #vision-content,
 #mission-content,
-#value-content,
-#approach-content {
+#value-content {
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -374,73 +373,54 @@ h3 {
     padding: 0vw 0vw 5vw 0vw;
 }
 
-#approach-content {
-    padding: 0;
-    align-items: stretch;
-}
-
-#approach h3 {
-    color: #c62ff6;
-}
-
-.textApproach_1 {
-    text-align: right;
-    padding-right: 5vw;
-    display: grid;
+#approach-accordion {
+    width: 80vw;
+    display: flex;
     gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 15vh 0vw 10vw 0vw;
 }
 
-.textApproach_2 {
-    text-align: left;
-    padding-left: 5vw;
+.accordion-item {
     display: grid;
-    gap: 50px;
-}
-
-.infoGraphic-approach {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.infoGraphic-approach div {
-    height: 16vw;
-    width: 16vw;
-    color: white;
+    flex: 1;
+    min-width: 20vw;
     text-align: center;
+    border-radius: 1vw;
     box-shadow: 0 0 15px #0000001f;
-    margin: 0;
+    transition: 0.3s ease, box-shadow 0.3s ease;
+    vertical-align: middle;
 }
 
-.box1,
-.box4 {
+#approach .int-content {
+    border-radius: 1vw 1vw 1vw 1vw;
+    background-color: #730099;
+    cursor: pointer;
+    padding: 1vw;
+}
+
+#approach h3{
+    color: #fff;
+}
+
+#approach .int-content:hover {
     background-color: #c62ff6;
 }
 
-.box2,
-.box3 {
-    background-color: #730099;
+
+.accordion-item p {
+    display: none;
+    margin: 1vw;
+    transition: all 0.5s ease-in-out;
+    height: 9.5vw;
 }
 
-.box1 {
-    clip-path: polygon(-50% 0%, 100% 0%, 100% 100%, 20% 100%);
+.accordion-item.active p {
+    display: block;
 }
 
-.box2 {
-    clip-path: polygon(0% 20%, 100% -50%, 100% 100%, 0% 100%);
-}
-
-.box3 {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 150%);
-}
-
-.box4 {
-    clip-path: polygon(0% -50%, 100% 20%, 100% 100%, 0% 100%);
-}
-
-.infoGraphic-approach p {
-    font-size: 3vw;
-    margin: 39%;
-}
 
 
 /* Contact Section */
@@ -683,8 +663,7 @@ h3 {
 
     #vision-content,
     #mission-content,
-    #value-content,
-    #approach-content {
+    #value-content {
         width: 90vw;
         display: block;
     }
@@ -755,35 +734,28 @@ h3 {
         padding: 0vw 0vw 4vw 0vw;
     }
 
-    .textApproach_1 {
-        padding: 0vw 0vw 5vw 0vw;
-        display: flex;
+    #approach-accordion {
+        width: 90vw;
+        gap: 5vw;
     }
 
-    .textApproach_2 {
-        padding: 5vw 0vw 0vw 0vw;
-        display: flex;
-    }
-
-    .infoGraphic-approach div {
-        height: 100%;
+    .accordion-item{
+        padding: 0vw;
+        border-radius: 3vw;
+        flex: unset;
+        height: 50vw;
         width: 100%;
     }
 
-    .infoGraphic-approach p {
-        font-size: 10vw;
-        margin: 36%;
+    #approach h3 {
+        border-radius: 2vw 2vw 2vw 2vw;
+        padding: 2vw;
     }
 
-    .technology,
-    .result {
-        text-align: left;
+    .accordion-item p{
+        height: 50%;
     }
 
-    .strategy,
-    .Support {
-        text-align: right;
-    }
 
     .contact-content {
         width: 90vw;
@@ -971,24 +943,6 @@ h3 {
         min-width: 20vw;
     }
 
-    #approach-content {
-        padding: 0;
-        align-items: start;
-    }
-
-    .textApproach_1 {
-        gap: 0;
-        padding-right: 2vw;
-    }
-
-    .textApproach_2 {
-        gap: 0;
-        padding-left: 2vw;
-    }
-
-    .contact-content {
-        width: 90vw;
-    }
 
     #contact p {
         width: 100%;

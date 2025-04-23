@@ -221,51 +221,61 @@
             <section id="approach">
                 <h2> Approccio</h2>
 
-                <div id="approach-content">
+                <div id="approach-accordion">
 
-                    <div class="textApproach_1">
-                        <div class="strategy">
+                    <div class="accordion-item">
+                        <div class="int-content">
+                            <i class="material-icons icone"></i>
                             <h3> Strategia su misura</h3>
-                            <p>Ogni progetto parte da un’attenta analisi degli obiettivi e del pubblico. Costruiamo
-                                strategie su misura che rispecchiano l’identità e le esigenze uniche di ogni brand.</p>
                         </div>
-
-                        <div class="technology">
-                            <h3>Alto livello</h3>
-                            <p>Un design curato nei dettagli e le tecnologie più avanzate garantiscono esperienze
-                                digitali moderne, funzionali e coinvolgenti.
-                            </p>
-                        </div>
+                        <p>Ogni progetto parte da un’attenta analisi degli obiettivi e del pubblico. Costruiamo
+                            strategie su misura che rispecchiano l’identità e le esigenze uniche di ogni brand.</p>
                     </div>
 
-                    <div class="infoGraphic-approach">
-                        <div class="box1">
-                            <p>1</p>
+                    <div class="accordion-item">
+                        <div class="int-content">
+                            <i class="material-icons icone"></i>
+                            <h3>Tecnologia di alto livello</h3>
                         </div>
-                        <div class="box2">
-                            <p>2</p>
-                        </div>
-                        <div class="box3">
-                            <p>3</p>
-                        </div>
-                        <div class="box4">
-                            <p>4</p>
-                        </div>
+                        <p>Un design curato nei dettagli e le tecnologie più avanzate garantiscono esperienze
+                            digitali moderne, funzionali e coinvolgenti.
+                        </p>
+
                     </div>
 
-                    <div class="textApproach_2">
-                        <div class="Support">
+                    <div class="accordion-item">
+
+                        <div class="int-content">
+                            <i class="material-icons icone"></i>
                             <h3> Supporto continuo</h3>
-                            <p>Non ci limitiamo alla consegna del progetto: ti accompagniamo nel tempo con supporto
-                                costante, aggiornamenti e consigli per far crescere il tuo brand digitale.</p>
                         </div>
+                        <p>Non ci limitiamo alla consegna del progetto: ti accompagniamo nel tempo con supporto
+                            costante, aggiornamenti e consigli per far crescere il tuo brand digitale.</p>
 
-                        <div class="result">
+                    </div>
+
+                    <div class="accordion-item">
+
+                        <div class="int-content">
+                            <i class="material-icons icone"></i>
                             <h3>Risultati misurabili</h3>
-                            <p>Ogni azione ha un obiettivo chiaro e dati a supporto. Monitoriamo i risultati per
-                                ottimizzare continuamente le performance e garantire un ritorno reale sul tuo
-                                investimento. </p>
                         </div>
+                        <p>Ogni azione ha un obiettivo chiaro e dati a supporto. Monitoriamo i risultati per
+                            ottimizzare continuamente le performance e garantire un ritorno reale sul tuo
+                            investimento. </p>
+
+                    </div>
+
+                    <div class="accordion-item">
+
+                        <div class="int-content">
+                            <i class="material-icons icone"></i>
+                            <h3>Prezzi competitivi</h3>
+                        </div>
+                        <p>Crediamo che l'innovazione digitale debba essere accessibile a tutte le aziende. Offriamo
+                            soluzioni su misura a costi trasparenti e concordati, garantendo sempre il miglior
+                            equilibrio tra qualità e investimento</p>
+
                     </div>
 
                 </div>
@@ -306,7 +316,7 @@
                 <p>Email: <a href="mailto:info@visionext.it">info@visionext.it</a></p>
                 <h4>Indirizzo</h4>
                 <p>Firenze, Italia</p>
-                
+
             </div>
         </div>
 
@@ -437,7 +447,31 @@
         });
 
 
+        /*accordion*/
+        document.addEventListener("DOMContentLoaded", () => {
+            const items = document.querySelectorAll(".accordion-item");
+            //Apre solo item cliccato, chiude gli altri
 
+            items.forEach(item => {
+                const title = item.querySelector("h3");
+
+                title.addEventListener("click", (e) => {
+
+                    e.stopPropagation(); // Impedisce al click di propagarsi al document
+
+                    const isActive = item.classList.contains("active");
+                    item.forEach(i => i.classList.remove("active")) //Chiude tutti
+                    //Se non era già aperto
+                    if (!isActive) {
+                        item.classList.add("active");
+                    }
+                });
+            });
+
+            document.addEventListener("click", () => {
+                items.forEach(item => item.classList.remove("active"));
+            });
+        });
 
         /*alert banner*/
 
