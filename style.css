@@ -596,7 +596,7 @@ h3 {
     .header-content {
         order: 1;
         width: 100%;
-        padding: 20vw 5vw 0vw 0vw;
+        padding: 20vw 5vw 0vw 5vw;
     }
 
     .header-content h1 {
@@ -752,6 +752,7 @@ h3 {
 
     #approach {
         clip-path: polygon(50% 5%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+        padding: 0vw 0vw 4vw 0vw;
     }
 
     .textApproach_1 {
@@ -788,6 +789,10 @@ h3 {
         width: 90vw;
     }
 
+    #contact {
+        padding: 0vw 0vw 20vw 0vw;
+    }
+
     #contact form {
         width: 100%;
     }
@@ -822,7 +827,7 @@ h3 {
 }
 
 /*Layout mobile version landscape */
-@media screen and (min-width: 481px) and (max-width:900px) {
+@media screen and (min-width: 481px) and (max-width:932px) {
     body {
         width: 100%;
         font-size: 1.6vw;
@@ -984,9 +989,10 @@ h3 {
     .contact-content {
         width: 90vw;
     }
-#contact p{
-    width: 100%;
-}
+
+    #contact p {
+        width: 100%;
+    }
 
     #contact form {
         width: 50%;
