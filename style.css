@@ -615,6 +615,7 @@ h3 {
 
     .header-content button {
         width: 45vw;
+        border-radius: 3vw;
     }
 
     .header-content button a {
@@ -672,7 +673,7 @@ h3 {
         flex-direction: column;
         gap: 0vh;
         position: absolute;
-        top: 5.5vh;
+        top: 50.3px;
         /* right: 21vw; */
         background-color: #fff;
         border-radius: -0.5rem;
