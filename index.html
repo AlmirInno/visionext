@@ -12,7 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <meta name="google-site-verification" content="JdOD4mfz1aJ8NE6mr1pVOpv5nZeWfHmb7ztGEUYqrqs" />
+
+        <meta name="google-site-verification" content="JdOD4mfz1aJ8NE6mr1pVOpv5nZeWfHmb7ztGEUYqrqs" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-16V3QYNW4E"></script>
@@ -225,7 +226,9 @@
 
                     <div class="accordion-item">
                         <div class="int-content">
-                            <i class="material-icons icone"></i>
+                            <i class="material-icons icone">
+                                person_search
+                                </i>
                             <h3> Strategia su misura</h3>
                         </div>
                         <p>Ogni progetto parte da un’attenta analisi degli obiettivi e del pubblico. Costruiamo
@@ -234,7 +237,9 @@
 
                     <div class="accordion-item">
                         <div class="int-content">
-                            <i class="material-icons icone"></i>
+                            <i class="material-icons icone">
+                                computer
+                                </i>
                             <h3>Tecnologia di alto livello</h3>
                         </div>
                         <p>Un design curato nei dettagli e le tecnologie più avanzate garantiscono esperienze
@@ -246,7 +251,7 @@
                     <div class="accordion-item">
 
                         <div class="int-content">
-                            <i class="material-icons icone"></i>
+                            <i class="material-icons icone"> support_agent </i>
                             <h3> Supporto continuo</h3>
                         </div>
                         <p>Non ci limitiamo alla consegna del progetto: ti accompagniamo nel tempo con supporto
@@ -257,7 +262,7 @@
                     <div class="accordion-item">
 
                         <div class="int-content">
-                            <i class="material-icons icone"></i>
+                            <i class="material-icons icone">bar_chart</i>
                             <h3>Risultati misurabili</h3>
                         </div>
                         <p>Ogni azione ha un obiettivo chiaro e dati a supporto. Monitoriamo i risultati per
@@ -269,7 +274,7 @@
                     <div class="accordion-item">
 
                         <div class="int-content">
-                            <i class="material-icons icone"></i>
+                            <i class="material-icons icone">local_offer</i>
                             <h3>Prezzi competitivi</h3>
                         </div>
                         <p>Crediamo che l'innovazione digitale debba essere accessibile a tutte le aziende. Offriamo
@@ -448,30 +453,34 @@
 
 
         /*accordion*/
-        document.addEventListener("DOMContentLoaded", () => {
-            const items = document.querySelectorAll(".accordion-item");
-            //Apre solo item cliccato, chiude gli altri
+        document.addEventListener("DOMContentLoaded", function () {
+            const accordionItems = document.querySelectorAll("#approach-accordion .accordion-item");
 
-            items.forEach(item => {
-                const title = item.querySelector("h3");
+            accordionItems.forEach((item) => {
+                const header = item.querySelector(".int-content");
 
-                title.addEventListener("click", (e) => {
+                header.addEventListener("click", function (e) {
+                    const isOpen = item.classList.contains("active");
 
-                    e.stopPropagation(); // Impedisce al click di propagarsi al document
+                    // Chiude tutti
+                    accordionItems.forEach((el) => el.classList.remove("active"));
 
-                    const isActive = item.classList.contains("active");
-                    item.forEach(i => i.classList.remove("active")) //Chiude tutti
-                    //Se non era già aperto
-                    if (!isActive) {
+                    // Se non era già aperto, apri quello cliccato
+                    if (!isOpen) {
                         item.classList.add("active");
                     }
                 });
             });
 
-            document.addEventListener("click", () => {
-                items.forEach(item => item.classList.remove("active"));
+            // Chiude tutto se clicchi fuori
+            document.addEventListener("click", function (e) {
+                const isClickInside = e.target.closest("#approach-accordion");
+                if (!isClickInside) {
+                    accordionItems.forEach((el) => el.classList.remove("active"));
+                }
             });
         });
+
 
         /*alert banner*/
 

@@ -376,7 +376,7 @@ h3 {
 #approach-accordion {
     width: 80vw;
     display: flex;
-    gap: 50px;
+    gap: 25px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
@@ -386,7 +386,7 @@ h3 {
 .accordion-item {
     display: grid;
     flex: 1;
-    min-width: 20vw;
+    min-width: 26vw;
     text-align: center;
     border-radius: 1vw;
     box-shadow: 0 0 15px #0000001f;
@@ -396,17 +396,18 @@ h3 {
 
 #approach .int-content {
     border-radius: 1vw 1vw 1vw 1vw;
-    background-color: #730099;
     cursor: pointer;
+    background-color: #730099;
+}
+
+#approach .material-icons {
+    background-color: #730099;
+    box-shadow: none;
     padding: 1vw;
 }
 
-#approach h3{
+#approach h3 {
     color: #fff;
-}
-
-#approach .int-content:hover {
-    background-color: #c62ff6;
 }
 
 
@@ -415,6 +416,7 @@ h3 {
     margin: 1vw;
     transition: all 0.5s ease-in-out;
     height: 9.5vw;
+    font-size: 1.3vw;
 }
 
 .accordion-item.active p {
@@ -739,7 +741,7 @@ h3 {
         gap: 5vw;
     }
 
-    .accordion-item{
+    .accordion-item {
         padding: 0vw;
         border-radius: 3vw;
         flex: unset;
@@ -752,7 +754,7 @@ h3 {
         padding: 2vw;
     }
 
-    .accordion-item p{
+    .accordion-item p {
         height: 50%;
     }
 
