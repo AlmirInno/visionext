@@ -590,13 +590,13 @@ h3 {
     }
 
     header figure img {
-        padding: 25vw 0vw 0vw 0vw;
+        padding: 20vw 0vw 0vw 0vw;
     }
 
     .header-content {
         order: 1;
         width: 100%;
-        padding: 20vw 5vw 0vw 5vw;
+        padding: 25vw 5vw 0vw 5vw;
     }
 
     .header-content h1 {
