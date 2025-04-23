@@ -400,9 +400,15 @@
             });
         });
 
-
-        /*cookie*/
+        // Cookie popup
         window.addEventListener("load", function () {
+            // Verifica se l'utente ha già scelto
+            var consentStatus = localStorage.getItem("cookieconsent_status");
+            if (consentStatus === "allow" || consentStatus === "deny") {
+                // Se ha già scelto, non mostrare il popup
+                return;
+            }
+
             window.cookieconsent.initialise({
                 "palette": {
                     "popup": { "background": "#000", "text": "#fff" },
@@ -410,16 +416,24 @@
                 },
                 "theme": "classic",
                 "position": "bottom",
-                "type": "opt-in",  // ATTIVA il rifiuto
+                "type": "opt-in",
+                "revokable": false,
+                "revokeBtn": false,
                 "content": {
                     "message": "Questo sito utilizza i cookie per migliorare l'esperienza utente.",
                     "dismiss": "Accetta",
-                    "deny": "Rifiuta",  // ATTIVA il pulsante di rifiuto
+                    "deny": "Rifiuta",
                     "link": "Leggi di più",
                     "href": "https://www.termsfeed.com/live/51600732-c7a3-47dd-b112-022031687524"
+                },
+                onStatusChange: function (status, chosenBefore) {
+                    var popup = document.querySelector('.cc-window');
+                    if (popup) popup.style.display = 'none';
                 }
             });
         });
+
+
 
 
         /*alert banner*/

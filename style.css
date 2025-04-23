@@ -571,7 +571,7 @@ h3 {
 }
 
 
-/*Layout mobile version */
+/*Layout mobile version portrait */
 
 @media screen and (max-width:480px) {
 
@@ -666,7 +666,7 @@ h3 {
         flex-direction: column;
         gap: 0vh;
         position: absolute;
-        top: 50.3px;
+        top: 48px;
         /* right: 21vw; */
         background-color: #fff;
         border-radius: -0.5rem;
@@ -818,10 +818,190 @@ h3 {
 
     .footer-section {
         width: 50vw;
-        ;
     }
 }
 
-@media screen and (max-width:800px) {
+/*Layout mobile version landscape */
+@media screen and (min-width: 481px) and (max-width:900px) {
+    body {
+        width: 100%;
+        font-size: 1.6vw;
+    }
 
+    nav ul li a {
+        font-size: 3vw;
+    }
+
+    nav ul li {
+        border-top: 0.3px solid rgba(0, 0, 0, 0.123);
+        width: 100%;
+        padding: 1vh 6vw;
+    }
+
+    nav ul li:hover {
+        background-color: #c62ff6;
+    }
+
+    nav ul li:hover a {
+        color: #fff;
+    }
+
+    nav {
+        width: 92%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 3vh;
+    }
+
+    nav .logo {
+        font-weight: bold;
+        color: #000;
+        display: flex;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    /* Show hamburger icon on mobile */
+    nav .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        font-size: 5vw;
+        /* Mantiene il font adattabile senza diventare troppo grande */
+        color: #c62ff6;
+        /* Adatta il margine in base alla larghezza dello schermo */
+    }
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0vh;
+        position: absolute;
+        top: 42px;
+        /* right: 21vw; */
+        background-color: #fff;
+        border-radius: -0.5rem;
+        box-shadow: 0px 0.5vh 1vh rgba(0, 0, 0, 0.1);
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Make nav links visible when hamburger is clicked */
+    nav.active .nav-links {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #vision-content,
+    #mission-content,
+    #value-content,
+    #approach-content {
+        width: 90vw;
+
+    }
+
+    #services h2,
+    #value h2,
+    #approach h2 {
+        padding: 10vw 0vw 6vh 0vw;
+    }
+
+
+    .header-content {
+        width: 50%;
+    }
+
+    .header-content h1 {
+        font-size: 5vw;
+    }
+
+
+    .header-content p {
+        font-size: 3vw;
+    }
+
+    .header-content button {
+        width: 20vw;
+        border-radius: 1vw;
+        height: 6vw;
+    }
+
+    .header-content button a {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        font-size: 3.3vw;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    #value-content {
+        gap: 2vw;
+    }
+
+    #value-content article {
+        padding: 1vw;
+        border-radius: 2vw;
+        height: 34.5vw;
+    }
+
+    #value-content article h4 {
+        font-size: 2.3vw;
+    }
+
+
+    .service-cards {
+        width: 90vw;
+        gap: 2vw;
+    }
+
+    .service-card {
+        padding: 1vw;
+        border-radius: 2vw;
+        height: 24.5vw;
+        flex: 1;
+        min-width: 20vw;
+    }
+
+    #approach-content {
+        padding: 0;
+        align-items: start;
+    }
+
+    .textApproach_1 {
+        gap: 0;
+        padding-right: 2vw;
+    }
+
+    .textApproach_2 {
+        gap: 0;
+        padding-left: 2vw;
+    }
+
+    .contact-content {
+        width: 90vw;
+    }
+#contact p{
+    width: 100%;
+}
+
+    #contact form {
+        width: 50%;
+    }
+
+    #contact input,
+    #contact textarea {
+        font-size: 1.6vw;
+        border-radius: 1vw;
+        width: 90%;
+    }
+
+    #contact button {
+        width: 101%;
+        font-size: 1.6vw;
+        border-radius: 1vw;
+    }
 }
