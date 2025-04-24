@@ -759,6 +759,7 @@ h3 {
     .accordion-item p {
         height: 50%;
         font-size: 4vw;
+        padding: 1.5vw;
     }
 
     .contact-content {
