@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VISIONEXT</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link
@@ -23,6 +22,33 @@
         gtag('js', new Date());
         gtag('config', 'G-16V3QYNW4E');
     </script>
+
+    <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+    <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js"
+        charset="UTF-8"></script>
+    <script type="text/javascript" charset="UTF-8">
+        document.addEventListener('DOMContentLoaded', function () {
+            cookieconsent.run({ "notice_banner_type": "interstitial", "consent_type": "express", "palette": "dark", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "VISIONEXT" });
+        });
+    </script>
+
+    <!-- Google Analytics -->
+    <script type="text/plain" data-cookie-consent="tracking" async
+        src="https://www.googletagmanager.com/gtag/js?id=G-16V3QYNW4E"></script>
+    <script type="text/plain" data-cookie-consent="tracking">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-16V3QYNW4E');
+    </script>
+    <!-- end of Google Analytics-->
+
+    <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed
+            Generator</a></noscript>
+    <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+    <!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+
 </head>
 
 <body>
@@ -347,13 +373,13 @@
 
         <div class="footer-bottom">
             <p>© 2025 VISIONEXT.it Tutti i diritti sono riservati.</p>
-            <p><a href="https://www.termsfeed.com/live/51600732-c7a3-47dd-b112-022031687524">Privacy Policy</a> | <a
-                    href="https://www.termsfeed.com/live/51600732-c7a3-47dd-b112-022031687524">Cookie Policy</a></p>
+            <p><a href="https://www.freeprivacypolicy.com/live/e1fc0ed1-ef22-4469-acf3-1925838b4d2b">Privacy Policy</a>
+                | <a href="#" id="open_preferences_center">Update cookies preferences</a> |</p>
+            <p><a href="">Terms and conditions</a></p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
 
     <script>
         (function () {
@@ -435,38 +461,6 @@
             });
         });
 
-        // Cookie popup
-        window.addEventListener("load", function () {
-            // Verifica se l'utente ha già scelto
-            var consentStatus = localStorage.getItem("cookieconsent_status");
-            if (consentStatus === "allow" || consentStatus === "deny") {
-                // Se ha già scelto, non mostrare il popup
-                return;
-            }
-
-            window.cookieconsent.initialise({
-                "palette": {
-                    "popup": { "background": "#000", "text": "#fff" },
-                    "button": { "background": "#c62ff6", "text": "#fff" }
-                },
-                "theme": "classic",
-                "position": "bottom",
-                "type": "opt-in",
-                "revokable": false,
-                "revokeBtn": false,
-                "content": {
-                    "message": "Questo sito utilizza i cookie per migliorare l'esperienza utente.",
-                    "dismiss": "Accetta",
-                    "deny": "Rifiuta",
-                    "link": "Leggi di più",
-                    "href": "https://www.termsfeed.com/live/51600732-c7a3-47dd-b112-022031687524"
-                },
-                onStatusChange: function (status, chosenBefore) {
-                    var popup = document.querySelector('.cc-window');
-                    if (popup) popup.style.display = 'none';
-                }
-            });
-        });
 
 
         /*accordion*/
