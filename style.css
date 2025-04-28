@@ -564,8 +564,7 @@ h3 {
 }
 
 
-/*Layout mobile version portrait */
-
+/*Layout mobile versione portrait */
 @media screen and (max-width:480px) {
 
     body {
@@ -629,11 +628,12 @@ h3 {
     }
 
     nav {
-        width: 79%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 3vh;
+        height: 7vh;
+        padding: 0vw;
     }
 
     nav .logo {
@@ -641,6 +641,7 @@ h3 {
         color: #000;
         display: flex;
         font-family: 'Orbitron', sans-serif;
+        padding: 0vw 0vw 0vw 5vw;
     }
 
     /* Show hamburger icon on mobile */
@@ -652,6 +653,7 @@ h3 {
         /* Mantiene il font adattabile senza diventare troppo grande */
         color: #c62ff6;
         /* Adatta il margine in base alla larghezza dello schermo */
+        padding: 0vw 5vw 0vw 0vw;
     }
 
     nav .nav-links {
@@ -659,7 +661,7 @@ h3 {
         flex-direction: column;
         gap: 0vh;
         position: absolute;
-        top: 47px;
+        top: 38px;
         /* right: 21vw; */
         background-color: #fff;
         border-radius: -0.5rem;
@@ -819,7 +821,7 @@ h3 {
     }
 }
 
-/*Layout mobile version landscape */
+/*Layout mobile versione landscape */
 @media screen and (min-width: 481px) and (max-width:932px) {
     body {
         width: 100%;
@@ -845,11 +847,12 @@ h3 {
     }
 
     nav {
-        width: 92%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 3vh;
+        height: 15vh;
+        padding: 0vw;
     }
 
     nav .logo {
@@ -857,6 +860,7 @@ h3 {
         color: #000;
         display: flex;
         font-family: 'Orbitron', sans-serif;
+        padding: 0vw 0vw 0vw 5vw;
     }
 
     /* Show hamburger icon on mobile */
@@ -868,6 +872,7 @@ h3 {
         /* Mantiene il font adattabile senza diventare troppo grande */
         color: #c62ff6;
         /* Adatta il margine in base alla larghezza dello schermo */
+        padding: 0vw 5vw 0vw 0vw;
     }
 
     nav .nav-links {
@@ -986,3 +991,263 @@ h3 {
         border-radius: 1vw;
     }
 }
+
+/*Layout Tablet versione portrait */
+@media screen and (max-width:1024px) {
+
+    body {
+        width: 100%;
+        font-size: 3vw;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    figure {
+        order: 2;
+        width: 100%;
+    }
+
+    header figure img {
+        padding: 20vw 0vw 0vw 0vw;
+    }
+
+    .header-content {
+        order: 1;
+        width: 100%;
+        padding: 15vw 5vw 0vw 5vw;
+    }
+
+    .header-content h1 {
+        font-size: 9vw;
+    }
+
+    .header-content p {
+        font-size: 5vw;
+        width: 90vw;
+    }
+
+    .header-content button {
+        width: 45vw;
+        border-radius: 1vw;
+    }
+
+    .header-content button a {
+        font-size: 3vw;
+    }
+
+    nav ul li a {
+        font-size: 5vw;
+    }
+
+    nav ul li {
+        border-top: 0.3px solid rgba(0, 0, 0, 0.123);
+        width: 100%;
+        padding: 1vh 6vw;
+    }
+
+    nav ul li:hover {
+        background-color: #c62ff6;
+    }
+
+    nav ul li:hover a {
+        color: #fff;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 7vh;
+        padding: 0vw;
+    }
+
+    nav .logo {
+        font-weight: bold;
+        color: #000;
+        display: flex;
+        font-family: 'Orbitron', sans-serif;
+        padding: 0vw 0vw 0vw 5vw;
+    }
+
+    /* Show hamburger icon on mobile */
+    nav .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        font-size: 8vw;
+        /* Mantiene il font adattabile senza diventare troppo grande */
+        color: #c62ff6;
+        /* Adatta il margine in base alla larghezza dello schermo */
+        padding: 0vw 5vw 0vw 0vw;
+    }
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0vh;
+        position: absolute;
+        top: 38px;
+        /* right: 21vw; */
+        background-color: #fff;
+        border-radius: -0.5rem;
+        box-shadow: 0px 0.5vh 1vh rgba(0, 0, 0, 0.1);
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Make nav links visible when hamburger is clicked */
+    nav.active .nav-links {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #vision-content,
+    #mission-content,
+    #value-content {
+        width: 90vw;
+        display: block;
+    }
+
+    h2 {
+        font-size: 8vw;
+    }
+
+    h3 {
+        font-size: 6vw;
+    }
+
+    .textMission,
+    .textVision {
+        width: 100%;
+    }
+
+    .fotoVision,
+    .fotoMission {
+        width: 100%;
+    }
+
+    #value-content {
+        display: flex;
+        gap: 5vw;
+        flex-direction: column;
+    }
+
+    #value-content article {
+        padding: 5vw;
+        border-radius: 3vw;
+    }
+
+    #value-content article h4 {
+        font-size: 5vw;
+    }
+
+    #services {
+        clip-path: polygon(50% 5%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    }
+
+    #services h2,
+    #value h2,
+    #approach h2 {
+        padding: 26vw 0vw 6vh 0vw;
+    }
+
+    .service-cards {
+        width: 90vw;
+        gap: 5vw;
+    }
+
+    .service-card {
+        padding: 3vw;
+        border-radius: 3vw;
+        flex: unset;
+        height: 50vw;
+    }
+
+    .material-icons {
+        width: 10vw;
+        height: 10vw;
+        font-size: 5vw;
+    }
+
+    #approach {
+        clip-path: polygon(50% 5%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+        padding: 0vw 0vw 4vw 0vw;
+    }
+
+    #approach-accordion {
+        width: 90vw;
+        gap: 5vw;
+    }
+
+    #approach .material-icons {
+        width: 10vw;
+        height: 10vw;
+        font-size: 10vw;
+        padding: 0vw 5vw 0vw 5vw;
+    }
+
+    .accordion-item {
+        padding: 0vw;
+        border-radius: 3vw;
+        flex: unset;
+        height: 50vw;
+        width: 100%;
+    }
+
+    #approach h3 {
+        border-radius: 2vw 2vw 2vw 2vw;
+        padding: 2vw;
+    }
+
+    .accordion-item p {
+        height: 50%;
+        font-size: 4vw;
+        padding: 2vw;
+    }
+
+    .contact-content {
+        width: 90vw;
+    }
+
+    #contact {
+        padding: 0vw 0vw 20vw 0vw;
+    }
+
+    #contact form {
+        width: 100%;
+    }
+
+    #contact input,
+    #contact textarea {
+        width: 90%;
+        font-size: 4vw;
+        border-radius: 2vw;
+    }
+
+    #contact p {
+        width: 100%;
+    }
+
+    #contact button {
+        width: 100%;
+        font-size: 4vw;
+        border-radius: 2vw;
+    }
+
+    .footer-container {
+        width: 90vw;
+        margin: 0;
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
+
+    .footer-section {
+        width: 50vw;
+    }
+}
+
+/*Layout Tablet versione landscape */
+@media screen and (max-width: 1080px) {}
