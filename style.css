@@ -95,7 +95,7 @@ header {
 }
 
 figure {
-    width: 50.15%;
+    width: 50%;
     margin: 0px;
     padding: 0px;
 }
@@ -111,20 +111,21 @@ header figure img {
 }
 
 .header-content {
-    width: 40%;
+    width: 50%;
     padding: 0vh 5vw 0vh 0vw;
 }
 
 
 .header-content h1 {
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: #c62ff6;
     margin: 0;
 }
 
 .header-content p {
-    font-size: 2vw;
+    font-size: 1.6vw;
     margin: 3vh 0vw 0vh 0vw;
+    line-height: 2.5rem;
 }
 
 .header-content button {
@@ -593,12 +594,13 @@ h3 {
     }
 
     .header-content h1 {
-        font-size: 11vw;
+        font-size: 10vw;
     }
 
     .header-content p {
-        font-size: 6vw;
+        font-size: 4.5vw;
         width: 90vw;
+        line-height: 1.5rem;
     }
 
     .header-content button {
@@ -918,15 +920,17 @@ h3 {
 
     .header-content {
         width: 50%;
+        padding-top: 7vw;
     }
 
     .header-content h1 {
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
 
 
     .header-content p {
-        font-size: 3vw;
+        font-size: 2vw;
+        line-height: 3vw;
     }
 
     .header-content button {
@@ -936,7 +940,7 @@ h3 {
     }
 
     .header-content button a {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 
 
@@ -1025,7 +1029,7 @@ h3 {
 
     header figure img {
         padding: 0vw 0vw 0vw 0vw;
-        width: 90%;
+        width: 83%;
     }
 
     .header-content {
@@ -1035,12 +1039,13 @@ h3 {
     }
 
     .header-content h1 {
-        font-size: 8vw;
+        font-size: 7.5vw;
         width: 100%;
     }
 
     .header-content p {
-        font-size: 5vw;
+        line-height: 4vw;
+        font-size: 3.5vw;
         width: 100%;
     }
 
@@ -1050,7 +1055,7 @@ h3 {
     }
 
     .header-content button a {
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 
     nav ul li a {
@@ -1333,7 +1338,7 @@ h3 {
 
     .logo a,
     .logo p {
-        font-size:50px;
+        font-size: 50px;
     }
 
     /* Show hamburger icon on mobile */
@@ -1409,6 +1414,7 @@ h3 {
     header figure {
         width: 60%;
     }
+
     header figure img {
         padding: 20% 0vw 0vw 0vw;
     }
