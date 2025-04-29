@@ -130,7 +130,7 @@ header figure img {
 .header-content button {
     background-color: #263238;
     padding: content;
-    width: 10vw;
+    width: 20vw;
     height: 6vh;
     border: none;
     border-radius: 0.5vw;
@@ -542,7 +542,7 @@ h3 {
     margin-top: 40px;
     padding-top: 20px;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.2;
 }
 
 .footer-bottom a {
@@ -565,7 +565,7 @@ h3 {
 
 
 /*Layout mobile versione portrait */
-@media screen and (max-width:480px) {
+@media screen and (max-width:600px) and (orientation:portrait) {
 
     body {
         width: 100%;
@@ -574,6 +574,7 @@ h3 {
 
     header {
         flex-wrap: wrap;
+        height: 100vh;
     }
 
     figure {
@@ -582,7 +583,7 @@ h3 {
     }
 
     header figure img {
-        padding: 20vw 0vw 0vw 0vw;
+        padding: 4% 0vw 0vw 0vw;
     }
 
     .header-content {
@@ -602,11 +603,11 @@ h3 {
 
     .header-content button {
         width: 45vw;
-        border-radius: 3vw;
+        border-radius: 1.5vw;
     }
 
     .header-content button a {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     nav ul li a {
@@ -642,6 +643,7 @@ h3 {
         display: flex;
         font-family: 'Orbitron', sans-serif;
         padding: 0vw 0vw 0vw 5vw;
+
     }
 
     /* Show hamburger icon on mobile */
@@ -822,10 +824,14 @@ h3 {
 }
 
 /*Layout mobile versione landscape */
-@media screen and (min-width: 481px) and (max-width:932px) {
+@media screen and (min-width: 600px) and (max-width:932px) and (orientation:landscape) {
     body {
         width: 100%;
         font-size: 1.6vw;
+    }
+
+    header {
+        height: 100vh;
     }
 
     nav ul li a {
@@ -933,6 +939,10 @@ h3 {
         font-size: 2.5vw;
     }
 
+    header figure img {
+        padding: 20% 0vw 0vw 0vw;
+    }
+
     h2 {
         font-size: 3.3vw;
     }
@@ -993,39 +1003,44 @@ h3 {
 }
 
 /*Layout Tablet versione portrait */
-@media screen and (max-width:1024px) {
+@media screen and (min-width:600px) and (max-width:1024px) and (orientation:portrait) {
 
     body {
         width: 100%;
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     header {
         flex-wrap: wrap;
+        height: 100vh;
     }
 
     figure {
         order: 2;
         width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
 
     header figure img {
-        padding: 20vw 0vw 0vw 0vw;
+        padding: 0vw 0vw 0vw 0vw;
+        width: 90%;
     }
 
     .header-content {
         order: 1;
-        width: 100%;
-        padding: 15vw 5vw 0vw 5vw;
+        width: 90%;
+        padding: 12vw 5vw 0vw 5vw;
     }
 
     .header-content h1 {
-        font-size: 9vw;
+        font-size: 8vw;
+        width: 100%;
     }
 
     .header-content p {
         font-size: 5vw;
-        width: 90vw;
+        width: 100%;
     }
 
     .header-content button {
@@ -1034,7 +1049,7 @@ h3 {
     }
 
     .header-content button a {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     nav ul li a {
@@ -1070,6 +1085,12 @@ h3 {
         display: flex;
         font-family: 'Orbitron', sans-serif;
         padding: 0vw 0vw 0vw 5vw;
+        font-size: 30px;
+    }
+
+    .logo p,
+    .logo a {
+        font-size: 30px;
     }
 
     /* Show hamburger icon on mobile */
@@ -1089,7 +1110,7 @@ h3 {
         flex-direction: column;
         gap: 0vh;
         position: absolute;
-        top: 38px;
+        top: 55px;
         /* right: 21vw; */
         background-color: #fff;
         border-radius: -0.5rem;
@@ -1112,7 +1133,7 @@ h3 {
     }
 
     h2 {
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     h3 {
@@ -1127,6 +1148,12 @@ h3 {
     .fotoVision,
     .fotoMission {
         width: 100%;
+    }
+
+
+    .fotoVision img,
+    .fotoMission img {
+        width: 70%;
     }
 
     #value-content {
@@ -1151,7 +1178,7 @@ h3 {
     #services h2,
     #value h2,
     #approach h2 {
-        padding: 26vw 0vw 6vh 0vw;
+        padding: 27vw 0vw 6vh 0vw;
     }
 
     .service-cards {
@@ -1213,7 +1240,8 @@ h3 {
     }
 
     #contact {
-        padding: 0vw 0vw 20vw 0vw;
+        width: 100%;
+        padding: 0vw 0vw 16vw 0vw;
     }
 
     #contact form {
@@ -1222,19 +1250,19 @@ h3 {
 
     #contact input,
     #contact textarea {
-        width: 90%;
+        width: 100%;
         font-size: 4vw;
-        border-radius: 2vw;
+        border-radius: 1vw;
     }
 
     #contact p {
-        width: 100%;
+        width: 105%;
     }
 
     #contact button {
-        width: 100%;
+        width: 105%;
         font-size: 4vw;
-        border-radius: 2vw;
+        border-radius: 1vw;
     }
 
     .footer-container {
@@ -1242,12 +1270,200 @@ h3 {
         margin: 0;
         flex-wrap: nowrap;
         align-items: baseline;
+        padding: 0vw 2vw;
     }
 
     .footer-section {
         width: 50vw;
     }
+
+    .footer-bottom {
+        font-size: 2.5vw;
+    }
 }
 
 /*Layout Tablet versione landscape */
-@media screen and (max-width: 1080px) {}
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation:landscape) {
+
+    body {
+        width: 100%;
+        font-size: 1.6vw;
+    }
+
+    header {
+        height: 100vh;
+    }
+
+    nav ul li a {
+        font-size: 3vw;
+    }
+
+    nav ul li {
+        border-top: 0.3px solid rgba(0, 0, 0, 0.123);
+        width: 100%;
+        padding: 1vh 6vw;
+    }
+
+    nav ul li:hover {
+        background-color: #c62ff6;
+    }
+
+    nav ul li:hover a {
+        color: #fff;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 15vh;
+        padding: 0vw;
+    }
+
+    nav .logo {
+        font-weight: bold;
+        color: #000;
+        display: flex;
+        font-family: 'Orbitron', sans-serif;
+        padding: 0vw 0vw 0vw 5vw;
+        font-size: 50px;
+    }
+
+    .logo a,
+    .logo p {
+        font-size:50px;
+    }
+
+    /* Show hamburger icon on mobile */
+    nav .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        font-size: 5vw;
+        /* Mantiene il font adattabile senza diventare troppo grande */
+        color: #c62ff6;
+        /* Adatta il margine in base alla larghezza dello schermo */
+        padding: 0vw 5vw 0vw 0vw;
+    }
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0vh;
+        position: absolute;
+        top: 42px;
+        /* right: 21vw; */
+        background-color: #fff;
+        border-radius: -0.5rem;
+        box-shadow: 0px 0.5vh 1vh rgba(0, 0, 0, 0.1);
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Make nav links visible when hamburger is clicked */
+    nav.active .nav-links {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #vision-content,
+    #mission-content,
+    #value-content,
+    #approach-content {
+        width: 90vw;
+
+    }
+
+    #services h2,
+    #value h2,
+    #approach h2 {
+        padding: 10vw 0vw 6vh 0vw;
+    }
+
+
+    .header-content {
+        width: 50%;
+    }
+
+    .header-content h1 {
+        font-size: 5vw;
+    }
+
+
+    .header-content p {
+        font-size: 3vw;
+    }
+
+    .header-content button {
+        width: 20vw;
+        border-radius: 1vw;
+        height: 6vw;
+    }
+
+    .header-content button a {
+        font-size: 2.5vw;
+    }
+
+    header figure img {
+        padding: 20% 0vw 0vw 0vw;
+    }
+
+    h2 {
+        font-size: 3.3vw;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    #value-content {
+        gap: 2vw;
+    }
+
+    #value-content article {
+        padding: 1vw;
+        border-radius: 2vw;
+        height: 34.5vw;
+    }
+
+    #value-content article h4 {
+        font-size: 2.3vw;
+    }
+
+
+    .service-cards {
+        width: 90vw;
+        gap: 2vw;
+    }
+
+    .service-card {
+        padding: 1vw;
+        border-radius: 2vw;
+        height: 24.5vw;
+        flex: 1;
+        min-width: 20vw;
+    }
+
+
+    #contact p {
+        width: 100%;
+    }
+
+    #contact form {
+        width: 50%;
+    }
+
+    #contact input,
+    #contact textarea {
+        font-size: 1.6vw;
+        border-radius: 1vw;
+        width: 90%;
+    }
+
+    #contact button {
+        width: 101%;
+        font-size: 1.6vw;
+        border-radius: 1vw;
+    }
+}
