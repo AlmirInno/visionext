@@ -617,7 +617,7 @@ h3 {
     nav ul li {
         border-top: 0.3px solid rgba(0, 0, 0, 0.123);
         width: 100%;
-        padding: 1vh 6vw;
+        padding: 2vh 6vw;
     }
 
     nav ul li:hover {
@@ -841,7 +841,7 @@ h3 {
     nav ul li {
         border-top: 0.3px solid rgba(0, 0, 0, 0.123);
         width: 100%;
-        padding: 1vh 6vw;
+        padding: 2vh 6vw;
     }
 
     nav ul li:hover {
