@@ -663,7 +663,7 @@ h3 {
         flex-direction: column;
         gap: 0vh;
         position: absolute;
-        top: 38px;
+        top: 32px;
         /* right: 21vw; */
         background-color: #fff;
         border-radius: -0.5rem;
@@ -841,7 +841,7 @@ h3 {
     nav ul li {
         border-top: 0.3px solid rgba(0, 0, 0, 0.123);
         width: 100%;
-        padding: 2vh 6vw;
+        padding: 1.5vh 6vw;
     }
 
     nav ul li:hover {
@@ -886,7 +886,7 @@ h3 {
         flex-direction: column;
         gap: 0vh;
         position: absolute;
-        top: 42px;
+        top: 35px;
         /* right: 21vw; */
         background-color: #fff;
         border-radius: -0.5rem;
