@@ -248,7 +248,7 @@ h3 {
     padding: 1vw;
 }
 
-#value-content article h4 {
+#value-content article h3 {
     color: #c62ff6;
     text-align: center;
     font-size: 1.5vw;
@@ -716,7 +716,7 @@ h3 {
         border-radius: 5vw;
     }
 
-    #value-content article h4 {
+    #value-content article h3 {
         font-size: 6vw;
     }
 
@@ -966,7 +966,7 @@ h3 {
         height: 34.5vw;
     }
 
-    #value-content article h4 {
+    #value-content article h3 {
         font-size: 2.3vw;
     }
 
@@ -1173,7 +1173,7 @@ h3 {
         border-radius: 3vw;
     }
 
-    #value-content article h4 {
+    #value-content article h3 {
         font-size: 5vw;
     }
 
@@ -1298,6 +1298,7 @@ h3 {
 
     header {
         height: 100vh;
+
     }
 
     nav ul li a {
@@ -1437,7 +1438,7 @@ h3 {
         height: 34.5vw;
     }
 
-    #value-content article h4 {
+    #value-content article h3 {
         font-size: 2.3vw;
     }
 
