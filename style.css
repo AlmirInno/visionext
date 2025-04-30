@@ -590,7 +590,7 @@ h3 {
     .header-content {
         order: 1;
         width: 100%;
-        padding: 15vw 5vw 0vw 5vw;
+        padding: 17vw 5vw 0vw 5vw;
     }
 
     .header-content h1 {
@@ -600,7 +600,7 @@ h3 {
     .header-content p {
         font-size: 4.5vw;
         width: 90vw;
-        line-height: 1.5rem;
+        line-height: 1.3rem;
     }
 
     .header-content button {
