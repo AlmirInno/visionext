@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Almir Innocenti | Identity Designer freelance | Visionext</title>
+  <meta name="description" content="Almir Innocenti, Interactive Media Designer freelance sotto il brand Visionext. Offro servizi di branding, web design, UX/UI, content creation, digital marketing e SEO per aziende." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .container {
+      max-width: 1000px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #7f5af0;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+    .disclaimer {
+      font-size: 0.95rem;
+      color: #999;
+      margin-top: -1rem;
+      margin-bottom: 2rem;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      width: 160px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeInCard 1s ease forwards;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(127, 90, 240, 0.4);
+    }
+    .card h3 {
+      color: #7f5af0;
+      font-size: 1rem;
+      margin: 0;
+    }
+    .cta {
+      background-color: #7f5af0;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta:hover {
+      background-color: #5d3fd3;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #777;
+      text-align: center;
+    }
+    .legal-links {
+      margin-top: 10px;
+    }
+    .legal-links a {
+      color: #888;
+      margin: 0 8px;
+      text-decoration: underline;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 768px) {
+      .card {
+        width: 45%;
+      }
+    }
+    @media (max-width: 480px) {
+      .card {
+        width: 100%;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Almir Innocenti</h1>
+    <p>Interactive Media Designer freelance. Offro prestazioni occasionali per aziende che vogliono costruire o rinnovare la propria identità digitale.</p>
+    <p class="disclaimer">Visionext è il nome del mio progetto personale come freelance.</p><div class="services">
+  <div class="card"><h3>Branding & Graphic Design</h3></div>
+  <div class="card"><h3>Web & App Design</h3></div>
+  <div class="card"><h3>UX/UI Design</h3></div>
+  <div class="card"><h3>Content Creation</h3></div>
+  <div class="card"><h3>Digital Marketing</h3></div>
+  <div class="card"><h3>SEO</h3></div>
+</div>
+
+<a href="mailto:almir@visionext.it" class="cta">Contattami</a>
+
+<footer>
+  <p>Prestazioni occasionali ai sensi dell'art. 2222 c.c. — P.IVA non necessaria sotto i 5000 € annui.</p>
+  <div class="legal-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Termini e Condizioni</a>
+    <a href="#">Cookie Policy</a>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>
