@@ -32,6 +32,7 @@ body {
 .logo {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .logo span:first-child {
@@ -96,7 +97,6 @@ h3.profession {
 }
 
 .card {
-
     scroll-snap-align: start;
     background-color: #fff;
     color: #263238;
@@ -159,6 +159,7 @@ h3.profession {
     font-weight: bold;
     transition: background 0.3s;
     display: inline-block;
+    font-size: 0.9rem;
 }
 
 .cta:hover {
@@ -177,6 +178,7 @@ footer {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 .footer-logo span:first-child {
@@ -214,10 +216,131 @@ footer {
 }
 
 /*Layout mobile versione landscape */
-@media screen and (min-width: 600px) and (max-width:932px) and (orientation:landscape) {}
+@media screen and (min-width: 600px) and (max-width:932px) and (orientation:landscape) {
+
+
+    .slider-hint {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        flex: 0 0 50%;
+        padding: 1rem;
+    }
+}
 
 /*Layout Tablet versione portrait */
-@media screen and (min-width:600px) and (max-width:1024px) and (orientation:portrait) {}
+@media screen and (min-width:600px) and (max-width:1024px) and (orientation:portrait) {
+    .logo {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+    
+
+    h1.name {
+        font-size: 3.1rem;
+    }
+
+    h3.profession {
+        font-size: 1.9rem;
+    }
+
+    .description {
+        font-size: 1.9rem;
+
+    }
+
+    .disclaimer {
+        font-size: 1.75rem;
+        color: #777;
+        margin-top: 1rem;
+    }
+
+    .slider-hint {
+        margin-top: 80px;
+        margin-bottom: 0px;
+
+    }
+
+    .card h3 {
+        margin-top: 1.5rem;
+        font-size: 2.2rem;
+    }
+
+    .card {
+        flex: 0 0 50%;
+        height: 15vh;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+
+    .cta {
+        font-size: 1.75rem;
+    }
+
+    footer {
+        font-size: 1.75rem;
+    }
+
+}
 
 /*Layout Tablet versione landscape */
-@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation:landscape) {}
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation:landscape) {
+    .logo {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+    
+
+    h1.name {
+        font-size: 3.1rem;
+    }
+
+    h3.profession {
+        font-size: 1.9rem;
+    }
+
+    .description {
+        font-size: 1.9rem;
+
+    }
+
+    .disclaimer {
+        font-size: 1.75rem;
+        color: #777;
+        margin-top: 1rem;
+    }
+
+    .slider-hint {
+        margin-top: 80px;
+        margin-bottom: 0px;
+
+    }
+
+    .card h3 {
+        flex: 0 0 50%;
+        font-size: 2.2rem;
+    }
+
+    .card {
+        font-size: 1.3rem;
+    }
+
+    .cta {
+        font-size: 1.75rem;
+    }
+
+    footer {
+        font-size: 1.75rem;
+    }
+
+}
