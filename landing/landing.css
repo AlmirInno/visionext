@@ -79,17 +79,18 @@ h2.profession {
 }
 
 .slider-wrapper {
-
-    display: flex;
+display: flex;
 
     padding: 0.5rem 0.5rem;
     scroll-snap-type: x mandatory;
     position: relative;
     flex-wrap: wrap;
     justify-content: center;
-    overflow-x: hidden;
+    
     gap: 1.5rem;
+    scroll-behavior: smooth;
 }
+
 
 .slider-wrapper::-webkit-scrollbar {
     height: 6px;
@@ -202,7 +203,7 @@ footer {
 
 .footer-container {
     display: flex;
-flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 5vw;
     justify-content: start;
     max-width: 90vw;
@@ -340,7 +341,10 @@ flex-wrap: wrap;
 
     .card {
         flex: 0 0 50%;
+        max-width: 80vw;
         padding: 1rem;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
     }
 
     h1.name {
@@ -351,11 +355,13 @@ flex-wrap: wrap;
         font-size: 0.9rem;
     }
 
+
     .slider-wrapper {
         gap: unset;
         flex-wrap: nowrap;
         overflow-x: auto;
-        margin: 0vw 1vw;
+        scroll-behavior: smooth;
+        justify-content: start;
     }
 
     footer {
@@ -363,7 +369,7 @@ flex-wrap: wrap;
     }
 
 
-    .footer-container{
+    .footer-container {
 
         flex-wrap: wrap;
         gap: 10vw 22vw;
@@ -372,10 +378,10 @@ flex-wrap: wrap;
         margin: 0 auto;
     }
 
-    .footer-section{
+    .footer-section {
         width: 100%;
     }
-    
+
 }
 
 
