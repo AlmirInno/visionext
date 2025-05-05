@@ -178,19 +178,10 @@ footer {
     background-color: #263238;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 3rem;
     font-size: 0.9rem;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-footer a:hover {
-    color: #c62ff6;
-}
 
 .footer-logo {
     font-family: 'Orbitron', sans-serif;
@@ -206,6 +197,66 @@ footer a:hover {
 .footer-logo span:last-child {
     color: #c62ff6;
 }
+
+
+
+.footer-container {
+    display: flex;
+ 
+    gap: 5vw;
+    justify-content: start;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.footer-section {
+    /* flex: 1 1 37vw; */
+    width: 25vw;
+    color: #fff;
+    text-align: left;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-section a:hover {
+    text-decoration: none;
+    color: #c62ff6;
+}
+
+.footer-bottom {
+    border-top: 1px solid #fff;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.2;
+}
+
+.footer-bottom a {
+    color: #fff;
+}
+
+.footer-bottom a:hover {
+    color: #c62ff6;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-section a footer a:hover {
+    color: #c62ff6;
+}
+
 
 /* Desktop resposive*/
 @media screen and (min-width: 600px) and (max-width: 1367px) {
