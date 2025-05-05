@@ -273,6 +273,9 @@ footer {
 /*Layout mobile versione portrait */
 @media screen and (max-width:599px) and (orientation:portrait) {
 
+    .slider-hint {
+        margin-top: 2rem;
+    }
 
     .card {
         flex: 0 0 50%;
