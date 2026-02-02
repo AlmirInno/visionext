@@ -1713,6 +1713,7 @@ ease-in-out infinite; */
     header {
         margin-top: 3.5rem;
         width: 100%;
+        padding-bottom: 8rem;
     }
 
     .box_header {
@@ -1920,7 +1921,7 @@ ease-in-out infinite; */
     p,
     .about p,
     .about_visionext_box p {
-        font-size: 4.8vw;
+        font-size: 3.8vw;
         line-height: 2rem;
     }
 
