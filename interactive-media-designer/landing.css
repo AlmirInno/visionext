@@ -1921,7 +1921,7 @@ ease-in-out infinite; */
     p,
     .about p,
     .about_visionext_box p {
-        font-size: 3.8vw;
+        font-size: 4.8vw;
         line-height: 2rem;
     }
 
@@ -1970,7 +1970,7 @@ ease-in-out infinite; */
 
 
     footer {
-        font-size: 3vw;
+        font-size: 3.7vw;
         padding: 1rem;
     }
 
@@ -1985,6 +1985,10 @@ ease-in-out infinite; */
 
     .footer-section {
         width: 100%;
+    }
+
+    .footer-bottom p {
+        font-size: 4.5vw;
     }
 
 }
