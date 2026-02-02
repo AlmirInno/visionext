@@ -119,11 +119,11 @@
         <div class="about_box">
             <div class="about" id="about">
                 <div class="title_box">
-                    <h2>Chi sono</h2>
-                    <h3>Passione, creatività, crescita</h3>
+                    <h2  class="reveal reveal-left">Chi sono</h2>
+                    <h3 class="reveal reveal-right">Passione, creatività, crescita</h3>
                 </div>
 
-                <p>Ciao! Sono Almir Innocenti, Interactive Media Designer freelance con base a Firenze. Ho studiato al
+                <p class="reveal reveal-bottom">Ciao! Sono Almir Innocenti, Interactive Media Designer freelance con base a Firenze. Ho studiato al
                     Centro Scolastico per le Industrie Artistiche di Lugano in Svizzera, dove ho ottenuto il titolo di
                     Interactive Media Designer — una tappa fondamentale che ha acceso la mia passione per il design
                     digitale.
@@ -137,17 +137,18 @@
             </div>
 
             <figure>
-                <img src="img/Almir_Innocenti.jpg" alt="Almir Innocenti, Interactive Media Designer a Firenze" id="Almir" />
+                <img src="img/Almir_Innocenti.jpg" alt="Almir Innocenti, Interactive Media Designer a Firenze"
+                    id="Almir" />
             </figure>
         </div>
 
         <div class="about_visionext_box">
             <div class="title_box">
-                <h2 id="progetto"> Cos'è visionext?</h2>
-                <h3>La mia visione, il mio modo di dare forma alle tue idee </h3>
+                <h2 class="reveal reveal-left" id="progetto"> Cos'è visionext?</h2>
+                <h3 class="reveal reveal-right">La mia visione, il mio modo di dare forma alle tue idee </h3>
             </div>
 
-            <p>Visionext è il progetto che sto costruendo passo dopo passo.
+            <p class="reveal reveal-bottom">Visionext è il progetto che sto costruendo passo dopo passo.
                 Nasce dal desiderio di trasformare la presenza digitale delle persone in qualcosa che parli davvero di
                 loro, che esprima ciò che le rende uniche, che lasci un segno.
 
@@ -175,15 +176,15 @@
 
         <div class="services-section">
             <div class="title_box">
-                <h2 id="services">Servizi</h2>
-                <h3>Soluzioni digitali personalizzate per valorizzare il tuo brand </h3>
+                <h2 class="reveal reveal-left" id="services">Servizi</h2>
+                <h3 class="reveal reveal-right">Soluzioni digitali personalizzate per valorizzare il tuo brand </h3>
             </div>
 
             <div class="slider-wrapper">
-                <div class="card">
+                <div class="card animate-scale delay-1">
                     <span class="material-symbols-outlined">palette</span>
                     <h4>Branding & Graphic Design</h4>
-                    <p> Costruisco identità visive coerenti e memorabili per distinguerti nel mercato.</p>
+                    <p > Costruisco identità visive coerenti e memorabili per distinguerti nel mercato.</p>
                 </div>
                 <div class="card">
                     <span class="material-symbols-outlined">devices</span>
@@ -217,8 +218,8 @@
 
         <div class="portfolio_box_master">
             <div class="title_box">
-                <h2 id="portfolio">Portfolio</h2>
-                <h3>Progetti che raccontano storie di successo</h3>
+                <h2  class="reveal reveal-left"  id="portfolio">Portfolio</h2>
+                <h3 class="reveal reveal-right">Progetti che raccontano storie di successo</h3>
             </div>
 
             <div class="portfolio_box">
@@ -227,8 +228,9 @@
                             src="img/d39e2b233767007.68b633990318a.webp"></a>
                     <h4>Graphic Design</h4>
                     <h5>Locandina "La forza della vita"</h5>
-                    <p>Progetto grafico sviluppato per E SONA MO, Associazione musicale culturale Antonio Improta, per evento solidale a favore
-                        di CiaoLapo. 
+                    <p>Progetto grafico sviluppato per E SONA MO, Associazione musicale culturale Antonio Improta, per
+                        evento solidale a favore
+                        di CiaoLapo.
                     </p>
 
                     <a class="links_project"
@@ -243,7 +245,8 @@
                             src="img/6021f5233726807.68b5fb2812084.webp"></a>
                     <h4>Graphic Design</h4>
                     <h5>Voucher "La forza della vita"</h5>
-                    <p>Progetto grafico sviluppato per E SONA MO, Associazione musicale culturale Antonio Improta, per evento solidale a favore
+                    <p>Progetto grafico sviluppato per E SONA MO, Associazione musicale culturale Antonio Improta, per
+                        evento solidale a favore
                         di CiaoLapo.</p>
 
                     <a class="links_project"
@@ -258,8 +261,8 @@
 
         <div class="contact">
             <div class="title_box">
-                <h2 id="contact"> Contattami</h2>
-                <h3>Hai bisogno di un’identità digitale per la tua azienda? Richiedi un preventivo. </h3>
+                <h2  class="reveal reveal-left" id="contact"> Contattami</h2>
+                <h3 class="reveal reveal-right">Hai bisogno di un’identità digitale per la tua azienda? Richiedi un preventivo. </h3>
             </div>
 
             <div class="contact-content">
@@ -444,6 +447,29 @@
                 shape.classList.remove('hovered');
             });
         });
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const reveals = document.querySelectorAll(".reveal");
+
+            const observer = new IntersectionObserver(
+                entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("is-visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.15,
+                    rootMargin: "0px 0px -60px 0px"
+                }
+            );
+
+            reveals.forEach(el => observer.observe(el));
+        });
+
     </script>
 </body>
 

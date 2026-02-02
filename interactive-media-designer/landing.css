@@ -821,6 +821,64 @@ footer {
 }
 
 
+/* ============================= */
+/* SCROLL ANIMATIONS (ADD-ON)    */
+/* ============================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s cubic-bezier(.19, 1, .22, 1);
+    will-change: transform, opacity;
+}
+
+/* Varianti */
+.reveal-left {
+    transform: translateX(-60px);
+}
+
+.reveal-bottom {
+    transform: translateY(40px);
+}
+
+.reveal-scale {
+    transform: scale(0.92);
+}
+
+/* Stato visibile */
+.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Delay opzionali */
+.delay-1 {
+    transition-delay: .15s;
+}
+
+.delay-2 {
+    transition-delay: .3s;
+}
+
+.delay-3 {
+    transition-delay: .45s;
+}
+
+/* Riduzione motion (accessibilità + mobile) */
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        transition: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+
+
+
 /* Desktop resposive*/
 @media screen and (min-width: 600px) and (max-width: 1367px) {
 
