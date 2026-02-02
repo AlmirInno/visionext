@@ -119,11 +119,12 @@
         <div class="about_box">
             <div class="about" id="about">
                 <div class="title_box">
-                    <h2  class="reveal reveal-left">Chi sono</h2>
+                    <h2 class="reveal reveal-left">Chi sono</h2>
                     <h3 class="reveal reveal-right">Passione, creatività, crescita</h3>
                 </div>
 
-                <p class="reveal reveal-bottom">Ciao! Sono Almir Innocenti, Interactive Media Designer freelance con base a Firenze. Ho studiato al
+                <p class="reveal reveal-bottom">Ciao! Sono Almir Innocenti, Interactive Media Designer freelance con
+                    base a Firenze. Ho studiato al
                     Centro Scolastico per le Industrie Artistiche di Lugano in Svizzera, dove ho ottenuto il titolo di
                     Interactive Media Designer — una tappa fondamentale che ha acceso la mia passione per il design
                     digitale.
@@ -137,8 +138,8 @@
             </div>
 
             <figure>
-                <img src="img/Almir_Innocenti.jpg" alt="Almir Innocenti, Interactive Media Designer a Firenze"
-                    id="Almir" />
+                <img class="reveal reveal-scale" src="img/Almir_Innocenti.jpg"
+                    alt="Almir Innocenti, Interactive Media Designer a Firenze" id="Almir" />
             </figure>
         </div>
 
@@ -181,34 +182,34 @@
             </div>
 
             <div class="slider-wrapper">
-                <div class="card animate-scale delay-1">
+                <div class="card reveal reveal-scale">
                     <span class="material-symbols-outlined">palette</span>
                     <h4>Branding & Graphic Design</h4>
-                    <p > Costruisco identità visive coerenti e memorabili per distinguerti nel mercato.</p>
+                    <p> Costruisco identità visive coerenti e memorabili per distinguerti nel mercato.</p>
                 </div>
-                <div class="card">
+                <div class="card reveal reveal-scale">
                     <span class="material-symbols-outlined">devices</span>
                     <h4>Web & App Design</h4>
                     <p>Progetto siti web funzionali e accattivanti, ottimizzati per ogni dispositivo.
                     </p>
                 </div>
-                <div class="card">
+                <div class="card reveal reveal-scale">
                     <span class="material-symbols-outlined">psychology</span>
                     <h4>UX/UI Design</h4>
                     <p>Creo esperienze utente intuitive e coinvolgenti per aumentare la soddisfazione dei tuoi clienti
                     </p>
                 </div>
-                <div class="card">
+                <div class="card reveal reveal-scale">
                     <span class="material-symbols-outlined">draw</span>
                     <h4> Multimedia Content</h4>
                     <p> Produco contenuti audio visivi e testuali efficaci per raccontare la tua azienda al meglio.</p>
                 </div>
-                <div class="card">
+                <div class="card reveal reveal-scale">
                     <span class="material-symbols-outlined">campaign</span>
                     <h4>Digital Marketing</h4>
                     <p>Pianifico strategie su misura per promuovere la tua attività e generare risultati concreti.</p>
                 </div>
-                <div class="card">
+                <div class="card reveal reveal-scale">
                     <span class="material-symbols-outlined">trending_up</span>
                     <h4>SEO</h4>
                     <p>Ottimizzo la tua presenza online per migliorare la visibilità e attrarre nuovi clienti.</p>
@@ -218,12 +219,12 @@
 
         <div class="portfolio_box_master">
             <div class="title_box">
-                <h2  class="reveal reveal-left"  id="portfolio">Portfolio</h2>
+                <h2 class="reveal reveal-left" id="portfolio">Portfolio</h2>
                 <h3 class="reveal reveal-right">Progetti che raccontano storie di successo</h3>
             </div>
 
             <div class="portfolio_box">
-                <article>
+                <article class="reveal reveal-scale">
                     <a href="https://www.behance.net/gallery/233767007/Evento-di-beneficenza-%28Poster%29"><img
                             src="img/d39e2b233767007.68b633990318a.webp"></a>
                     <h4>Graphic Design</h4>
@@ -240,7 +241,7 @@
                         </span></a>
                 </article>
 
-                <article>
+                <article class="reveal reveal-scale">
                     <a href="https://www.behance.net/gallery/233726807/Evento-di-beneficenza-%28Voucher%29"><img
                             src="img/6021f5233726807.68b5fb2812084.webp"></a>
                     <h4>Graphic Design</h4>
@@ -261,11 +262,12 @@
 
         <div class="contact">
             <div class="title_box">
-                <h2  class="reveal reveal-left" id="contact"> Contattami</h2>
-                <h3 class="reveal reveal-right">Hai bisogno di un’identità digitale per la tua azienda? Richiedi un preventivo. </h3>
+                <h2 class="reveal reveal-left" id="contact"> Contattami</h2>
+                <h3 class="reveal reveal-right">Hai bisogno di un’identità digitale per la tua azienda? Richiedi un
+                    preventivo. </h3>
             </div>
 
-            <div class="contact-content">
+            <div class="contact-content reveal reveal-bottom">
                 <form id="contactForm">
                     <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
                     <input type="email" id="email" name="email" placeholder="La tua email" required>
@@ -273,7 +275,7 @@
                     <button type="submit">Invia messaggio</button>
                 </form>
 
-                <div class="map_container">
+                <div class="map_container reveal reveal-scale">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.797263622305!2d11.24220131549928!3d43.76956297911771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a540e1d11f6b5%3A0x42b6f3f2e4f8b6!2sFirenze%2C%20FI!5e0!3m2!1sit!2sit!4v1700831386785!5m2!1sit!2sit"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -449,6 +451,8 @@
         });
 
 
+        // Animazioni di rivelazione con Intersection Observer
+
         document.addEventListener("DOMContentLoaded", () => {
             const reveals = document.querySelectorAll(".reveal");
 
@@ -470,6 +474,21 @@
             reveals.forEach(el => observer.observe(el));
         });
 
+        // Aggiungi ritardi di transizione per le carte dei servizi
+
+        document.querySelectorAll('.slider-wrapper .card.reveal')
+            .forEach((el, i) => {
+                el.style.transitionDelay = `${i * 0.12}s`;
+            });
+
+        // Aggiungi ritardi di transizione per gli articoli del portfolio
+
+        document.querySelectorAll('.portfolio_box article.reveal')
+            .forEach((el, i) => {
+                el.style.transitionDelay = `${i * 0.12}s`;
+            });
+
+            
     </script>
 </body>
 

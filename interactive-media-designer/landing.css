@@ -876,6 +876,22 @@ footer {
 }
 
 
+.box_header {
+    animation: heroFade 1.5s ease forwards;
+}
+
+@keyframes heroFade {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 
