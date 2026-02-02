@@ -747,17 +747,19 @@ footer {
 
 
 .footer-logo {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron';
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
 }
 
 .footer-logo span:first-child {
     color: white;
+    font-family: 'Orbitron';
 }
 
 .footer-logo span:last-child {
     color: #c62ff6;
+    font-family: 'Orbitron';
 }
 
 
