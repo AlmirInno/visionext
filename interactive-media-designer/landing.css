@@ -831,8 +831,8 @@ footer {
     transition:
         opacity 0.9s ease,
         transform 0.9s cubic-bezier(.19, 1, .22, 1);
-    will-change: transform, opacity;
 }
+
 
 /* Varianti */
 .reveal-left {
@@ -844,8 +844,40 @@ footer {
 }
 
 .reveal-scale {
-    transform: scale(0.92);
+    transform: scale(0.95);
 }
+
+/* CARD + PORTFOLIO (bounce) */
+.reveal-bounce {
+    transform: scale(0.96) translateY(24px);
+    will-change: transform, opacity;
+}
+
+@keyframes bounceInSoft {
+    0% {
+        opacity: 0;
+        transform: scale(0.96) translateY(24px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.015) translateY(-6px);
+    }
+
+    80% {
+        transform: scale(0.995) translateY(2px);
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+.reveal.is-visible.reveal-bounce {
+    animation: bounceInSoft 0.75s ease-out forwards;
+}
+
+
 
 /* Stato visibile */
 .reveal.is-visible {
@@ -853,18 +885,6 @@ footer {
     transform: none;
 }
 
-/* Delay opzionali */
-.delay-1 {
-    transition-delay: .15s;
-}
-
-.delay-2 {
-    transition-delay: .3s;
-}
-
-.delay-3 {
-    transition-delay: .45s;
-}
 
 /* Riduzione motion (accessibilità + mobile) */
 @media (prefers-reduced-motion: reduce) {
