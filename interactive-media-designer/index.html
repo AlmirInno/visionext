@@ -185,34 +185,40 @@
                 <div class="card">
                     <span class="material-symbols-outlined">palette</span>
                     <h4 class="reveal reveal-bottom">Branding & Graphic Design</h4>
-                    <p class="reveal reveal-bottom"> Costruisco identità visive coerenti e memorabili per distinguerti nel mercato.</p>
+                    <p class="reveal reveal-bottom"> Costruisco identità visive coerenti e memorabili per distinguerti
+                        nel mercato.</p>
                 </div>
                 <div class="card">
                     <span class="material-symbols-outlined">devices</span>
                     <h4 class="reveal reveal-bottom">Web & App Design</h4>
-                    <p class="reveal reveal-bottom">Progetto siti web funzionali e accattivanti, ottimizzati per ogni dispositivo.
+                    <p class="reveal reveal-bottom">Progetto siti web funzionali e accattivanti, ottimizzati per ogni
+                        dispositivo.
                     </p>
                 </div>
                 <div class="card">
                     <span class="material-symbols-outlined">psychology</span>
                     <h4 class="reveal reveal-bottom">UX/UI Design</h4>
-                    <p class="reveal reveal-bottom">Creo esperienze utente intuitive e coinvolgenti per aumentare la soddisfazione dei tuoi clienti
+                    <p class="reveal reveal-bottom">Creo esperienze utente intuitive e coinvolgenti per aumentare la
+                        soddisfazione dei tuoi clienti
                     </p>
                 </div>
                 <div class="card">
                     <span class="material-symbols-outlined">draw</span>
                     <h4 class="reveal reveal-bottom"> Multimedia Content</h4>
-                    <p class="reveal reveal-bottom"> Produco contenuti audio visivi e testuali efficaci per raccontare la tua azienda al meglio.</p>
+                    <p class="reveal reveal-bottom"> Produco contenuti audio visivi e testuali efficaci per raccontare
+                        la tua azienda al meglio.</p>
                 </div>
                 <div class="card">
                     <span class="material-symbols-outlined">campaign</span>
                     <h4 class="reveal reveal-bottom">Digital Marketing</h4>
-                    <p class="reveal reveal-bottom">Pianifico strategie su misura per promuovere la tua attività e generare risultati concreti.</p>
+                    <p class="reveal reveal-bottom">Pianifico strategie su misura per promuovere la tua attività e
+                        generare risultati concreti.</p>
                 </div>
                 <div class="card">
                     <span class="material-symbols-outlined">trending_up</span>
                     <h4 class="reveal reveal-bottom">SEO</h4>
-                    <p class="reveal reveal-bottom">Ottimizzo la tua presenza online per migliorare la visibilità e attrarre nuovi clienti.</p>
+                    <p class="reveal reveal-bottom">Ottimizzo la tua presenza online per migliorare la visibilità e
+                        attrarre nuovi clienti.</p>
                 </div>
             </div>
         </div>
@@ -229,7 +235,8 @@
                             src="img/d39e2b233767007.68b633990318a.webp"></a>
                     <h4 class="reveal reveal-bottom">Graphic Design</h4>
                     <h5 class="reveal reveal-bottom">Locandina "La forza della vita"</h5>
-                    <p class="reveal reveal-bottom">Progetto grafico sviluppato per E SONA MO, Associazione musicale culturale Antonio Improta, per
+                    <p class="reveal reveal-bottom">Progetto grafico sviluppato per E SONA MO, Associazione musicale
+                        culturale Antonio Improta, per
                         evento solidale a favore
                         di CiaoLapo.
                     </p>
@@ -246,7 +253,8 @@
                             src="img/6021f5233726807.68b5fb2812084.webp"></a>
                     <h4 class="reveal reveal-bottom">Graphic Design</h4>
                     <h5 class="reveal reveal-bottom">Voucher "La forza della vita"</h5>
-                    <p class="reveal reveal-bottom">Progetto grafico sviluppato per E SONA MO, Associazione musicale culturale Antonio Improta, per
+                    <p class="reveal reveal-bottom">Progetto grafico sviluppato per E SONA MO, Associazione musicale
+                        culturale Antonio Improta, per
                         evento solidale a favore
                         di CiaoLapo.</p>
 
@@ -491,7 +499,7 @@
             });
 
 
-            // Animazioni di rivelazione con Intersection Observer
+        // Animazioni di rivelazione con Intersection Observer
         const observer = new IntersectionObserver(
             entries => {
                 entries.forEach(entry => {
@@ -528,6 +536,25 @@
             );
 
             reveals.forEach(el => observer.observe(el));
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.registerPlugin(Draggable);
+
+            const s1 = document.querySelector('.s1');
+
+            // Azzeriamo trasformazioni precedenti per sicurezza
+            gsap.set(s1, { x: 0, y: 0 });
+
+            Draggable.create(s1, {
+                type: "x,y",
+                edgeResistance: 0.65,
+                inertia: false,
+                onRelease() {
+                    // torna alla posizione originale
+                    gsap.to(s1, { duration: 0.5, x: 0, y: 0, ease: "elastic.out(1, 0.5)" });
+                }
+            });
         });
 
 
