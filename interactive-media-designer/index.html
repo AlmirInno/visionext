@@ -138,7 +138,7 @@
             </div>
 
             <figure>
-                <img class="reveal reveal-scale" src="img/Almir_Innocenti.jpg"
+                <img class="reveal reveal-bounce" src="img/Almir_Innocenti.jpg"
                     alt="Almir Innocenti, Interactive Media Designer a Firenze" id="Almir" />
             </figure>
         </div>
@@ -184,35 +184,35 @@
             <div class="slider-wrapper reveal reveal-bounce">
                 <div class="card">
                     <span class="material-symbols-outlined">palette</span>
-                    <h4>Branding & Graphic Design</h4>
-                    <p> Costruisco identità visive coerenti e memorabili per distinguerti nel mercato.</p>
+                    <h4 class="reveal reveal-bottom">Branding & Graphic Design</h4>
+                    <p class="reveal reveal-bottom"> Costruisco identità visive coerenti e memorabili per distinguerti nel mercato.</p>
                 </div>
                 <div class="card">
                     <span class="material-symbols-outlined">devices</span>
-                    <h4>Web & App Design</h4>
-                    <p>Progetto siti web funzionali e accattivanti, ottimizzati per ogni dispositivo.
+                    <h4 class="reveal reveal-bottom">Web & App Design</h4>
+                    <p class="reveal reveal-bottom">Progetto siti web funzionali e accattivanti, ottimizzati per ogni dispositivo.
                     </p>
                 </div>
                 <div class="card">
                     <span class="material-symbols-outlined">psychology</span>
-                    <h4>UX/UI Design</h4>
-                    <p>Creo esperienze utente intuitive e coinvolgenti per aumentare la soddisfazione dei tuoi clienti
+                    <h4 class="reveal reveal-bottom">UX/UI Design</h4>
+                    <p class="reveal reveal-bottom">Creo esperienze utente intuitive e coinvolgenti per aumentare la soddisfazione dei tuoi clienti
                     </p>
                 </div>
                 <div class="card">
                     <span class="material-symbols-outlined">draw</span>
-                    <h4> Multimedia Content</h4>
-                    <p> Produco contenuti audio visivi e testuali efficaci per raccontare la tua azienda al meglio.</p>
+                    <h4 class="reveal reveal-bottom"> Multimedia Content</h4>
+                    <p class="reveal reveal-bottom"> Produco contenuti audio visivi e testuali efficaci per raccontare la tua azienda al meglio.</p>
                 </div>
                 <div class="card">
                     <span class="material-symbols-outlined">campaign</span>
-                    <h4>Digital Marketing</h4>
-                    <p>Pianifico strategie su misura per promuovere la tua attività e generare risultati concreti.</p>
+                    <h4 class="reveal reveal-bottom">Digital Marketing</h4>
+                    <p class="reveal reveal-bottom">Pianifico strategie su misura per promuovere la tua attività e generare risultati concreti.</p>
                 </div>
                 <div class="card">
                     <span class="material-symbols-outlined">trending_up</span>
-                    <h4>SEO</h4>
-                    <p>Ottimizzo la tua presenza online per migliorare la visibilità e attrarre nuovi clienti.</p>
+                    <h4 class="reveal reveal-bottom">SEO</h4>
+                    <p class="reveal reveal-bottom">Ottimizzo la tua presenza online per migliorare la visibilità e attrarre nuovi clienti.</p>
                 </div>
             </div>
         </div>
@@ -224,19 +224,19 @@
             </div>
 
             <div class="portfolio_box reveal reveal-bounce">
-                <article >
+                <article>
                     <a href="https://www.behance.net/gallery/233767007/Evento-di-beneficenza-%28Poster%29"><img
                             src="img/d39e2b233767007.68b633990318a.webp"></a>
-                    <h4>Graphic Design</h4>
-                    <h5>Locandina "La forza della vita"</h5>
-                    <p>Progetto grafico sviluppato per E SONA MO, Associazione musicale culturale Antonio Improta, per
+                    <h4 class="reveal reveal-bottom">Graphic Design</h4>
+                    <h5 class="reveal reveal-bottom">Locandina "La forza della vita"</h5>
+                    <p class="reveal reveal-bottom">Progetto grafico sviluppato per E SONA MO, Associazione musicale culturale Antonio Improta, per
                         evento solidale a favore
                         di CiaoLapo.
                     </p>
 
                     <a class="links_project"
                         href="https://www.behance.net/gallery/233767007/Evento-di-beneficenza-%28Poster%29"><span
-                            class="material-symbols-outlined   arrow_outward">
+                            class="material-symbols-outlined arrow_outward reveal reveal-bottom reveal reveal-bottom">
                             arrow_outward
                         </span></a>
                 </article>
@@ -244,15 +244,15 @@
                 <article>
                     <a href="https://www.behance.net/gallery/233726807/Evento-di-beneficenza-%28Voucher%29"><img
                             src="img/6021f5233726807.68b5fb2812084.webp"></a>
-                    <h4>Graphic Design</h4>
-                    <h5>Voucher "La forza della vita"</h5>
-                    <p>Progetto grafico sviluppato per E SONA MO, Associazione musicale culturale Antonio Improta, per
+                    <h4 class="reveal reveal-bottom">Graphic Design</h4>
+                    <h5 class="reveal reveal-bottom">Voucher "La forza della vita"</h5>
+                    <p class="reveal reveal-bottom">Progetto grafico sviluppato per E SONA MO, Associazione musicale culturale Antonio Improta, per
                         evento solidale a favore
                         di CiaoLapo.</p>
 
                     <a class="links_project"
                         href="https://www.behance.net/gallery/233726807/Evento-di-beneficenza-%28Voucher%29"><span
-                            class="material-symbols-outlined   arrow_outward">
+                            class="material-symbols-outlined  arrow_outward reveal reveal-bottom">
                             arrow_outward
                         </span></a>
                 </article>
@@ -326,6 +326,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <script>
         (function () {
@@ -478,17 +480,57 @@
 
         document.querySelectorAll('.slider-wrapper .card.reveal')
             .forEach((el, i) => {
-            el.style.animationDelay = `${i * 0.05}s`;
+                el.style.animationDelay = `${i * 0.05}s`;
             });
 
         // Aggiungi ritardi di transizione per gli articoli del portfolio
 
         document.querySelectorAll('.portfolio_box article.reveal')
             .forEach((el, i) => {
-              el.style.animationDelay = `${i * 0.05}s`;
+                el.style.animationDelay = `${i * 0.05}s`;
             });
 
-            
+
+            // Animazioni di rivelazione con Intersection Observer
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                    } else {
+                        entry.target.classList.remove("is-visible");
+                    }
+                });
+            },
+            {
+                threshold: 0.15,
+                rootMargin: "0px 0px -60px 0px"
+            }
+        )
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const reveals = document.querySelectorAll(".reveal");
+
+            const observer = new IntersectionObserver(
+                entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("is-visible");
+                        } else {
+                            entry.target.classList.remove("is-visible");
+                        }
+                    });
+                },
+                {
+                    threshold: 0.15,
+                    rootMargin: "0px 0px -60px 0px"
+                }
+            );
+
+            reveals.forEach(el => observer.observe(el));
+        });
+
+
     </script>
 </body>
 
