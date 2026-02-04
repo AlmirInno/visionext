@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     font-family: Poppins;
-    transition: font-size 0.3s ease, padding 0.3s ease, margin 0.3s ease;
 }
 
 html,
@@ -16,7 +15,6 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -46,7 +44,7 @@ nav {
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    padding: clamp(0.8rem, 2vw, 1.5rem) clamp(1.5rem, 5vw, 3rem);
+    padding: 20px 40px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -57,7 +55,7 @@ nav {
 }
 
 .logo {
-    font-size: clamp(1rem, 5vw, 2rem);
+    font-size: 2rem;
     font-weight: bold;
     color: #000;
     display: flex;
@@ -76,7 +74,7 @@ nav {
 .lx {
     padding-top: 0px;
     margin: 0px;
-    font-size: clamp(1.2rem, 4vw, 2rem);
+    font-size: 2rem;
     color: #c62ff6;
     font-family: 'Orbitron', sans-serif;
 }
@@ -90,7 +88,7 @@ nav ul {
 nav ul li a {
     color: #263238;
     text-decoration: none;
-    font-size: clamp(0.7rem, 2vw, 1.2rem);
+    font-size: 1vw;
     text-transform: uppercase;
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -128,29 +126,33 @@ nav .nav-links {
 
 /* Shape container */
 header {
-    margin-top: clamp(5rem, 10vw, 9.6rem);
+    margin-top: 8.6rem;
+    position: relative;
+    height: 100vh;
+    /* tutta altezza viewport */
     width: 100%;
     overflow: visible;
+    display: flex;
     flex-direction: column;
-    padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 3vw, 2rem);
+    justify-content: center;
+    /* centro verticale */
+    align-items: center;
+    /* centro orizzontale */
+    padding: 19rem 2rem;
     box-sizing: border-box;
     text-align: center;
+    z-index: 1;
 }
 
 .box_header {
-    margin: clamp(5rem, 10vw, 10rem) clamp(0rem, 2vw, 0rem);
     width: 100%;
-    position: sticky;
-    z-index: 1;
     text-align: center;
 }
 
 /* Background shapes wrapper */
 .bg-shapes {
-    position: relative;
-    height: 0vh;
+    position: absolute;
     inset: 0;
-    width: 100%;
     pointer-events: none;
     z-index: 0;
 }
@@ -185,44 +187,41 @@ header {
 .s1 {
     width: 9rem;
     height: 9rem;
-    left: 16vw;
-    top: -68vh;
+    left: 5%;
+    top: 10%;
     animation: float1 8s ease-in-out infinite;
-    cursor: grab;
-    user-select: none;
-    touch-action: none;
-    /* evita scroll involontari su mobile */
 }
 
 .s2 {
     width: 9rem;
     height: 9rem;
-    right: 20vw;
-    top: -73vh;
+    right: 21%;
+    top: 16%;
     animation: float2 10s ease-in-out infinite;
 }
+
 
 .s3 {
     width: 5rem;
     height: 5rem;
-    left: 35vw;
-    bottom: 21vh;
+    left: 32%;
+    bottom: 26%;
     animation: float2 10s ease-in-out infinite;
 }
 
 .s4 {
     width: 35rem;
     height: 35rem;
-    right: 64vw;
-    bottom: 6rem;
+    right: 65%;
+    bottom: 17%;
     rotate: 43deg;
 }
 
 .s5 {
     width: 37rem;
     height: 37rem;
-    left: 77vw;
-    top: -41rem;
+    left: 70%;
+    top: 5%;
 }
 
 /* Animations */
@@ -304,31 +303,22 @@ header {
 
 
 .name {
-    /* position: relative; */
+    position: relative;
     z-index: 2;
-    font-size: clamp(2rem, 6.5vw, 5rem);
-    /* margin: 0.5rem 0; */
+    font-size: 6.5vw;
+    margin: 0.5rem 0;
     color: #730099;
-    /* line-height: 1.5rem; */
+    line-height: 1.5rem;
     font-weight: bolder;
 }
 
 .description {
-    /* position: relative; */
+    position: relative;
     z-index: 2;
-    font-size: clamp(1.5rem, 3.1vw, 2.5rem);
-    line-height: clamp(2rem, 3vw, 3rem);
-    /* margin-top: 1rem; */
+    font-size: 1.9vw;
+    line-height: 2.9;
+    margin-top: 1rem;
     color: #555;
-}
-
-.explain-description {
-    line-height: 2rem;
-    font-size: clamp(1rem, 2vw, 1.64rem);
-    color: #555;
-    max-width: 90%;
-    margin: 0 auto;
-    justify-content: left;
 }
 
 .title_box {
@@ -340,7 +330,7 @@ header {
 }
 
 h2 {
-    font-size: clamp(1rem, 2vw, 1.6rem);
+    font-size: 1.6rem;
     /* Section label */
     font-weight: 600;
     text-transform: uppercase;
@@ -348,7 +338,7 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(1.2rem, 2.5vw, 2.4rem);
+    font-size: 2.4rem;
     /* Section title */
     line-height: 1.4;
     font-weight: 700;
@@ -359,11 +349,12 @@ h3 {
 .about_box {
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: fit-content;
-    padding: clamp(2rem, 6vw, 5rem) clamp(1rem, 3vw, 2rem) clamp(1rem, 3vw, 2rem) clamp(1rem, 3vw, 2rem);
+    padding: 2rem;
+    /* clip-path: polygon(50% 5%, 100% 0%, 100% 100%, 0% 100%, 0% 0%); */
 }
 
 .about {
@@ -372,7 +363,7 @@ h3 {
 }
 
 .about p {
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: 1.2rem;
     line-height: 1.7;
 }
 
@@ -383,21 +374,14 @@ h3 {
 
 figure {
     margin: 0;
-    width: clamp(20rem, 80vw, 37rem);
+    width: 37rem;
     border-radius: 1rem;
-    height: clamp(20rem, 80vw, 40rem);
-}
-
-#Almir {
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    object-fit: cover;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 40rem;
+    background: linear-gradient(to right, #c62ff6, #730099);
 }
 
 .services-section {
-    padding: clamp(1rem, 3vw, 2rem);
+    padding: 2rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -419,16 +403,12 @@ figure {
 
 
 .about_visionext_box {
-
-    display: flex;
     text-align: center;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     background-color: #730099;
     color: white;
     width: 100%;
-    padding: clamp(1rem, 3vw, 2rem);
+    padding: 2rem;
     clip-path: polygon(50% 5%,
             /* punto alto centrale, incavo superiore */
             100% 0%,
@@ -448,7 +428,6 @@ figure {
     font-size: 1.2rem;
     line-height: 1.7;
     margin: 0 0 2rem 0;
-    width: 91%;
 }
 
 .about_visionext_box h2 {
@@ -458,12 +437,12 @@ figure {
 
 .slider-wrapper {
     display: flex;
-    padding: clamp(0.3rem, 1vw, 0.5rem) clamp(0.3rem, 1vw, 0.5rem);
+    padding: 0.5rem 0.5rem;
     scroll-snap-type: x mandatory;
     position: relative;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: clamp(1rem, 2.5vw, 1.5rem);
+    justify-content: center;
+    gap: 1.5rem;
     scroll-behavior: smooth;
 }
 
@@ -480,13 +459,13 @@ figure {
 .card {
     flex: 1 1 calc(33.33% - 2rem);
     max-width: 450px;
-    margin: clamp(0.5rem, 1.5vw, 1rem) clamp(0.3rem, 1vw, 0.5rem);
+    margin: 1rem 0.5rem;
     flex-wrap: wrap;
     scroll-snap-align: start;
     background-color: #fff;
     color: #263238;
     border-radius: 8px;
-    padding: clamp(1rem, 2vw, 1.5rem);
+    padding: 1.5rem;
     text-align: left;
     transition: background 0.3s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -499,14 +478,14 @@ figure {
 
 .card h4 {
     margin-top: 0.5rem;
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: 1.3rem;
     /* Card / item title */
     font-weight: 600;
 }
 
 .material-symbols-outlined {
     color: #fff;
-    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-size: 2rem;
     background-image: linear-gradient(-25deg, #c62ff6, #730099);
     padding: 1.5rem;
     border-radius: 0.5rem;
@@ -532,8 +511,7 @@ figure {
 
 
 .cta_box {
-    margin-top: clamp(8rem, 20vw, 11.7rem);
-
+    top: 10%;
 }
 
 .cta {
@@ -541,7 +519,11 @@ figure {
     margin: 1rem auto;
     text-decoration: none;
     transition: background 0.3s;
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: 1.3rem;
+    position: absolute;
+    z-index: 2;
+    top: 90%;
+    left: 50%;
     opacity: 0.9;
     animation: blink 1.5s infinite;
 }
@@ -551,92 +533,15 @@ figure {
 }
 
 .south {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: 1.5rem;
     vertical-align: middle;
     color: #c62ff6;
     background-image: none;
     padding: 0;
 }
 
-/* Hero CTA variants */
-.cta_box .cta {
-    display: inline-block;
-    padding: clamp(0.6rem, 1.2vw, 0.9rem) clamp(1rem, 2vw, 1.6rem);
-    border-radius: 8px;
-    margin: 0.5rem 0.6rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.cta.primary {
-    background-image: linear-gradient(-25deg, #c62ff6, #730099);
-    color: #fff;
-}
-
-.cta.secondary {
-    background: transparent;
-    color: #263238;
-    border: 2px solid rgba(198,47,246,0.12);
-}
-
-.hero-tagline {
-    font-size: clamp(1rem, 1.8vw, 1.4rem);
-    color: #444;
-    margin: 0.6rem 0 1.2rem 0;
-}
-
-/* Testimonials */
-.testimonials {
-    padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 3vw, 3rem);
-    background: linear-gradient(180deg, #fff 0%, #f7f4fb 100%);
-}
-
-.testimonials .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: clamp(1rem, 2vw, 1.5rem);
-    margin-top: 1.5rem;
-}
-
-.testimonial {
-    background: #fff;
-    padding: clamp(1rem, 1.6vw, 1.4rem);
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-    color: #333;
-}
-
-.testimonial p {
-    margin: 0 0 0.8rem 0;
-    line-height: 1.5;
-}
-
-.testimonial cite {
-    display: block;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-/* Sticky contact button */
-.sticky-contact {
-    position: fixed;
-    right: clamp(12px, 2.5vw, 24px);
-    bottom: clamp(12px, 2.5vw, 24px);
-    z-index: 2000;
-    background-image: linear-gradient(-25deg, #c62ff6, #730099);
-    color: #fff;
-    padding: 0.8rem 1rem;
-    border-radius: 999px;
-    box-shadow: 0 10px 30px rgba(115,0,153,0.18);
-    text-decoration: none;
-    font-weight: 700;
-    transition: transform 0.2s ease;
-}
-
-.sticky-contact:hover { transform: translateY(-4px); }
-
 .portfolio_box_master {
-    padding: clamp(1rem, 3vw, 2rem);
+    padding: 2rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -658,22 +563,14 @@ figure {
 }
 
 .portfolio_box {
-    justify-content: center;
     display: flex;
-    padding: clamp(0.3rem, 1vw, 0.5rem) clamp(0.3rem, 1vw, 0.5rem);
-}
-
-.arrow_outward {
-    color: #fff;
-    font-size: clamp(1.4rem, 6vw, 4rem);
-    background-image: linear-gradient(-25deg, #c62ff6, #730099);
-    padding: 0.5rem;
-    border-radius: 3.5rem;
-    display: inline-flex;
-    align-items: center;
+    padding: 0.5rem 0.5rem;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: clamp(0.5rem, 2vw, 2rem) 0 0 auto;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    gap: 1.5rem;
+    scroll-behavior: smooth;
 }
 
 .portfolio_box::-webkit-scrollbar {
@@ -688,13 +585,13 @@ figure {
 .portfolio_box article {
     flex: 1 1 calc(33.33% - 2rem);
     max-width: 23vw;
-    margin: clamp(0.5rem, 1.5vw, 1rem) clamp(0.3rem, 1vw, 0.5rem);
+    margin: 1rem 0.5rem;
     flex-wrap: wrap;
     scroll-snap-align: start;
     background-color: #fff;
     color: #263238;
     border-radius: 1rem;
-    padding: clamp(0.5rem, 1.5vw, 1rem);
+    padding: 1rem;
     /* text-align: center; */
     transition: background 0.3s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -714,9 +611,9 @@ figure {
 .portfolio_box h4 {
     width: fit-content;
     background-image: linear-gradient(25deg, #c62ff6, #730079);
-    padding: clamp(0.3rem, 1vw, 0.5rem);
+    padding: 0.5rem;
     color: #f7ddff;
-    border-radius: clamp(1rem, 3vw, 2rem);
+    border-radius: 2rem;
     margin-top: 1rem;
 }
 
@@ -725,26 +622,21 @@ figure {
 }
 
 h5 {
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-size: 1.1rem;
     font-weight: 800;
 }
 
 .arrow_outward {
     color: #fff;
-    font-size: clamp(1.2rem, 4.5vw, 3rem);
+    font-size: 3rem;
     background-image: linear-gradient(-25deg, #c62ff6, #730099);
     padding: 0.5rem;
     border-radius: 2.5rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: clamp(0.5rem, 2vw, 2rem) 0 0 auto;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    /* margin: 2vw 0vw 0vw 37vw; */
 }
 
 .arrow_outward:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background-color: #c62ff6;
 }
 
 .links_project {
@@ -764,7 +656,7 @@ h5 {
 .contact {
     flex-wrap: wrap;
     display: flex;
-    padding: clamp(1rem, 3vw, 2rem);
+    padding: 2rem;
     background-image: url('img/footer_new.png');
     /* Percorso immagine */
     background-position: bottom center;
@@ -780,7 +672,7 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: clamp(2rem, 4vw, 3vw) 0;
+    padding: 3vw 0vw;
     width: 100%;
 }
 
@@ -788,16 +680,16 @@ h5 {
 .contact form {
     display: flex;
     flex-direction: column;
-    gap: clamp(0.8rem, 2vw, 1.5rem);
+    gap: 20px;
     width: 100%;
-    max-width: 45vw;
+    max-width: 40vw;
     align-items: center;
 }
 
 .contact input,
 .contact textarea {
-    padding: clamp(0.8rem, 1.5vw, 14px);
-    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    padding: 14px;
+    font-size: 1.1rem;
     background: #fff;
     border-radius: 0.5vw;
     width: 100%;
@@ -812,12 +704,12 @@ h5 {
 }
 
 .contact button {
-    padding: clamp(0.8rem, 1.5vw, 14px);
+    padding: 14px;
     background-color: #263238;
     color: #fff;
     border: none;
-    border-radius: clamp(0.3rem, 0.8vw, 0.5vw);
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    border-radius: 0.5vw;
+    font-size: 1.2rem;
     cursor: pointer;
     display: block;
     text-align: center;
@@ -829,50 +721,43 @@ h5 {
     color: #fff;
 }
 
-iframe {
-    width: clamp(300px, 45vw, 50vw);
-    height: 400px;
-}
-
 
 footer {
     background-color: #263238;
     color: white;
     text-align: center;
-    padding: clamp(1.5rem, 3vw, 3rem) clamp(2rem, 6vw, 8rem) clamp(0.5rem, 1vw, 1rem) clamp(2rem, 6vw, 8rem);
-    font-size: clamp(0.8rem, 1vw, 0.95rem);
+    padding: 3rem;
+    font-size: 0.9rem;
 }
 
 
 .footer-logo {
-    font-family: 'Orbitron';
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
 }
 
 .footer-logo span:first-child {
     color: white;
-    font-family: 'Orbitron';
 }
 
 .footer-logo span:last-child {
     color: #c62ff6;
-    font-family: 'Orbitron';
 }
 
 
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    gap: clamp(2rem, 4vw, 5vw);
+    gap: 5vw;
     justify-content: start;
-    max-width: 95vw;
+    max-width: 90vw;
     margin: 0 auto;
 }
 
 .footer-section {
     /* flex: 1 1 37vw; */
-    width: clamp(15rem, 25vw, 30vw);
+    width: 25vw;
     color: #fff;
     text-align: left;
 }
@@ -894,8 +779,8 @@ footer {
 
 .footer-bottom {
     border-top: 1px solid #fff;
-    margin-top: clamp(2rem, 4vw, 40px);
-    padding-top: clamp(1rem, 2vw, 20px);
+    margin-top: 40px;
+    padding-top: 20px;
     text-align: center;
     font-size: 0.2;
 }
@@ -906,62 +791,6 @@ footer {
 
 .footer-bottom a:hover {
     color: #c62ff6;
-}
-
-/* Smooth layout transitions for fluid resizing */
-nav,
-header,
-main,
-footer,
-.box_header,
-.about_box,
-.services-section,
-.portfolio_box,
-.footer-container {
-    transition: padding 0.25s ease, margin 0.25s ease, font-size 0.25s ease, gap 0.25s ease, width 0.25s ease;
-    will-change: transform, width, opacity;
-}
-
-/* Social links in footer */
-.footer-social .social-links {
-    display: flex;
-    gap: 0.6rem;
-    align-items: center;
-}
-
-.footer-social .social-links a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: clamp(36px, 4.5vw, 48px);
-    height: clamp(36px, 4.5vw, 48px);
-    border-radius: 8px;
-    background-image: linear-gradient(-25deg, #c62ff6, #730099);
-    color: #fff;
-    text-decoration: none;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
-}
-
-.footer-social .social-links a svg {
-    width: 60%;
-    height: 60%;
-    fill: currentColor;
-}
-
-.footer-social .social-links a:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(199, 47, 246, 0.18);
-}
-
-@media (max-width: 600px) {
-    .footer-social .social-links {
-        gap: 0.5rem;
-    }
-
-    .footer-social .social-links a {
-        width: 40px;
-        height: 40px;
-    }
 }
 
 .footer-section a {
@@ -975,214 +804,6 @@ footer,
 }
 
 
-/* ============================= */
-/* SCROLL ANIMATIONS (ADD-ON)    */
-/* ============================= */
-
-.reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition:
-        opacity 0.9s ease,
-        transform 0.9s cubic-bezier(.19, 1, .22, 1);
-}
-
-
-/* Varianti */
-.reveal-left {
-    transform: translateX(-60px);
-}
-
-.reveal-bottom {
-    transform: translateY(40px);
-}
-
-.reveal-scale {
-    transform: scale(0.95);
-}
-
-/* CARD + PORTFOLIO (bounce) */
-.reveal-bounce {
-    transform: scale(0.96) translateY(24px);
-    will-change: transform, opacity;
-}
-
-@keyframes bounceInSoft {
-    0% {
-        opacity: 0;
-        transform: scale(0.96) translateY(24px);
-    }
-
-    60% {
-        opacity: 1;
-        transform: scale(1.015) translateY(-6px);
-    }
-
-    80% {
-        transform: scale(0.995) translateY(2px);
-    }
-
-    100% {
-        transform: scale(1) translateY(0);
-    }
-}
-
-.reveal.is-visible.reveal-bounce {
-    animation: bounceInSoft 0.75s ease-out forwards;
-}
-
-
-/* Stato visibile */
-.reveal.is-visible {
-    opacity: 1;
-    transform: none;
-}
-
-
-/* Riduzione motion (accessibilità + mobile) */
-@media (prefers-reduced-motion: reduce) {
-    .reveal {
-        transition: none;
-        opacity: 1;
-        transform: none;
-    }
-}
-
-/* FLUID RESPONSIVE - Miglioramenti globali per fluidità */
-@media screen and (min-width: 300px) {
-    body {
-        font-size: clamp(0.9rem, 2vw, 1.1rem);
-    }
-
-    .name {
-        font-size: clamp(1.8rem, 5vw, 5rem);
-    }
-
-    .description {
-        font-size: clamp(1rem, 2.5vw, 2.5rem);
-    }
-
-    .explain-description {
-        font-size: clamp(0.9rem, 1.8vw, 1.64rem);
-    }
-
-    .card {
-        flex: 1 1 clamp(250px, 90vw, 450px);
-    }
-
-    .portfolio_box article {
-        flex: 1 1 clamp(250px, 90vw, 23vw);
-    }
-}
-
-
-.box_header {
-    animation: heroFade 1.5s ease forwards;
-}
-
-@keyframes heroFade {
-    from {
-        opacity: 0;
-        transform: translateY(80px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.no-animation {
-    animation: none !important;
-}
-
-/* IMPROVED FLUID RESPONSIVE - Breakpoints fluidi senza salti */
-@supports (font-size: clamp(1rem, 1vw, 2rem)) {
-
-    /* Usa clamp() dove supportato per una fluidità perfetta */
-    nav {
-        padding: clamp(0.8rem, 1.5vw, 1.5rem) clamp(1rem, 4vw, 3rem);
-    }
-
-    .logo,
-    .lx {
-        font-size: clamp(1rem, 4vw, 2rem);
-    }
-
-    nav ul li a {
-        font-size: clamp(0.65rem, 1.8vw, 1.1rem);
-    }
-
-    header {
-        margin-top: clamp(4.5rem, 8vw, 10rem);
-    }
-
-    .name {
-        font-size: clamp(1.5rem, 5vw, 5rem);
-        line-height: 1.1;
-    }
-
-    .description {
-        font-size: clamp(0.9rem, 2.2vw, 2.5rem);
-    }
-
-    .explain-description {
-        font-size: clamp(0.85rem, 1.6vw, 1.6rem);
-        max-width: min(90vw, 800px);
-    }
-
-    h2 {
-        font-size: clamp(0.95rem, 1.8vw, 1.6rem);
-    }
-
-    h3 {
-        font-size: clamp(1rem, 2.3vw, 2.4rem);
-    }
-
-    h4 {
-        font-size: clamp(0.9rem, 1.8vw, 1.3rem);
-    }
-
-    h5 {
-        font-size: clamp(0.8rem, 1.6vw, 1.1rem);
-    }
-
-    .card h4 {
-        font-size: clamp(0.9rem, 1.6vw, 1.2rem);
-    }
-
-    .about p {
-        font-size: clamp(0.85rem, 1.8vw, 1.2rem);
-    }
-
-    .about_visionext_box p {
-        font-size: clamp(0.85rem, 1.8vw, 1.2rem);
-    }
-
-    .portfolio_box h4 {
-        font-size: clamp(0.8rem, 1.5vw, 1.2rem);
-    }
-
-    .portfolio_box h5 {
-        font-size: clamp(0.75rem, 1.4vw, 1.1rem);
-    }
-
-    .contact input,
-    .contact textarea,
-    .contact button {
-        font-size: clamp(0.85rem, 1.5vw, 1.1rem);
-    }
-
-    footer {
-        font-size: clamp(0.75rem, 1vw, 0.95rem);
-    }
-
-    .footer-section h4 {
-        font-size: clamp(0.9rem, 1.6vw, 1.2rem);
-    }
-}
-
-
 /* Desktop resposive*/
 @media screen and (min-width: 600px) and (max-width: 1367px) {
 
@@ -1193,7 +814,7 @@ footer,
         flex-direction: column;
         align-items: center;
         background-color: #fff;
-        padding: clamp(1rem, 1.5vw, 1.5rem) clamp(2rem, 4vw, 3rem);
+        padding: 20px 40px;
         position: fixed;
         width: 100%;
         top: 0;
@@ -1204,7 +825,7 @@ footer,
     }
 
     .logo {
-        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-size: 2rem;
         font-weight: bold;
         color: #000;
         display: flex;
@@ -1223,7 +844,7 @@ footer,
     .lx {
         padding-top: 0px;
         margin: 0px;
-        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-size: 2rem;
         color: #c62ff6;
         font-family: 'Orbitron', sans-serif;
     }
@@ -1237,7 +858,7 @@ footer,
     nav ul li a {
         color: #263238;
         text-decoration: none;
-        font-size: clamp(0.9vw, 1.8vw, 1.2rem);
+        font-size: 1vw;
         text-transform: uppercase;
         font-weight: bold;
         transition: color 0.3s ease, transform 0.3s ease;
@@ -1272,71 +893,30 @@ footer,
     }
 
     header {
-        margin-top: clamp(8rem, 10vw, 10.5rem);
+        margin-top: 6.4rem;
         width: 100%;
         text-align: center;
     }
-
-    .box_header {
-        margin: clamp(8rem, 12vw, 10rem) 0rem 0rem 0rem;
-        width: 100%;
-        position: sticky;
-        z-index: 1;
-        text-align: center;
-    }
-
-    .cta_box {
-        margin-top: clamp(8rem, 15vw, 11rem);
-    }
-
 
     .bg-shapes {
         width: 100%;
-        height: 0vh;
-    }
-
-
-    .s1 {
-        width: 9rem;
-        height: 9rem;
-        left: 0rem;
-        top: -36rem;
-        animation: float1 8s ease-in-out infinite;
-    }
-
-    .s2 {
-        display: none;
-        /* width: 6rem;
-    height: 6rem;
-    right: 2rem;
-    top: -34rem;
-    animation: float2 10s 
-ease-in-out infinite; */
-    }
-
-    .s3 {
-        width: 5rem;
-        height: 5rem;
-        left: 43rem;
-        bottom: 8rem;
-        animation: float2 10s ease-in-out infinite;
+        height: 93vh;
     }
 
 
     .s4 {
-        /* width: 25rem;
-        height: 25rem;
-        right: 30rem;
-        bottom: 11rem;
-        rotate: 43deg; */
-        display: none;
+        width: 35rem;
+        height: 35rem;
+        right: 65%;
+        bottom: 26%;
+        rotate: 43deg;
     }
 
     .s5 {
-        width: 35rem;
-        height: 35rem;
-        left: 42rem;
-        top: -41rem;
+        width: 41rem;
+        height: 41rem;
+        left: 69%;
+        top: 10%;
     }
 
     main {
@@ -1345,20 +925,13 @@ ease-in-out infinite; */
     }
 
     h1.name {
-        font-size: clamp(3.5rem, 5.5vw, 6rem);
+        font-size: 6rem;
     }
 
     .description {
-        font-size: clamp(1.5rem, 2.5vw, 2.87rem);
-    }
+        font-size: 2.3rem;
 
-    .explain-description {
-        line-height: 2.5rem;
-        text-align: left;
-        font-size: 1.64rem;
-        color: #555;
-        max-width: 63vw;
-        margin: 0 auto;
+
     }
 
 
@@ -1406,7 +979,7 @@ ease-in-out infinite; */
         flex: 1 1 calc(33.33% - 2rem);
         max-width: 300px;
         min-width: 200px;
-        margin: clamp(0.5rem, 1.5vw, 1rem) clamp(0.3rem, 1vw, 0.5rem);
+        margin: 1rem 0.5rem;
         font-size: 1rem;
     }
 
@@ -1426,7 +999,7 @@ ease-in-out infinite; */
     }
 
     footer {
-        font-size: clamp(0.85rem, 1.2vw, 1rem);
+        font-size: 1rem;
     }
 
 }
@@ -1434,13 +1007,13 @@ ease-in-out infinite; */
 /* Tablet Portrait */
 @media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
     nav ul li a {
-        font-size: clamp(3.5vw, 5vw, 5.5vw);
+        font-size: 5vw;
     }
 
     nav ul li {
         border-top: 0.3px solid rgba(0, 0, 0, 0.123);
         width: 100%;
-        padding: clamp(0.8rem, 1.5vh, 1.2rem) clamp(1rem, 6vw, 2rem);
+        padding: 1vh 6vw;
     }
 
     nav ul li:hover {
@@ -1457,8 +1030,8 @@ ease-in-out infinite; */
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        height: clamp(6vh, 7.5vh, 8vh);
-        padding: 0 clamp(1rem, 5vw, 2.5rem);
+        height: 7vh;
+        padding: 0vw;
     }
 
     nav .logo {
@@ -1466,13 +1039,13 @@ ease-in-out infinite; */
         color: #000;
         display: flex;
         font-family: 'Orbitron', sans-serif;
-        padding: 0vw 0vw 0vw clamp(0.5rem, 5vw, 1.5rem);
-        font-size: clamp(1.5rem, 4vw, 2.2rem);
+        padding: 0vw 0vw 0vw 5vw;
+        font-size: 2rem;
     }
 
     .logo p,
     .logo a {
-        font-size: clamp(1.5rem, 4vw, 2.2rem);
+        font-size: 2rem;
         font-family: 'Orbitron';
     }
 
@@ -1481,11 +1054,11 @@ ease-in-out infinite; */
         display: block;
         background: transparent;
         border: none;
-        font-size: clamp(4vw, 6vw, 6.5vw);
+        font-size: 6vw;
         /* Mantiene il font adattabile senza diventare troppo grande */
         color: #c62ff6;
         /* Adatta il margine in base alla larghezza dello schermo */
-        padding: 0vw clamp(1rem, 5vw, 2rem) 0vw 0vw;
+        padding: 0vw 5vw 0vw 0vw;
     }
 
     nav .nav-links {
@@ -1516,32 +1089,30 @@ ease-in-out infinite; */
 
     .bg-shapes {
         width: 100%;
-        height: 0vh;
+        height: 93vh;
     }
 
     .box_header {
-        /* height: 87vh; */
-        width: 100%;
+        height: 87vh;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         text-align: left;
-        margin: 17rem 0rem 0rem 0rem;
     }
 
     .s1 {
         width: 15rem;
         height: 15rem;
-        left: 2rem;
-        top: -72rem;
+        left: 8%;
+        top: 5%;
     }
 
     .s3 {
         width: 10rem;
         height: 10rem;
-        left: 24rem;
-        bottom: 12rem;
+        left: 46%;
+        bottom: 18%;
     }
 
     .s2 {
@@ -1555,41 +1126,30 @@ ease-in-out infinite; */
     .s5 {
         width: 66rem;
         height: 66rem;
-        left: 35rem;
-        top: -73rem;
+        left: 58%;
+        top: 7%;
     }
 
     h1.name {
         width: 100%;
-        line-height: clamp(10vw, 14vw, 18vw);
-        font-size: clamp(10vw, 16.8vw, 20vw);
-        margin-bottom: clamp(2rem, 4vh, 4rem);
+        line-height: 14vw;
+        font-size: 16.8vw;
     }
 
     .description {
-        line-height: clamp(3rem, 5vw, 5rem);
-        font-size: clamp(3.5vw, 5vw, 6vw);
-    }
-
-    .explain-description {
-        line-height: clamp(2rem, 3.5vh, 3.5rem);
-        text-align: left;
-        font-size: clamp(1.6rem, 2.5vw, 2.64rem);
-        color: #555;
-        max-width: 100%;
-        margin: 0 auto;
+        line-height: 5rem;
+        font-size: 6.5vw;
     }
 
     .cta_box {
-        margin-top: 21rem;
         left: 20%;
         width: 100%;
-        /* position: relative; */
+        position: relative;
         top: 29%;
     }
 
     .cta {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
 
@@ -1603,20 +1163,20 @@ ease-in-out infinite; */
     }
 
     .about_box {
-        padding: clamp(1rem, 3vw, 2.5rem);
+        padding: 2rem;
         width: 100%;
         height: max-content;
     }
 
     .about p {
-        font-size: clamp(2rem, 3.2vw, 3.5rem);
+        font-size: 3.2vw;
 
     }
 
     figure {
-        margin-top: clamp(1rem, 3vh, 2rem);
+        margin-top: 2rem;
         width: 100%;
-        height: clamp(35rem, 60vh, 50rem);
+        height: 45rem;
     }
 
 
@@ -1630,7 +1190,6 @@ ease-in-out infinite; */
         font-size: 3.2vw;
         margin: 0;
         text-align: left;
-        width: 100%;
     }
 
     .services-section {
@@ -1658,21 +1217,21 @@ ease-in-out infinite; */
     .card {
         flex: 0 0 100%;
         max-width: 100%;
-        padding: clamp(1rem, 2vw, 2.5rem);
-        margin-top: clamp(3rem, 7vh, 7rem);
+        padding: 2rem;
+        margin-top: 7rem;
     }
 
 
     .material-symbols-outlined {
         color: #fff;
-        font-size: clamp(3rem, 5vw, 5.5rem);
+        font-size: 5rem;
         background-image: linear-gradient(-25deg, #c62ff6, #730099);
-        padding: clamp(1.5rem, 2.5vw, 2.5rem);
+        padding: 2.5rem;
         border-radius: 0.5rem;
     }
 
     .card h4 {
-        font-size: clamp(2rem, 2.8vw, 3rem);
+        font-size: 2.8rem;
     }
 
 
@@ -1721,26 +1280,23 @@ ease-in-out infinite; */
     .portfolio_box article {
         flex: 0 0 70%;
         max-width: 100%;
-        padding: clamp(1rem, 2vw, 2.5rem);
+        padding: 2rem;
     }
 
 
     p {
-        font-size: clamp(1.3rem, 2vw, 2.2rem);
+        font-size: 2rem;
     }
 
     .portfolio_box h4 {
-        font-size: clamp(1.3rem, 1.8vw, 2rem);
+        font-size: 1.8rem;
         width: fit-content;
-        padding: clamp(0.8rem, 1.2vw, 1.2rem);
+        padding: 1.2rem;
         color: #f7ddff;
         border-radius: 5rem;
-        margin-top: clamp(0.6rem, 1vh, 1rem);
+        margin-top: 1rem;
     }
 
-    .portfolio_box h5 {
-        font-size: clamp(2.5rem, 1.4vw, 1.1rem);
-    }
 
     .arrow_outward {
         color: #fff;
@@ -1797,11 +1353,11 @@ ease-in-out infinite; */
 
 
     footer {
-        font-size: clamp(0.85rem, 1vw, 1.1rem);
+        font-size: 1rem;
     }
 
     footer p {
-        font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+        font-size: 1.5rem;
     }
 
     .footer-section h4 {
@@ -1817,13 +1373,13 @@ ease-in-out infinite; */
 /* Tablet Landscape */
 @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
     nav ul li a {
-        font-size: clamp(2.5vw, 3vw, 3.5vw);
+        font-size: 3vw;
     }
 
     nav ul li {
         border-top: 0.3px solid rgba(0, 0, 0, 0.123);
         width: 100%;
-        padding: clamp(0.8rem, 1vh, 1.2rem) clamp(1rem, 6vw, 2rem);
+        padding: 1vh 6vw;
     }
 
     nav ul li:hover {
@@ -1840,8 +1396,8 @@ ease-in-out infinite; */
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        height: clamp(8vh, 10vh, 12vh);
-        padding: 0 clamp(0.5rem, 2vw, 1.5rem);
+        height: 10vh;
+        padding: 0vw;
     }
 
     nav .logo {
@@ -1849,13 +1405,13 @@ ease-in-out infinite; */
         color: #000;
         display: flex;
         font-family: 'Orbitron', sans-serif;
-        padding: 0vw 0vw 0vw clamp(0.5rem, 5vw, 1.5rem);
-        font-size: clamp(1.5rem, 3vw, 2rem);
+        padding: 0vw 0vw 0vw 5vw;
+        font-size: 2rem;
     }
 
     .logo a,
     .logo p {
-        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-size: 2rem;
     }
 
     /* Show hamburger icon on mobile */
@@ -1875,7 +1431,7 @@ ease-in-out infinite; */
         flex-direction: column;
         gap: 0vh;
         position: absolute;
-        top: 102px;
+        top: 42px;
         /* right: 21vw; */
         background-color: #fff;
         border-radius: -0.5rem;
@@ -1890,115 +1446,9 @@ ease-in-out infinite; */
         align-items: flex-start;
     }
 
-    header {
-        margin-top: 6.5rem;
-        width: 100%;
-        text-align: center;
-    }
-
-    h1.name {
-        font-size: 8rem;
-    }
-
-    .explain-description {
-        line-height: 3.5rem;
-        text-align: left;
-        font-size: 2.64rem;
-        color: #555;
-        max-width: 89%;
-        margin: 0 auto;
-    }
-
-    .description {
-        font-size: 3.9rem;
-        line-height: 5rem;
-
-    }
-
-    .box_header {
-        margin: 15rem 0rem 0rem 0rem;
-        width: 100%;
-        position: sticky;
-        z-index: 1;
-        text-align: center;
-    }
-
     .bg-shapes {
         width: 100%;
-        height: 0vh;
-    }
-
-    .s1 {
-        width: 9rem;
-        height: 9rem;
-        left: 5rem;
-        top: -48rem;
-        animation: float1 8s ease-in-out infinite;
-    }
-
-    .s2 {
-        width: 5rem;
-        height: 5rem;
-        right: 15rem;
-        top: -39rem;
-        animation: float2 10s ease-in-out infinite;
-    }
-
-    .s3 {
-        width: 5rem;
-        height: 5rem;
-        left: 73vw;
-        bottom: 11vh;
-        animation: float2 10s ease-in-out infinite;
-    }
-
-    .s4 {
-        width: 35rem;
-        height: 35rem;
-        right: 54rem;
-        bottom: 11.5rem;
-        rotate: 43deg;
-    }
-
-    .s5 {
-        width: 41rem;
-        height: 41rem;
-        left: 68rem;
-        top: -50rem;
-    }
-
-    .cta_box {
-        margin-top: 18.2rem;
-        margin-top: 11rem;
-    }
-
-    .cta {
-        font-size: 2vw;
-    }
-
-
-    .title_box {
-        padding: 2rem 0rem;
-    }
-
-    .about_box {
-        width: 100%;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-    }
-
-    .about {
-        margin: 0rem 2rem 0rem 0rem;
-    }
-
-    .about_visionext_box p {
-        text-align: center;
-        width: 100%;
-    }
-
-    .services-section {
-        display: flex;
-        justify-content: space-around;
+        height: 90vh;
     }
 
     .card {
@@ -2006,89 +1456,17 @@ ease-in-out infinite; */
         padding: 1.5rem;
     }
 
-    .portfolio_box article {
-        flex: 1 1 calc(33.33% - 2rem);
-        max-width: 34vw;
-        margin: 1rem 0.5rem;
-        flex-wrap: wrap;
-        scroll-snap-align: start;
-        background-color: #fff;
-        color: #263238;
-        border-radius: 1rem;
-        padding: 1rem;
-        /* text-align: center; */
-        transition: background 0.3s;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .portfolio_box h5 {
-        font-size: clamp(1.5rem, 1.4vw, 1.1rem);
-    }
-
     footer {
-        font-size: clamp(0.85rem, 1.1vw, 1.1rem);
+        font-size: 1rem;
     }
 
-}
-
-/* ULTRA-MOBILE (max 400px) */
-@media screen and (max-width: 400px) {
-    nav {
-        padding: 0.6rem 1rem;
-    }
-
-    .logo {
-        font-size: 1.1rem;
-    }
-
-    .lx {
-        font-size: 1.1rem;
-    }
-
-    nav ul li a {
-        font-size: clamp(2.5vw, 3.5vw, 4vw);
-    }
-
-    nav ul {
-        gap: 15px;
-    }
-
-    .name {
-        font-size: clamp(1.3rem, 4vw, 2.8rem);
-    }
-
-    .description {
-        font-size: clamp(0.9rem, 2vw, 1.6rem);
-    }
-
-    h2 {
-        font-size: clamp(0.85rem, 1.5vw, 1.1rem);
-    }
-
-    h3 {
-        font-size: clamp(1rem, 1.8vw, 1.5rem);
-    }
-
-    .card {
-        max-width: calc(100vw - 1rem);
-    }
-
-    .contact form {
-        max-width: 95vw;
-    }
-
-    .contact input,
-    .contact textarea,
-    .contact button {
-        font-size: clamp(0.8rem, 2vw, 0.95rem);
-    }
 }
 
 /*Layout mobile versione portrait */
 @media screen and (max-width:599px) and (orientation:portrait) {
 
     nav ul li a {
-        font-size: clamp(3vw, 4.5vw, 5vw);
+        font-size: 5vw;
     }
 
     nav ul li {
@@ -2121,7 +1499,7 @@ ease-in-out infinite; */
         display: flex;
         font-family: 'Orbitron', sans-serif;
         padding: 0vw 0vw 0vw 5vw;
-        font-size: 1.5rem;
+
     }
 
     /* Show hamburger icon on mobile */
@@ -2154,12 +1532,10 @@ ease-in-out infinite; */
     nav.active .nav-links {
         display: flex;
         align-items: flex-start;
-        top: 50px;
     }
 
     nav .lx {
-        font-size: 1.5rem;
-        padding-top: 6px;
+        padding-top: 9px;
         margin: 0px;
         color: #c62ff6;
         font-family: 'Orbitron', sans-serif;
@@ -2174,48 +1550,34 @@ ease-in-out infinite; */
     }
 
     header {
+        height: 93vh;
         margin-top: 3.5rem;
         width: 100%;
-        padding-bottom: 8rem;
     }
 
     .box_header {
-        margin-top: 11rem;
         text-align: left;
         width: 100%;
     }
 
     .bg-shapes {
-        position: relative;
+        position: absolute;
         inset: 0;
         pointer-events: none;
         z-index: 0;
         width: 100%;
-        height: 0vh;
-    }
-
-    .s2,
-    .s4 {
-        display: none;
-    }
-
-    .s1 {
-        width: 9rem;
-        height: 9rem;
-        left: 0vw;
-        top: -36rem;
-        animation: float1 8s ease-in-out infinite;
+        height: 93vh;
     }
 
     .s3 {
-        top: -10rem;
+        top: 69%;
     }
 
     .s5 {
         width: 37rem;
         height: 37rem;
-        left: 6rem;
-        top: -38rem;
+        left: 28%;
+        top: 5%;
     }
 
     .about_box {
@@ -2230,13 +1592,12 @@ ease-in-out infinite; */
     }
 
     .about p {
-        font-size: 4.8vw;
-        line-height: 2rem;
+        font-size: 3.8vw;
     }
 
     .about_box .title_box {
         align-items: start;
-        padding: 0rem 0rem 2rem 0rem;
+        padding: 5rem 0rem 2rem 0rem;
     }
 
     .about_visionext_box {
@@ -2245,10 +1606,9 @@ ease-in-out infinite; */
     }
 
     .about_visionext_box p {
-        font-size: 4.8vw;
+        font-size: 3.8vw;
         margin: 0;
         text-align: left;
-        width: 100%;
     }
 
     .services-section {
@@ -2264,42 +1624,33 @@ ease-in-out infinite; */
         scroll-snap-stop: always;
     }
 
-    .card h4 {
-        font-size: clamp(1.3rem, 1.6vw, 1.2rem);
-    }
 
     .name {
+        position: relative;
         z-index: 2;
-        font-size: clamp(12vw, 15vw, 16vw);
-        /* margin: 0.5rem 0; */
+        font-size: 15vw;
+        margin: 0.5rem 0;
         color: #730099;
         line-height: 1.1;
         font-weight: bolder;
         /* -webkit-text-stroke-width: medium; */
     }
 
-    .explain-description {
-        font-size: 1.2rem;
+    .description {
+        position: relative;
+        z-index: 2;
+        font-size: 6vw;
+
+        line-height: 1.1;
+        margin-top: 1rem;
         color: #555;
-        line-height: 1.7rem;
-        max-width: 100%;
-        justify-content: left;
     }
 
-    .description {
-        z-index: 2;
-        font-size: 8.4vw;
-        line-height: 2.2rem;
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
-        color: #555;
-    }
 
     .slider-wrapper {
         gap: unset;
         flex-wrap: nowrap;
         overflow-x: auto;
-        overflow-y: hidden;
         scroll-behavior: smooth;
         justify-content: start;
     }
@@ -2318,26 +1669,17 @@ ease-in-out infinite; */
         gap: unset;
         flex-wrap: nowrap;
         overflow-x: auto;
-        overflow-y: hidden;
         scroll-behavior: smooth;
         justify-content: start;
     }
 
     .portfolio_box article {
-        max-width: 91.3vw;
-    }
-
-    .portfolio_box h5 {
-        font-size: clamp(1.3rem, 1.4vw, 1.1rem);
-    }
-
-    .portfolio_box h4 {
-        font-size: clamp(1rem, 1.5vw, 1.2rem);
+        max-width: 90.7vw;
     }
 
     .arrow_outward {
-        font-size: clamp(1.2rem, 6vw, 3.5rem);
-        margin: clamp(0.5rem, 2vw, 2rem) 0 0 auto;
+             margin: 1vw -4vw -3vw 0vw;
+        font-size: 10vw;
     }
 
     .contact {
@@ -2360,12 +1702,12 @@ ease-in-out infinite; */
     .contact input,
     .contact textarea {
         width: 100%;
-        font-size: 4.8vw;
+        font-size: 3.8vw;
         border-radius: 0.5rem;
     }
 
     .contact button {
-        font-size: 4.8vw;
+        font-size: 3.8vw;
         width: 100%;
         border-radius: 0.5rem;
     }
@@ -2388,34 +1730,30 @@ ease-in-out infinite; */
     }
 
     h2 {
-        font-size: clamp(4vw, 5vw, 6vw);
+        font-size: 4vw;
     }
 
     h3 {
-        font-size: clamp(5vw, 6vw, 7vw);
+        font-size: 5vw;
     }
 
     h4 {
-        font-size: clamp(4.5vw, 4.8vw, 5.5vw);
+        font-size: 3.8vw;
     }
 
     h5 {
-        font-size: clamp(4.5vw, 4.9vw, 5.5vw);
+        font-size: 3.9vw;
     }
 
     p,
     .about p,
     .about_visionext_box p {
-        font-size: clamp(4vw, 4.8vw, 5.5vw);
-        line-height: 1.7rem;
+        font-size: 3.8vw;
+        line-height: 2rem;
     }
 
     .cta {
         font-size: 4vw;
-    }
-
-    .cta_box {
-        margin-top: 0rem;
     }
 
     .contact {
@@ -2440,7 +1778,7 @@ ease-in-out infinite; */
     .contact textarea,
     .contact button {
         width: 90vw;
-        font-size: 4.8vw;
+        font-size: 1rem;
         border-radius: 0.5rem;
     }
 
@@ -2455,7 +1793,7 @@ ease-in-out infinite; */
 
 
     footer {
-        font-size: 3.7vw;
+        font-size: 3vw;
         padding: 1rem;
     }
 
@@ -2472,10 +1810,6 @@ ease-in-out infinite; */
         width: 100%;
     }
 
-    .footer-bottom p {
-        font-size: 4.5vw;
-    }
-
 }
 
 /*Layout mobile versione landscape */
@@ -2483,7 +1817,7 @@ ease-in-out infinite; */
 
 
     nav ul li a {
-        font-size: clamp(2.5vw, 3.5vw, 3.5vw);
+        font-size: 3.1vw;
     }
 
     nav ul li {
@@ -2511,17 +1845,11 @@ ease-in-out infinite; */
     }
 
     nav .logo {
-        font-size: 1.5rem;
         font-weight: bold;
         color: #000;
         display: flex;
         font-family: 'Orbitron', sans-serif;
         padding: 0vw 0vw 0vw 5vw;
-
-    }
-
-    .lx {
-        font-size: 1.5rem;
 
     }
 
@@ -2569,55 +1897,53 @@ ease-in-out infinite; */
         margin-top: 3.4rem;
         width: 100%;
         text-align: center;
-        padding: 2rem;
-    }
-
-    .box_header {
-        margin: 0rem 0rem;
-        width: 100%;
-        position: sticky;
-        z-index: 1;
-        text-align: center;
+        padding: 6.6rem;
     }
 
     .bg-shapes {
         width: 100%;
-        height: 0vh;
+        height: 86vh;
     }
 
     .s1 {
         width: 7rem;
         height: 7rem;
-        left: 1rem;
-        top: -17rem;
+        left: 6%;
+        top: 7%;
         animation: float1 8s ease-in-out infinite;
     }
 
     .s2 {
         width: 3rem;
         height: 3rem;
-        right: 5rem;
-        top: -17rem;
+        right: 19%;
+        top: 12%;
         animation: float2 10s ease-in-out infinite;
     }
+
 
     .s3 {
         width: 3rem;
         height: 3rem;
-        left: 36rem;
-        bottom: 3rem;
+        left: 34%;
+        bottom: 14%;
         animation: float2 10s ease-in-out infinite;
     }
 
     .s4 {
+        /* width: 15rem;
+        height: 15rem;
+        right: 67%;
+        bottom: 15%;
+        rotate: 43deg; */
         display: none;
     }
 
     .s5 {
         width: 20rem;
         height: 20rem;
-        left: 40rem;
-        top: -18.5rem;
+        left: 87%;
+        top: -1%;
     }
 
     .about {
@@ -2640,14 +1966,13 @@ ease-in-out infinite; */
         background-color: #730099;
         color: white;
         width: 100%;
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .about_visionext_box p {
         font-size: 1.2rem;
         line-height: 1.7;
         margin: 0 0 2rem 0;
-        width: 100%;
     }
 
     .about_visionext_box h2 {
@@ -2671,10 +1996,6 @@ ease-in-out infinite; */
         scroll-snap-stop: always;
     }
 
-    .card h4 {
-        font-size: clamp(1.3rem, 1.6vw, 1.2rem);
-    }
-
     h1.name {
         position: relative;
         font-size: 8vw;
@@ -2691,24 +2012,15 @@ ease-in-out infinite; */
         z-index: 2;
         font-size: 1.86rem;
         line-height: 1.1;
-        margin-top: 0rem;
+        margin-top: 1rem;
         color: #555;
     }
 
-    .explain-description {
-        line-height: 2rem;
-        text-align: left;
-        font-size: 1.53rem;
-        color: #555;
-        max-width: 78%;
-        margin: 0 auto;
-    }
 
     .slider-wrapper {
         gap: unset;
         flex-wrap: nowrap;
         overflow-x: auto;
-        overflow-y: hidden;
         scroll-behavior: smooth;
         justify-content: start;
     }
@@ -2736,17 +2048,8 @@ ease-in-out infinite; */
         max-width: 46.7vw;
     }
 
-    .portfolio_box h5 {
-        font-size: clamp(1.3rem, 1.4vw, 1.1rem);
-    }
-
-    .portfolio_box h4 {
-        font-size: clamp(1rem, 1.5vw, 1.2rem);
-    }
-
     .arrow_outward {
-        font-size: clamp(1rem, 4.5vw, 3rem);
-        margin: clamp(0.5rem, 2vw, 2rem) 0 0 auto;
+        margin: 2rem 0rem 0rem 38vw;
     }
 
     .contact {
@@ -2799,11 +2102,11 @@ ease-in-out infinite; */
     }
 
     h2 {
-        font-size: clamp(1rem, 1.2vw, 1.2rem);
+        font-size: 1.2rem;
     }
 
     h3 {
-        font-size: clamp(1.4rem, 1.7vw, 1.8rem);
+        font-size: 1.7rem;
     }
 
     h4 {
@@ -2815,10 +2118,6 @@ ease-in-out infinite; */
     .about_visionext_box p {
         font-size: 1rem;
         line-height: 1.6;
-    }
-
-    .cta_box {
-        margin-top: 3rem;
     }
 
     .cta {
@@ -2844,37 +2143,4 @@ ease-in-out infinite; */
         width: 100%;
     }
 
-}
-
-/* DESKTOP GRANDE (1920px+) */
-@media screen and (min-width: 1920px) {
-    nav {
-        padding: 1.5rem 4rem;
-    }
-
-    .logo,
-    .lx {
-        font-size: 2.2rem;
-    }
-
-    nav ul li a {
-        font-size: 1.1rem;
-    }
-
-    .name {
-        font-size: 5.5rem;
-    }
-
-    .description {
-        font-size: 2.8rem;
-    }
-
-    .contact form {
-        max-width: 35vw;
-    }
-
-    iframe {
-        width: 40vw;
-        height: 450px;
-    }
 }

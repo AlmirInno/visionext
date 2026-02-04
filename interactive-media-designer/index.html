@@ -98,6 +98,8 @@
         <div class="box_header">
             <h1 class="name">ALMIR INNOCENTI</h1>
             <p class="description"> <strong>Interactive Media Designer</strong> a Firenze</p>
+            <p class="explain-description reveal reveal-bottom">Aiuto imprese e professionisti a costruire una presenza
+                digitale unica e coinvolgente.</p>
         </div>
 
         <div class="cta_box">
@@ -543,16 +545,27 @@
 
             const s1 = document.querySelector('.s1');
 
-            // Azzeriamo trasformazioni precedenti per sicurezza
-            gsap.set(s1, { x: 0, y: 0 });
+            // Salva posizione iniziale (posizione reale sullo schermo)
+            const rect = s1.getBoundingClientRect();
+            const startX = 0; // partiamo da 0 perché GSAP draggable usa translateX/Y, non left/top
+            const startY = 0;
 
             Draggable.create(s1, {
                 type: "x,y",
                 edgeResistance: 0.65,
                 inertia: false,
+                onPress() {
+                    // Pausa l'animazione CSS durante il drag
+                    s1.style.animationPlayState = "paused";
+                    // Cambia il cursor per far capire che si trascina
+                    s1.style.cursor = "grabbing";
+                },
                 onRelease() {
-                    // torna alla posizione originale
-                    gsap.to(s1, { duration: 0.5, x: 0, y: 0, ease: "elastic.out(1, 0.5)" });
+                    // Riavvia l'animazione
+                    s1.style.animationPlayState = "running";
+                    s1.style.cursor = "grab";
+                    // Riporta alla posizione iniziale con animazione fluida
+                    gsap.to(s1, { duration: 0.5, x: startX, y: startY, ease: "elastic.out(1, 0.5)" });
                 }
             });
         });
