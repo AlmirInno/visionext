@@ -1863,11 +1863,11 @@ ease-in-out infinite; */
         display: block;
         background: transparent;
         border: none;
-        font-size: 4vw;
+        font-size: clamp(3vw, 4vw, 5vw);
         /* Mantiene il font adattabile senza diventare troppo grande */
         color: #c62ff6;
         /* Adatta il margine in base alla larghezza dello schermo */
-        padding: 0vw 5vw 0vw 0vw;
+        padding: 0vw clamp(1rem, 5vw, 2rem) 0vw 0vw;
     }
 
     nav .nav-links {
@@ -1897,21 +1897,21 @@ ease-in-out infinite; */
     }
 
     h1.name {
-        font-size: 8rem;
+        font-size: clamp(4rem, 8vw, 8rem);
     }
 
     .explain-description {
-        line-height: 3.5rem;
+        line-height: clamp(2rem, 3.5vh, 3.5rem);
         text-align: left;
-        font-size: 2.64rem;
+        font-size: clamp(1.5rem, 2.64vw, 2.64rem);
         color: #555;
         max-width: 89%;
         margin: 0 auto;
     }
 
     .description {
-        font-size: 3.9rem;
-        line-height: 5rem;
+        font-size: clamp(2rem, 3.9vw, 3.9rem);
+        line-height: clamp(3rem, 5vh, 5rem);
 
     }
 
@@ -1968,17 +1968,16 @@ ease-in-out infinite; */
     }
 
     .cta_box {
-        margin-top: 18.2rem;
-        margin-top: 11rem;
+        margin-top: clamp(8rem, 11rem, 18.2rem);
     }
 
     .cta {
-        font-size: 2vw;
+        font-size: clamp(1.5rem, 2vw, 2.5rem);
     }
 
 
     .title_box {
-        padding: 2rem 0rem;
+        padding: clamp(1rem, 2rem, 3rem) 0rem;
     }
 
     .about_box {
@@ -1988,7 +1987,7 @@ ease-in-out infinite; */
     }
 
     .about {
-        margin: 0rem 2rem 0rem 0rem;
+        margin: 0rem clamp(1rem, 2rem, 3rem) 0rem 0rem;
     }
 
     .about_visionext_box p {
@@ -2002,20 +2001,20 @@ ease-in-out infinite; */
     }
 
     .card {
-        font-size: 1.1rem;
-        padding: 1.5rem;
+        font-size: clamp(0.9rem, 1.1vw, 1.3rem);
+        padding: clamp(1rem, 1.5rem, 2rem);
     }
 
     .portfolio_box article {
-        flex: 1 1 calc(33.33% - 2rem);
-        max-width: 34vw;
-        margin: 1rem 0.5rem;
+        flex: 1 1 clamp(250px, calc(33.33% - 2rem), 34vw);
+        max-width: clamp(300px, 34vw, 500px);
+        margin: clamp(0.5rem, 1rem, 1.5rem) clamp(0.25rem, 0.5rem, 1rem);
         flex-wrap: wrap;
         scroll-snap-align: start;
         background-color: #fff;
         color: #263238;
         border-radius: 1rem;
-        padding: 1rem;
+        padding: clamp(0.75rem, 1rem, 1.5rem);
         /* text-align: center; */
         transition: background 0.3s;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -2180,7 +2179,7 @@ ease-in-out infinite; */
     }
 
     .box_header {
-        margin-top: 11rem;
+        margin-top: 9rem;
         text-align: left;
         width: 100%;
     }
@@ -2324,7 +2323,7 @@ ease-in-out infinite; */
     }
 
     .portfolio_box article {
-        max-width: 91.3vw;
+        max-width: 87.3vw;
     }
 
     .portfolio_box h5 {
@@ -2506,22 +2505,22 @@ ease-in-out infinite; */
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
-        height: 14vh;
-        padding: 0vw;
+        height: clamp(12vh, 14vh, 16vh);
+        padding: 0 clamp(0.5rem, 1vw, 1.5rem);
     }
 
     nav .logo {
-        font-size: 1.5rem;
+        font-size: clamp(1.2rem, 1.5vw, 1.8rem);
         font-weight: bold;
         color: #000;
         display: flex;
         font-family: 'Orbitron', sans-serif;
-        padding: 0vw 0vw 0vw 5vw;
+        padding: 0vw 0vw 0vw clamp(0.5rem, 5vw, 1rem);
 
     }
 
     .lx {
-        font-size: 1.5rem;
+        font-size: clamp(1.2rem, 1.5vw, 1.8rem);
 
     }
 
@@ -2530,11 +2529,11 @@ ease-in-out infinite; */
         display: block;
         background: transparent;
         border: none;
-        font-size: 4vw;
+        font-size: clamp(2.5vw, 4vw, 5vw);
         /* Mantiene il font adattabile senza diventare troppo grande */
         color: #c62ff6;
         /* Adatta il margine in base alla larghezza dello schermo */
-        padding: 0vw 5vw 0vw 0vw;
+        padding: 0vw clamp(1rem, 5vw, 2rem) 0vw 0vw;
     }
 
     nav .nav-links {
@@ -2566,10 +2565,10 @@ ease-in-out infinite; */
     }
 
     header {
-        margin-top: 3.4rem;
+        margin-top: clamp(2rem, 3.4rem, 4rem);
         width: 100%;
         text-align: center;
-        padding: 2rem;
+        padding: clamp(1rem, 2rem, 3rem);
     }
 
     .box_header {
@@ -2621,17 +2620,17 @@ ease-in-out infinite; */
     }
 
     .about {
-        margin: 0 0 2rem 0;
+        margin: 0 0 clamp(1rem, 2rem, 3rem) 0;
         width: 100%;
     }
 
     figure {
         width: 100%;
-        height: 19rem;
+        height: clamp(16rem, 19rem, 22rem);
     }
 
     .about p {
-        font-size: 1.1rem;
+        font-size: clamp(0.9rem, 1.1vw, 1.3rem);
     }
 
     .about_visionext_box {
@@ -2640,13 +2639,13 @@ ease-in-out infinite; */
         background-color: #730099;
         color: white;
         width: 100%;
-        padding: 1rem;
+        padding: clamp(0.75rem, 1rem, 1.5rem);
     }
 
     .about_visionext_box p {
-        font-size: 1.2rem;
+        font-size: clamp(0.95rem, 1.2vw, 1.4rem);
         line-height: 1.7;
-        margin: 0 0 2rem 0;
+        margin: 0 0 clamp(1rem, 2rem, 3rem) 0;
         width: 100%;
     }
 
@@ -2664,22 +2663,22 @@ ease-in-out infinite; */
     }
 
     .card {
-        flex: 0 0 100%;
-        max-width: 44vw;
-        padding: 1rem;
+        flex: 0 0 clamp(200px, 100%, 50vw);
+        max-width: clamp(400px, 44vw, 500px);
+        padding: clamp(0.75rem, 1rem, 1.5rem);
         scroll-snap-align: start;
         scroll-snap-stop: always;
     }
 
     .card h4 {
-        font-size: clamp(1.3rem, 1.6vw, 1.2rem);
+        font-size: clamp(1rem, 1.6vw, 1.4rem);
     }
 
     h1.name {
         position: relative;
-        font-size: 8vw;
+        font-size: clamp(4vw, 8vw, 10vw);
         z-index: 2;
-        margin: 0.5rem 0;
+        margin: clamp(0.25rem, 0.5rem, 1rem) 0;
         color: #730099;
         line-height: 1.1;
         font-weight: bolder;
@@ -2689,16 +2688,16 @@ ease-in-out infinite; */
     .description {
         position: relative;
         z-index: 2;
-        font-size: 1.86rem;
+        font-size: clamp(1.2rem, 1.86vw, 2.2rem);
         line-height: 1.1;
         margin-top: 0rem;
         color: #555;
     }
 
     .explain-description {
-        line-height: 2rem;
+        line-height: clamp(1.5rem, 2rem, 2.5rem);
         text-align: left;
-        font-size: 1.53rem;
+        font-size: clamp(1.2rem, 1.53vw, 1.8rem);
         color: #555;
         max-width: 78%;
         margin: 0 auto;
@@ -2750,7 +2749,7 @@ ease-in-out infinite; */
     }
 
     .contact {
-        padding: 1rem;
+        padding: clamp(0.75rem, 1rem, 1.5rem);
         width: 100%;
         flex-wrap: wrap;
     }
@@ -2764,31 +2763,31 @@ ease-in-out infinite; */
 
     .contact form {
         width: 100%;
-        margin: 0rem 0rem 2rem 0rem;
+        margin: 0rem 0rem clamp(1rem, 2rem, 3rem) 0rem;
     }
 
     .contact input,
     .contact textarea {
-        width: 94vw;
-        font-size: 1rem;
-        border-radius: 0.5rem;
+        width: clamp(300px, 94vw, 500px);
+        font-size: clamp(0.9rem, 1rem, 1.1rem);
+        border-radius: clamp(0.25rem, 0.5rem, 0.75rem);
     }
 
     .contact button {
-        font-size: 1.2rem;
-        width: 94vw;
-        border-radius: 0.5rem;
+        font-size: clamp(1rem, 1.2vw, 1.4rem);
+        width: clamp(300px, 94vw, 500px);
+        border-radius: clamp(0.25rem, 0.5rem, 0.75rem);
     }
 
     .map-container {
         width: 100%;
         height: auto;
-        margin: 2rem 0rem;
+        margin: clamp(1rem, 2rem, 3rem) 0rem;
     }
 
     .contact iframe {
-        width: 95vw;
-        height: 18rem;
+        width: clamp(300px, 95vw, 500px);
+        height: clamp(14rem, 18rem, 22rem);
     }
 
     .title_box {
