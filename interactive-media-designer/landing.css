@@ -576,7 +576,7 @@ figure {
 .cta.secondary {
     background: transparent;
     color: #263238;
-    border: 2px solid rgba(198,47,246,0.12);
+    border: 2px solid rgba(198, 47, 246, 0.12);
 }
 
 .hero-tagline {
@@ -602,7 +602,7 @@ figure {
     background: #fff;
     padding: clamp(1rem, 1.6vw, 1.4rem);
     border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
     color: #333;
 }
 
@@ -627,13 +627,15 @@ figure {
     color: #fff;
     padding: 0.8rem 1rem;
     border-radius: 999px;
-    box-shadow: 0 10px 30px rgba(115,0,153,0.18);
+    box-shadow: 0 10px 30px rgba(115, 0, 153, 0.18);
     text-decoration: none;
     font-weight: 700;
     transition: transform 0.2s ease;
 }
 
-.sticky-contact:hover { transform: translateY(-4px); }
+.sticky-contact:hover {
+    transform: translateY(-4px);
+}
 
 .portfolio_box_master {
     padding: clamp(1rem, 3vw, 2rem);
