@@ -44,9 +44,9 @@
 
     <!-- <meta name="google-site-verification" content="JdOD4mfz1aJ8NE6mr1pVOpv5nZeWfHmb7ztGEUYqrqs" /> -->
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-16V3QYNW4E"></script>
-    <script>
+    <!-- Google tag (gtag.js) - caricato solo dopo consenso (data-cookie-consent) -->
+    <script type="text/plain" data-cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-16V3QYNW4E"></script>
+    <script type="text/plain" data-cookie-consent="tracking">
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
@@ -61,6 +61,10 @@
             cookieconsent.run({ "notice_banner_type": "interstitial", "consent_type": "express", "palette": "dark", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "VISIONEXT" });
         });
     </script>
+
+    <style>
+        .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    </style>
 
     <!-- Google Analytics -->
     <!-- <script type="text/plain" data-cookie-consent="tracking" async
@@ -82,10 +86,10 @@
     <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed
             Generator</a></noscript>
 
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
         <div class="logo"><a href="https://www.visionext.it"> VISIO<p class="lx">NEXT</p></a>
         </div>
-        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">&#9776;</button>
         <ul class="nav-links" id="nav-links">
             <li><a href="#vision">Visione</a></li>
             <li><a href="#mission">Missione</a></li>
@@ -98,7 +102,7 @@
 
     <header>
         <figure>
-            <img src="img/new_hero_qu2.png" alt="Web Designer sviluppa siti web " href="https://storyset.com/online">
+            <img src="img/new_hero_qu2.png" alt="Web Designer sviluppa siti web " />
         </figure>
 
         <div class="header-content">
@@ -106,10 +110,7 @@
             <p>Digital Agency a Firenze: branding, design multimediale, sviluppo
                 Web&App, campagne ads e SEO per fare crescere il business online.</p>
 
-
-            <button>
-                <a href="#contact">Contattaci</a>
-            </button>
+            <a href="#contact" class="btn">Contattaci</a>
         </div>
     </header>
 
@@ -371,14 +372,23 @@
 
         <section id="contact" class="contact">
             <div id="contact-content">
-                <h2>Contattaci</h2>
-                <form id="contactForm">
-                    <p>Hai bisogno di un’identità digitale per la tua azienda? Richiedi un preventivo.</p>
-                    <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
-                    <input type="email" id="email" name="email" placeholder="La tua email" required>
-                    <textarea id="message" name="message" placeholder="Descrivi la tua idea" required></textarea>
-                    <button type="submit">Invia</button>
-                </form>
+                        <h2>Contattaci</h2>
+                        <form id="contactForm" aria-live="polite" aria-describedby="contact-form-note">
+                            <p id="contact-form-note" class="sr-only">Modulo di contatto: compila i campi per richiedere un preventivo.</p>
+                            <label class="sr-only" for="name">Il tuo nome</label>
+                            <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+
+                            <label class="sr-only" for="email">La tua email</label>
+                            <input type="email" id="email" name="email" placeholder="La tua email" required>
+
+                            <label class="sr-only" for="message">Descrivi la tua idea</label>
+                            <textarea id="message" name="message" placeholder="Descrivi la tua idea" required></textarea>
+
+                            <!-- Honeypot anti-spam (hidden) -->
+                            <input type="text" id="website" name="website" autocomplete="off" style="display:none">
+
+                            <button type="submit">Invia</button>
+                        </form>
             </div>
 
         </section>
@@ -424,6 +434,12 @@
         document.getElementById("contactForm").addEventListener("submit", function (event) {
             event.preventDefault();
 
+            // Honeypot anti-spam: se compilato, abortiamo
+            const honeypot = document.getElementById("website");
+            if (honeypot && honeypot.value.trim() !== "") {
+                return; // bot detected
+            }
+
             // Ottieni i dati dal form
             let formData = {
                 name: document.getElementById("name").value,
@@ -459,11 +475,13 @@
                     // Cambia l'icona dell'hamburger
                     if (nav.classList.contains("active")) {
                         menuToggle.setAttribute("aria-label", "Close Menu");
+                        menuToggle.setAttribute("aria-expanded", "true");
                         menuToggle.innerHTML = "&#10006;"; // X
                         menuToggle.style.fontWeight = "lighter";
 
                     } else {
                         menuToggle.setAttribute("aria-label", "Open Menu");
+                        menuToggle.setAttribute("aria-expanded", "false");
                         menuToggle.innerHTML = "&#9776;"; // Hamburger
                     }
 
@@ -479,6 +497,7 @@
                     if (nav.classList.contains("active")) {
                         nav.classList.remove("active");  // Chiude il menu
                         menuToggle.setAttribute("aria-label", "Open Menu");
+                        menuToggle.setAttribute("aria-expanded", "false");
                         menuToggle.innerHTML = "&#9776;"; // Hamburger
                     }
                 });
