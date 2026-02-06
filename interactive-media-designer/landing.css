@@ -2560,15 +2560,19 @@ ease-in-out infinite; */
 
     .cta_buttons {
     margin-top: 6rem;
+    width: 100%;
 }
 
-    .cta_buttons a {
+       .cta_buttons a {
         background-color: #263238;
         color: white;
         padding: 1rem;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        display: block;
         border-radius: 0.3rem;
         text-decoration: none;
+        width: 100%;
+        text-align: center;
     }
 
     .about_box {
