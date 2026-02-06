@@ -2491,8 +2491,8 @@ ease-in-out infinite; */
         padding-bottom: 9rem;
     }
 
-        .box_header {
-        padding-top: 5.5rem;
+       .box_header {
+        padding-top: 3.5rem;
         text-align: left;
         width: 100%;
     }
@@ -2562,7 +2562,7 @@ ease-in-out infinite; */
         background-color: #263238;
         color: white;
         padding: 1rem;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         border-radius: 0.3rem;
         text-decoration: none;
     }
