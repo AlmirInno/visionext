@@ -2754,7 +2754,7 @@ ease-in-out infinite; */
     .about p,
     .about_visionext_box p {
         font-size: clamp(4vw, 4.8vw, 5.5vw);
-        line-height: 1.7rem;
+        line-height: 1.4rem;
     }
 
     .cta {
