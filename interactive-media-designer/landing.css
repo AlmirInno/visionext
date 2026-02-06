@@ -2491,7 +2491,7 @@ ease-in-out infinite; */
         padding-bottom: 9rem;
     }
 
-       .box_header {
+    .box_header {
         padding-top: 3.5rem;
         text-align: left;
         width: 100%;
@@ -2538,7 +2538,7 @@ ease-in-out infinite; */
         color: #730099;
         line-height: 3.5rem;
         font-weight: bolder;
-        -webkit-text-stroke-width: thin; 
+        -webkit-text-stroke-width: thin;
     }
 
     .explain-description {
@@ -2551,7 +2551,7 @@ ease-in-out infinite; */
 
     .description {
         z-index: 2;
-        font-size: 4.35vw;
+        font-size: 4.3vw;
         line-height: 1.2rem;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
@@ -3043,7 +3043,7 @@ ease-in-out infinite; */
         color: #730099;
         line-height: 3.5rem;
         font-weight: bolder;
-        -webkit-text-stroke-width:thin;
+        -webkit-text-stroke-width: thin;
     }
 
     .description {
@@ -3068,7 +3068,7 @@ ease-in-out infinite; */
         margin-top: 1.8rem;
     }
 
-      .cta_buttons a {
+    .cta_buttons a {
         background-color: #263238;
         color: white;
         padding: 0.9rem;
