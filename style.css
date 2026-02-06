@@ -1,12 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
+:root {
+    --primary: #c62ff6;
+    --accent: #730099;
+    --text: #263238;
+    --muted: #666666;
+    --bg: #ffffff;
+    --card-bg: #ffffff;
+    
+    /* Tipografia - Scala responsiva coerente */
+    --fs-h1: clamp(1.8rem, 5vw, 3.2rem);    /* Titoli principali */
+    --fs-h2: clamp(1.1rem, 2.2vw, 1.8rem);  /* Titoli secondari */
+    --fs-h3: clamp(1rem, 2vw, 1.5rem);      /* Sottotitoli */
+    --fs-h4: clamp(0.95rem, 1.6vw, 1.15rem); /* Card titles */
+    --fs-body: clamp(0.95rem, 1.5vw, 1.1rem); /* Testo corpo */
+    --fs-small: clamp(0.85rem, 1.2vw, 0.95rem); /* Testo piccolo */
+    --fs-label: clamp(0.7rem, 1vw, 0.9rem);  /* Label */
+    
+    /* Line heights */
+    --lh-tight: 1.2;
+    --lh-normal: 1.5;
+    --lh-loose: 1.7;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     width: 100%;
-    color: #263238;
+    color: var(--text);
     font-size: 1.1vw;
 }
 
@@ -47,7 +70,7 @@ nav {
     padding-top: 0px;
     margin: 0px;
     font-size: 28px;
-    color: #c62ff6;
+    color: var(--primary);
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -68,7 +91,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #c62ff6;
+    color: var(--primary);
     transform: scale(1.1);
 }
 
@@ -118,7 +141,7 @@ header figure img {
 
 .header-content h1 {
     font-size: 3.5vw;
-    color: #c62ff6;
+    color: var(--primary);
     margin: 0;
 }
 
@@ -190,13 +213,13 @@ main {
 
 
 h2 {
-    color: #c62ff6;
-    font-size: 3vw;
+    color: var(--primary);
+    font-size: var(--fs-h2);
     margin: 0;
 }
 
 h3 {
-    font-size: 2vw;
+    font-size: var(--fs-h3);
     margin: 0;
 }
 
@@ -214,6 +237,12 @@ h3 {
 .textMission,
 .textVision {
     width: 38%;
+}
+
+.textVision p,
+.textMission p {
+    font-size: var(--fs-body);
+    line-height: var(--lh-loose);
 }
 
 .fotoVision,
@@ -357,6 +386,8 @@ h3 {
 
 .service-card p {
     margin: 2vw 0vw;
+    font-size: var(--fs-body);
+    line-height: var(--lh-normal);
 }
 
 /* Approach section */
@@ -398,6 +429,22 @@ h3 {
 
 #approach .int-content {
     border-radius: 1vw 1vw 1vw 1vw;
+}
+
+/* Theme overrides — uniform colors using CSS variables */
+.theme-overrides {
+}
+
+.lx { color: var(--primary); }
+nav ul li a:hover { color: var(--primary); }
+.header-content h1 { color: var(--primary); }
+h2 { color: var(--primary); }
+#services { background-color: var(--accent) !important; }
+#value-content article h3 { color: var(--primary); }
+.service-card:hover { background-color: var(--primary); color: #fff; }
+.material-icons { color: var(--accent); }
+body { color: var(--text); }
+
     cursor: pointer;
     background-color: #730099;
     width: 100%;
