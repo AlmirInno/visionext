@@ -2488,11 +2488,11 @@ ease-in-out infinite; */
     header {
         margin-top: 3.5rem;
         width: 100%;
-        padding-bottom: 8rem;
+        padding-bottom: 9rem;
     }
 
-    .box_header {
-        padding-top: 7.5rem;
+        .box_header {
+        padding-top: 5.5rem;
         text-align: left;
         width: 100%;
     }
@@ -2538,7 +2538,7 @@ ease-in-out infinite; */
         color: #730099;
         line-height: 3.5rem;
         font-weight: bolder;
-        -webkit-text-stroke-width: thin; *
+        -webkit-text-stroke-width: thin; 
     }
 
     .explain-description {
