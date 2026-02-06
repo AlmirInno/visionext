@@ -2558,6 +2558,10 @@ ease-in-out infinite; */
         color: #555;
     }
 
+    .cta_buttons {
+    margin-top: 6rem;
+}
+
     .cta_buttons a {
         background-color: #263238;
         color: white;
