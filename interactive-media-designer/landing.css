@@ -2538,7 +2538,7 @@ ease-in-out infinite; */
         color: #730099;
         line-height: 3.5rem;
         font-weight: bolder;
-        /* -webkit-text-stroke-width: medium; */
+        -webkit-text-stroke-width: thin; *
     }
 
     .explain-description {
@@ -3043,7 +3043,7 @@ ease-in-out infinite; */
         color: #730099;
         line-height: 3.5rem;
         font-weight: bolder;
-        -webkit-text-stroke-width: medium;
+        -webkit-text-stroke-width:thin;
     }
 
     .description {
