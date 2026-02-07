@@ -2832,6 +2832,10 @@ ease-in-out infinite; */
     .footer-bottom p {
         font-size: 4.5vw;
     }
+    .how-i-work {
+        width: 100%;
+        padding: 1rem 1rem 5rem;
+    }
 
 
     .how-i-work .timeline {
