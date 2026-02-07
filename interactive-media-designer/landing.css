@@ -2843,6 +2843,11 @@ ease-in-out infinite; */
 
     }
 
+
+       .how-i-work .step .marker {
+        width: 5rem;
+        text-align: center;
+
 }
 
 /*Layout mobile versione landscape */
