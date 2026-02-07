@@ -2560,8 +2560,9 @@ ease-in-out infinite; */
 
     .cta_buttons {
     margin-top: 6rem;
-    width: 100%;
-}
+    width: 100%;}
+
+    
 
        .cta_buttons a {
         background-color: #263238;
@@ -2850,18 +2851,20 @@ ease-in-out infinite; */
 
 }
 
+}
+
 /*Layout mobile versione landscape */
 @media screen and (min-width: 599px) and (max-width:932px) and (orientation:landscape) {
 
 
     nav ul li a {
-        font-size: clamp(2.5vw, 3.5vw, 3.5vw);
+        font-size: clamp(2.5vw, 3vw, 3.5vw);
     }
 
     nav ul li {
         border-top: 0.3px solid rgba(0, 0, 0, 0.123);
         width: 100%;
-        padding: 2vh 6vw;
+        padding: clamp(0.8rem, 1vh, 1.2rem) clamp(1rem, 6vw, 2rem);
     }
 
     nav ul li:hover {
@@ -2871,30 +2874,29 @@ ease-in-out infinite; */
     nav ul li:hover a {
         color: #fff;
     }
-
+    
     nav {
         width: 100%;
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        flex-direction: row;
-        height: clamp(12vh, 14vh, 16vh);
-        padding: 0 clamp(0.5rem, 1vw, 1.5rem);
+        height: clamp(14vh, 16vh, 18vh);
+        padding: 0 clamp(-0.5rem, 0vw, 1.5rem);
     }
 
     nav .logo {
-        font-size: clamp(1.2rem, 1.5vw, 1.8rem);
         font-weight: bold;
         color: #000;
         display: flex;
         font-family: 'Orbitron', sans-serif;
-        padding: 0vw 0vw 0vw clamp(0.5rem, 5vw, 1rem);
-
+        padding: 0vw 0vw 0vw clamp(0.5rem, 5vw, 1.5rem);
+        font-size: clamp(1.5rem, 3vw, 2rem);
     }
 
-    .lx {
-        font-size: clamp(1.2rem, 1.5vw, 1.8rem);
-
+    .logo a,
+    .logo p {
+        font-size: clamp(1.5rem, 3vw, 2rem);
     }
 
     /* Show hamburger icon on mobile */
@@ -2902,7 +2904,7 @@ ease-in-out infinite; */
         display: block;
         background: transparent;
         border: none;
-        font-size: clamp(2.5vw, 4vw, 5vw);
+        font-size: clamp(3vw, 4vw, 5vw);
         /* Mantiene il font adattabile senza diventare troppo grande */
         color: #c62ff6;
         /* Adatta il margine in base alla larghezza dello schermo */
@@ -2914,7 +2916,7 @@ ease-in-out infinite; */
         flex-direction: column;
         gap: 0vh;
         position: absolute;
-        top: 52px;
+        top: 102px;
         /* right: 21vw; */
         background-color: #fff;
         border-radius: -0.5rem;
@@ -2928,6 +2930,7 @@ ease-in-out infinite; */
         display: flex;
         align-items: flex-start;
     }
+
 
     #about,
     #progetto,
