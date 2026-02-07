@@ -2874,7 +2874,7 @@ ease-in-out infinite; */
     nav ul li:hover a {
         color: #fff;
     }
-    
+
     nav {
         width: 100%;
         display: flex;
@@ -3234,6 +3234,25 @@ ease-in-out infinite; */
         width: 100%;
     }
 
+    
+    .how-i-work .timeline {
+        gap: unset;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        justify-content: start;
+
+    }
+
+
+         .how-i-work .timeline .card {
+        flex: 0 0 clamp(200px, 100%, 50vw);
+        max-width: clamp(352px, 44vw, 500px);
+        padding: clamp(0.75rem, 1rem, 1.5rem);
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
 
 }
 
