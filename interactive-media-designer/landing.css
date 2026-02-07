@@ -2559,12 +2559,13 @@ ease-in-out infinite; */
     }
 
     .cta_buttons {
-    margin-top: 6rem;
-    width: 100%;}
+        margin-top: 6rem;
+        width: 100%;
+    }
 
-    
 
-       .cta_buttons a {
+
+    .cta_buttons a {
         background-color: #263238;
         color: white;
         padding: 1rem;
@@ -2832,6 +2833,7 @@ ease-in-out infinite; */
     .footer-bottom p {
         font-size: 4.5vw;
     }
+
     .how-i-work {
         width: 100%;
         padding: 1rem 1rem 5rem;
@@ -2849,11 +2851,11 @@ ease-in-out infinite; */
     }
 
 
-       .how-i-work .step .marker {
+    .how-i-work .step .marker {
         width: 5rem;
         text-align: center;
 
-}
+    }
 
 }
 
@@ -2862,7 +2864,7 @@ ease-in-out infinite; */
 
 
     nav ul li a {
-        font-size: clamp(2.5vw, 3vw, 3.5vw);
+        font-size: clamp(1.5vw, 2vw, 2.5vw);
     }
 
     nav ul li {
@@ -2933,6 +2935,7 @@ ease-in-out infinite; */
     nav.active .nav-links {
         display: flex;
         align-items: flex-start;
+        top: 59px;
     }
 
 
@@ -3238,7 +3241,7 @@ ease-in-out infinite; */
         width: 100%;
     }
 
-    
+
     .how-i-work .timeline {
         gap: unset;
         flex-wrap: nowrap;
@@ -3250,7 +3253,7 @@ ease-in-out infinite; */
     }
 
 
-         .how-i-work .timeline .card {
+    .how-i-work .timeline .card {
         flex: 0 0 clamp(200px, 100%, 50vw);
         max-width: clamp(352px, 44vw, 500px);
         padding: clamp(0.75rem, 1rem, 1.5rem);
