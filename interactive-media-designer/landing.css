@@ -1049,7 +1049,6 @@ h5 {
             0% 0%
             /* angolo in alto a sinistra */
         );
-    background-color: white;
     flex-wrap: wrap;
     display: flex;
     padding: clamp(1rem, 3vw, 2rem);
