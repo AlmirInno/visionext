@@ -2955,7 +2955,7 @@ ease-in-out infinite; */
     nav.active .nav-links {
         display: flex;
         align-items: flex-start;
-        top: 56px;
+        top: 50px;
     }
 
 
