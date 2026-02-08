@@ -1581,6 +1581,8 @@ footer,
         border-color: #c62ff6;
     }
 
+
+
     .contact input,
     .contact textarea,
     .contact button {
@@ -2869,8 +2871,7 @@ ease-in-out infinite; */
 
     p,
     .about p,
-    .about_visionext_box p,
-    .faq-cta p {
+    .about_visionext_box p {
         font-size: clamp(4vw, 4.8vw, 5.5vw);
         line-height: 1.6rem;
     }
@@ -2974,6 +2975,13 @@ ease-in-out infinite; */
 
     .how-i-work .step {
         background-color: #fff;
+    }
+
+    .faq-cta p {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        color: #666;
     }
 }
 
