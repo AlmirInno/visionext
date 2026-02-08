@@ -1487,6 +1487,73 @@ footer,
         font-size: clamp(0.75rem, 1.4vw, 1.1rem);
     }
 
+    .faq-section {
+        padding: 80px 20px;
+        background-color: #f6f6f6;
+    }
+
+    .faq-container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+
+    .faq-intro {
+        margin-bottom: 38px;
+        color: #555;
+        max-width: 650px;
+    }
+
+    .faq-item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+    }
+
+    .faq-item summary {
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        list-style: none;
+        position: relative;
+        padding-right: 30px;
+    }
+
+    .faq-item summary::after {
+        content: "+";
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    .faq-item[open] summary::after {
+        transform: rotate(45deg);
+        color: #c62ff6;
+    }
+
+
+
+    /* Micro CTA */
+    .faq-cta {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        text-align: center;
+        color: #666;
+    }
+
+    .faq-cta a {
+        color: #c62ff6;
+        font-weight: 700;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s ease;
+    }
+
+    .faq-cta a:hover {
+        border-color: #c62ff6;
+    }
+
     .contact input,
     .contact textarea,
     .contact button {
@@ -2642,6 +2709,7 @@ ease-in-out infinite; */
         padding: 1rem;
         scroll-snap-align: start;
         scroll-snap-stop: always;
+        background-color: #fff;
     }
 
     .card h4 {
@@ -2874,9 +2942,11 @@ ease-in-out infinite; */
     .how-i-work .step .marker {
         width: 5rem;
         text-align: center;
-
     }
 
+    .how-i-work .step {
+        background-color: #fff;
+    }
 }
 
 /*Layout mobile versione landscape */
