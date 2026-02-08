@@ -2890,7 +2890,7 @@ ease-in-out infinite; */
     nav ul li {
         border-top: 0.3px solid rgba(0, 0, 0, 0.123);
         width: 100%;
-        padding: clamp(0.65rem, 1vh, 1.2rem) clamp(1rem, 6vw, 2rem);
+        padding: clamp(0.6rem, 1vh, 1.2rem) clamp(1rem, 6vw, 2rem);
     }
 
     nav ul li:hover {
