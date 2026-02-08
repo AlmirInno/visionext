@@ -1489,7 +1489,20 @@ footer,
 
     .faq-section {
         padding: 80px 20px;
-        background-color: #f6f6f6;
+    background-color: #fff;
+        clip-path: polygon(50% 5%,
+                /* punto alto centrale, incavo superiore */
+                100% 0%,
+                /* angolo in alto a destra */
+                100% 95%,
+                /* angolo in basso a destra risalito per l'incavo */
+                50% 100%,
+                /* punto basso centrale, incavo inferiore */
+                0% 95%,
+                /* angolo in basso a sinistra risalito */
+                0% 0%
+                /* angolo in alto a sinistra */
+            );
     }
 
     .faq-container {
@@ -1580,7 +1593,6 @@ footer,
     .faq-cta a:hover {
         border-color: #c62ff6;
     }
-
 
 
     .contact input,
