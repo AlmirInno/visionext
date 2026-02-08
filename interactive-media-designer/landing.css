@@ -1509,6 +1509,8 @@ footer,
         padding: 20px 0;
     }
 
+
+
     .faq-item summary {
         font-size: 1.1rem;
         font-weight: 600;
@@ -1530,6 +1532,31 @@ footer,
     .faq-item[open] summary::after {
         transform: rotate(45deg);
         color: #c62ff6;
+    }
+
+    /* Animazione apertura testo */
+    @keyframes fadeSlideDown {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .faq-item p {
+        opacity: 0;
+        transform: translateY(-10px);
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.4s ease;
+        margin-top: 0;
+    }
+
+    .faq-item[open] p {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 500px;
+        /* valore alto per permettere di vedere tutto il contenuto */
+        margin-top: 15px;
     }
 
 

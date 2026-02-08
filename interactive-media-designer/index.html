@@ -93,38 +93,88 @@
 
     <!-- JSON-LD Schema.org Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "VISIONEXT - Almir Innocenti",
+  "description": "Web e graphic designer freelance a Firenze. Progetto siti web, identità visive e soluzioni digitali su misura per professionisti e piccole imprese.",
+  "image": "https://www.visionext.it/img/new_hero_qu2.png",
+  "url": "https://www.visionext.it",
+  "email": "info@visionext.it",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Firenze",
+    "addressLocality": "Firenze",
+    "addressRegion": "Toscana",
+    "postalCode": "50124",
+    "addressCountry": "IT"
+  },
+  "areaServed": [
+    "IT",
+    "EU"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/almirinnocenti/",
+    "https://www.behance.net/almirinnocenti"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Almir Innocenti",
+    "jobTitle": "Web & Graphic Designer",
+    "url": "https://www.visionext.it"
+  }
+}
+</script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "VISIONEXT - Almir Innocenti",
-        "description": "Web e graphic designer freelance a Firenze. Progetto siti web, identità visive e soluzioni digitali su misura per professionisti e piccole imprese.",
-        "image": "https://www.visionext.it/img/new_hero_qu2.png",
-        "url": "https://www.visionext.it",
-        "email": "info@visionext.it",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Firenze",
-            "addressLocality": "Firenze",
-            "addressRegion": "Toscana",
-            "postalCode": "50124",
-            "addressCountry": "IT"
-        },
-        "areaServed": [
-            "IT",
-            "EU"
-        ],
-        "sameAs": [
-            "https://www.linkedin.com/in/almirinnocenti/",
-            "https://www.behance.net/almirinnocenti"
-        ],
-        "founder": {
-            "@type": "Person",
-            "name": "Almir Innocenti",
-            "jobTitle": "Web & Graphic Designer",
-            "url": "https://www.visionext.it"
-        }
+      "@type": "Question",
+      "name": "Lavori solo su progetti web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Il web è una parte del mio lavoro, ma realizzo anche progetti di branding, grafica, interfacce digitali e contenuti visivi. La tecnologia viene scelta in funzione del progetto, non il contrario."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto costa un progetto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non esistono prezzi standard. Il costo dipende dalla complessità, dal tempo necessario e dagli obiettivi. Dopo un primo confronto preparo sempre un preventivo personalizzato."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "In che tempi viene realizzato un progetto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le tempistiche variano in base al tipo di progetto. In genere vanno da alcune settimane a qualche mese. Le scadenze vengono sempre concordate in anticipo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Offri anche consulenza e analisi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì. È possibile richiedere consulenze mirate, analisi UX o SEO e valutazioni strategiche come servizi dedicati, separati dalla fase di produzione."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Collabori anche con studi o agenzie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì. Collaboro con professionisti, studi creativi e agenzie come supporto su specifiche competenze o fasi di progetto."
+      }
     }
-    </script>
+  ]
+}
+</script>
+
 
     <!-- Adsense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7691085770800083"
@@ -422,7 +472,7 @@
                 <p>Hai altre domande o vuoi iniziare un progetto? <a href="#contact">Contattami subito</a> e ne
                     parliamo insieme!</p>
             </div>
-            </div>
+        </div>
 
         <div class="contact">
             <div class="title_box">
@@ -764,6 +814,24 @@
                 }
             });
         });
+
+
+// Funzione per gestire l'apertura/chiusura degli elementi FAQ
+        document.querySelectorAll('.faq-item summary').forEach((summary) => {
+            summary.addEventListener('click', function () {
+                const details = this.parentNode;
+
+                // Chiudi tutti gli altri details
+                document.querySelectorAll('.faq-item').forEach((item) => {
+                    if (item !== details) {
+                        item.removeAttribute('open');
+                    }
+                });
+
+                // Il details corrente si apre o chiude automaticamente da HTML
+            });
+        });
+
 
 
     </script>
