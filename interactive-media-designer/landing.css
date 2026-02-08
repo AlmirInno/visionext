@@ -2584,7 +2584,7 @@ ease-in-out infinite; */
 
     nav .lx {
         font-size: 1.5rem;
-        padding-top: 0px;
+        padding-top: 6px;
         margin: 0px;
         color: #c62ff6;
         font-family: 'Orbitron', sans-serif;
@@ -2792,7 +2792,7 @@ ease-in-out infinite; */
     }
 
     .portfolio_box h5 {
-        font-size: clamp(1.2rem, 1.4vw, 1.1rem);
+        font-size: clamp(1.1rem, 1.3vw, 1rem);
     }
 
     .portfolio_box h4 {
@@ -2869,9 +2869,10 @@ ease-in-out infinite; */
 
     p,
     .about p,
-    .about_visionext_box p {
+    .about_visionext_box p,
+    .faq-cta p {
         font-size: clamp(4vw, 4.8vw, 5.5vw);
-        line-height: 1.4☺rem;
+        line-height: 1.6rem;
     }
 
     .cta {
