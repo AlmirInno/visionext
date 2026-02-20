@@ -1873,7 +1873,7 @@ ease-in-out infinite; */
 /* Tablet Portrait */
 @media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
     nav ul li a {
-        font-size: clamp(3.5vw, 5vw, 5.5vw);
+        font-size: clamp(1.5vw, 3vw, 3.5vw);
     }
 
     nav ul li {
@@ -1920,7 +1920,7 @@ ease-in-out infinite; */
         display: block;
         background: transparent;
         border: none;
-        font-size: clamp(4vw, 6vw, 6.5vw);
+        font-size: clamp(2vw, 4vw, 4.5vw);
         /* Mantiene il font adattabile senza diventare troppo grande */
         color: #c62ff6;
         /* Adatta il margine in base alla larghezza dello schermo */
@@ -1931,9 +1931,9 @@ ease-in-out infinite; */
         display: none;
         flex-direction: column;
         gap: 0vh;
-        position: absolute;
-        top: 95px;
-        /* right: 21vw; */
+        position: fixed;
+        top: 100%;
+        right: 0vw;
         background-color: #fff;
         border-radius: -0.5rem;
         box-shadow: 0px 0.5vh 1vh rgba(0, 0, 0, 0.1);
@@ -1966,7 +1966,7 @@ ease-in-out infinite; */
         align-items: center;
         flex-direction: column;
         text-align: left;
-        margin: 17rem 0rem 0rem 0rem;
+        margin: 8rem 0rem 0rem 0rem;
     }
 
     .s1 {
@@ -2007,30 +2007,34 @@ ease-in-out infinite; */
 
     .description {
         line-height: clamp(3rem, 5vw, 5rem);
-        font-size: clamp(3.5vw, 5vw, 6vw);
+        font-size: clamp(3vw, 4.5vw, 5.5vw);
     }
 
     .explain-description {
         line-height: clamp(2rem, 3.5vh, 3.5rem);
         text-align: left;
-        font-size: clamp(1.6rem, 2.5vw, 2.64rem);
+        font-size: clamp(2.6rem, 3.5vw, 3.64rem);
         color: #555;
         max-width: 100%;
         margin: 0 auto;
     }
 
-    .cta_box {
-        margin-top: 21rem;
-        left: 20%;
+    .cta_buttons a {
+        background-color: #263238;
+        color: white;
+        padding: 2rem;
+        font-size: 2.2rem;
+        border-radius: 0.3rem;
+        text-decoration: none;
+        display: block;
         width: 100%;
-        /* position: relative; */
-        top: 29%;
     }
 
-    .cta {
-        font-size: 3vw;
+    .cta_buttons {
+        margin-top: 6rem;
+        width: 100%;
+        text-align: center;
     }
-
 
     main {
         width: 100%;
