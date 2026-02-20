@@ -2341,7 +2341,11 @@ ease-in-out infinite; */
 
     h1.name {
         font-size: clamp(4rem, 8vw, 8rem);
-    }
+        -webkit-text-stroke-width: thin;
+}
+
+
+    
 
     .explain-description {
         line-height: clamp(2rem, 3.5vh, 3.5rem);
