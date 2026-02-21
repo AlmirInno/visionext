@@ -2096,6 +2096,10 @@ ease-in-out infinite; */
         margin-top: clamp(3rem, 7vh, 7rem);
     }
 
+    .how-i-work .work-note {
+        font-size: clamp(1.9rem, 2.5vw, 3rem);
+    }
+
     .services-section {
         width: 100%;
         margin: 0;
@@ -2138,6 +2142,11 @@ ease-in-out infinite; */
         font-size: clamp(2rem, 2.8vw, 3rem);
     }
 
+
+    .small-note {
+        font-size: clamp(1.9rem, 2.5vw, 3rem);
+
+    }
 
     .title_box {
         width: 100%;
