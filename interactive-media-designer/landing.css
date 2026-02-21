@@ -565,10 +565,6 @@ h3 {
 }
 
 /* Miglioramenti estetici per la sezione 'Come lavoro' */
-.how-i-work h2 {
-    margin-bottom: 0.6rem;
-    font-size: var(--fs-h2);
-}
 
 .how-i-work .work-steps li {
     position: relative;
@@ -616,15 +612,10 @@ h3 {
     color: var(--muted);
     font-style: italic;
     text-align: center;
-    font-size: var(--fs-small);
+
 }
 
 /* Nuovo layout timeline/step per .how-i-work */
-.how-i-work .subtitle {
-    color: #444;
-    margin-top: 0.3rem;
-    font-weight: 500;
-}
 
 
 .how-i-work .timeline {
@@ -2036,6 +2027,13 @@ ease-in-out infinite; */
         text-align: center;
     }
 
+    p,
+    .about p,
+    .about_visionext_box p {
+        font-size: clamp(2rem, 3.2vw, 3.5vw);
+        line-height: 3.5rem;
+    }
+
     main {
         width: 100%;
     }
@@ -2051,15 +2049,13 @@ ease-in-out infinite; */
         height: max-content;
     }
 
-    .about p {
-        font-size: clamp(2rem, 3.2vw, 3.5rem);
 
-    }
-
-    figure {
-        margin-top: clamp(1rem, 3vh, 2rem);
+    .about_box figure {
         width: 100%;
-        height: clamp(35rem, 60vh, 50rem);
+        margin: 0;
+        /* width: clamp(60rem, 184vw, 111rem); */
+        border-radius: 1rem;
+        /* height: clamp(20rem, 80vw, 40rem); */
     }
 
 
@@ -2074,6 +2070,23 @@ ease-in-out infinite; */
         margin: 0;
         text-align: left;
         width: 100%;
+    }
+
+    .how-i-work .timeline {
+        gap: unset;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        justify-self: start;
+        width: 100%;
+    }
+
+
+    .how-i-work .step {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: clamp(1rem, 2vw, 2.5rem);
+        margin-top: clamp(3rem, 7vh, 7rem);
     }
 
     .services-section {
@@ -2168,10 +2181,6 @@ ease-in-out infinite; */
     }
 
 
-    p {
-        font-size: clamp(1.3rem, 2vw, 2.2rem);
-    }
-
     .portfolio_box h4 {
         font-size: clamp(1.3rem, 1.8vw, 2rem);
         width: fit-content;
@@ -2202,6 +2211,17 @@ ease-in-out infinite; */
         font-size: 2.5rem;
     }
 
+
+    .faq-intro {
+        margin-bottom: 38px;
+        color: #555;
+        max-width: 100%;
+    }
+
+    .faq-item summary {
+        font-size: 2.1rem;
+
+    }
 
     .contact-content {
         width: 100%;
@@ -2342,10 +2362,10 @@ ease-in-out infinite; */
     h1.name {
         font-size: clamp(4rem, 8vw, 8rem);
         -webkit-text-stroke-width: thin;
-}
+    }
 
 
-    
+
 
     .explain-description {
         line-height: clamp(2rem, 3.5vh, 3.5rem);
